@@ -1873,7 +1873,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				 )); 
 		String ReferrakData1=ReferrakData.get(20).getText();
 		System.out.println("Referal Data="+ReferrakData1);
-		//close();
+		
 				  
 			  }
 			//@AfterClass public void close() throws IOException {

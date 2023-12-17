@@ -3,23 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="webAuto.OPDEndToEndWorkFlow2">
+      <class name="webAuto.AppointmentCreation">
         <methods>
-          <include name="Investigation"/>
-          <include name="AllDocuments1"/>
-          <include name="HealthProfile"/>
-          <include name="ReferralOption3"/>
-          <include name="Document2"/>
+          <include name="verifyButton"/>
+          <include name="sendOTP"/>
           <include name="setUp"/>
           <include name="screenShot"/>
-          <include name="cirtificateOption3"/>
-          <include name="AllDocuments"/>
-          <include name="cirtificateOption1"/>
-          <include name="cirtificateOption"/>
-          <include name="previewReceipt"/>
-          <include name="Investigation1"/>
+          <include name="searchOpt"/>
+          <include name="AddNewAppointment"/>
+          <include name="searchBar"/>
         </methods>
-      </class> <!-- webAuto.OPDEndToEndWorkFlow2 -->
+      </class> <!-- webAuto.AppointmentCreation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

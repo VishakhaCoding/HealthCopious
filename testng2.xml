@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="webAuto.CreatePatient"/>
+      <class name="webAuto.AddNewPrescription"/>
+      <class name="webAuto.AdultPatientCreation "/>
+      <class name="webAuto.ApoointmentCall"/>
+      <class name="webAutoAppointmentCreation"/>
+      <class name="webAuto.CancelAppointment"/>
+      <class name="webAuto.CreateCirtificate"/>
+      <class name="webAuto.CreateReceipt"/>
+      <class name="webAuto.CreateReferral"/>
+      <class name="webAuto.CreateRequisitions"/>
+      <class name="webAuto.DeleteReceipt"/>
+      <class name="webAuto.EndToEndTest"/>
+      <class name="webAuto.EndToEndWorkflow"/>
+      <class name="webAuto.ImmunizationBasicRecord"/>
+      <class name="webAuto.InvestigationReportUpload"/>
+      <class name="webAuto.LogIn"/>
+      <class name="webAuto.prescriptionShort"/>
+      <class name="webAuto.PriorityTimeAppointment"/>
+      <class name="webAuto.ViewCertificateInDocuments"/>
+      <class name="webAuto.ViewCirtificate"/>
+      <class name="webAuto.ViewInvestigationReportInAllDoc"/>
+      <class name="webAuto.ViewReceipt"/>
+       <class name="webAuto.ViewReceiptInDoc"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

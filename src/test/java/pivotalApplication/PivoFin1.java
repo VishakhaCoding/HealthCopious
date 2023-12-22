@@ -25,30 +25,30 @@ public class PivoFin1 extends AppiumServerStart {
 	public Object MobileElement;
 	
 
-	@BeforeClass
-	public void setup() throws MalformedURLException, InterruptedException {
-
-		DesiredCapabilities dc = new DesiredCapabilities();
-		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
-		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
-		//dc.setCapability(MobileCapabilityType.APP, "D:\\z");
-		dc.setCapability("–session-override",true);
-		//dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
-		dc.setCapability("noReset", false) ;
-		dc.setCapability(MobileCapabilityType.APP, "D:\\pivoapp-prod-16-nov.apk");
-		//dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-vishakha-8-Dec.apk");
-		URL url = new URL("http://0.0.0.0:4723/");
-		dc.setCapability("appPackage", "com.calculator_apps");
-		dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
-		// AndroidDriver driver = new AndroidDriver(new
-		// URL("http://127.0.0.1:4723/wd/hub"), dc); //Create driver object
-		driver = new AppiumDriver(url, dc);
-
-		Thread.sleep(5000);
-
-	}
+	
+	  @BeforeClass public void setup1() throws MalformedURLException,
+	  InterruptedException {
+	  
+	  DesiredCapabilities dc = new DesiredCapabilities();
+	  dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+	  dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+	  dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
+	  dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
+	  
+	  dc.setCapability("–session-override",true);
+	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
+	  dc.setCapability("noReset", false) ;
+	  dc.setCapability(MobileCapabilityType.APP, "D:\\pivoapp-prod-16-nov.apk");
+	  URL url = new
+	  URL("http://0.0.0.0:4723/"); dc.setCapability("appPackage",
+	  "com.calculator_apps"); dc.setCapability("appActivity",
+	  "com.calculator_apps.MainActivity"); 
+	  driver = new AppiumDriver(url, dc);
+	  
+	  Thread.sleep(5000);
+	  
+	  }
+	 
 	
 	@Test(priority = 0)
 	public void NumberField() throws MalformedURLException, InterruptedException {
@@ -188,7 +188,7 @@ public class PivoFin1 extends AppiumServerStart {
 		Thread.sleep(2000);
 
 		WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-		FirstName.sendKeys("PivoTotal126Automations");
+		FirstName.sendKeys("PivoTotal127Automations");
 		//FirstName.sendKeys("abhaPatient1Dec");
 		Thread.sleep(2000);
 

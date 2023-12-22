@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pivotalApplication.PivoFin2">
+      <class name="pivotalApplication.AppiumServerStart">
         <methods>
-          <include name="Prescription"/>
-          <include name="screenShot"/>
-          <include name="Appointments"/>
-          <include name="PatientList"/>
           <include name="setup"/>
+          <include name="BfSuite"/>
+          <include name="AfterSuite"/>
         </methods>
-      </class> <!-- pivotalApplication.PivoFin2 -->
+      </class> <!-- pivotalApplication.AppiumServerStart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

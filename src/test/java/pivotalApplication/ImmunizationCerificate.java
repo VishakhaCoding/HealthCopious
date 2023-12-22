@@ -20,7 +20,7 @@ import io.appium.java_client.AppiumDriver;
 //import io.appium.java_client.MobileElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class ImmunizationCerificate {
+public class ImmunizationCerificate extends AppiumServerStart {
 	AppiumDriver driver;
 	public Object MobileElement;
 
@@ -81,7 +81,7 @@ public void submit() throws MalformedURLException, InterruptedException {
 			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
 	submit.click();
 
-	Thread.sleep(2000);
+	Thread.sleep(10000);
 	 List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
 	  WhatsNewClose.get(1).click();
 	  Thread.sleep(2000);
@@ -93,10 +93,10 @@ public void Search() throws InterruptedException {
 	WebElement SearchIcon = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
 	SearchIcon.click();
 
-	Thread.sleep(2000);
+	Thread.sleep(5000);
 
 	WebElement SearchBar =driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-	SearchBar.sendKeys("PivoTota20Automation");
+	SearchBar.sendKeys("PivoTotal123Automation");
 
 	Thread.sleep(2000);
 	WebElement SearchIcon1 = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -105,22 +105,22 @@ public void Search() throws InterruptedException {
 
 }
 
-@Test(priority = 6)
-public void close() throws InterruptedException {
-	Thread.sleep(2000);
-	WebElement close = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_close\"]"));
-	close.click();
-
-	Thread.sleep(2000);
-
-}
-
+/*
+ * @Test(priority = 6) public void close() throws InterruptedException {
+ * Thread.sleep(2000); WebElement close = driver.findElement(By.xpath(
+ * "//android.view.ViewGroup[@content-desc=\"search_close\"]")); close.click();
+ * 
+ * Thread.sleep(2000);
+ * 
+ * }
+ */
 @Test(priority = 7)
 public void ClickPatient() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	List<WebElement> Clickpatient = driver
 			.findElements(By.className("android.widget.TextView"));
-	Clickpatient.get(5).click();
+	Clickpatient.get(4).click();
+	Clickpatient.get(4).click();
 
 	
 
@@ -206,11 +206,39 @@ public void Preview() throws InterruptedException, IndexOutOfBoundsException {
 @Test(priority = 16)
 public void Print() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(5000);
-	WebElement Print
-	  = driver.findElement(By.xpath("//*[@text='Print']"));
-	 Print.click();
+	/*
+	 * WebElement Print = driver.findElement(By.xpath("//*[@text='Print']"));
+	 * Print.click();
+	 */
 	
 
+
+	   List<WebElement> close =
+	  driver.findElements(By.className("android.widget.TextView"));
+	  close.get(0).click(); Thread.sleep(5000);
+	  
+	  List<WebElement> ClickBack =
+	  driver.findElements(By.className("android.widget.TextView"));
+	  ClickBack.get(0).click();
+	  
+	  Thread.sleep(5000);
+	  
+	  List< WebElement> ClickBack1 =
+				/*
+				 * driver.findElements(By.className("android.view.ViewGroup"));
+				 * ClickBack1.get(2).click();
+				 */
+	  
+	  driver.findElements(By.className("android.widget.TextView"));
+	  ClickBack1.get(10).click();
+	  
+	  Thread.sleep(5000);
+	  
+	  List< WebElement> ClickBack2 =
+			  driver.findElements(By.className("android.widget.TextView"));
+			  ClickBack2.get(13).click();
+			  
+			  Thread.sleep(5000);
 }
 //@AfterClass public void close() throws IOException {
 		@AfterMethod

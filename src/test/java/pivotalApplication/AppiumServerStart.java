@@ -33,7 +33,7 @@ public void BfSuite()
 
   @org.testng.annotations.AfterSuite() public void AfterSuite() {
   
-  Server.stop();
+  //Server.stop();
   System.out.println("Appium Server stopped");
   
   

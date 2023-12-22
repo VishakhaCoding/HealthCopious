@@ -3,17 +3,48 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="webAuto.AppointmentCreation">
+      <class name="webAuto.OpdEndToEndWorkFlow1">
         <methods>
-          <include name="verifyButton"/>
-          <include name="sendOTP"/>
+          <include name="SaveandProceed"/>
+          <include name="BpandHeartOption"/>
+          <include name="VitalsOption"/>
           <include name="setUp"/>
+          <include name="OnExamination"/>
+          <include name="ConfirmPrescription"/>
+          <include name="GeneralInstruction"/>
+          <include name="LipidProfile"/>
+          <include name="Diagnosis"/>
+          <include name="BloodAndAnalysis"/>
+          <include name="DietaryAdvice"/>
+          <include name="Medicine1"/>
           <include name="screenShot"/>
-          <include name="searchOpt"/>
-          <include name="AddNewAppointment"/>
-          <include name="searchBar"/>
         </methods>
-      </class> <!-- webAuto.AppointmentCreation -->
+      </class> <!-- webAuto.OpdEndToEndWorkFlow1 -->
+      <class name="webAuto.OPDEndToEndWorkFlow2">
+        <methods>
+          <include name="AllDocuments1"/>
+          <include name="ReferralOption3"/>
+          <include name="screenShot"/>
+          <include name="searchBar1"/>
+          <include name="Document1"/>
+          <include name="numberField"/>
+          <include name="cirtificateOption"/>
+          <include name="sendOTP"/>
+          <include name="Investigation"/>
+          <include name="ReceiptOption"/>
+          <include name="HealthProfile"/>
+          <include name="verifyButton"/>
+          <include name="Document2"/>
+          <include name="setUp"/>
+          <include name="searchBar2"/>
+          <include name="cirtificateOption3"/>
+          <include name="searchOpt"/>
+          <include name="AllDocuments"/>
+          <include name="cirtificateOption1"/>
+          <include name="previewReceipt"/>
+          <include name="Investigation1"/>
+        </methods>
+      </class> <!-- webAuto.OPDEndToEndWorkFlow2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

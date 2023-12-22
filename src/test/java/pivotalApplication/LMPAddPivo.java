@@ -210,7 +210,7 @@ Close1.get(8).click();
 			
 
 			WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-			 FirstName.sendKeys("LMP72VAutomation");
+			 FirstName.sendKeys("LMP76Automation");
 			
 
 

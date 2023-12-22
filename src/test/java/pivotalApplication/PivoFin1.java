@@ -35,7 +35,7 @@ public class PivoFin1 extends AppiumServerStart {
 		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
 		//dc.setCapability(MobileCapabilityType.APP, "D:\\z");
 		dc.setCapability("–session-override",true);
-		//dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 1200);
+		//dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 		dc.setCapability("noReset", false) ;
 		dc.setCapability(MobileCapabilityType.APP, "D:\\pivoapp-prod-16-nov.apk");
 		//dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-vishakha-8-Dec.apk");
@@ -188,7 +188,7 @@ public class PivoFin1 extends AppiumServerStart {
 		Thread.sleep(2000);
 
 		WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-		FirstName.sendKeys("PivoTotal119Automations");
+		FirstName.sendKeys("PivoTotal126Automations");
 		//FirstName.sendKeys("abhaPatient1Dec");
 		Thread.sleep(2000);
 
@@ -860,7 +860,7 @@ public class PivoFin1 extends AppiumServerStart {
 		SelectPatient.get(0).click();
 		Thread.sleep(5000);
 		List<WebElement> Seatchbar = driver.findElements(By.xpath("//*[@text='Name / Mobile']"));
-		Seatchbar.get(0).sendKeys("PivoTotal118Automations");
+		Seatchbar.get(0).sendKeys("PivoTotal125Automations");
 		Thread.sleep(5000);
 		List<WebElement> Search = driver.findElements(By.className("android.widget.TextView"));
 		Search.get(1).click();
@@ -1962,34 +1962,50 @@ Thread.sleep(2000);*/
 	@Test(priority = 180)
 	public void Print() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(5000);
+		
+		
 		/*
 		 * WebElement Print = driver.findElement(By.xpath("//*[@text='Print']"));
 		 * Print.click();
 		 */
 		 
+		 
+		 
+		
 		/*
 		 * WebElement SaveAndShare =
 		 * driver.findElement(By.xpath("//*[@text='Save & Share']"));
 		 * SaveAndShare.click();
 		 */
-		 Thread.sleep(5000);
-		 List<WebElement> close
-		  = driver.findElements(By.className("android.widget.TextView"));
-		 close.get(0).click();
-		 Thread.sleep(5000); 
 		 
-		 List<WebElement> ClickBack
-		  = driver.findElements(By.className("android.widget.TextView"));
-		 ClickBack.get(0).click();
+		
+		  List<WebElement> close =
+				  driver.findElements(By.className("android.widget.TextView"));
+				  close.get(0).click(); Thread.sleep(5000);
+				  
+				  List<WebElement> ClickBack =
+				  driver.findElements(By.className("android.widget.TextView"));
+				  ClickBack.get(0).click();
+				  
+				  Thread.sleep(5000);
+				  
+				  List< WebElement> ClickBack1 =
+							/*
+							 * driver.findElements(By.className("android.view.ViewGroup"));
+							 * ClickBack1.get(2).click();
+							 */
+				  
+				  driver.findElements(By.className("android.widget.TextView"));
+				  ClickBack1.get(10).click();
+				  
+				  Thread.sleep(5000);
+				  
+				  List< WebElement> ClickBack2 =
+						  driver.findElements(By.className("android.widget.TextView"));
+						  ClickBack2.get(13).click();
+						  
+						  Thread.sleep(5000);
 		 
- Thread.sleep(5000); 
-		 
-		List< WebElement> ClickBack1
-		  = driver.findElements(By.className("android.widget.TextView"));
-		 ClickBack1.get(0).click();
-		 
-		 Thread.sleep(5000); 
-
 	}
 //@AfterClass public void close() throws IOException {
 	@AfterMethod

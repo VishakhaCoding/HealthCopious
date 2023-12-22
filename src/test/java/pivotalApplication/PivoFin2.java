@@ -21,10 +21,11 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class PivoFin2 extends AppiumServerStart {
+public class PivoFin2  {
 	AppiumDriver driver;
 	public Object MobileElement;
 
+	@SuppressWarnings("deprecation")
 	@BeforeClass
 	public void setup() throws MalformedURLException, InterruptedException {
 
@@ -34,8 +35,8 @@ public class PivoFin2 extends AppiumServerStart {
 	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
 	dc.setCapability("–session-override",true);
-	dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 1200);
-	dc.setCapability("noReset", false) ;
+	dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
+	dc.setCapability("noReset", true) ;
 	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
 	//dc.setCapability(MobileCapabilityType.APP, "D:\\pivoapp-prod-16-nov.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
@@ -45,24 +46,24 @@ public class PivoFin2 extends AppiumServerStart {
 	// URL("http://127.0.0.1:4723/wd/hub"), dc); //Create driver object
 	driver = new AppiumDriver(url, dc);
 
-	Thread.sleep(10000);
+	//Thread.sleep(10000);
 
 }
-	//@Ignore()
+	@Ignore()
 @Test(priority = 0)
 public void NumberField() throws MalformedURLException, InterruptedException {
 	WebElement Number =  driver.findElement(By.xpath(
 			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
 	Number.sendKeys("9665002440");
 }
-	//@Ignore
+	@Ignore
 @Test(priority = 1)
 public void IAgree() throws MalformedURLException, InterruptedException {
 	WebElement Agree =  driver.findElement(By.xpath("//android.widget.TextView[@index='1']"));
 	Agree.click();
 	Thread.sleep(1000);
 }
-	//@Ignore
+	@Ignore
 @Test(priority = 2)
 public void proceedButton() throws MalformedURLException, InterruptedException {
 	WebElement proceed =  driver.findElement(By.xpath(
@@ -70,7 +71,7 @@ public void proceedButton() throws MalformedURLException, InterruptedException {
 	proceed.click();
 	Thread.sleep(5000);
 }
-	//@Ignore
+	@Ignore
 @Test(priority = 3)
 public void OTP() throws MalformedURLException, InterruptedException {
 	WebElement otp =  driver.findElement(By.xpath(
@@ -79,7 +80,7 @@ public void OTP() throws MalformedURLException, InterruptedException {
 
 	Thread.sleep(10000);
 }
-	//@Ignore
+	@Ignore
 @Test(priority = 4)
 public void submit() throws MalformedURLException, InterruptedException {
 	WebElement submit =  driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
@@ -91,7 +92,7 @@ public void submit() throws MalformedURLException, InterruptedException {
 	  WhatsNewClose.get(1).click();
 
 }
-
+	@Ignore
 @Test(priority = 5)
 public void Search() throws InterruptedException {
 	Thread.sleep(2000);
@@ -120,9 +121,9 @@ public void Search() throws InterruptedException {
  * 
  * }
  */
-
+	@Ignore
 @Test(priority = 7)
-public void ClickPatient() throws InterruptedException, IndexOutOfBoundsException {
+public void ClickPatient1() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	List<WebElement> Clickpatient = driver
 			.findElements(By.className("android.widget.TextView"));
@@ -272,11 +273,12 @@ public void Camera2() throws InterruptedException, IndexOutOfBoundsException {
 	Camera.click();
 	Thread.sleep(2000);
 	
-	WebElement Camera1
-
-	= driver.findElement(By.xpath("//*[@text='While using the app']"));
-Camera1.click();
-Thread.sleep(2000);
+	/*
+	 * WebElement Camera1
+	 * 
+	 * = driver.findElement(By.xpath("//*[@text='While using the app']"));
+	 * Camera1.click(); Thread.sleep(2000);
+	 */
 	//WebElement allow
 	
 	 /* = driver.findElement(By.xpath("//*[@text='Allow']"));
@@ -294,7 +296,7 @@ Thread.sleep(2000);
 	  = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Take picture\"]"));
 	CameraClick.click();
 
-	Thread.sleep(5000);
+	Thread.sleep(10000);
 	
 	WebElement UploadOk
 	  =driver.findElement(By.xpath("//*[@text='OK']"));
@@ -648,7 +650,7 @@ public void UploadCam() throws InterruptedException, IndexOutOfBoundsException {
 
 @Test(priority = 52)
 public void UploadCamOk() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(5000);
+	Thread.sleep(10000);
 	WebElement UploadOk
 	  =driver.findElement(By.xpath("//*[@text='OK']"));
 	 UploadOk.click();
@@ -1232,17 +1234,15 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 		 
 		 Thread.sleep(1000);
 				 
-		 List<WebElement> Date3= driver.findElements(By.className(
-				  "android.widget.TextView"
-				 ));
-		String Date33=Date3.get(10).getText();
-		System.out.println(Date33);
-				 
-		List<WebElement> time3= driver.findElements(By.className(
-						  "android.widget.TextView"
-						 )); 
-		String Time33=time3.get(11).getText();
-		System.out.println(Time33);
+			/*
+			 * List<WebElement> Date3= driver.findElements(By.className(
+			 * "android.widget.TextView" )); String Date33=Date3.get(10).getText();
+			 * System.out.println(Date33);
+			 * 
+			 * List<WebElement> time3= driver.findElements(By.className(
+			 * "android.widget.TextView" )); String Time33=time3.get(11).getText();
+			 * System.out.println(Time33);
+			 */
 				 
 					 
 									 Thread.sleep(5000); 
@@ -1873,7 +1873,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				 )); 
 		String ReferrakData1=ReferrakData.get(20).getText();
 		System.out.println("Referal Data="+ReferrakData1);
-		
+		//driver.close();
 				  
 			  }
 			//@AfterClass public void close() throws IOException {

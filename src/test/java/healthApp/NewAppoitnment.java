@@ -12,8 +12,9 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import pivotalApplication.AppiumServerStart;
 
-public class NewAppoitnment {
+public class NewAppoitnment extends AppiumServerStart {
 	AppiumDriver driver;
 	public Object MobileElement;
 //CertificateValid
@@ -25,6 +26,9 @@ public class NewAppoitnment {
 	dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
+	dc.setCapability("–session-override",true);
+	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
+	  dc.setCapability("noReset", false) ;
 	//dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-release-16-Aug.apk");
 	dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-Stage-24-Nov.apk");
 	URL url = new URL("http://0.0.0.0:4723/");

@@ -23,7 +23,7 @@ import org.testng.annotations.BeforeClass;
 	import io.appium.java_client.AppiumDriver;
 	import io.appium.java_client.remote.MobileCapabilityType;
 
-	public class AddVitals {
+	public class AddVitals extends AppiumServerStart {
 		static AppiumDriver driver;
 		 public Object MobileElement;
 		 
@@ -40,6 +40,9 @@ import org.testng.annotations.BeforeClass;
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
+		dc.setCapability("–session-override",true);
+		  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
+		  dc.setCapability("noReset", false) ;
 		dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
 		dc.setCapability("appPackage","com.calculator_apps");

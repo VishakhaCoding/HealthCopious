@@ -30,13 +30,16 @@ public class LMPAddPivo extends AppiumServerStart {
 
 	
 @BeforeClass
-	public void setup() throws MalformedURLException, InterruptedException {
+	public void setup1() throws MalformedURLException, InterruptedException {
 		
 	DesiredCapabilities dc=new DesiredCapabilities();
 	dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 	dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
+	dc.setCapability("–session-override",true);
+	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
+	  dc.setCapability("noReset", false) ;
 	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage","com.calculator_apps");
@@ -148,7 +151,7 @@ Close1.get(8).click();
 			
 
 			WebElement MobileNumber1 = driver.findElement(By.xpath("//*[@text='Mobile Number']"));
-			 MobileNumber1.sendKeys("1000000013");
+			 MobileNumber1.sendKeys("1000000016");
 			
 
 
@@ -210,7 +213,7 @@ Close1.get(8).click();
 			
 
 			WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-			 FirstName.sendKeys("LMP76Automation");
+			 FirstName.sendKeys("LMP77Automation");
 			
 
 

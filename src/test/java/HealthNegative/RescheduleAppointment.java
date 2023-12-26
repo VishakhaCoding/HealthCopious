@@ -19,8 +19,9 @@ import org.testng.annotations.Test;
 import healthApp.NewAppoitnment;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import pivotalApplication.AppiumServerStart;
 
-public class RescheduleAppointment {
+public class RescheduleAppointment extends AppiumServerStart{
 	
 	
 	public Object MobileElement;

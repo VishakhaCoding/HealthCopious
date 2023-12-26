@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class DashBoard {
+public class DashBoard extends AppiumServerStart{
 	
 	
 	static AppiumDriver driver;
@@ -39,6 +39,9 @@ public class DashBoard {
 	dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
+	dc.setCapability("–session-override",true);
+	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
+	  dc.setCapability("noReset", false) ;
 	//dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-release-31-Oct.apk");
 	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-2-nov-production.apk");
 	URL url = new URL("http://0.0.0.0:4723/");

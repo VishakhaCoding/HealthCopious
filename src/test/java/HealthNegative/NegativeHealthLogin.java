@@ -19,8 +19,9 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import pivotalApplication.AppiumServerStart;
 
-public class NegativeHealthLogin {
+public class NegativeHealthLogin extends AppiumServerStart{
 static AppiumDriver driver;
 	
 	public Object MobileElement;

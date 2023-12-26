@@ -16,19 +16,17 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.google.gson.stream.MalformedJsonException;
-
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class PreviousDateReceipt {
+public class PreviousDateReceipt extends AppiumServerStart{
 	private AppiumDriver driver;
 	//public Object MobileElement;
 	//AndroidDriver driver;
 
 	@BeforeClass
-	public void setup() throws MalformedJsonException, InterruptedException, MalformedURLException {
+	public void setup() throws InterruptedException, MalformedURLException {
 
 		DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
@@ -37,6 +35,9 @@ public class PreviousDateReceipt {
 		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
 		dc.setCapability(MobileCapabilityType.APP, "D:\\\\pivotalapp-20-june.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
+		dc.setCapability("–session-override",true);
+		  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
+		  dc.setCapability("noReset", false) ;
 		dc.setCapability("appPackage", "com.calculator_apps");
 		dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
 		// AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), dc); //Create driver object

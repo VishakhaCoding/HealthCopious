@@ -18,8 +18,9 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import pivotalApplication.AppiumServerStart;
 
-public class CancelAppointment {
+public class CancelAppointment extends AppiumServerStart {
 	AppiumDriver driver;
 	public Object MobileElement;
 //CertificateValid

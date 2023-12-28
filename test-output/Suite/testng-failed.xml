@@ -3,15 +3,71 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="pivotalApplication.PivoFin1">
+      <class name="webAuto.OpdEndToEndWorkFlow1">
         <methods>
-          <include name="BulkCancel"/>
-          <include name="setup1"/>
+          <include name="SaveandProceed"/>
+          <include name="createPatient"/>
+          <include name="VitalsOption"/>
+          <include name="setUp"/>
+          <include name="fillHealthProfile"/>
+          <include name="GeneralInstruction"/>
+          <include name="Number1"/>
+          <include name="Diagnosis"/>
           <include name="screenShot"/>
-          <include name="BfSuite"/>
-          <include name="AfterSuite"/>
+          <include name="Complaints"/>
+          <include name="city"/>
+          <include name="lastName"/>
+          <include name="LipidProfile"/>
+          <include name="sendOTP"/>
+          <include name="number2"/>
+          <include name="proceedWithSameRMN"/>
+          <include name="pinCode"/>
+          <include name="confirm"/>
+          <include name="firstName"/>
+          <include name="clickClose"/>
+          <include name="genFemale"/>
+          <include name="fillFamilyProfile"/>
+          <include name="Medicine1"/>
+          <include name="DietaryAdvice"/>
+          <include name="AddPrescription"/>
+          <include name="middleName"/>
+          <include name="verifyButton"/>
+          <include name="BpandHeartOption"/>
+          <include name="OnExamination"/>
+          <include name="ConfirmPrescription"/>
+          <include name="address"/>
+          <include name="birthDate"/>
+          <include name="GoHome"/>
+          <include name="BloodAndAnalysis"/>
+          <include name="fillVitalForm"/>
+          <include name="nextButton"/>
+          <include name="AddNewAppointment"/>
+          <include name="locality"/>
         </methods>
-      </class> <!-- pivotalApplication.PivoFin1 -->
+      </class> <!-- webAuto.OpdEndToEndWorkFlow1 -->
+      <class name="webAuto.OPDEndToEndWorkFlow2">
+        <methods>
+          <include name="AllDocuments1"/>
+          <include name="ReferralOption3"/>
+          <include name="screenShot"/>
+          <include name="searchBar1"/>
+          <include name="Document1"/>
+          <include name="cirtificateOption"/>
+          <include name="Investigation"/>
+          <include name="ReceiptOption"/>
+          <include name="HealthProfile"/>
+          <include name="verifyButton"/>
+          <include name="Document2"/>
+          <include name="setUp"/>
+          <include name="searchBar2"/>
+          <include name="cirtificateOption3"/>
+          <include name="searchOpt"/>
+          <include name="AllDocuments"/>
+          <include name="cirtificateOption1"/>
+          <include name="previewReceipt"/>
+          <include name="Investigation1"/>
+        </methods>
+      </class> <!-- webAuto.OPDEndToEndWorkFlow2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

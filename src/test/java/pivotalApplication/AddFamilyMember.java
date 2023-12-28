@@ -88,7 +88,7 @@ public class AddFamilyMember extends AppiumServerStart{
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
 		submit.click();
 
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 		 List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
 		  WhatsNewClose.get(1).click();
 		  Thread.sleep(2000);
@@ -119,6 +119,7 @@ public class AddFamilyMember extends AppiumServerStart{
 		List<WebElement> Clickpatient = driver
 				.findElements(By.className("android.widget.TextView"));
 		Clickpatient.get(5).click();
+		Clickpatient.get(5).click();
 
 		Thread.sleep(5000);
 		//System.out.println("Before scrolling ....");
@@ -141,14 +142,14 @@ public class AddFamilyMember extends AppiumServerStart{
 		
 
 
-		Thread.sleep(40000);
+		Thread.sleep(10000);
 		
 		 WebElement ProceedWithSameRMN =driver.findElement(By.xpath("//*[@text='Proceed with same RMN']"));
 		 ProceedWithSameRMN.click();
 	}
 	 @Test(priority = 8)
 		public void FirstName() throws InterruptedException {
-			Thread.sleep(40000);
+			Thread.sleep(10000);
 
 			
 
@@ -183,7 +184,7 @@ public class AddFamilyMember extends AppiumServerStart{
 
 
 		
-		  Thread.sleep(40000);
+		  Thread.sleep(10000);
 
 
 			

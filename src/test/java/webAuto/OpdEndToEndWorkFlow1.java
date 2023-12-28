@@ -372,7 +372,7 @@ public class OpdEndToEndWorkFlow1 {
 	@Test(priority = 8, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("Uopdtest");
+		driver.findElement(By.xpath(firstName)).sendKeys("Wopdtest");
 		;
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));

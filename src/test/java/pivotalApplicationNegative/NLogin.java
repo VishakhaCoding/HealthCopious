@@ -112,7 +112,7 @@ public class NLogin extends AppiumServerStart{
 	  
 	  
 	  
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		/*
 		 * WebElement Agree =
 		 * driver.findElement(By.xpath("//android.widget.TextView[@index='1']"));

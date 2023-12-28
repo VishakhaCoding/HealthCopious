@@ -3,19 +3,27 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="healthApp.HealthEndToEndScript">
+      <class name="pivotalApplication.AppointmentVideo">
         <methods>
-          <include name="setup"/>
-          <include name="LipidProfile"/>
-          <include name="AllVisits"/>
-          <include name="AddVitalsClick"/>
-          <include name="AddButton2"/>
+          <include name="submit"/>
+          <include name="proceedButton"/>
           <include name="BfSuite"/>
+          <include name="Time"/>
+          <include name="VideoCheckBox"/>
+          <include name="Appointment"/>
+          <include name="OTP"/>
+          <include name="NumberField"/>
+          <include name="IAgree"/>
+          <include name="setup1"/>
+          <include name="SlotBook"/>
+          <include name="Search"/>
+          <include name="Book"/>
+          <include name="SlotTime"/>
           <include name="AfterSuite"/>
-          <include name="AddVitals"/>
           <include name="screenShot"/>
+          <include name="AppointmentBookedPopup"/>
         </methods>
-      </class> <!-- healthApp.HealthEndToEndScript -->
+      </class> <!-- pivotalApplication.AppointmentVideo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

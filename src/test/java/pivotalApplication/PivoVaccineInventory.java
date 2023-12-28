@@ -91,7 +91,7 @@ public void submit() throws MalformedURLException, InterruptedException {
 @Test(priority = 5)
 public void close() throws InterruptedException {
 	
-	Thread.sleep(2000);
+	Thread.sleep(10000);
 	
 	  List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
 	  WhatsNewClose.get(1).click();

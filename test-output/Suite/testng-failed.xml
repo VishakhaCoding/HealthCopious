@@ -7,7 +7,6 @@
         <methods>
           <include name="BulkCancel"/>
           <include name="setup1"/>
-          <include name="setup"/>
           <include name="screenShot"/>
           <include name="BfSuite"/>
           <include name="AfterSuite"/>

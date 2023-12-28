@@ -1,25 +1,812 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="0" failed="0" skipped="14">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-26T17:00:50 IST" name="Default suite" finished-at="2023-12-26T17:00:53 IST" duration-ms="3392">
+  <suite started-at="2023-12-28T14:51:02 IST" name="Default suite" finished-at="2023-12-28T14:51:03 IST" duration-ms="568">
     <groups>
     </groups>
-    <test started-at="2023-12-26T17:00:50 IST" name="Default test" finished-at="2023-12-26T17:00:53 IST" duration-ms="3392">
-      <class name="pivotalApplication.AppiumServerStart">
-        <test-method is-config="true" signature="BfSuite()[pri:0, instance:pivotalApplication.AppiumServerStart@75437611]" started-at="2023-12-26T17:00:29 IST" name="BfSuite" finished-at="2023-12-26T17:00:50 IST" duration-ms="20809" status="PASS">
+    <test started-at="2023-12-28T14:51:02 IST" name="Default test" finished-at="2023-12-28T14:51:03 IST" duration-ms="568">
+      <class name="pivotalApplication.AppointmentVideo">
+        <test-method is-config="true" signature="BfSuite()[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:50:37 IST" name="BfSuite" finished-at="2023-12-28T14:51:02 IST" duration-ms="25370" status="FAIL">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BfSuite -->
-        <test-method signature="BfSuite()[pri:0, instance:pivotalApplication.AppiumServerStart@75437611]" started-at="2023-12-26T17:00:50 IST" name="BfSuite" finished-at="2023-12-26T17:00:53 IST" duration-ms="3310" status="PASS">
+        <test-method is-config="true" signature="setup1()[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="setup1" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup1 -->
+        <test-method signature="BfSuite()[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="BfSuite" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BfSuite -->
-        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:pivotalApplication.AppiumServerStart@75437611]" started-at="2023-12-26T17:00:53 IST" name="AfterSuite" finished-at="2023-12-26T17:00:53 IST" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="screenShot" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="NumberField()[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="NumberField" finished-at="2023-12-28T14:51:02 IST" duration-ms="6" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NumberField -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="screenShot" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="IAgree()[pri:1, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="IAgree" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IAgree -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="screenShot" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="proceedButton()[pri:2, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="proceedButton" finished-at="2023-12-28T14:51:02 IST" duration-ms="1" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedButton -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="screenShot" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="OTP()[pri:3, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="OTP" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OTP -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="screenShot" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="submit()[pri:4, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="submit" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="screenShot" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Search()[pri:5, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="Search" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="screenShot" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Appointment()[pri:7, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="Appointment" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Appointment -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="screenShot" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="SlotTime()[pri:8, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="SlotTime" finished-at="2023-12-28T14:51:02 IST" duration-ms="8" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SlotTime -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="screenShot" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Time()[pri:9, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="Time" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Time -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="screenShot" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="SlotBook()[pri:10, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="SlotBook" finished-at="2023-12-28T14:51:02 IST" duration-ms="1" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SlotBook -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="screenShot" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="VideoCheckBox()[pri:11, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="VideoCheckBox" finished-at="2023-12-28T14:51:02 IST" duration-ms="1" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VideoCheckBox -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="screenShot" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Book()[pri:12, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:02 IST" name="Book" finished-at="2023-12-28T14:51:02 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Book -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:03 IST" name="screenShot" finished-at="2023-12-28T14:51:03 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="AppointmentBookedPopup()[pri:13, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:03 IST" name="AppointmentBookedPopup" finished-at="2023-12-28T14:51:03 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[[The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0], Output: [35m[Appium][39m Welcome to Appium v2.2.2
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[35m[Appium][39m Requiring driver at C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver
+]
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+at pivotalApplication.AppiumServerStart.BfSuite(AppiumServerStart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppointmentBookedPopup -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:03 IST" name="screenShot" finished-at="2023-12-28T14:51:03 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:pivotalApplication.AppointmentVideo@6caf0677]" started-at="2023-12-28T14:51:03 IST" name="AfterSuite" finished-at="2023-12-28T14:51:03 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->
-      </class> <!-- pivotalApplication.AppiumServerStart -->
+      </class> <!-- pivotalApplication.AppointmentVideo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -83,7 +83,7 @@ public class LMPAddPivo extends AppiumServerStart {
 			 )); submit.click();
 			
 			
-			  Thread.sleep(5000);
+			  Thread.sleep(10000);
 			  List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
 			  WhatsNewClose.get(1).click();
 			  
@@ -151,7 +151,7 @@ Close1.get(8).click();
 			
 
 			WebElement MobileNumber1 = driver.findElement(By.xpath("//*[@text='Mobile Number']"));
-			 MobileNumber1.sendKeys("1000000016");
+			 MobileNumber1.sendKeys("1000000015");
 			
 
 
@@ -213,7 +213,7 @@ Close1.get(8).click();
 			
 
 			WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-			 FirstName.sendKeys("LMP77Automation");
+			 FirstName.sendKeys("LMP79Automation");
 			
 
 

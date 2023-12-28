@@ -85,7 +85,7 @@ package pivotalApplication;
 					"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
 			submit.click();
 
-			Thread.sleep(2000);
+			Thread.sleep(10000);
 			 List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
 			  WhatsNewClose.get(1).click();
 			  Thread.sleep(2000);
@@ -110,16 +110,15 @@ package pivotalApplication;
 
 		}
 
-		@Test(priority = 6)
-		public void close() throws InterruptedException {
-			Thread.sleep(2000);
-			WebElement close = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_close\"]"));
-			close.click();
-
-			Thread.sleep(2000);
-
-		}
-
+		/*
+		 * @Test(priority = 6) public void close() throws InterruptedException {
+		 * Thread.sleep(2000); WebElement close = driver.findElement(By.xpath(
+		 * "//android.view.ViewGroup[@content-desc=\"search_close\"]")); close.click();
+		 * 
+		 * Thread.sleep(2000);
+		 * 
+		 * }
+		 */
 		@Test(priority = 7)
 		public void Appointment() throws InterruptedException, IndexOutOfBoundsException {
 			Thread.sleep(2000);

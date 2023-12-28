@@ -116,6 +116,7 @@ public class DeletePatient extends AppiumServerStart{
 		List<WebElement> Clickpatient = driver
 				.findElements(By.className("android.widget.TextView"));
 		Clickpatient.get(5).click();
+		Clickpatient.get(5).click();
 
 
 		System.out.println("Before scrolling ....");

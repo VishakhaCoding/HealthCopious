@@ -89,6 +89,10 @@ public class PreviousDateReceipt extends AppiumServerStart{
 		submit.click();
 
 		Thread.sleep(2000);
+		  Thread.sleep(10000);
+		  List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
+		  WhatsNewClose.get(1).click();
+		  Thread.sleep(2000);
 
 	}
 
@@ -115,6 +119,7 @@ public class PreviousDateReceipt extends AppiumServerStart{
 		Thread.sleep(2000);
 		List<WebElement> Clickpatient = driver
 				.findElements(By.className("android.widget.TextView"));
+		Clickpatient.get(5).click();
 		Clickpatient.get(5).click();
 
 

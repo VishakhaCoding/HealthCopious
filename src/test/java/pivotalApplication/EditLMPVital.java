@@ -83,7 +83,7 @@ public class EditLMPVital extends AppiumServerStart{
 			 )); submit.click();
 			
 			
-			  Thread.sleep(2000);
+			  Thread.sleep(10000);
 			  List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
 			  WhatsNewClose.get(1).click();
 			  
@@ -95,7 +95,7 @@ public class EditLMPVital extends AppiumServerStart{
 			
 
 			List<WebElement> Createptient = driver.findElements(By.className("android.widget.TextView"));
-			Createptient.get(14).click();
+			Createptient.get(36).click();
 
 			Thread.sleep(2000);
 

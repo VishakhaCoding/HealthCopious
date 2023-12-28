@@ -122,9 +122,9 @@ public class LogIn1 {
 		}
 
 		@BeforeClass
-		public void setUp() {
+		public void setUp() throws InterruptedException {
 
-			System.setProperty("webdriver.chrome.driver","D:\\webAuto\\src\\test\\resources\\Browser\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
 			
 			
 			driver = new ChromeDriver();
@@ -133,7 +133,8 @@ public class LogIn1 {
 			//driver.get("http://stage.copious.care:4200/");
 			//driver.get("https://stage.copious.care/");
 			driver.manage().window().fullscreen();
-			 driver.get("https://opd.copious.care/");
+			 driver.get("https://app.copious.care/");
+			 Thread.sleep(5000);
 		}
 		@Test(priority = 1)
 		public void numberField1() {

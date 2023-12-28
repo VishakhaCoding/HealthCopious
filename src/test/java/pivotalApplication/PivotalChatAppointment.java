@@ -84,7 +84,7 @@ public class PivotalChatAppointment extends AppiumServerStart{
 		WebElement submit = driver.findElement(By.xpath(
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
 		submit.click();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		List<WebElement> WhatsNewClose = driver.findElements(By.className("android.widget.TextView"));
 		WhatsNewClose.get(1).click();
 		Thread.sleep(2000);

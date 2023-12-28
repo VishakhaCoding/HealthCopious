@@ -82,7 +82,7 @@ public class Chats extends AppiumServerStart{
 			 )); submit.click();
 			
 			
-			  Thread.sleep(2000);
+			  Thread.sleep(10000);
 			  List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
 			  WhatsNewClose.get(1).click();
 			  Thread.sleep(2000);

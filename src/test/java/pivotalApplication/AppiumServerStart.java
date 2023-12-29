@@ -1,6 +1,6 @@
 package pivotalApplication;
 
-import java.io.IOException;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
-import io.netty.channel.unix.Socket;
+
 
 public class AppiumServerStart {
 	 AppiumDriver driver;
@@ -42,24 +42,16 @@ public void BfSuite()
   
   }
  
-public boolean CheckAppiumServerIsRunning(int port) throws IOException
-{
-	boolean isAppiumRunning= false;
-	Socket socket;
-	try {
-		socket= new Socket(port);
-		socket.close();}
-	catch(IOExceptionWithCause e)
-	{
-		System.out.println("1");
-		isAppiumRunning= true;
-		
-	}finally {
-		socket=null;
-	}
-	
-	return isAppiumRunning;
-}
+	/*
+	 * public boolean CheckAppiumServerIsRunning(int port) throws IOException {
+	 * boolean isAppiumRunning= false; Socket socket; try { socket= new
+	 * Socket(port); socket.close();} catch(IOExceptionWithCause e) {
+	 * System.out.println("1"); isAppiumRunning= true;
+	 * 
+	 * }finally { socket=null; }
+	 * 
+	 * return isAppiumRunning; }
+	 */
 
 public AppiumDriverLocalService getAppiumServiceDefault() {
 	return AppiumDriverLocalService.buildDefaultService();

@@ -3,14 +3,15 @@
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
 			<item value="D:\HealthCopious\HealthCopious"/>
+			<item value="D:\HealthCopious"/>
 		</list>
 		<list key="projectNameTemplate">
+			<item value="[name]"/>
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
 			<item value="[artifactId]-[version]"/>
 			<item value="[groupId].[artifactId]"/>
 			<item value="[groupId].[artifactId]-[version]"/>
-			<item value="[name]"/>
 		</list>
 	</section>
 </section>

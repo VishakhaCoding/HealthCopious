@@ -1,6 +1,6 @@
 package webAuto;
 
-import java.net.MalformedURLException;
+
 import java.net.URL;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -14,8 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
+
 
 public class LogOut {
 	public static WebDriver driver;

@@ -38,6 +38,7 @@
           <include name="address"/>
           <include name="birthDate"/>
           <include name="GoHome"/>
+          <include name="numberField"/>
           <include name="BloodAndAnalysis"/>
           <include name="fillVitalForm"/>
           <include name="nextButton"/>
@@ -52,7 +53,9 @@
           <include name="screenShot"/>
           <include name="searchBar1"/>
           <include name="Document1"/>
+          <include name="numberField"/>
           <include name="cirtificateOption"/>
+          <include name="sendOTP"/>
           <include name="Investigation"/>
           <include name="ReceiptOption"/>
           <include name="HealthProfile"/>

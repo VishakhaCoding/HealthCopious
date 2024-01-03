@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webAuto.LogIn">
+      <class name="pivotalApplication.PivoFin1">
         <methods>
-          <include name="verifyButton"/>
-          <include name="setUp"/>
-          <include name="sendOTP"/>
+          <include name="BulkCancel"/>
+          <include name="setup1"/>
           <include name="screenShot"/>
-          <include name="numberField"/>
         </methods>
-      </class> <!-- webAuto.LogIn -->
+      </class> <!-- pivotalApplication.PivoFin1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

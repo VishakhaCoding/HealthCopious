@@ -1,9 +1,6 @@
 package pivotalApplication;
 
 
-import java.net.MalformedURLException;
-import java.net.URL;
-
 import org.apache.commons.exec.CommandLine;
 import org.apache.commons.io.IOExceptionWithCause;
 import org.openqa.selenium.remote.DesiredCapabilities;

@@ -143,7 +143,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 7)
 	public void FirstName() throws MalformedURLException, InterruptedException {
 		List<WebElement> FirstName = driver.findElements(By.xpath("//*[@text='Your First Name']"));
-		FirstName.get(0).sendKeys("PIiHealth");
+		FirstName.get(0).sendKeys("PMHealth");
 
 		Thread.sleep(5000);
 
@@ -1020,7 +1020,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	public void photo() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(10000);
 		driver.findElement(By.xpath(
-				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20231214-124051_Gallery.jpg, 829 kB, 14 Dec\"]"))
+				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20231214-124051_Gallery.jpg, 829 kB, 14 Dec 2023\"]"))
 				.click();
 
 	}

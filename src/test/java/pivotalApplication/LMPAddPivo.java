@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class LMPAddPivo extends AppiumServerStart {
+public class LMPAddPivo  {
 	static AppiumDriver driver;
 	 public Object MobileElement;
 	 
@@ -213,7 +213,7 @@ Close1.get(8).click();
 			
 
 			WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-			 FirstName.sendKeys("LMP79Automation");
+			 FirstName.sendKeys("LMP80Automation");
 			
 
 

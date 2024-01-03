@@ -1,6 +1,7 @@
 package pivotalApplication;
 
 import java.io.File;
+import pivotalApplication.AppiumServerStart;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
@@ -188,7 +189,7 @@ public class PivoFin1 extends AppiumServerStart {
 		Thread.sleep(2000);
 
 		WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-		FirstName.sendKeys("PivoTotal130Automations");
+		FirstName.sendKeys("PivoTotal133Automations");
 		//FirstName.sendKeys("abhaPatient1Dec");
 		Thread.sleep(2000);
 
@@ -223,11 +224,11 @@ public class PivoFin1 extends AppiumServerStart {
 
 		Thread.sleep(2000);
 
-		WebElement YearDropdown = driver.findElement(By.xpath("//*[@text='2023']"));
+		WebElement YearDropdown = driver.findElement(By.xpath("//*[@text='2024']"));
 		YearDropdown.click();
 
 		Thread.sleep(2000);
-		WebElement Year = driver.findElement(By.xpath("//*[@text='2021']"));
+		WebElement Year = driver.findElement(By.xpath("//*[@text='2022']"));
 		Year.click();
 
 	}
@@ -860,7 +861,7 @@ public class PivoFin1 extends AppiumServerStart {
 		SelectPatient.get(0).click();
 		Thread.sleep(5000);
 		List<WebElement> Seatchbar = driver.findElements(By.xpath("//*[@text='Name / Mobile']"));
-		Seatchbar.get(0).sendKeys("PivoTotal130Automations");
+		Seatchbar.get(0).sendKeys("PivoTotal133Automations");
 		Thread.sleep(5000);
 		List<WebElement> Search = driver.findElements(By.className("android.widget.TextView"));
 		Search.get(1).click();
@@ -1553,7 +1554,7 @@ Thread.sleep(2000);
 	public void GallariesPhoto() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(
-				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20231214-124051_Gallery.jpg, 829 kB, 14 Dec\"]"))
+				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20231214-124051_Gallery.jpg, 829 kB, 14 Dec 2023\"]"))
 				.click();
 
 		Thread.sleep(5000);
@@ -1858,7 +1859,7 @@ Thread.sleep(2000);*/
 	public void photo() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(10000);
 		driver.findElement(By.xpath(
-				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20231214-124051_Gallery.jpg, 829 kB, 14 Dec\"]"))
+				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20231214-124051_Gallery.jpg, 829 kB, 14 Dec 2023\"]"))
 				.click();
 
 	}

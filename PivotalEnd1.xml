@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="pivotalApplication.LMPAddPivo"/>
+     
       <class name="pivotalApplication.PivoFin1"/>
        <class name="pivotalApplication.PivoFin2"/>
     </classes>

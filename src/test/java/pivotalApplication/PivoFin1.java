@@ -189,7 +189,7 @@ public class PivoFin1 extends AppiumServerStart {
 		Thread.sleep(2000);
 
 		WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-		FirstName.sendKeys("PivoTotal133Automations");
+		FirstName.sendKeys("PivoTotal137Automations");
 		//FirstName.sendKeys("abhaPatient1Dec");
 		Thread.sleep(2000);
 
@@ -861,7 +861,7 @@ public class PivoFin1 extends AppiumServerStart {
 		SelectPatient.get(0).click();
 		Thread.sleep(5000);
 		List<WebElement> Seatchbar = driver.findElements(By.xpath("//*[@text='Name / Mobile']"));
-		Seatchbar.get(0).sendKeys("PivoTotal133Automations");
+		Seatchbar.get(0).sendKeys("PivoTotal137Automations");
 		Thread.sleep(5000);
 		List<WebElement> Search = driver.findElements(By.className("android.widget.TextView"));
 		Search.get(1).click();
@@ -1430,7 +1430,7 @@ Thread.sleep(2000);
 	@Test(priority = 135)
 	public void PCV() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
-		WebElement PCV = driver.findElement(By.xpath("//*[@text='PCV (1/3)']"));
+		WebElement PCV = driver.findElement(By.xpath("//*[@text='Hib-1']"));
 		PCV.click();
 
 		Thread.sleep(2000);
@@ -1440,7 +1440,7 @@ Thread.sleep(2000);
 	@Test(priority = 136)
 	public void IPV() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
-		WebElement IPV = driver.findElement(By.xpath("//*[@text='IPV (2/3)']"));
+		WebElement IPV = driver.findElement(By.xpath("//*[@text='IPV-2']"));
 		IPV.click();
 
 		Thread.sleep(2000);
@@ -1450,7 +1450,7 @@ Thread.sleep(2000);
 	@Test(priority = 137)
 	public void Rotavirus() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
-		WebElement Rotavirus = driver.findElement(By.xpath("//*[@text='Rotavirus (1/3)']"));
+		WebElement Rotavirus = driver.findElement(By.xpath("//*[@text='Rotavirus-1']"));
 		Rotavirus.click();
 
 		Thread.sleep(2000);

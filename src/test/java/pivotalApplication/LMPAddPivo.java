@@ -213,7 +213,7 @@ Close1.get(8).click();
 			
 
 			WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-			 FirstName.sendKeys("LMP80Automation");
+			 FirstName.sendKeys("LMP82Automation");
 			
 
 
@@ -597,6 +597,8 @@ Close1.get(8).click();
 	  
 	  List<WebElement> LipidArrowDown =  driver.findElements(By.className("android.widget.TextView"));
 	  LipidArrowDown.get(29).click();
+	  
+	  Thread.sleep(5000);
 } 
 	  @Test(priority = 43)
 			public void CholesterolHDL() throws InterruptedException {

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pivotalApplication.PivoFin1">
+      <class name="pivotalApplication.LMPAddPivo">
         <methods>
-          <include name="BulkCancel"/>
+          <include name="CholesterolHDL"/>
           <include name="setup1"/>
           <include name="screenShot"/>
         </methods>
-      </class> <!-- pivotalApplication.PivoFin1 -->
+      </class> <!-- pivotalApplication.LMPAddPivo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

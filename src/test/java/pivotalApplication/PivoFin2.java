@@ -103,7 +103,7 @@ public void Search() throws InterruptedException {
 
 	WebElement SearchBar =  driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
 	//SearchBar.sendKeys("PivoTotal119Automations");
-	SearchBar.sendKeys("PivoTotal133Automations");
+	SearchBar.sendKeys("PivoTotal136Automations");
 
 	Thread.sleep(2000);
 	WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));

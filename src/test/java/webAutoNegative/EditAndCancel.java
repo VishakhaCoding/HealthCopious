@@ -192,7 +192,7 @@ public class EditAndCancel {
 			
 			
 			waitForVisibilityOf(By.xpath(searchBar));
-			driver.findElement(By.xpath(searchBar)).sendKeys("Eopdtest");
+			driver.findElement(By.xpath(searchBar)).sendKeys("Fopdtest");
 			highlightElement(By.xpath(searchBar));
 			clickUsingJavaScript(By.xpath(searchBar));
 		}

@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pivotalApplication.LMPAddPivo">
+      <class name="webAutoNegative.EditAndCancel">
         <methods>
-          <include name="CholesterolHDL"/>
-          <include name="setup1"/>
+          <include name="setUp"/>
+          <include name="ProfileValidation"/>
+          <include name="familyProfileCancel"/>
           <include name="screenShot"/>
         </methods>
-      </class> <!-- pivotalApplication.LMPAddPivo -->
+      </class> <!-- webAutoNegative.EditAndCancel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -229,7 +229,7 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	@Test(priority = 4)
 	public void searchBar1() {
 		waitForVisibilityOf(By.xpath(searchBar));
-		driver.findElement(By.xpath(searchBar)).sendKeys("Eopdtest");
+		driver.findElement(By.xpath(searchBar)).sendKeys("Fopdtest");
 		highlightElement(By.xpath(searchBar));
 		clickUsingJavaScript(By.xpath(searchBar));
 	}

@@ -143,7 +143,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 7)
 	public void FirstName() throws MalformedURLException, InterruptedException {
 		List<WebElement> FirstName = driver.findElements(By.xpath("//*[@text='Your First Name']"));
-		FirstName.get(0).sendKeys("PQHealth");
+		FirstName.get(0).sendKeys("pXHealth");
 
 		Thread.sleep(5000);
 
@@ -574,7 +574,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 39)
 	public void Time() throws MalformedURLException, InterruptedException {
 
-		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='02:40 pm']"));
+		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='01:40 pm']"));
 		Time.get(0).click();
 
 		Thread.sleep(5000);

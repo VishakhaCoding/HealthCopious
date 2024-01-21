@@ -1,662 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="43" passed="43" failed="0" skipped="0">
+<testng-results ignored="0" total="28" passed="28" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-08T11:54:53 IST" name="Default suite" finished-at="2024-01-08T11:59:48 IST" duration-ms="294811">
+  <suite started-at="2024-01-16T10:41:46 IST" name="Default suite" finished-at="2024-01-16T10:45:32 IST" duration-ms="226087">
     <groups>
+      <group name="Regression">
+        <method signature="AddVitalWeb.numberField()[pri:1, instance:webAuto.AddVitalWeb@72035809]" name="numberField" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.sendOTP()[pri:2, instance:webAuto.AddVitalWeb@72035809]" name="sendOTP" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.createPatient()[pri:4, instance:webAuto.AddVitalWeb@72035809]" name="createPatient" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.Number1()[pri:5, instance:webAuto.AddVitalWeb@72035809]" name="Number1" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.confirm()[pri:6, instance:webAuto.AddVitalWeb@72035809]" name="confirm" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.number2()[pri:7, instance:webAuto.AddVitalWeb@72035809]" name="number2" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.firstName()[pri:8, instance:webAuto.AddVitalWeb@72035809]" name="firstName" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.middleName()[pri:9, instance:webAuto.AddVitalWeb@72035809]" name="middleName" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.lastName()[pri:10, instance:webAuto.AddVitalWeb@72035809]" name="lastName" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.birthDate()[pri:11, instance:webAuto.AddVitalWeb@72035809]" name="birthDate" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.genFemale()[pri:12, instance:webAuto.AddVitalWeb@72035809]" name="genFemale" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.address()[pri:13, instance:webAuto.AddVitalWeb@72035809]" name="address" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.locality()[pri:14, instance:webAuto.AddVitalWeb@72035809]" name="locality" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.city()[pri:15, instance:webAuto.AddVitalWeb@72035809]" name="city" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.pinCode()[pri:16, instance:webAuto.AddVitalWeb@72035809]" name="pinCode" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.proceedWithSameRMN()[pri:17, instance:webAuto.AddVitalWeb@72035809]" name="proceedWithSameRMN" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.nextButton()[pri:18, instance:webAuto.AddVitalWeb@72035809]" name="nextButton" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.clickClose()[pri:19, instance:webAuto.AddVitalWeb@72035809]" name="clickClose" class="webAuto.AddVitalWeb"/>
+        <method signature="AddVitalWeb.searchBar2()[pri:24, instance:webAuto.AddVitalWeb@72035809]" name="searchBar2" class="webAuto.AddVitalWeb"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-01-08T11:54:53 IST" name="Default test" finished-at="2024-01-08T11:59:48 IST" duration-ms="294811">
-      <class name="pivotalApplication.LMPAddPivo">
-        <test-method is-config="true" signature="setup1()[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:54:53 IST" name="setup1" finished-at="2024-01-08T11:55:20 IST" duration-ms="27325" status="PASS">
+    <test started-at="2024-01-16T10:41:46 IST" name="Default test" finished-at="2024-01-16T10:45:32 IST" duration-ms="226087">
+      <class name="webAuto.AddVitalWeb">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:41:46 IST" name="setUp" finished-at="2024-01-16T10:41:56 IST" duration-ms="10595" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup1 -->
-        <test-method signature="NumberField()[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:20 IST" name="NumberField" finished-at="2024-01-08T11:55:22 IST" duration-ms="1258" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="numberField()[pri:1, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:41:57 IST" name="numberField" finished-at="2024-01-16T10:41:57 IST" duration-ms="424" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NumberField -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:22 IST" name="screenShot" finished-at="2024-01-08T11:55:22 IST" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=NumberField status=SUCCESS method=LMPAddPivo.NumberField()[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- numberField -->
+        <test-method signature="sendOTP()[pri:2, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:41:57 IST" name="sendOTP" finished-at="2024-01-16T10:42:09 IST" duration-ms="12342" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="IAgree()[pri:1, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:22 IST" name="IAgree" finished-at="2024-01-08T11:55:24 IST" duration-ms="2142" status="PASS">
+        </test-method> <!-- sendOTP -->
+        <test-method signature="verifyButton()[pri:3, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:09 IST" name="verifyButton" finished-at="2024-01-16T10:42:19 IST" duration-ms="10174" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- IAgree -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:24 IST" name="screenShot" finished-at="2024-01-08T11:55:24 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=IAgree status=SUCCESS method=LMPAddPivo.IAgree()[pri:1, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyButton -->
+        <test-method signature="createPatient()[pri:4, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:20 IST" name="createPatient" finished-at="2024-01-16T10:42:23 IST" duration-ms="3853" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="proceedButton()[pri:2, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:24 IST" name="proceedButton" finished-at="2024-01-08T11:55:26 IST" duration-ms="2396" status="PASS">
+        </test-method> <!-- createPatient -->
+        <test-method signature="Number1()[pri:5, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:23 IST" name="Number1" finished-at="2024-01-16T10:42:24 IST" duration-ms="791" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- proceedButton -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:26 IST" name="screenShot" finished-at="2024-01-08T11:55:26 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=proceedButton status=SUCCESS method=LMPAddPivo.proceedButton()[pri:2, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="OTP()[pri:3, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:26 IST" name="OTP" finished-at="2024-01-08T11:55:37 IST" duration-ms="11147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OTP -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:37 IST" name="screenShot" finished-at="2024-01-08T11:55:37 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=OTP status=SUCCESS method=LMPAddPivo.OTP()[pri:3, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="submit()[pri:4, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:37 IST" name="submit" finished-at="2024-01-08T11:55:49 IST" duration-ms="11326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submit -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:49 IST" name="screenShot" finished-at="2024-01-08T11:55:49 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=submit status=SUCCESS method=LMPAddPivo.submit()[pri:4, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Createptient()[pri:5, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:49 IST" name="Createptient" finished-at="2024-01-08T11:55:53 IST" duration-ms="4506" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Createptient -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:53 IST" name="screenShot" finished-at="2024-01-08T11:55:53 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Createptient status=SUCCESS method=LMPAddPivo.Createptient()[pri:5, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Neweptient()[pri:7, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:55:53 IST" name="Neweptient" finished-at="2024-01-08T11:56:06 IST" duration-ms="12313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Neweptient -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:06 IST" name="screenShot" finished-at="2024-01-08T11:56:06 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Neweptient status=SUCCESS method=LMPAddPivo.Neweptient()[pri:7, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Close()[pri:8, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:06 IST" name="Close" finished-at="2024-01-08T11:56:11 IST" duration-ms="4960" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:11 IST" name="screenShot" finished-at="2024-01-08T11:56:11 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Close status=SUCCESS method=LMPAddPivo.Close()[pri:8, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="MobileNumber1()[pri:9, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:11 IST" name="MobileNumber1" finished-at="2024-01-08T11:56:13 IST" duration-ms="2504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MobileNumber1 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:13 IST" name="screenShot" finished-at="2024-01-08T11:56:13 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MobileNumber1 status=SUCCESS method=LMPAddPivo.MobileNumber1()[pri:9, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="confirm()[pri:10, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:13 IST" name="confirm" finished-at="2024-01-08T11:56:18 IST" duration-ms="4530" status="PASS">
+        </test-method> <!-- Number1 -->
+        <test-method signature="confirm()[pri:6, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:24 IST" name="confirm" finished-at="2024-01-16T10:42:27 IST" duration-ms="2874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirm -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:18 IST" name="screenShot" finished-at="2024-01-08T11:56:18 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=confirm status=SUCCESS method=LMPAddPivo.confirm()[pri:10, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="number2()[pri:7, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:27 IST" name="number2" finished-at="2024-01-16T10:42:28 IST" duration-ms="1045" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="confirmPopup()[pri:11, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:18 IST" name="confirmPopup" finished-at="2024-01-08T11:56:24 IST" duration-ms="6639" status="PASS">
+        </test-method> <!-- number2 -->
+        <test-method signature="firstName()[pri:8, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:28 IST" name="firstName" finished-at="2024-01-16T10:42:29 IST" duration-ms="656" status="PASS">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- confirmPopup -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:24 IST" name="screenShot" finished-at="2024-01-08T11:56:24 IST" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=confirmPopup status=SUCCESS method=LMPAddPivo.confirmPopup()[pri:11, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="AdditionalNumber1()[pri:12, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:24 IST" name="AdditionalNumber1" finished-at="2024-01-08T11:56:27 IST" duration-ms="3042" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AdditionalNumber1 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:27 IST" name="screenShot" finished-at="2024-01-08T11:56:27 IST" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AdditionalNumber1 status=SUCCESS method=LMPAddPivo.AdditionalNumber1()[pri:12, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="FirstName()[pri:13, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:27 IST" name="FirstName" finished-at="2024-01-08T11:56:32 IST" duration-ms="5011" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FirstName -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:32 IST" name="screenShot" finished-at="2024-01-08T11:56:32 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=FirstName status=SUCCESS method=LMPAddPivo.FirstName()[pri:13, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="MiddleName()[pri:14, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:32 IST" name="MiddleName" finished-at="2024-01-08T11:56:37 IST" duration-ms="4982" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MiddleName -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:37 IST" name="screenShot" finished-at="2024-01-08T11:56:37 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MiddleName status=SUCCESS method=LMPAddPivo.MiddleName()[pri:14, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="LastName()[pri:15, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:37 IST" name="LastName" finished-at="2024-01-08T11:56:42 IST" duration-ms="4973" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LastName -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:42 IST" name="screenShot" finished-at="2024-01-08T11:56:42 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LastName status=SUCCESS method=LMPAddPivo.LastName()[pri:15, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Age()[pri:16, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:42 IST" name="Age" finished-at="2024-01-08T11:56:43 IST" duration-ms="417" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Age -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:43 IST" name="screenShot" finished-at="2024-01-08T11:56:43 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Age status=SUCCESS method=LMPAddPivo.Age()[pri:16, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="GenFemale()[pri:18, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:43 IST" name="GenFemale" finished-at="2024-01-08T11:56:47 IST" duration-ms="4431" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GenFemale -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:47 IST" name="screenShot" finished-at="2024-01-08T11:56:47 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GenFemale status=SUCCESS method=LMPAddPivo.GenFemale()[pri:18, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Address()[pri:19, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:47 IST" name="Address" finished-at="2024-01-08T11:56:50 IST" duration-ms="2956" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Address -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:50 IST" name="screenShot" finished-at="2024-01-08T11:56:50 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Address status=SUCCESS method=LMPAddPivo.Address()[pri:19, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Area()[pri:20, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:50 IST" name="Area" finished-at="2024-01-08T11:56:53 IST" duration-ms="2390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Area -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:53 IST" name="screenShot" finished-at="2024-01-08T11:56:53 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Area status=SUCCESS method=LMPAddPivo.Area()[pri:20, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="City()[pri:21, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:53 IST" name="City" finished-at="2024-01-08T11:56:56 IST" duration-ms="2923" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- City -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:56 IST" name="screenShot" finished-at="2024-01-08T11:56:56 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=City status=SUCCESS method=LMPAddPivo.City()[pri:21, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="PinCode()[pri:22, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:56 IST" name="PinCode" finished-at="2024-01-08T11:56:58 IST" duration-ms="2937" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PinCode -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:58 IST" name="screenShot" finished-at="2024-01-08T11:56:58 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=PinCode status=SUCCESS method=LMPAddPivo.PinCode()[pri:22, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Next()[pri:23, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:56:58 IST" name="Next" finished-at="2024-01-08T11:57:14 IST" duration-ms="15440" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Next -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:14 IST" name="screenShot" finished-at="2024-01-08T11:57:14 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Next status=SUCCESS method=LMPAddPivo.Next()[pri:23, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="AddVital()[pri:24, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:14 IST" name="AddVital" finished-at="2024-01-08T11:57:19 IST" duration-ms="5372" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddVital -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:19 IST" name="screenShot" finished-at="2024-01-08T11:57:19 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AddVital status=SUCCESS method=LMPAddPivo.AddVital()[pri:24, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Continue()[pri:25, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:19 IST" name="Continue" finished-at="2024-01-08T11:57:25 IST" duration-ms="5239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Continue -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:25 IST" name="screenShot" finished-at="2024-01-08T11:57:25 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Continue status=SUCCESS method=LMPAddPivo.Continue()[pri:25, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="weight()[pri:26, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:25 IST" name="weight" finished-at="2024-01-08T11:57:25 IST" duration-ms="303" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- weight -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:25 IST" name="screenShot" finished-at="2024-01-08T11:57:25 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=weight status=SUCCESS method=LMPAddPivo.weight()[pri:26, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Height()[pri:27, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:25 IST" name="Height" finished-at="2024-01-08T11:57:31 IST" duration-ms="6026" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Height -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:31 IST" name="screenShot" finished-at="2024-01-08T11:57:31 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Height status=SUCCESS method=LMPAddPivo.Height()[pri:27, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Temperature()[pri:28, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:31 IST" name="Temperature" finished-at="2024-01-08T11:57:36 IST" duration-ms="5354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Temperature -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:36 IST" name="screenShot" finished-at="2024-01-08T11:57:36 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Temperature status=SUCCESS method=LMPAddPivo.Temperature()[pri:28, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="SPO2()[pri:29, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:36 IST" name="SPO2" finished-at="2024-01-08T11:57:42 IST" duration-ms="5869" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SPO2 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:42 IST" name="screenShot" finished-at="2024-01-08T11:57:42 IST" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SPO2 status=SUCCESS method=LMPAddPivo.SPO2()[pri:29, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="LMPDate()[pri:30, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:42 IST" name="LMPDate" finished-at="2024-01-08T11:57:59 IST" duration-ms="16708" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LMPDate -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:59 IST" name="screenShot" finished-at="2024-01-08T11:57:59 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LMPDate status=SUCCESS method=LMPAddPivo.LMPDate()[pri:30, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="UpArrow()[pri:33, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:57:59 IST" name="UpArrow" finished-at="2024-01-08T11:58:11 IST" duration-ms="11816" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UpArrow -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:11 IST" name="screenShot" finished-at="2024-01-08T11:58:11 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UpArrow status=SUCCESS method=LMPAddPivo.UpArrow()[pri:33, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="BPSYS()[pri:34, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:11 IST" name="BPSYS" finished-at="2024-01-08T11:58:17 IST" duration-ms="5807" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BPSYS -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:17 IST" name="screenShot" finished-at="2024-01-08T11:58:17 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BPSYS status=SUCCESS method=LMPAddPivo.BPSYS()[pri:34, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="BPDIA()[pri:35, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:17 IST" name="BPDIA" finished-at="2024-01-08T11:58:22 IST" duration-ms="5791" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BPDIA -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:22 IST" name="screenShot" finished-at="2024-01-08T11:58:22 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BPDIA status=SUCCESS method=LMPAddPivo.BPDIA()[pri:35, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="HeartRate()[pri:36, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:22 IST" name="HeartRate" finished-at="2024-01-08T11:58:29 IST" duration-ms="6858" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HeartRate -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:29 IST" name="screenShot" finished-at="2024-01-08T11:58:29 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=HeartRate status=SUCCESS method=LMPAddPivo.HeartRate()[pri:36, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Pulse()[pri:37, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:29 IST" name="Pulse" finished-at="2024-01-08T11:58:46 IST" duration-ms="16518" status="PASS">
+        </test-method> <!-- firstName -->
+        <test-method signature="middleName()[pri:9, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:29 IST" name="middleName" finished-at="2024-01-16T10:42:29 IST" duration-ms="451" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Pulse -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:46 IST" name="screenShot" finished-at="2024-01-08T11:58:46 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Pulse status=SUCCESS method=LMPAddPivo.Pulse()[pri:37, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- middleName -->
+        <test-method signature="lastName()[pri:10, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:29 IST" name="lastName" finished-at="2024-01-16T10:42:30 IST" duration-ms="452" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="BloodSugar()[pri:39, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:46 IST" name="BloodSugar" finished-at="2024-01-08T11:58:52 IST" duration-ms="5852" status="PASS">
+        </test-method> <!-- lastName -->
+        <test-method signature="birthDate()[pri:11, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:30 IST" name="birthDate" finished-at="2024-01-16T10:42:31 IST" duration-ms="980" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BloodSugar -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:52 IST" name="screenShot" finished-at="2024-01-08T11:58:52 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BloodSugar status=SUCCESS method=LMPAddPivo.BloodSugar()[pri:39, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- birthDate -->
+        <test-method signature="genFemale()[pri:12, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:31 IST" name="genFemale" finished-at="2024-01-16T10:42:31 IST" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="BloodSugarf()[pri:40, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:52 IST" name="BloodSugarf" finished-at="2024-01-08T11:58:57 IST" duration-ms="5813" status="PASS">
+        </test-method> <!-- genFemale -->
+        <test-method signature="address()[pri:13, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:31 IST" name="address" finished-at="2024-01-16T10:42:32 IST" duration-ms="614" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BloodSugarf -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:57 IST" name="screenShot" finished-at="2024-01-08T11:58:57 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BloodSugarf status=SUCCESS method=LMPAddPivo.BloodSugarf()[pri:40, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- address -->
+        <test-method signature="locality()[pri:14, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:32 IST" name="locality" finished-at="2024-01-16T10:42:32 IST" duration-ms="511" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="BloodSugarPP()[pri:41, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:58:57 IST" name="BloodSugarPP" finished-at="2024-01-08T11:59:03 IST" duration-ms="5890" status="PASS">
+        </test-method> <!-- locality -->
+        <test-method signature="city()[pri:15, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:32 IST" name="city" finished-at="2024-01-16T10:42:33 IST" duration-ms="454" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BloodSugarPP -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:03 IST" name="screenShot" finished-at="2024-01-08T11:59:03 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BloodSugarPP status=SUCCESS method=LMPAddPivo.BloodSugarPP()[pri:41, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- city -->
+        <test-method signature="pinCode()[pri:16, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:33 IST" name="pinCode" finished-at="2024-01-16T10:42:33 IST" duration-ms="522" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="BloodSugarHB()[pri:42, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:03 IST" name="BloodSugarHB" finished-at="2024-01-08T11:59:20 IST" duration-ms="16561" status="PASS">
+        </test-method> <!-- pinCode -->
+        <test-method signature="proceedWithSameRMN()[pri:17, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:33 IST" name="proceedWithSameRMN" finished-at="2024-01-16T10:42:34 IST" duration-ms="431" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BloodSugarHB -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:20 IST" name="screenShot" finished-at="2024-01-08T11:59:20 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BloodSugarHB status=SUCCESS method=LMPAddPivo.BloodSugarHB()[pri:42, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- proceedWithSameRMN -->
+        <test-method signature="nextButton()[pri:18, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:34 IST" name="nextButton" finished-at="2024-01-16T10:42:49 IST" duration-ms="15322" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="CholesterolHDL()[pri:43, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:20 IST" name="CholesterolHDL" finished-at="2024-01-08T11:59:25 IST" duration-ms="5294" status="PASS">
+        </test-method> <!-- nextButton -->
+        <test-method signature="clickClose()[pri:19, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:49 IST" name="clickClose" finished-at="2024-01-16T10:42:51 IST" duration-ms="1548" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CholesterolHDL -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:25 IST" name="screenShot" finished-at="2024-01-08T11:59:25 IST" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CholesterolHDL status=SUCCESS method=LMPAddPivo.CholesterolHDL()[pri:43, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- clickClose -->
+        <test-method signature="fillVitalForm()[pri:20, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:51 IST" name="fillVitalForm" finished-at="2024-01-16T10:43:11 IST" duration-ms="20579" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="CholesterolLDL()[pri:44, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:25 IST" name="CholesterolLDL" finished-at="2024-01-08T11:59:31 IST" duration-ms="5825" status="PASS">
+        </test-method> <!-- fillVitalForm -->
+        <test-method signature="fillHealthProfile()[pri:21, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:43:11 IST" name="fillHealthProfile" finished-at="2024-01-16T10:43:31 IST" duration-ms="19496" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CholesterolLDL -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:31 IST" name="screenShot" finished-at="2024-01-08T11:59:31 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CholesterolLDL status=SUCCESS method=LMPAddPivo.CholesterolLDL()[pri:44, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- fillHealthProfile -->
+        <test-method signature="fillFamilyProfile()[pri:22, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:43:31 IST" name="fillFamilyProfile" finished-at="2024-01-16T10:43:55 IST" duration-ms="24471" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="TotalCholesterol()[pri:45, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:31 IST" name="TotalCholesterol" finished-at="2024-01-08T11:59:37 IST" duration-ms="6038" status="PASS">
+        </test-method> <!-- fillFamilyProfile -->
+        <test-method signature="GoHome()[pri:23, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:43:55 IST" name="GoHome" finished-at="2024-01-16T10:43:56 IST" duration-ms="1226" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TotalCholesterol -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:37 IST" name="screenShot" finished-at="2024-01-08T11:59:37 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TotalCholesterol status=SUCCESS method=LMPAddPivo.TotalCholesterol()[pri:45, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- GoHome -->
+        <test-method signature="searchBar2()[pri:24, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:43:56 IST" name="searchBar2" finished-at="2024-01-16T10:44:21 IST" duration-ms="24433" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Triglycerides()[pri:46, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:37 IST" name="Triglycerides" finished-at="2024-01-08T11:59:42 IST" duration-ms="5306" status="PASS">
+        </test-method> <!-- searchBar2 -->
+        <test-method signature="AdVitals()[pri:25, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:44:21 IST" name="AdVitals" finished-at="2024-01-16T10:44:35 IST" duration-ms="13975" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Triglycerides -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:42 IST" name="screenShot" finished-at="2024-01-08T11:59:42 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Triglycerides status=SUCCESS method=LMPAddPivo.Triglycerides()[pri:46, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- AdVitals -->
+        <test-method signature="AdBpandHeartOption()[pri:26, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:44:35 IST" name="AdBpandHeartOption" finished-at="2024-01-16T10:44:53 IST" duration-ms="18088" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="Save()[pri:47, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:42 IST" name="Save" finished-at="2024-01-08T11:59:48 IST" duration-ms="5434" status="PASS">
+        </test-method> <!-- AdBpandHeartOption -->
+        <test-method signature="AdBloodAndAnalysis()[pri:27, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:44:53 IST" name="AdBloodAndAnalysis" finished-at="2024-01-16T10:45:11 IST" duration-ms="18467" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Save -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplication.LMPAddPivo@451001e5]" started-at="2024-01-08T11:59:48 IST" name="screenShot" finished-at="2024-01-08T11:59:48 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Save status=SUCCESS method=LMPAddPivo.Save()[pri:47, instance:pivotalApplication.LMPAddPivo@451001e5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- AdBloodAndAnalysis -->
+        <test-method signature="AdLipidProfile()[pri:28, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:45:11 IST" name="AdLipidProfile" finished-at="2024-01-16T10:45:32 IST" duration-ms="20374" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-      </class> <!-- pivotalApplication.LMPAddPivo -->
+        </test-method> <!-- AdLipidProfile -->
+      </class> <!-- webAuto.AddVitalWeb -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

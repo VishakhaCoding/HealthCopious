@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webAutoNegative.EditAndCancel">
+      <class name="webAuto.AddVitalWeb">
         <methods>
           <include name="setUp"/>
-          <include name="ProfileValidation"/>
-          <include name="familyProfileCancel"/>
-          <include name="screenShot"/>
+          <include name="AdVitals"/>
         </methods>
-      </class> <!-- webAutoNegative.EditAndCancel -->
+      </class> <!-- webAuto.AddVitalWeb -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

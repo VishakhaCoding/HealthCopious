@@ -361,7 +361,7 @@ public class AddVitalWeb {
 	@Test(priority = 8, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("Vital87Webopdtest");
+		driver.findElement(By.xpath(firstName)).sendKeys("Vital93Webopdtest");
 		;
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));

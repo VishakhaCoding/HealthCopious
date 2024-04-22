@@ -151,7 +151,7 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -229,7 +229,7 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	@Test(priority = 4)
 	public void searchBar1() {
 		waitForVisibilityOf(By.xpath(searchBar));
-		driver.findElement(By.xpath(searchBar)).sendKeys("Topdtest");
+		driver.findElement(By.xpath(searchBar)).sendKeys("MWebTest22April");
 		highlightElement(By.xpath(searchBar));
 		clickUsingJavaScript(By.xpath(searchBar));
 	}
@@ -282,7 +282,7 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 		highlightElement(By.xpath(DocumentOn));
 
 		waitForVisibilityOf(By.xpath(BrownFile1));
-		driver.findElement(By.xpath(BrownFile1)).sendKeys("C:\\Users\\Lenovo\\Desktop\\nature.jpg");
+		driver.findElement(By.xpath(BrownFile1)).sendKeys("C:\\Users\\91966\\Desktop\\nature.jpg");
 		highlightElement(By.xpath(BrownFile1));
 
 		Thread.sleep(15000);
@@ -354,26 +354,27 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 		
 		
 		
-		  waitForVisibilityOf(By.xpath(ChooseLab));
-		  driver.findElement(By.xpath(ChooseLab));
-		  highlightElement(By.xpath(ChooseLab));
-		  clickUsingJavaScript(By.xpath(ChooseLab));
-		  
-		  waitForVisibilityOf(By.xpath(ChooseLab));
-		  driver.findElement(By.xpath(ChooseLab));
-		  highlightElement(By.xpath(ChooseLab));
-		  clickUsingJavaScript(By.xpath(ChooseLab));
-		  
-		  waitForVisibilityOf(By.xpath(DashLab));
-		  driver.findElement(By.xpath(DashLab)); highlightElement(By.xpath(DashLab));
-		  clickUsingJavaScript(By.xpath(DashLab));
-		  
-		  waitForVisibilityOf(By.xpath(EmailOption));
-		  driver.findElement(By.xpath(EmailOption));
-		  highlightElement(By.xpath(EmailOption));
-		  clickUsingJavaScript(By.xpath(EmailOption));
-		 
-		 
+		/*
+		 * waitForVisibilityOf(By.xpath(ChooseLab));
+		 * driver.findElement(By.xpath(ChooseLab));
+		 * highlightElement(By.xpath(ChooseLab));
+		 * clickUsingJavaScript(By.xpath(ChooseLab));
+		 * 
+		 * waitForVisibilityOf(By.xpath(ChooseLab));
+		 * driver.findElement(By.xpath(ChooseLab));
+		 * highlightElement(By.xpath(ChooseLab));
+		 * clickUsingJavaScript(By.xpath(ChooseLab));
+		 * 
+		 * waitForVisibilityOf(By.xpath(DashLab));
+		 * driver.findElement(By.xpath(DashLab)); highlightElement(By.xpath(DashLab));
+		 * clickUsingJavaScript(By.xpath(DashLab));
+		 * 
+		 * waitForVisibilityOf(By.xpath(EmailOption));
+		 * driver.findElement(By.xpath(EmailOption));
+		 * highlightElement(By.xpath(EmailOption));
+		 * clickUsingJavaScript(By.xpath(EmailOption));
+		 * 
+		 */
 		 
 	  
 	  

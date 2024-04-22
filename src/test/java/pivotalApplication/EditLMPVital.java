@@ -40,7 +40,7 @@ public class EditLMPVital extends AppiumServerStart{
 	dc.setCapability("–session-override",true);
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage","com.calculator_apps");
 	dc.setCapability("appActivity","com.calculator_apps.MainActivity");
@@ -213,7 +213,7 @@ Close1.get(8).click();
 			
 
 			WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-			 FirstName.sendKeys("pedi31vAutomation");
+			 FirstName.sendKeys("LMP12Add");
 			
 
 
@@ -397,9 +397,9 @@ Close1.get(8).click();
 	  Thread.sleep(5000);
 	  
 		List<WebElement> EditVital = driver
-	  			.findElements(By.className("android.widget.TextView"));
+	  			.findElements(By.xpath("//*[@text='']"));
 	  	//EditVital.get(6).click();
-		EditVital.get(23).click();
+		EditVital.get(0).click();
 	  	//EditVital.get(25).click();
 	  	//EditVital.get(26).click();
 	  	//EditVital.get(27).click();
@@ -554,7 +554,7 @@ Close1.get(8).click();
 			public void BloodSugar() throws InterruptedException {
 			 
 		  List<WebElement> BloodSugar =  driver.findElements(By.className("android.widget.EditText"));
-		  BloodSugar.get(1).sendKeys("120");
+		  BloodSugar.get(0).sendKeys("120");
 		  Thread.sleep(5000);
 
 	}
@@ -562,15 +562,15 @@ Close1.get(8).click();
 		public void BloodSugarf() throws InterruptedException {
 		 
 		  List<WebElement> BloodSugarf =  driver.findElements(By.className("android.widget.EditText"));
-		  BloodSugarf.get(2).sendKeys("120");
+		  BloodSugarf.get(1).sendKeys("120");
 		  Thread.sleep(5000);
 
 }
 	  @Test(priority = 41)
 		public void BloodSugarPP() throws InterruptedException {
 		 
-		  List<WebElement> BloodSugarHB =  driver.findElements(By.className("android.widget.EditText"));
-		  BloodSugarHB.get(3).sendKeys("10");
+		  List<WebElement> BloodSugarPP =  driver.findElements(By.className("android.widget.EditText"));
+		  BloodSugarPP.get(2).sendKeys("10");
 		  Thread.sleep(5000);
 	 
 } 
@@ -579,7 +579,7 @@ Close1.get(8).click();
 		public void BloodSugarHB() throws InterruptedException {
 		 
 		  List<WebElement> BloodSugarHB =  driver.findElements(By.className("android.widget.EditText"));
-		  BloodSugarHB.get(4).sendKeys("10");
+		  BloodSugarHB.get(3).sendKeys("10");
 		 
 	  Thread.sleep(5000);
 	  List<WebElement> BPArrowDown =  driver.findElements(By.className("android.widget.TextView"));

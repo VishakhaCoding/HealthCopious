@@ -35,7 +35,7 @@ public class PivotalChatAppointment extends AppiumServerStart{
 		dc.setCapability("–session-override",true);
 		  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 		  dc.setCapability("noReset", false) ;
-		dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+		dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 		//dc.setCapability(MobileCapabilityType.APP, "D:\\pivoapp-prod-16-nov.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
 		dc.setCapability("appPackage", "com.calculator_apps");
@@ -112,13 +112,14 @@ public class PivotalChatAppointment extends AppiumServerStart{
 				  
 				//working code for vdo call checkbox
 				  
-				 WebElement Patientclick =driver.findElement(By.xpath("//*[@text='GovVcc Test']"));
-				 Patientclick.click();
-		  
-		 // WebElement Appointmentclick =driver.findElement(By.id("appointment_menu_id"));
-		 // Appointmentclick.click();
-		  
-		  Thread.sleep(5000);
+		  WebElement Patientclick =driver.findElement(By.xpath("//*[@text='ReHealth16feb Nawale ']"));
+			 Patientclick.click();
+	  
+	 // WebElement Appointmentclick =driver.findElement(By.id("appointment_menu_id"));
+	 // Appointmentclick.click();
+	  
+	  Thread.sleep(5000);
+		
 			
 		  
 		  }
@@ -140,7 +141,7 @@ public class PivotalChatAppointment extends AppiumServerStart{
 		  From.click();
 		  Thread.sleep(5000);
 		  
-		  WebElement Evening =driver.findElement(By.xpath("//*[@text='Evening Session  49 /  54']"));
+		  WebElement Evening =driver.findElement(By.xpath("//*[@text='Evening Session  55 /  56']"));
 		  Evening.click();
 			
   Thread.sleep(5000);

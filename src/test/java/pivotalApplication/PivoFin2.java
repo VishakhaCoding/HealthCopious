@@ -37,7 +37,7 @@ public class PivoFin2  {
 	dc.setCapability("–session-override",true);
 	dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	dc.setCapability("noReset", true) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 	//dc.setCapability(MobileCapabilityType.APP, "D:\\pivoapp-prod-16-nov.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage", "com.calculator_apps");
@@ -103,7 +103,7 @@ public void Search() throws InterruptedException {
 
 	WebElement SearchBar =  driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
 	//SearchBar.sendKeys("PivoTotal119Automations");
-	SearchBar.sendKeys("PivoTotal136Automations");
+	SearchBar.sendKeys("Pivota22April");
 
 	Thread.sleep(2000);
 	WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -403,7 +403,7 @@ public void Gallery3() throws InterruptedException, IndexOutOfBoundsException {
 @Test(priority = 31)
 public void photo3() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(10000);
- driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"Screenshot_20231214-124051_Gallery.jpg, 829 kB, 14 Dec 2023\"]")).click();
+ driver.findElement(By.xpath("(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[2]")).click();
 
 	
 
@@ -737,7 +737,7 @@ public void Gallery() throws InterruptedException, IndexOutOfBoundsException {
 @Test(priority = 60)
 public void photo() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(10000);
- driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"Screenshot_20231214-124051_Gallery.jpg, 829 kB, 14 Dec 2023\"]")).click();
+ driver.findElement(By.xpath("(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[2]")).click();
 
 	
 
@@ -832,41 +832,36 @@ public void VaccinationOk() throws InterruptedException, IndexOutOfBoundsExcepti
 	
 
 }
-@Test(priority = 70)
-public void LinkPatient() throws InterruptedException, IndexOutOfBoundsException {
-	driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Link Patient to Doctor\").instance(0))"));
-	Thread.sleep(10000);
-	Thread.sleep(2000);
-	List<WebElement> LinkPatient =  driver.findElements(By.xpath("//*[@text='Link Patient to Doctor']"));
-	
-	LinkPatient.get(1).click();
-	
-	Thread.sleep(5000);
-}
-@Test(priority = 71)
-public void DrMobileNumber() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(10000);
-	List<WebElement> DrMobileNumber = driver
-			.findElements(By.className("android.widget.EditText"));
-	DrMobileNumber.get(0).sendKeys("9665002440");
-}
-@Test(priority = 72)
-public void SearchDr() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(2000);
-	List<WebElement> SearchDr = driver
-			.findElements(By.className("android.widget.TextView"));
-	SearchDr.get(1).click();
-	Thread.sleep(15000);
-}
-@Test(priority = 73)
-public void Link() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(5000);
-	List<WebElement> Link = driver
-			.findElements(By.className("android.widget.TextView"));
-	Link.get(5).click();
-	Thread.sleep(10000);
 
-}
+/*
+ * @Test(priority = 70) public void LinkPatient() throws InterruptedException,
+ * IndexOutOfBoundsException { driver.findElement(AppiumBy.
+ * androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Link Patient to Doctor\").instance(0))"
+ * )); Thread.sleep(10000); Thread.sleep(2000); List<WebElement> LinkPatient =
+ * driver.findElements(By.xpath("//*[@text='Link Patient to Doctor']"));
+ * 
+ * LinkPatient.get(1).click();
+ * 
+ * Thread.sleep(5000); }
+ * 
+ * @Test(priority = 71) public void DrMobileNumber() throws
+ * InterruptedException, IndexOutOfBoundsException { Thread.sleep(10000);
+ * List<WebElement> DrMobileNumber = driver
+ * .findElements(By.className("android.widget.EditText"));
+ * DrMobileNumber.get(0).sendKeys("9665002440"); }
+ * 
+ * @Test(priority = 72) public void SearchDr() throws InterruptedException,
+ * IndexOutOfBoundsException { Thread.sleep(2000); List<WebElement> SearchDr =
+ * driver .findElements(By.className("android.widget.TextView"));
+ * SearchDr.get(1).click(); Thread.sleep(15000); }
+ * 
+ * @Test(priority = 73) public void Link() throws InterruptedException,
+ * IndexOutOfBoundsException { Thread.sleep(5000); List<WebElement> Link =
+ * driver .findElements(By.className("android.widget.TextView"));
+ * Link.get(5).click(); Thread.sleep(10000);
+ * 
+ * }
+ */
 @Test(priority = 74)
 public void Reciept() throws InterruptedException, IndexOutOfBoundsException {
 	

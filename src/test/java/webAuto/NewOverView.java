@@ -34,14 +34,14 @@ public class NewOverView {
 	public static String BPDIA ="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/div[1]/div[1]/div[2]/div[2]/div[6]/div[1]/div[1]";
 	
 	
-	public static String WeightGraph ="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/img ";
+	public static String WeightGraph ="//*[text()='Weight']/following::img ";
 	public static String heightGraph ="//*[text()='Height']/following::img[1] ";
 	public static String HCGraph ="//*[text()='Height']/following::img[2]";
 	public static String CCGraph ="//*[text()='Height']/following::img[3] ";
 	public static String BPSYSGraph ="//*[text()='Height']/following::img[4] ";
 	public static String SPO2Graph =" ";
 	public static String BPDIAGraph ="//*[text()='Height']/following::img[5]";
-	public static String CloseGraph="//*[text()='×']";
+	public static String CloseGraph="//*[text()='Ã—']";
 	
 	
 	public static String TypeOfDelivery="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]";
@@ -369,7 +369,8 @@ public class NewOverView {
 
 		  		public static String RxCC = ".mat-input-element.mat-form-field-autofill-control.mat-tooltip-trigger.ng-tns-c164-48";
 		  		public static String temperature = ".mat-input-element.mat-form-field-autofill-control.mat-tooltip-trigger.mat-input-element.mat-form-field-autofill-control.mat-tooltip-trigger.ng-tns-c164-10";
-		  		public static String SPO2 = ".mat-input-element.mat-form-field-autofill-control.mat-tooltip-trigger.ng-tns-c164-11";
+		  		public static String SPO2 = "//*[text()='SPO2']";
+		  		public static String Temp = "//*[text()='Temp']";
 		  		public static String AnyGeneticDisorder = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[3]/form/div[2]/div[5]/mat-form-field/div/div[1]/div[1]/input";
 		  		public static String FamilyMedicalHistory = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[4]/div[2]/div[3]/mat-form-field/div/div[1]/div[1]/input";
 		  		public static String EnterDisorder = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[4]/div[2]/div[4]/mat-form-field/div/div[1]/div[1]/input";
@@ -439,7 +440,7 @@ public class NewOverView {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -1074,7 +1075,10 @@ public class NewOverView {
 			  highlightElement(By.xpath(SPO2));
 			 
 			  
-			  
+			  waitForVisibilityOf(By.xpath(Temp));
+			  String BTemp=driver.findElement(By.xpath(Temp)).getText();
+			  System.out.println(BTemp);
+			  highlightElement(By.xpath(Temp));
 			  
 			  
 			  
@@ -1459,7 +1463,7 @@ public class NewOverView {
 		  highlightElement(By.xpath(DocumentOn));
 		  
 		  waitForVisibilityOf(By.xpath(BrownFile1));
-			driver.findElement(By.xpath(BrownFile1)).sendKeys("C:\\\\Users\\\\Lenovo\\\\Desktop\\\\nature.jpg");
+			driver.findElement(By.xpath(BrownFile1)).sendKeys("C:\\Users\\91966\\Desktop\\nature.jpg");
 			highlightElement(By.xpath(BrownFile1));
 		  
 			Thread.sleep(15000);

@@ -30,7 +30,7 @@ public class ViewReeiptHistory extends AppiumServerStart{
 		dc.setCapability("–session-override",true);
 		  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 		  dc.setCapability("noReset", false) ;
-		dc.setCapability(MobileCapabilityType.APP, "D:\\\\pivotalapp-20-june.apk");
+		dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
 		dc.setCapability("appPackage", "com.calculator_apps");
 		dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
@@ -100,7 +100,7 @@ public class ViewReeiptHistory extends AppiumServerStart{
 		Thread.sleep(2000);
 
 		WebElement SearchBar = driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-		SearchBar.sendKeys("PivoTotal7Automation");
+		SearchBar.sendKeys("Pivo3addvital");
 
 		Thread.sleep(2000);
 		WebElement SearchIcon1 = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -118,12 +118,12 @@ public class ViewReeiptHistory extends AppiumServerStart{
 	}
 	@Test(priority = 7)
 	public void ClickHistory() throws InterruptedException, IndexOutOfBoundsException {
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 		List<WebElement> ClickHistory = driver
-				.findElements(By.className("android.widget.TextView"));
-		//ClickHistory.get(9).click();
-		Thread.sleep(2000);
-		ClickHistory.get(10).click();
+				.findElements(By.xpath("//*[@text='']"));
+		ClickHistory.get(0).click();
+		//Thread.sleep(2000);
+		//ClickHistory.get(10).click();
 		//ClickHistory.get(11).click();
 		Thread.sleep(2000);
 		//ClickHistory.get(12).click();

@@ -43,7 +43,7 @@ public class PDeletePatient extends AppiumServerStart{
 	dc.setCapability("–session-override",true);
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage","com.calculator_apps");
 	dc.setCapability("appActivity","com.calculator_apps.MainActivity");
@@ -99,7 +99,7 @@ public class PDeletePatient extends AppiumServerStart{
 			
 
 			List<WebElement> Createptient = driver.findElements(By.className("android.widget.TextView"));
-			Createptient.get(14).click();
+			Createptient.get(36).click();
 
 			Thread.sleep(2000);
 
@@ -217,7 +217,7 @@ Close1.get(8).click();
 			
 
 			WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-			 FirstName.sendKeys("PivoTotal26Automation");
+			 FirstName.sendKeys("Pivotal");
 			
 
 
@@ -260,11 +260,11 @@ Close1.get(8).click();
 
 		  Thread.sleep(2000);
 		
-		  WebElement YearDropdown = driver.findElement(By.xpath("//*[@text='2023']"));
+		  WebElement YearDropdown = driver.findElement(By.xpath("//*[@text='2024']"));
 		  YearDropdown.click();
 
 		  Thread.sleep(2000);
-		  WebElement Year= driver.findElement(By.xpath("//*[@text='2021']"));
+		  WebElement Year= driver.findElement(By.xpath("//*[@text='2022']"));
 		  Year.click();
 
 		}

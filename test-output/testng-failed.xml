@@ -3,12 +3,70 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webAuto.AddVitalWeb">
+      <class name="pivotalApplicationNegative.PDeletePatient">
         <methods>
-          <include name="setUp"/>
-          <include name="AdVitals"/>
+          <include name="MiddleName"/>
+          <include name="Heightl"/>
+          <include name="screenShot"/>
+          <include name="MedicalConditionSelect"/>
+          <include name="RecurringComplaints"/>
+          <include name="helathNext"/>
+          <include name="CC"/>
+          <include name="Neweptient"/>
+          <include name="Address"/>
+          <include name="ContinueProfile"/>
+          <include name="Fatherheight"/>
+          <include name="HospitalizationHistory"/>
+          <include name="OTP"/>
+          <include name="BPDia"/>
+          <include name="AfterSuite"/>
+          <include name="confirm"/>
+          <include name="FamailyNedicalHistory"/>
+          <include name="AddMedicalCondition"/>
+          <include name="Next"/>
+          <include name="Close"/>
+          <include name="HC"/>
+          <include name="setup"/>
+          <include name="HealthHistory"/>
+          <include name="AddGeneticdisoredr"/>
+          <include name="TypeOfDelivery"/>
+          <include name="FirstName"/>
+          <include name="City"/>
+          <include name="DeleteOption"/>
+          <include name="FathersName"/>
+          <include name="GeneticdisoredrAdd"/>
+          <include name="MedicalConditionAdd"/>
+          <include name="BPSYS"/>
+          <include name="BloodGroup"/>
+          <include name="Mothersheight"/>
+          <include name="Reactions"/>
+          <include name="submit"/>
+          <include name="TypeOfDeliveryNormal"/>
+          <include name="BloodGroupA"/>
+          <include name="BirthHistoryNext"/>
+          <include name="Createptient"/>
+          <include name="EnterDisorders"/>
+          <include name="PinCode"/>
+          <include name="Area"/>
+          <include name="BirthCalender"/>
+          <include name="IAgree"/>
+          <include name="proceedButton"/>
+          <include name="LastName"/>
+          <include name="BfSuite"/>
+          <include name="BfSuite"/>
+          <include name="Birthok"/>
+          <include name="OtherEmailId"/>
+          <include name="confirmPopup"/>
+          <include name="AdditionalNumber1"/>
+          <include name="weightl"/>
+          <include name="GeneticdisoredrSelect"/>
+          <include name="MobileNumber1"/>
+          <include name="GenFemale"/>
+          <include name="MothersName"/>
+          <include name="NumberField"/>
+          <include name="Allergies"/>
         </methods>
-      </class> <!-- webAuto.AddVitalWeb -->
+      </class> <!-- pivotalApplicationNegative.PDeletePatient -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -38,11 +38,11 @@ public class DeletePatient {
     public static String proceedWithSameRMN="//*[text()='Proceed With same RMN']";
     public static String Done="/html/body/ngb-modal-window/div/div/div[3]/div";
     public static String createPatient="createPatient";
-    public static String SelectDate="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-month-view/table/tbody/tr[1]/td[2]/div[1]";		
+    public static String SelectDate="//*[text()=' 1 ']";		
     public static String prefferedLanguage="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[7]/mat-form-field[2]/div/div[1]/div/mat-select/div/div[1]/span";
     public static String prefferedLanguageEnglish="/html/body/div[2]/div[4]/div/div/div/mat-option[1]/span"; 
     public static String  LinkNotification="//*[text()=' Linked Patient to Doctor']";
-    public static String DeleteOption="//*[text()='Delete']";
+    public static String DeleteOption="//*[text()='Delete Patient']";
     public static String Delete="//*[text()='Cancel']/following::button";
     public static String OTP1="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]"; 
 	   public static String OTP2="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[2]"; 
@@ -77,13 +77,13 @@ public class DeletePatient {
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
-			driver.get("http://stage.copious.care:4200/");
+			//driver.get("http://stage.copious.care:4200/");
 			//driver.get("https://stage.copious.care/");
-			//driver.get("https://opd.copious.care/");
+			driver.get("https://app.copious.care/");
 			 driver.manage().window().fullscreen();
 		}
 

@@ -40,7 +40,7 @@ public class SearchNAppointment extends AppiumServerStart{
 	dc.setCapability("–session-override",true);
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage","com.calculator_apps");
 	dc.setCapability("appActivity","com.calculator_apps.MainActivity");
@@ -100,7 +100,7 @@ public class SearchNAppointment extends AppiumServerStart{
 		  
 		  WebElement myElement2 = driver.findElement(By.xpath(
 		  "//android.widget.EditText[@content-desc=\"search_bar\"]"));
-		  myElement2.sendKeys("pedi39Automation");
+		  myElement2.sendKeys("Pivo16AprilAutomation");
 		  
 		  Thread.sleep(2000); WebElement myElement3=driver.findElement(By.xpath(
 		  "//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"
@@ -129,7 +129,7 @@ public class SearchNAppointment extends AppiumServerStart{
 		  Thread.sleep(2000);
 		  List<WebElement> els2 = driver.findElements(By.className("android.widget.TextView"));
 		  els2.get(7).click();	
-		
+		  els2.get(7).click();	
 			//Working code for prescription 
 		 // List<io.appium.java_client.MobileElement> els2 = driver.findElements(By.className("android.widget.TextView"));
 		 // els2.get(8).click();	

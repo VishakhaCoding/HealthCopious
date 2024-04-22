@@ -96,7 +96,7 @@ public class NewAdultOverview {
 		public static String OverViewOption ="//*[text()='Overview '] ";
 		
 		
-		public static String Hospitalization="//*[text()='Hospitallisation']";
+		public static String Hospitalization="//*[text()='Reaction To Drugs/ Medicine']";
 		public static String HealthHistoryT="//*[text()='Health History']";
 		public static String FamMedicalHistory="//*[text()='Family Medical History']";
 		public static String GenDisorder="//*[text()='Genetic Disorders']";
@@ -145,13 +145,13 @@ public class NewAdultOverview {
        @BeforeClass
        public void setUp() {
    	
-           System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+           System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		//driver.get("https://app.copious.care/");
-		driver.get("https://stage.copious.care/");
+		driver.get("https://app.copious.care/");
+		//driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
 
 }

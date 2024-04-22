@@ -38,7 +38,7 @@ public class Medicine {
 	public static String FavouriteClickMedicine = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[2]/div/div/img";
 	public static String Medicine = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[1]/mat-step-header[5]";
 	public static String Medpageinstruction = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div/div/div[4]/div/app-language-select-textbox/div/input";
-	public static String MandatoryError="/html/body/div[4]/div[4]/div/mat-dialog-container/h4";
+	public static String MandatoryError="//*[text()='Mandatory Fields']";
 	public static String MandatoryFieldsOk="//*[text()='Ok']";
 	public static String MedicineNotFound="// *[text()=' Medicine not found']";
 	public static String AddNewDrug1="//*[@class='modal-footer ng-star-inserted']/child::div";
@@ -80,13 +80,13 @@ public class Medicine {
 	        @BeforeClass
 	        public void setUp() {
 	    	
-	            System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+	            System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 			
-			driver.get("https://opd.copious.care/");
+			driver.get("https://app.copious.care/");
 			//driver.get("https://stage.copious.care/");
 			driver.manage().window().fullscreen();
 
@@ -277,7 +277,7 @@ public class Medicine {
 					  
 					  waitForVisibilityOf(By.xpath(FavouriteSearch));
 					  highlightElement(By.xpath(FavouriteSearch));
-					  driver.findElement(By.xpath(FavouriteSearch)).sendKeys("disprin");
+					  driver.findElement(By.xpath(FavouriteSearch)).sendKeys("temp");
 					  
 					  waitForVisibilityOf(By.cssSelector(FavouriteClick));
 					  highlightElement(By.cssSelector(FavouriteClick));

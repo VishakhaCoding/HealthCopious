@@ -35,7 +35,7 @@ public class ReferralCreation extends AppiumServerStart{
 	dc.setCapability("–session-override",true);
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage", "com.calculator_apps");
 	dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
@@ -66,7 +66,7 @@ public void proceedButton() throws MalformedURLException, InterruptedException {
 	WebElement proceed = driver.findElement(By.xpath(
 			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView"));
 	proceed.click();
-	Thread.sleep(2000);
+	Thread.sleep(5000);
 }
 
 @Test(priority = 3)
@@ -100,7 +100,7 @@ public void Search() throws InterruptedException {
 	Thread.sleep(2000);
 
 	WebElement SearchBar = driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-	SearchBar.sendKeys("PivoTotal7Automation");
+	SearchBar.sendKeys("Pivo17AprilAutomation");
 
 	Thread.sleep(2000);
 	WebElement SearchIcon1 = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -109,16 +109,15 @@ public void Search() throws InterruptedException {
 
 }
 
-@Test(priority = 6)
-public void close() throws InterruptedException {
-	Thread.sleep(2000);
-	WebElement close = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_close\"]"));
-	close.click();
-
-	Thread.sleep(2000);
-
-}
-
+/*
+ * @Test(priority = 6) public void close() throws InterruptedException {
+ * Thread.sleep(2000); WebElement close = driver.findElement(By.xpath(
+ * "//android.view.ViewGroup[@content-desc=\"search_close\"]")); close.click();
+ * 
+ * Thread.sleep(2000);
+ * 
+ * }
+ */
 @Test(priority = 7)
 public void ClickPatient() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
@@ -132,7 +131,7 @@ public void ClickPatient() throws InterruptedException, IndexOutOfBoundsExceptio
 @Test(priority = 8)
 public void RffralCreation() throws InterruptedException, IndexOutOfBoundsException {
 	
-	Thread.sleep(2000);
+	Thread.sleep(10000);
 	WebElement RffralCreation
 	  = driver.findElement(By.xpath("//*[@text='Referral']"));
 	  RffralCreation.click();

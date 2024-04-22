@@ -1,150 +1,865 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="28" passed="28" failed="0" skipped="0">
+<testng-results ignored="0" total="56" passed="56" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-16T10:41:46 IST" name="Default suite" finished-at="2024-01-16T10:45:32 IST" duration-ms="226087">
+  <suite started-at="2024-04-22T14:30:50 IST" name="Default suite" finished-at="2024-04-22T14:36:00 IST" duration-ms="309902">
     <groups>
-      <group name="Regression">
-        <method signature="AddVitalWeb.numberField()[pri:1, instance:webAuto.AddVitalWeb@72035809]" name="numberField" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.sendOTP()[pri:2, instance:webAuto.AddVitalWeb@72035809]" name="sendOTP" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.createPatient()[pri:4, instance:webAuto.AddVitalWeb@72035809]" name="createPatient" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.Number1()[pri:5, instance:webAuto.AddVitalWeb@72035809]" name="Number1" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.confirm()[pri:6, instance:webAuto.AddVitalWeb@72035809]" name="confirm" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.number2()[pri:7, instance:webAuto.AddVitalWeb@72035809]" name="number2" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.firstName()[pri:8, instance:webAuto.AddVitalWeb@72035809]" name="firstName" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.middleName()[pri:9, instance:webAuto.AddVitalWeb@72035809]" name="middleName" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.lastName()[pri:10, instance:webAuto.AddVitalWeb@72035809]" name="lastName" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.birthDate()[pri:11, instance:webAuto.AddVitalWeb@72035809]" name="birthDate" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.genFemale()[pri:12, instance:webAuto.AddVitalWeb@72035809]" name="genFemale" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.address()[pri:13, instance:webAuto.AddVitalWeb@72035809]" name="address" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.locality()[pri:14, instance:webAuto.AddVitalWeb@72035809]" name="locality" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.city()[pri:15, instance:webAuto.AddVitalWeb@72035809]" name="city" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.pinCode()[pri:16, instance:webAuto.AddVitalWeb@72035809]" name="pinCode" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.proceedWithSameRMN()[pri:17, instance:webAuto.AddVitalWeb@72035809]" name="proceedWithSameRMN" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.nextButton()[pri:18, instance:webAuto.AddVitalWeb@72035809]" name="nextButton" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.clickClose()[pri:19, instance:webAuto.AddVitalWeb@72035809]" name="clickClose" class="webAuto.AddVitalWeb"/>
-        <method signature="AddVitalWeb.searchBar2()[pri:24, instance:webAuto.AddVitalWeb@72035809]" name="searchBar2" class="webAuto.AddVitalWeb"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-01-16T10:41:46 IST" name="Default test" finished-at="2024-01-16T10:45:32 IST" duration-ms="226087">
-      <class name="webAuto.AddVitalWeb">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:41:46 IST" name="setUp" finished-at="2024-01-16T10:41:56 IST" duration-ms="10595" status="PASS">
+    <test started-at="2024-04-22T14:30:50 IST" name="Default test" finished-at="2024-04-22T14:36:00 IST" duration-ms="309902">
+      <class name="pivotalApplicationNegative.PDeletePatient">
+        <test-method is-config="true" signature="BfSuite()[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:30:45 IST" name="BfSuite" finished-at="2024-04-22T14:30:50 IST" duration-ms="4819" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="numberField()[pri:1, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:41:57 IST" name="numberField" finished-at="2024-01-16T10:41:57 IST" duration-ms="424" status="PASS">
+        </test-method> <!-- BfSuite -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:30:50 IST" name="setup" finished-at="2024-04-22T14:31:07 IST" duration-ms="16975" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- numberField -->
-        <test-method signature="sendOTP()[pri:2, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:41:57 IST" name="sendOTP" finished-at="2024-01-16T10:42:09 IST" duration-ms="12342" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="BfSuite()[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:07 IST" name="BfSuite" finished-at="2024-04-22T14:31:08 IST" duration-ms="1227" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sendOTP -->
-        <test-method signature="verifyButton()[pri:3, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:09 IST" name="verifyButton" finished-at="2024-01-16T10:42:19 IST" duration-ms="10174" status="PASS">
+        </test-method> <!-- BfSuite -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:08 IST" name="screenShot" finished-at="2024-04-22T14:31:08 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BfSuite status=SUCCESS method=AppiumServerStart.BfSuite()[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyButton -->
-        <test-method signature="createPatient()[pri:4, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:20 IST" name="createPatient" finished-at="2024-01-16T10:42:23 IST" duration-ms="3853" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="NumberField()[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:08 IST" name="NumberField" finished-at="2024-04-22T14:31:10 IST" duration-ms="1195" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createPatient -->
-        <test-method signature="Number1()[pri:5, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:23 IST" name="Number1" finished-at="2024-01-16T10:42:24 IST" duration-ms="791" status="PASS">
+        </test-method> <!-- NumberField -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:10 IST" name="screenShot" finished-at="2024-04-22T14:31:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NumberField status=SUCCESS method=PDeletePatient.NumberField()[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Number1 -->
-        <test-method signature="confirm()[pri:6, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:24 IST" name="confirm" finished-at="2024-01-16T10:42:27 IST" duration-ms="2874" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="IAgree()[pri:1, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:10 IST" name="IAgree" finished-at="2024-04-22T14:31:12 IST" duration-ms="2183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IAgree -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:12 IST" name="screenShot" finished-at="2024-04-22T14:31:12 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=IAgree status=SUCCESS method=PDeletePatient.IAgree()[pri:1, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="proceedButton()[pri:2, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:12 IST" name="proceedButton" finished-at="2024-04-22T14:31:14 IST" duration-ms="2386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedButton -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:14 IST" name="screenShot" finished-at="2024-04-22T14:31:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=proceedButton status=SUCCESS method=PDeletePatient.proceedButton()[pri:2, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="OTP()[pri:3, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:14 IST" name="OTP" finished-at="2024-04-22T14:31:26 IST" duration-ms="11590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OTP -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:26 IST" name="screenShot" finished-at="2024-04-22T14:31:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OTP status=SUCCESS method=PDeletePatient.OTP()[pri:3, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="submit()[pri:4, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:26 IST" name="submit" finished-at="2024-04-22T14:31:38 IST" duration-ms="12718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:38 IST" name="screenShot" finished-at="2024-04-22T14:31:38 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submit status=SUCCESS method=PDeletePatient.submit()[pri:4, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Createptient()[pri:5, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:38 IST" name="Createptient" finished-at="2024-04-22T14:31:43 IST" duration-ms="4446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Createptient -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:43 IST" name="screenShot" finished-at="2024-04-22T14:31:43 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Createptient status=SUCCESS method=PDeletePatient.Createptient()[pri:5, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Neweptient()[pri:7, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:43 IST" name="Neweptient" finished-at="2024-04-22T14:31:55 IST" duration-ms="12319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Neweptient -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:55 IST" name="screenShot" finished-at="2024-04-22T14:31:55 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Neweptient status=SUCCESS method=PDeletePatient.Neweptient()[pri:7, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Close()[pri:8, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:31:55 IST" name="Close" finished-at="2024-04-22T14:32:00 IST" duration-ms="5189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:00 IST" name="screenShot" finished-at="2024-04-22T14:32:00 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Close status=SUCCESS method=PDeletePatient.Close()[pri:8, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="MobileNumber1()[pri:9, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:00 IST" name="MobileNumber1" finished-at="2024-04-22T14:32:03 IST" duration-ms="2457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileNumber1 -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:03 IST" name="screenShot" finished-at="2024-04-22T14:32:03 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MobileNumber1 status=SUCCESS method=PDeletePatient.MobileNumber1()[pri:9, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="confirm()[pri:10, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:03 IST" name="confirm" finished-at="2024-04-22T14:32:07 IST" duration-ms="4512" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirm -->
-        <test-method signature="number2()[pri:7, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:27 IST" name="number2" finished-at="2024-01-16T10:42:28 IST" duration-ms="1045" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:07 IST" name="screenShot" finished-at="2024-04-22T14:32:07 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=confirm status=SUCCESS method=PDeletePatient.confirm()[pri:10, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- number2 -->
-        <test-method signature="firstName()[pri:8, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:28 IST" name="firstName" finished-at="2024-01-16T10:42:29 IST" duration-ms="656" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="confirmPopup()[pri:11, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:07 IST" name="confirmPopup" finished-at="2024-04-22T14:32:14 IST" duration-ms="6233" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- firstName -->
-        <test-method signature="middleName()[pri:9, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:29 IST" name="middleName" finished-at="2024-01-16T10:42:29 IST" duration-ms="451" status="PASS">
+        </test-method> <!-- confirmPopup -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:14 IST" name="screenShot" finished-at="2024-04-22T14:32:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=confirmPopup status=SUCCESS method=PDeletePatient.confirmPopup()[pri:11, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- middleName -->
-        <test-method signature="lastName()[pri:10, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:29 IST" name="lastName" finished-at="2024-01-16T10:42:30 IST" duration-ms="452" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="AdditionalNumber1()[pri:12, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:14 IST" name="AdditionalNumber1" finished-at="2024-04-22T14:32:16 IST" duration-ms="2423" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- lastName -->
-        <test-method signature="birthDate()[pri:11, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:30 IST" name="birthDate" finished-at="2024-01-16T10:42:31 IST" duration-ms="980" status="PASS">
+        </test-method> <!-- AdditionalNumber1 -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:16 IST" name="screenShot" finished-at="2024-04-22T14:32:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AdditionalNumber1 status=SUCCESS method=PDeletePatient.AdditionalNumber1()[pri:12, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- birthDate -->
-        <test-method signature="genFemale()[pri:12, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:31 IST" name="genFemale" finished-at="2024-01-16T10:42:31 IST" duration-ms="268" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="FirstName()[pri:13, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:16 IST" name="FirstName" finished-at="2024-04-22T14:32:21 IST" duration-ms="4974" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- genFemale -->
-        <test-method signature="address()[pri:13, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:31 IST" name="address" finished-at="2024-01-16T10:42:32 IST" duration-ms="614" status="PASS">
+        </test-method> <!-- FirstName -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:21 IST" name="screenShot" finished-at="2024-04-22T14:32:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FirstName status=SUCCESS method=PDeletePatient.FirstName()[pri:13, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- address -->
-        <test-method signature="locality()[pri:14, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:32 IST" name="locality" finished-at="2024-01-16T10:42:32 IST" duration-ms="511" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="MiddleName()[pri:14, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:21 IST" name="MiddleName" finished-at="2024-04-22T14:32:26 IST" duration-ms="4923" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- locality -->
-        <test-method signature="city()[pri:15, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:32 IST" name="city" finished-at="2024-01-16T10:42:33 IST" duration-ms="454" status="PASS">
+        </test-method> <!-- MiddleName -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:26 IST" name="screenShot" finished-at="2024-04-22T14:32:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MiddleName status=SUCCESS method=PDeletePatient.MiddleName()[pri:14, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- city -->
-        <test-method signature="pinCode()[pri:16, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:33 IST" name="pinCode" finished-at="2024-01-16T10:42:33 IST" duration-ms="522" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="LastName()[pri:15, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:26 IST" name="LastName" finished-at="2024-04-22T14:32:31 IST" duration-ms="4934" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pinCode -->
-        <test-method signature="proceedWithSameRMN()[pri:17, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:33 IST" name="proceedWithSameRMN" finished-at="2024-01-16T10:42:34 IST" duration-ms="431" status="PASS">
+        </test-method> <!-- LastName -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:31 IST" name="screenShot" finished-at="2024-04-22T14:32:31 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LastName status=SUCCESS method=PDeletePatient.LastName()[pri:15, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- proceedWithSameRMN -->
-        <test-method signature="nextButton()[pri:18, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:34 IST" name="nextButton" finished-at="2024-01-16T10:42:49 IST" duration-ms="15322" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="BirthCalender()[pri:16, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:31 IST" name="BirthCalender" finished-at="2024-04-22T14:32:36 IST" duration-ms="5039" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nextButton -->
-        <test-method signature="clickClose()[pri:19, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:49 IST" name="clickClose" finished-at="2024-01-16T10:42:51 IST" duration-ms="1548" status="PASS">
+        </test-method> <!-- BirthCalender -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:36 IST" name="screenShot" finished-at="2024-04-22T14:32:36 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BirthCalender status=SUCCESS method=PDeletePatient.BirthCalender()[pri:16, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickClose -->
-        <test-method signature="fillVitalForm()[pri:20, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:42:51 IST" name="fillVitalForm" finished-at="2024-01-16T10:43:11 IST" duration-ms="20579" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="Birthok()[pri:17, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:36 IST" name="Birthok" finished-at="2024-04-22T14:32:40 IST" duration-ms="4382" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillVitalForm -->
-        <test-method signature="fillHealthProfile()[pri:21, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:43:11 IST" name="fillHealthProfile" finished-at="2024-01-16T10:43:31 IST" duration-ms="19496" status="PASS">
+        </test-method> <!-- Birthok -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:40 IST" name="screenShot" finished-at="2024-04-22T14:32:40 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Birthok status=SUCCESS method=PDeletePatient.Birthok()[pri:17, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillHealthProfile -->
-        <test-method signature="fillFamilyProfile()[pri:22, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:43:31 IST" name="fillFamilyProfile" finished-at="2024-01-16T10:43:55 IST" duration-ms="24471" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="GenFemale()[pri:18, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:40 IST" name="GenFemale" finished-at="2024-04-22T14:32:45 IST" duration-ms="4410" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillFamilyProfile -->
-        <test-method signature="GoHome()[pri:23, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:43:55 IST" name="GoHome" finished-at="2024-01-16T10:43:56 IST" duration-ms="1226" status="PASS">
+        </test-method> <!-- GenFemale -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:45 IST" name="screenShot" finished-at="2024-04-22T14:32:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GenFemale status=SUCCESS method=PDeletePatient.GenFemale()[pri:18, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GoHome -->
-        <test-method signature="searchBar2()[pri:24, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:43:56 IST" name="searchBar2" finished-at="2024-01-16T10:44:21 IST" duration-ms="24433" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="Address()[pri:19, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:45 IST" name="Address" finished-at="2024-04-22T14:32:48 IST" duration-ms="2878" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchBar2 -->
-        <test-method signature="AdVitals()[pri:25, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:44:21 IST" name="AdVitals" finished-at="2024-01-16T10:44:35 IST" duration-ms="13975" status="PASS">
+        </test-method> <!-- Address -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:48 IST" name="screenShot" finished-at="2024-04-22T14:32:48 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Address status=SUCCESS method=PDeletePatient.Address()[pri:19, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AdVitals -->
-        <test-method signature="AdBpandHeartOption()[pri:26, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:44:35 IST" name="AdBpandHeartOption" finished-at="2024-01-16T10:44:53 IST" duration-ms="18088" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="Area()[pri:20, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:48 IST" name="Area" finished-at="2024-04-22T14:32:51 IST" duration-ms="2900" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AdBpandHeartOption -->
-        <test-method signature="AdBloodAndAnalysis()[pri:27, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:44:53 IST" name="AdBloodAndAnalysis" finished-at="2024-01-16T10:45:11 IST" duration-ms="18467" status="PASS">
+        </test-method> <!-- Area -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:51 IST" name="screenShot" finished-at="2024-04-22T14:32:51 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Area status=SUCCESS method=PDeletePatient.Area()[pri:20, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AdBloodAndAnalysis -->
-        <test-method signature="AdLipidProfile()[pri:28, instance:webAuto.AddVitalWeb@72035809]" started-at="2024-01-16T10:45:11 IST" name="AdLipidProfile" finished-at="2024-01-16T10:45:32 IST" duration-ms="20374" status="PASS">
+        </test-method> <!-- screenShot -->
+        <test-method signature="City()[pri:21, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:51 IST" name="City" finished-at="2024-04-22T14:32:54 IST" duration-ms="2880" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AdLipidProfile -->
-      </class> <!-- webAuto.AddVitalWeb -->
+        </test-method> <!-- City -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:54 IST" name="screenShot" finished-at="2024-04-22T14:32:54 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=City status=SUCCESS method=PDeletePatient.City()[pri:21, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="PinCode()[pri:22, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:54 IST" name="PinCode" finished-at="2024-04-22T14:32:56 IST" duration-ms="2908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PinCode -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:56 IST" name="screenShot" finished-at="2024-04-22T14:32:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PinCode status=SUCCESS method=PDeletePatient.PinCode()[pri:22, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Next()[pri:23, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:32:56 IST" name="Next" finished-at="2024-04-22T14:33:12 IST" duration-ms="15373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Next -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:12 IST" name="screenShot" finished-at="2024-04-22T14:33:12 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Next status=SUCCESS method=PDeletePatient.Next()[pri:23, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="ContinueProfile()[pri:25, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:12 IST" name="ContinueProfile" finished-at="2024-04-22T14:33:22 IST" duration-ms="10322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContinueProfile -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:22 IST" name="screenShot" finished-at="2024-04-22T14:33:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ContinueProfile status=SUCCESS method=PDeletePatient.ContinueProfile()[pri:25, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="TypeOfDelivery()[pri:26, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:22 IST" name="TypeOfDelivery" finished-at="2024-04-22T14:33:25 IST" duration-ms="2435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TypeOfDelivery -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:25 IST" name="screenShot" finished-at="2024-04-22T14:33:25 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TypeOfDelivery status=SUCCESS method=PDeletePatient.TypeOfDelivery()[pri:26, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="TypeOfDeliveryNormal()[pri:27, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:25 IST" name="TypeOfDeliveryNormal" finished-at="2024-04-22T14:33:27 IST" duration-ms="2284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TypeOfDeliveryNormal -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:27 IST" name="screenShot" finished-at="2024-04-22T14:33:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TypeOfDeliveryNormal status=SUCCESS method=PDeletePatient.TypeOfDeliveryNormal()[pri:27, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="weightl()[pri:28, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:27 IST" name="weightl" finished-at="2024-04-22T14:33:29 IST" duration-ms="2445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- weightl -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:29 IST" name="screenShot" finished-at="2024-04-22T14:33:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=weightl status=SUCCESS method=PDeletePatient.weightl()[pri:28, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Heightl()[pri:29, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:29 IST" name="Heightl" finished-at="2024-04-22T14:33:32 IST" duration-ms="2380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Heightl -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:32 IST" name="screenShot" finished-at="2024-04-22T14:33:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Heightl status=SUCCESS method=PDeletePatient.Heightl()[pri:29, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="HC()[pri:30, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:32 IST" name="HC" finished-at="2024-04-22T14:33:34 IST" duration-ms="2399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HC -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:34 IST" name="screenShot" finished-at="2024-04-22T14:33:34 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HC status=SUCCESS method=PDeletePatient.HC()[pri:30, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="CC()[pri:31, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:34 IST" name="CC" finished-at="2024-04-22T14:33:36 IST" duration-ms="2300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CC -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:36 IST" name="screenShot" finished-at="2024-04-22T14:33:36 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CC status=SUCCESS method=PDeletePatient.CC()[pri:31, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="BPSYS()[pri:32, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:36 IST" name="BPSYS" finished-at="2024-04-22T14:33:39 IST" duration-ms="2367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BPSYS -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:39 IST" name="screenShot" finished-at="2024-04-22T14:33:39 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BPSYS status=SUCCESS method=PDeletePatient.BPSYS()[pri:32, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="BPDia()[pri:33, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:39 IST" name="BPDia" finished-at="2024-04-22T14:33:41 IST" duration-ms="2296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BPDia -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:41 IST" name="screenShot" finished-at="2024-04-22T14:33:41 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BPDia status=SUCCESS method=PDeletePatient.BPDia()[pri:33, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="BloodGroup()[pri:34, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:41 IST" name="BloodGroup" finished-at="2024-04-22T14:33:44 IST" duration-ms="2481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BloodGroup -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:44 IST" name="screenShot" finished-at="2024-04-22T14:33:44 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BloodGroup status=SUCCESS method=PDeletePatient.BloodGroup()[pri:34, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="BloodGroupA()[pri:35, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:44 IST" name="BloodGroupA" finished-at="2024-04-22T14:33:46 IST" duration-ms="2226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BloodGroupA -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:46 IST" name="screenShot" finished-at="2024-04-22T14:33:46 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BloodGroupA status=SUCCESS method=PDeletePatient.BloodGroupA()[pri:35, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="BirthHistoryNext()[pri:36, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:46 IST" name="BirthHistoryNext" finished-at="2024-04-22T14:33:53 IST" duration-ms="7460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BirthHistoryNext -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:53 IST" name="screenShot" finished-at="2024-04-22T14:33:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BirthHistoryNext status=SUCCESS method=PDeletePatient.BirthHistoryNext()[pri:36, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="MedicalConditionAdd()[pri:37, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:53 IST" name="MedicalConditionAdd" finished-at="2024-04-22T14:33:57 IST" duration-ms="3885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MedicalConditionAdd -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:57 IST" name="screenShot" finished-at="2024-04-22T14:33:57 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MedicalConditionAdd status=SUCCESS method=PDeletePatient.MedicalConditionAdd()[pri:37, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="MedicalConditionSelect()[pri:38, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:33:57 IST" name="MedicalConditionSelect" finished-at="2024-04-22T14:34:01 IST" duration-ms="4253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MedicalConditionSelect -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:01 IST" name="screenShot" finished-at="2024-04-22T14:34:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MedicalConditionSelect status=SUCCESS method=PDeletePatient.MedicalConditionSelect()[pri:38, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="AddMedicalCondition()[pri:39, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:01 IST" name="AddMedicalCondition" finished-at="2024-04-22T14:34:08 IST" duration-ms="6284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddMedicalCondition -->
+        <test-method signature="Allergies()[pri:40, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:08 IST" name="Allergies" finished-at="2024-04-22T14:34:11 IST" duration-ms="2742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Allergies -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:08 IST" name="screenShot" finished-at="2024-04-22T14:34:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddMedicalCondition status=SUCCESS method=PDeletePatient.AddMedicalCondition()[pri:39, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:11 IST" name="screenShot" finished-at="2024-04-22T14:34:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Allergies status=SUCCESS method=PDeletePatient.Allergies()[pri:40, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Reactions()[pri:41, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:11 IST" name="Reactions" finished-at="2024-04-22T14:34:13 IST" duration-ms="2774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reactions -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:13 IST" name="screenShot" finished-at="2024-04-22T14:34:13 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Reactions status=SUCCESS method=PDeletePatient.Reactions()[pri:41, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="RecurringComplaints()[pri:42, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:13 IST" name="RecurringComplaints" finished-at="2024-04-22T14:34:16 IST" duration-ms="2796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RecurringComplaints -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:16 IST" name="screenShot" finished-at="2024-04-22T14:34:16 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RecurringComplaints status=SUCCESS method=PDeletePatient.RecurringComplaints()[pri:42, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="HospitalizationHistory()[pri:43, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:16 IST" name="HospitalizationHistory" finished-at="2024-04-22T14:34:19 IST" duration-ms="2805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HospitalizationHistory -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:19 IST" name="screenShot" finished-at="2024-04-22T14:34:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HospitalizationHistory status=SUCCESS method=PDeletePatient.HospitalizationHistory()[pri:43, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="HealthHistory()[pri:44, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:19 IST" name="HealthHistory" finished-at="2024-04-22T14:34:22 IST" duration-ms="2732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HealthHistory -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:22 IST" name="screenShot" finished-at="2024-04-22T14:34:22 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HealthHistory status=SUCCESS method=PDeletePatient.HealthHistory()[pri:44, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="GeneticdisoredrAdd()[pri:45, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:22 IST" name="GeneticdisoredrAdd" finished-at="2024-04-22T14:34:26 IST" duration-ms="3991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GeneticdisoredrAdd -->
+        <test-method signature="GeneticdisoredrSelect()[pri:46, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:26 IST" name="GeneticdisoredrSelect" finished-at="2024-04-22T14:34:39 IST" duration-ms="12882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GeneticdisoredrSelect -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:26 IST" name="screenShot" finished-at="2024-04-22T14:34:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GeneticdisoredrAdd status=SUCCESS method=PDeletePatient.GeneticdisoredrAdd()[pri:45, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="AddGeneticdisoredr()[pri:47, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:39 IST" name="AddGeneticdisoredr" finished-at="2024-04-22T14:34:41 IST" duration-ms="2471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddGeneticdisoredr -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:39 IST" name="screenShot" finished-at="2024-04-22T14:34:39 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GeneticdisoredrSelect status=SUCCESS method=PDeletePatient.GeneticdisoredrSelect()[pri:46, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:41 IST" name="screenShot" finished-at="2024-04-22T14:34:41 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddGeneticdisoredr status=SUCCESS method=PDeletePatient.AddGeneticdisoredr()[pri:47, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="OtherEmailId()[pri:48, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:41 IST" name="OtherEmailId" finished-at="2024-04-22T14:34:44 IST" duration-ms="2762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OtherEmailId -->
+        <test-method signature="helathNext()[pri:49, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:44 IST" name="helathNext" finished-at="2024-04-22T14:34:46 IST" duration-ms="2282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- helathNext -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:44 IST" name="screenShot" finished-at="2024-04-22T14:34:44 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OtherEmailId status=SUCCESS method=PDeletePatient.OtherEmailId()[pri:48, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:46 IST" name="screenShot" finished-at="2024-04-22T14:34:46 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=helathNext status=SUCCESS method=PDeletePatient.helathNext()[pri:49, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="FathersName()[pri:50, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:46 IST" name="FathersName" finished-at="2024-04-22T14:34:48 IST" duration-ms="2345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FathersName -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:48 IST" name="screenShot" finished-at="2024-04-22T14:34:48 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FathersName status=SUCCESS method=PDeletePatient.FathersName()[pri:50, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="MothersName()[pri:51, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:48 IST" name="MothersName" finished-at="2024-04-22T14:34:51 IST" duration-ms="2750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MothersName -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:51 IST" name="screenShot" finished-at="2024-04-22T14:34:51 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MothersName status=SUCCESS method=PDeletePatient.MothersName()[pri:51, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Fatherheight()[pri:52, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:51 IST" name="Fatherheight" finished-at="2024-04-22T14:34:59 IST" duration-ms="7524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fatherheight -->
+        <test-method signature="Mothersheight()[pri:53, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:59 IST" name="Mothersheight" finished-at="2024-04-22T14:35:04 IST" duration-ms="5486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mothersheight -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:34:59 IST" name="screenShot" finished-at="2024-04-22T14:34:59 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Fatherheight status=SUCCESS method=PDeletePatient.Fatherheight()[pri:52, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:35:04 IST" name="screenShot" finished-at="2024-04-22T14:35:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Mothersheight status=SUCCESS method=PDeletePatient.Mothersheight()[pri:53, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="FamailyNedicalHistory()[pri:54, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:35:04 IST" name="FamailyNedicalHistory" finished-at="2024-04-22T14:35:12 IST" duration-ms="8139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FamailyNedicalHistory -->
+        <test-method signature="EnterDisorders()[pri:55, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:35:12 IST" name="EnterDisorders" finished-at="2024-04-22T14:35:33 IST" duration-ms="20844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterDisorders -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:35:12 IST" name="screenShot" finished-at="2024-04-22T14:35:12 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FamailyNedicalHistory status=SUCCESS method=PDeletePatient.FamailyNedicalHistory()[pri:54, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:35:33 IST" name="screenShot" finished-at="2024-04-22T14:35:33 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EnterDisorders status=SUCCESS method=PDeletePatient.EnterDisorders()[pri:55, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="DeleteOption()[pri:56, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:35:33 IST" name="DeleteOption" finished-at="2024-04-22T14:36:00 IST" duration-ms="26842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteOption -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:36:00 IST" name="screenShot" finished-at="2024-04-22T14:36:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteOption status=SUCCESS method=PDeletePatient.DeleteOption()[pri:56, instance:pivotalApplicationNegative.PDeletePatient@1530c739] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:pivotalApplicationNegative.PDeletePatient@1530c739]" started-at="2024-04-22T14:36:00 IST" name="AfterSuite" finished-at="2024-04-22T14:36:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- pivotalApplicationNegative.PDeletePatient -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

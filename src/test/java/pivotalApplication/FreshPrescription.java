@@ -38,7 +38,7 @@ public class FreshPrescription extends AppiumServerStart{
 	dc.setCapability("–session-override",true);
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage", "com.calculator_apps");
 	dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
@@ -103,7 +103,7 @@ public void Search() throws InterruptedException {
 	Thread.sleep(2000);
 
 	WebElement myElement2 =  driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-	myElement2.sendKeys("PivoTotal33Automation");
+	myElement2.sendKeys("Pivo17AprilAutomation");
 
 	Thread.sleep(2000);
 	WebElement myElement3 = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -174,43 +174,48 @@ public void prescription() throws InterruptedException, IndexOutOfBoundsExceptio
   
   @Test(priority=12) public void Details() throws InterruptedException,
   IndexOutOfBoundsException{ Thread.sleep(2000);
-  List<WebElement> Details =
-  driver.findElements(By.className("android.widget.TextView"));
-  Details.get(6).click();
+  List<WebElement> Details1day =
+  driver.findElements(By.className("android.widget.EditText"));
+  Details1day.get(1).sendKeys("1");
+  
+  List<WebElement> WithChills =
+		  driver.findElements(By.xpath("//*[@text='With Chills']"));
+  WithChills.get(0).click();
   
   }
   
-  @Test(priority=13) public void mild() throws InterruptedException,
-  IndexOutOfBoundsException{ Thread.sleep(2000);
-  List<WebElement> mild =
-  driver.findElements(By.className("android.widget.TextView"));
-  mild.get(12).click();
-  
-  }
-  
+	/*
+	 * @Test(priority=13) public void mild() throws InterruptedException,
+	 * IndexOutOfBoundsException{ Thread.sleep(2000); List<WebElement> mild =
+	 * driver.findElements(By.className("android.widget.TextView"));
+	 * mild.get(12).click();
+	 * 
+	 * }
+	 */
   @Test(priority=14) public void moreSymptoms() throws InterruptedException,
   IndexOutOfBoundsException{ Thread.sleep(2000);
   List<WebElement> moreSymptoms =
-  driver.findElements(By.className("android.widget.TextView"));
-  moreSymptoms.get(7).click();
+  driver.findElements(By.xpath("//*[@text='Highgrade']"));
+  moreSymptoms.get(0).click();
   
   }
   
   
   
-  @Test(priority=15) public void Since2Days() throws InterruptedException,
-  IndexOutOfBoundsException{ Thread.sleep(2000);
-  List<WebElement> Since2Days =
-  driver.findElements(By.className("android.widget.TextView"));
-  Since2Days.get(9).click();
-  
-  }
+	/*
+	 * @Test(priority=15) public void Since2Days() throws InterruptedException,
+	 * IndexOutOfBoundsException{ Thread.sleep(2000); List<WebElement> Since2Days =
+	 * driver.findElements(By.className("android.widget.TextView"));
+	 * Since2Days.get(9).click();
+	 * 
+	 * }
+	 */
   
   @Test(priority=16) public void AddComplaint() throws InterruptedException,
   IndexOutOfBoundsException{ Thread.sleep(2000);
   List<WebElement> AddComplaint =
-  driver.findElements(By.className("android.widget.TextView"));
-  AddComplaint.get(30).click();
+  driver.findElements(By.xpath("//*[@text='Add Complaints']"));
+  AddComplaint.get(0).click();
   
   }
   
@@ -300,8 +305,8 @@ public   void SearchMedDolo() throws InterruptedException,
   @Test(priority=28) public void CopyMedicine() throws InterruptedException,
   IndexOutOfBoundsException{ Thread.sleep(2000);
   List<WebElement> CopyMedicine =
-  driver.findElements(By.className("android.widget.TextView"));
-  CopyMedicine.get(15).click(); }
+  driver.findElements(By.xpath("//*[@text='Copy Medicines']"));
+  CopyMedicine.get(0).click(); }
   
   @Test(priority=29) public void popularClick() throws InterruptedException,
   IndexOutOfBoundsException{ Thread.sleep(2000);

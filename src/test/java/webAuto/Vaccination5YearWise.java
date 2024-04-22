@@ -256,13 +256,13 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 
-		driver.get("https://opd.copious.care/");
+		driver.get("https://app.copious.care/");
 		// driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
 

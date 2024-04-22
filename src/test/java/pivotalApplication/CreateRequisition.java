@@ -35,7 +35,7 @@ public class CreateRequisition extends AppiumServerStart{
 	dc.setCapability("–session-override",true);
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage", "com.calculator_apps");
 	dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
@@ -100,7 +100,7 @@ public void Search() throws InterruptedException {
 	Thread.sleep(2000);
 
 	WebElement SearchBar =  driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-	SearchBar.sendKeys("PivoTotal122Automation");
+	SearchBar.sendKeys("Pivo17AprilAutomation");
 
 	Thread.sleep(2000);
 	WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -132,7 +132,7 @@ public void ClickPatient() throws InterruptedException, IndexOutOfBoundsExceptio
 }
 @Test(priority = 8)
 public void InvestigationClick() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(2000);
+	Thread.sleep(10000);
 	WebElement InvestigationClick
 	  =  driver.findElement(By.xpath("//*[@text='Investigations']"));
 	  InvestigationClick.click();
@@ -142,7 +142,7 @@ public void InvestigationClick() throws InterruptedException, IndexOutOfBoundsEx
 }
 @Test(priority = 9)
 public void NewRequisition() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(2000);
+	Thread.sleep(10000);
 	WebElement NewRequisition
 	  =  driver.findElement(By.xpath("//*[@text='New Requisition']"));
 	NewRequisition.click();

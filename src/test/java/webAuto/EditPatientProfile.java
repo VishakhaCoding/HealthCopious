@@ -110,13 +110,13 @@ public class EditPatientProfile {
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			//driver.get("http://stage.copious.care:4200/");
 			//driver.get("https://stage.copious.care/");
-			driver.get("https://opd.copious.care/");
+			driver.get("https://app.copious.care/");
 			 driver.manage().window().fullscreen();
 		}
 
@@ -175,7 +175,7 @@ public class EditPatientProfile {
 		@Test(priority = 4,groups="log")
 		public void searchBar() {
 			waitForVisibilityOf(By.xpath(searchBar));
-			driver.findElement(By.xpath(searchBar)).sendKeys("Weight12");
+			driver.findElement(By.xpath(searchBar)).sendKeys("Test");
 			
 			//driver.findElement(By.xpath(searchBar)).sendKeys("pres");
 			highlightElement(By.xpath(searchBar));

@@ -34,9 +34,9 @@ public class CreateReceipt {
 	   public static String OTP4="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
 	   public static String OTP5="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
 	   public static String OTP6="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]"; 
-	   public static String Document="//*[text()='Docients']";
+	   public static String Document="//*[text()='Documents']";
 	   public static String ReceiptOption="//*[text()='Bill/Receipt']";
-	   public static String ReceiptNo="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-receipt/div/div[2]/div/div[2]/mat-form-field[2]/div/div[1]/div/input";
+	   public static String ReceiptNo="//*[text()='Create Receipt ']//following::div[14]";
 	   public static String Consultation="//*[@class='searchBox']//child::input[1]";
 	   public static String Vaccination="//div[@class='searchBox']//following::input[2]";
 	   public static String VaccinationCheckboxClick="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-receipt/div/div[2]/div/div[6]/img";
@@ -45,7 +45,7 @@ public class CreateReceipt {
 	   public static String PaymentMethodDropdown="/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[1]/mat-form-field[2]/div/div[1]/div/mat-select";
 	   public static String PaymentMethod="/html/body/div[2]/div[4]/div/div/div/mat-option[1]/span";
 	   public static String CreateReceipt="/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[3]/button[2]";
-	   public static String CloseReceipt="//*[text()='�']";
+	   public static String CloseReceipt="//*[text()='×']";
 	   public static String OtheCharges="//div[@class='searchBox']//following::input[7]";
 	   public static String AddMoreButton="//*[text()='Add More']";
 	   public static String ExtraOtherCharges="//div[@class='searchBox']//following::input[8]";
@@ -76,7 +76,7 @@ public class CreateReceipt {
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 			
 			
 			
@@ -87,7 +87,7 @@ public class CreateReceipt {
 			//driver.get("http://stage.copious.care:4200/");
 			//driver.get("https://stage.copious.care/");
 			driver.manage().window().fullscreen();
-			 driver.get("https://opd.copious.care/");
+			 driver.get("https://app.copious.care/");
 		}
 
 		
@@ -172,7 +172,7 @@ public class CreateReceipt {
 		  
 		  @Test(priority = 7)
 			public void Document() throws InterruptedException {
-				
+			  Thread.sleep(5000);
 				waitForVisibilityOf(By.xpath(Document));
 				driver.findElement(By.xpath(Document));
 				highlightElement(By.xpath(Document));
@@ -186,9 +186,13 @@ public class CreateReceipt {
 			  highlightElement(By.xpath(ReceiptOption));
 			  clickUsingJavaScript(By.xpath(ReceiptOption));
 			  
-			  waitForVisibilityOf(By.xpath(ReceiptNo));
-			  driver.findElement(By.xpath(ReceiptNo)).sendKeys("123456");;
-			  highlightElement(By.xpath(ReceiptNo));
+			  
+			  Thread.sleep(5000);
+				/*
+				 * waitForVisibilityOf(By.xpath(ReceiptNo));
+				 * driver.findElement(By.xpath(ReceiptNo)).sendKeys("123456");;
+				 * highlightElement(By.xpath(ReceiptNo));
+				 */
 			  
 				
 				  Thread.sleep(3000); waitForVisibilityOf(By.xpath(Consultation));

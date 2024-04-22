@@ -39,7 +39,7 @@ public class Chats extends AppiumServerStart{
 	dc.setCapability("–session-override",true);
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage","com.calculator_apps");
 	dc.setCapability("appActivity","com.calculator_apps.MainActivity");
@@ -233,7 +233,7 @@ public class Chats extends AppiumServerStart{
 					  
 					//working code for vdo call checkbox
 					  
-					 WebElement Patientclick =driver.findElement(By.xpath("//*[@text='GovVcc Test']"));
+					 WebElement Patientclick =driver.findElement(By.xpath("//*[@text='ReHealth16feb Nawale ']"));
 					 Patientclick.click();
 			  
 			 // WebElement Appointmentclick =driver.findElement(By.id("appointment_menu_id"));
@@ -296,24 +296,26 @@ public class Chats extends AppiumServerStart{
 					  
 					//working code for vdo call checkbox
 					  
-				WebElement allow
+			  WebElement allow
 				
-				  = driver.findElement(By.xpath("//*[@text='Allow']"));
-				allow.click();
+			  = driver.findElement(By.xpath("//*[@text='While using the app']"));
+			allow.click();
 				  
 			  Thread.sleep(5000);}
-		  @Test(priority=13) public void CameraAllow1() throws InterruptedException {
-			  Thread.sleep(2000);
-			  
-					  
-					//working code for vdo call checkbox
-					  
-			  WebElement allow1
-				
-			  = driver.findElement(By.xpath("//*[@text='Allow']"));
-			allow1.click();
-				  
-			  Thread.sleep(5000);}
+
+			/*
+			 * @Test(priority=13) public void CameraAllow1() throws InterruptedException {
+			 * Thread.sleep(2000);
+			 * 
+			 * 
+			 * //working code for vdo call checkbox
+			 * 
+			 * WebElement allow1
+			 * 
+			 * = driver.findElement(By.xpath("//*[@text='Allow']")); allow1.click();
+			 * 
+			 * Thread.sleep(5000);}
+			 */
 		  @Test(priority=14) public void CameraClick() throws InterruptedException {
 			  Thread.sleep(2000);
 			  
@@ -321,7 +323,7 @@ public class Chats extends AppiumServerStart{
 					//working code for vdo call checkbox
 					  
 			  WebElement CameraClick
-			  = driver.findElement(By.xpath("//CenterButtonGroup[@content-desc=\"NONE\"]"));
+			  = driver.findElement(By.xpath("//android.view.View[@resource-id=\"com.sec.android.app.camera:id/bottom_background\"]"));
 			CameraClick.click();
 				  
 			  Thread.sleep(5000);}

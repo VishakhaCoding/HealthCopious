@@ -37,7 +37,7 @@ package pivotalApplication;
 			dc.setCapability("–session-override",true);
 			  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 			  dc.setCapability("noReset", false) ;
-			dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+			dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 			URL url = new URL("http://0.0.0.0:4723/");
 			dc.setCapability("appPackage", "com.calculator_apps");
 			dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
@@ -101,11 +101,11 @@ package pivotalApplication;
 			Thread.sleep(2000);
 
 			WebElement SearchBar = driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-			SearchBar.sendKeys("pedi59Automation");
+			SearchBar.sendKeys("test");
 
 			Thread.sleep(2000);
-			WebElement SerachIcon1 = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
-			SerachIcon1.click();
+			WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
+			SearchIcon1.click();
 			Thread.sleep(2000);
 
 		}
@@ -124,13 +124,14 @@ package pivotalApplication;
 			Thread.sleep(2000);
 			List<WebElement> Appointment = driver.findElements(By.className("android.widget.TextView"));
 			Appointment.get(7).click();
-
+			Appointment.get(7).click();
+			Thread.sleep(5000);
 			
 		}
 
 		
 		  @Test(priority=8) public void SlotTime() throws InterruptedException {
-		  Thread.sleep(10000); List<WebElement> SlotTime =
+		  Thread.sleep(20000); List<WebElement> SlotTime =
 		  driver.findElements(By.className("android.widget.EditText"));
 		  
 		  

@@ -69,14 +69,14 @@ public class DeleteFavouriteMedicine {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		//driver.get("http://stage.copious.care:4200/");
 		// driver.manage().window().fullscreen();
-		driver.get("https://opd.copious.care/");
+		driver.get("https://app.copious.care/");
 		//driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
 	}
@@ -197,7 +197,7 @@ public class DeleteFavouriteMedicine {
 		clickUsingJavaScript(By.xpath(AddMedicine));
 		
 		waitForVisibilityOf(By.xpath(MedicineSearch));
-		driver.findElement(By.xpath(MedicineSearch)).sendKeys("Syr");
+		driver.findElement(By.xpath(MedicineSearch)).sendKeys("Syru");
 		highlightElement(By.xpath(MedicineSearch));
 		
 		waitForVisibilityOf(By.xpath(MedicineClick));

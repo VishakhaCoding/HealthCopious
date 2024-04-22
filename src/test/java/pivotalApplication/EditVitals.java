@@ -40,7 +40,7 @@ public class EditVitals extends AppiumServerStart{
 	dc.setCapability("–session-override",true);
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage","com.calculator_apps");
 	dc.setCapability("appActivity","com.calculator_apps.MainActivity");
@@ -100,7 +100,7 @@ public class EditVitals extends AppiumServerStart{
 	  	Thread.sleep(2000);
 
 	  	WebElement myElement2 =  driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-	  	myElement2.sendKeys("pedi56Automation");
+	  	myElement2.sendKeys("Pivo15AprilAutomation");
 
 	  	Thread.sleep(2000);
 	  	WebElement myElement3 = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -138,12 +138,12 @@ public class EditVitals extends AppiumServerStart{
 	  public void EditVital() throws InterruptedException, IndexOutOfBoundsException {
 	  	Thread.sleep(2000);
 	  	List<WebElement> EditVital = driver
-	  			.findElements(By.className("android.widget.TextView"));
+	  			.findElements(By.xpath("//*[@text='']"));
 	  	//EditVital.get(6).click();
-		EditVital.get(23).click();
+		EditVital.get(0).click();
 	  	//EditVital.get(25).click();
 	  	//EditVital.get(26).click();
-	  	EditVital.get(27).click();
+	  //	EditVital.get(27).click();
 	  	// Working code for prescription
 	  	// List<io.appium.java_client.MobileElement> els2 =
 	  	// driver.findElements(By.className("android.widget.TextView"));

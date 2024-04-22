@@ -30,7 +30,7 @@ public class EditMoreInformation extends AppiumServerStart{
 		dc.setCapability("–session-override",true);
 		  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 		  dc.setCapability("noReset", false) ;
-		dc.setCapability(MobileCapabilityType.APP, "D:\\\\pivotalapp-20-june.apk");
+		dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
 		dc.setCapability("appPackage", "com.calculator_apps");
 		dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
@@ -99,7 +99,7 @@ public class EditMoreInformation extends AppiumServerStart{
 		Thread.sleep(2000);
 
 		WebElement SearchBar = driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-		SearchBar.sendKeys("pedi31Automation");
+		SearchBar.sendKeys("LMP12Add");
 
 		Thread.sleep(2000);
 		WebElement SearchIcon1 = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -122,9 +122,9 @@ public class EditMoreInformation extends AppiumServerStart{
 	public void ClickEdit() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		List<WebElement> ClickEdit = driver
-				.findElements(By.className("android.widget.TextView"));
-		ClickEdit.get(28).click();
-		ClickEdit.get(29).click();
+				.findElements(By.xpath("//android.widget.TextView[@text=\"\"]"));
+		ClickEdit.get(0).click();
+		//ClickEdit.get(29).click();
 
 
 }

@@ -35,7 +35,7 @@ public class Overview {
 	public static String AccidentalHistory="//*[text()='More Information']/following::input[4]";
 	public static String Save="//*[text()='Save']";
 	public static String HeightGraph="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[1]/div[2]/img";
-	public static String HeightGraphClose="//*[text()='×']";
+	public static String HeightGraphClose="//*[text()='ï¿½']";
 	
 	public static String CreatedBy = "//*[text()='Upload health reports and related documents as photos,images and PDFs.']/following::input[1]";
 	public static String DocumentOn = "//*[text()='Upload health reports and related documents as photos,images and PDFs.']/following::input[2]";
@@ -76,7 +76,7 @@ public class Overview {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

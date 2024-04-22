@@ -66,7 +66,7 @@ public class PriorityTimeAppointment {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 		
 		
 		 
@@ -74,9 +74,9 @@ public class PriorityTimeAppointment {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		//driver.get("http://stage.copious.care:4200/");
-		driver.get("https://stage.copious.care/");
+		//driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
-		 //driver.get("https://opd.copious.care/");
+		 driver.get("https://app.copious.care/");
 	}
 
 	

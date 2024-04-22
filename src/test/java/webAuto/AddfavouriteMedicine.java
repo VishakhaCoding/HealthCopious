@@ -66,7 +66,7 @@ public class AddfavouriteMedicine {
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -176,7 +176,7 @@ public class AddfavouriteMedicine {
 			clickUsingJavaScript(By.xpath(AddMedicine));
 			
 			waitForVisibilityOf(By.xpath(MedicineSearch));
-			driver.findElement(By.xpath(MedicineSearch)).sendKeys("Cro");
+			driver.findElement(By.xpath(MedicineSearch)).sendKeys("Crom");
 			highlightElement(By.xpath(MedicineSearch));
 			
 			waitForVisibilityOf(By.xpath(MedicineClick));
@@ -194,38 +194,46 @@ public class AddfavouriteMedicine {
 			highlightElement(By.xpath(AddMedicine));
 			clickUsingJavaScript(By.xpath(AddMedicine));
 			
-			waitForVisibilityOf(By.xpath(MedicineSearch));
-			driver.findElement(By.xpath(MedicineSearch)).sendKeys("Syr");
-			highlightElement(By.xpath(MedicineSearch));
+			/*
+			 * waitForVisibilityOf(By.xpath(MedicineSearch));
+			 * driver.findElement(By.xpath(MedicineSearch)).sendKeys("Syr");
+			 * highlightElement(By.xpath(MedicineSearch));
+			 * 
+			 * waitForVisibilityOf(By.xpath(MedicineClick));
+			 * driver.findElement(By.xpath(MedicineClick));
+			 * highlightElement(By.xpath(MedicineClick));
+			 * clickUsingJavaScript(By.xpath(MedicineClick));
+			 */
 			
-			waitForVisibilityOf(By.xpath(MedicineClick));
-			driver.findElement(By.xpath(MedicineClick));
-			highlightElement(By.xpath(MedicineClick));
-			clickUsingJavaScript(By.xpath(MedicineClick));
-			
-			waitForVisibilityOf(By.xpath(AddToList));
-			driver.findElement(By.xpath(AddToList));
-			highlightElement(By.xpath(AddToList));
-			clickUsingJavaScript(By.xpath(AddToList));
+			/*
+			 * waitForVisibilityOf(By.xpath(AddToList));
+			 * driver.findElement(By.xpath(AddToList));
+			 * highlightElement(By.xpath(AddToList));
+			 * clickUsingJavaScript(By.xpath(AddToList));
+			 */
 			
 			waitForVisibilityOf(By.xpath(AddMedicine));
 			driver.findElement(By.xpath(AddMedicine));
 			highlightElement(By.xpath(AddMedicine));
 			clickUsingJavaScript(By.xpath(AddMedicine));
 			
-			waitForVisibilityOf(By.xpath(MedicineSearch));
-			driver.findElement(By.xpath(MedicineSearch)).sendKeys("doloca");
-			highlightElement(By.xpath(MedicineSearch));
-			
-			waitForVisibilityOf(By.xpath(MedicineClick));
-			driver.findElement(By.xpath(MedicineClick));
-			highlightElement(By.xpath(MedicineClick));
-			clickUsingJavaScript(By.xpath(MedicineClick));
-			
-			waitForVisibilityOf(By.xpath(AddToList));
-			driver.findElement(By.xpath(AddToList));
-			highlightElement(By.xpath(AddToList));
-			clickUsingJavaScript(By.xpath(AddToList));
+			/*
+			 * waitForVisibilityOf(By.xpath(MedicineSearch));
+			 * driver.findElement(By.xpath(MedicineSearch)).sendKeys("dol");
+			 * highlightElement(By.xpath(MedicineSearch));
+			 * 
+			 * Thread.sleep(2000);
+			 * 
+			 * waitForVisibilityOf(By.xpath(MedicineClick));
+			 * driver.findElement(By.xpath(MedicineClick));
+			 * highlightElement(By.xpath(MedicineClick));
+			 * clickUsingJavaScript(By.xpath(MedicineClick));
+			 * 
+			 * waitForVisibilityOf(By.xpath(AddToList));
+			 * driver.findElement(By.xpath(AddToList));
+			 * highlightElement(By.xpath(AddToList));
+			 * clickUsingJavaScript(By.xpath(AddToList));
+			 */
 			
 			waitForVisibilityOf(By.xpath(Save));
 			driver.findElement(By.xpath(Save));

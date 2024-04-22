@@ -124,7 +124,7 @@ public class LogIn1 {
 		@BeforeClass
 		public void setUp() throws InterruptedException {
 
-			System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 			
 			
 			driver = new ChromeDriver();

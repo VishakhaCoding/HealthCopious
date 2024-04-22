@@ -40,7 +40,7 @@ public class LMPAddPivo  {
 	dc.setCapability("–session-override",true);
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage","com.calculator_apps");
 	dc.setCapability("appActivity","com.calculator_apps.MainActivity");
@@ -213,7 +213,7 @@ Close1.get(8).click();
 			
 
 			WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-			 FirstName.sendKeys("LMP88Automation");
+			 FirstName.sendKeys("LMP12Add");
 			
 
 

@@ -17,8 +17,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class ViewCertificateInDocuments {
-	
+public class ViewReceiptInAllDoc {
 	public static WebDriver driver;
 
 	public static String doctorLoginLink = "/html/body/app-root/app-home-page/div/div/div/header[2]/div/div[4]/button";
@@ -30,11 +29,6 @@ public class ViewCertificateInDocuments {
 	public static String searchOpt = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[1]/div/div[1]/div[3]/button";
 	public static String clickPatient = "li.clearfix";
 	public static String AllDocuments="//*[text()='All Documents']";
-	
-	public static String SaveAndShare="//*[text()='Save & share ']";
-	public static String ViewCirtificateDoc="//*[text()=' View ']";
-	public static String CloseCirtificateDoc="//*[text()='×']";
-	
 	public static String OTP1="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]"; 
 	   public static String OTP2="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[2]"; 
 	   public static String OTP3="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[3]"; 
@@ -42,7 +36,10 @@ public class ViewCertificateInDocuments {
 	   public static String OTP5="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
 	   public static String OTP6="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]"; 
 	   public static String Document="//*[text()='Documents']";
-	public static String CertificateOption="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/app-patient-history/div/mat-tab-group/mat-tab-header/div[2]/div/div/div[5]/div";
+	public static String ViewReceiptDoc="//*[text()=' View ']";
+	public static String CloseReceipt="//*[text()='×']";
+	   
+	   
 	   
 	   public static void waitForVisibilityOf(By by) {
 		try {
@@ -70,11 +67,12 @@ public class ViewCertificateInDocuments {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 		
-	
+		
 		
 		driver = new ChromeDriver();
+		
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		//driver.get("http://stage.copious.care:4200/");
@@ -82,8 +80,6 @@ public class ViewCertificateInDocuments {
 		driver.manage().window().fullscreen();
 		 //driver.get("https://opd.copious.care/");
 	}
-
-	
 
 	@Test(priority = 1)
 	public void numberField() {
@@ -99,6 +95,7 @@ public class ViewCertificateInDocuments {
 		waitForVisibilityOf(By.xpath(sendOTP));
 		highlightElement(By.xpath(sendOTP));
 		clickUsingJavaScript(By.xpath(sendOTP));
+		Thread.sleep(1000);
 		
 		  waitForVisibilityOf(By.xpath(OTP1));
 		   	driver.findElement(By.xpath(OTP1)).sendKeys("1");;
@@ -179,49 +176,41 @@ public class ViewCertificateInDocuments {
 		  highlightElement(By.xpath(AllDocuments));
 		  clickUsingJavaScript(By.xpath(AllDocuments));
 		  
-		  waitForVisibilityOf(By.xpath(CertificateOption));
-		  driver.findElement(By.xpath(CertificateOption));
-		  highlightElement(By.xpath(CertificateOption));
-		  clickUsingJavaScript(By.xpath(CertificateOption));
+		 
 			 
 			
-			  waitForVisibilityOf(By.xpath(ViewCirtificateDoc));
-			  driver.findElement(By.xpath(ViewCirtificateDoc));
-			  highlightElement(By.xpath(ViewCirtificateDoc));
-			  clickUsingJavaScript(By.xpath(ViewCirtificateDoc));
+			  waitForVisibilityOf(By.xpath(ViewReceiptDoc));
+			  driver.findElement(By.xpath(ViewReceiptDoc));
+			  highlightElement(By.xpath(ViewReceiptDoc));
+			  clickUsingJavaScript(By.xpath(ViewReceiptDoc));
 			  
-			  Thread.sleep(15000);
-			  
-			  waitForVisibilityOf(By.xpath(CloseCirtificateDoc));
-			  driver.findElement(By.xpath(CloseCirtificateDoc));
-			  highlightElement(By.xpath(CloseCirtificateDoc));
-			  clickUsingJavaScript(By.xpath(CloseCirtificateDoc));
 			 
 			  
-		  
-		  }
-		// @AfterClass public void close() throws IOException {
-		@AfterMethod
-		public void screenShot(ITestResult result) { // using ITestResult.FAILURE is equals to result.getStatus then it
-			// enter into if condition
-			if (ITestResult.FAILURE == result.getStatus()) {
-				try { // To create reference of TakesScreenshot
-					EventFiringWebDriver edriver = new EventFiringWebDriver(driver); // Call method to capture screenshot
-					File src = edriver.getScreenshotAs(OutputType.FILE); // Copy files to specific location
-					// result.getName() will return name of test case so that screenshot name will
-					// be same as test case name
-					FileUtils.copyFile(src, new File("C:\\ScreenShotFolder\\" + result.getName() + ".png"));
-					System.out.println("Successfully captured a screenshot"); // driver.quit();
-				} catch (Exception e) {
-					System.out.println("Exception while taking screenshot " + e.getMessage());
+			  Thread.sleep(15000);
+			  waitForVisibilityOf(By.xpath(CloseReceipt));
+			  driver.findElement(By.xpath(CloseReceipt));
+			  highlightElement(By.xpath(CloseReceipt));
+			  clickUsingJavaScript(By.xpath(CloseReceipt));
+	  }
+	// @AfterClass public void close() throws IOException {
+			@AfterMethod
+			public void screenShot(ITestResult result) { // using ITestResult.FAILURE is equals to result.getStatus then it
+				// enter into if condition
+				if (ITestResult.FAILURE == result.getStatus()) {
+					try { // To create reference of TakesScreenshot
+						EventFiringWebDriver edriver = new EventFiringWebDriver(driver); // Call method to capture screenshot
+						File src = edriver.getScreenshotAs(OutputType.FILE); // Copy files to specific location
+						// result.getName() will return name of test case so that screenshot name will
+						// be same as test case name
+						FileUtils.copyFile(src, new File("C:\\ScreenShotFolder\\" + result.getName() + ".png"));
+						System.out.println("Successfully captured a screenshot"); // driver.quit();
+					} catch (Exception e) {
+						System.out.println("Exception while taking screenshot " + e.getMessage());
 
-					// driver.quit();
-					// Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T"); }
+						// driver.quit();
+						// Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T"); }
 
+					}
 				}
 			}
-		}
-	  
-
-
 }

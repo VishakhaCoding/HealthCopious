@@ -37,7 +37,7 @@ public class LinkDoctor extends AppiumServerStart{
 		dc.setCapability("–session-override",true);
 		  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 		  dc.setCapability("noReset", false) ;
-		dc.setCapability(MobileCapabilityType.APP, "D:\\\\pivotalapp-20-june.apk");
+		dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
 		dc.setCapability("appPackage", "com.calculator_apps");
 		dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
@@ -105,7 +105,7 @@ public class LinkDoctor extends AppiumServerStart{
 		Thread.sleep(2000);
 
 		WebElement SearchBar = driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-		SearchBar.sendKeys("PivoTotal7Automation");
+		SearchBar.sendKeys("Pivo16AprilAutomation");
 
 		Thread.sleep(2000);
 		WebElement SearchIcon1 = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -141,7 +141,7 @@ public class LinkDoctor extends AppiumServerStart{
 		Thread.sleep(10000);
 		List<WebElement> DrMobileNumber = driver
 				.findElements(By.className("android.widget.EditText"));
-		DrMobileNumber.get(0).sendKeys("9665002440");
+		DrMobileNumber.get(0).sendKeys("9404361565");
 	}
 	@Test(priority = 9)
 	public void SearchDr() throws InterruptedException, IndexOutOfBoundsException {

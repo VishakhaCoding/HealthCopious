@@ -35,7 +35,7 @@ public class EditPatientProfile {
 	dc.setCapability("–session-override",true);
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage", "com.calculator_apps");
 	dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
@@ -100,7 +100,7 @@ public void Search() throws InterruptedException {
 	Thread.sleep(2000);
 
 	WebElement SearchBar =  driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-	SearchBar.sendKeys("PivoTotal51Automation");
+	SearchBar.sendKeys("lmp");
 
 	Thread.sleep(2000);
 	WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -128,8 +128,8 @@ public void ClickPatient() throws InterruptedException, IndexOutOfBoundsExceptio
 	Clickpatient.get(5).click();
 	Thread.sleep(5000);
 	
-	List<WebElement> els1 =  driver.findElements(By.xpath("//*[@text='PT']"));
-	els1.get(0).click();
+	List<WebElement> els1 =  driver.findElements(By.className("android.view.ViewGroup"));
+	els1.get(12).click();
 	
 	Thread.sleep(5000);
 }

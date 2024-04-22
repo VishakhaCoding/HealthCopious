@@ -35,7 +35,7 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 		dc.setCapability("–session-override",true);
 		  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 		  dc.setCapability("noReset", false) ;
-		dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+		dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
 		dc.setCapability("appPackage", "com.calculator_apps");
 		dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
@@ -101,7 +101,7 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 		Thread.sleep(2000);
 
 		WebElement SearchBar = driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-		SearchBar.sendKeys("PivoTotal34Automation");
+		SearchBar.sendKeys("Pivo17AprilAutomation");
 
 		Thread.sleep(2000);
 		WebElement SearchIcon1 = driver.findElement(
@@ -191,19 +191,18 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 
 		Thread.sleep(2000);
 		WebElement allow
-
-				= driver.findElement(By.xpath("//*[@text='Allow']"));
+		
+		  = driver.findElement(By.xpath("//*[@text='While using the app']"));
 		allow.click();
+		/*
+		 * WebElement allow1
+		 * 
+		 * = driver.findElement(By.xpath("//*[@text='Allow']")); allow1.click();
+		 * Thread.sleep(2000); ;
+		 */
 
-		WebElement allow1
-
-				= driver.findElement(By.xpath("//*[@text='Allow']"));
-		allow1.click();
 		Thread.sleep(2000);
-		;
-
-		Thread.sleep(2000);
-		WebElement CameraClick = driver.findElement(By.xpath("//CenterButtonGroup[@content-desc=\"NONE\"]"));
+		WebElement CameraClick = driver.findElement(By.xpath("//android.view.View[@resource-id=\"com.sec.android.app.camera:id/bottom_background\"]"));
 		CameraClick.click();
 
 		Thread.sleep(5000);
@@ -219,16 +218,18 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 	}
 
 	
-	  @Test(priority = 15) public void PopUpOk() throws InterruptedException,
-	  IndexOutOfBoundsException { Thread.sleep(2000); WebElement PopUpOk1 =
-	  driver.findElement(By.xpath("//*[@text='OK']")); PopUpOk1.click();
-	  
-	  Thread.sleep(2000);
-	  
-	  WebElement Submit =driver.findElement(By.xpath("//*[@text='Submit']"));
-	  Submit.click();
-	  
-	  }
+	/*
+	 * @Test(priority = 15) public void PopUpOk() throws InterruptedException,
+	 * IndexOutOfBoundsException { Thread.sleep(2000); WebElement PopUpOk1 =
+	 * driver.findElement(By.xpath("//*[@text='OK']")); PopUpOk1.click();
+	 * 
+	 * Thread.sleep(2000);
+	 * 
+	 * WebElement Submit =driver.findElement(By.xpath("//*[@text='Submit']"));
+	 * Submit.click();
+	 * 
+	 * }
+	 */
 	 
 
 	@Test(priority = 16)
@@ -244,7 +245,7 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 	@Test(priority = 17)
 	public void PCV() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
-		WebElement PCV = driver.findElement(By.xpath("//*[@text='PCV (1/3)']"));
+		WebElement PCV = driver.findElement(By.xpath("//*[@text='Hib-1']"));
 		PCV.click();
 
 		Thread.sleep(2000);
@@ -254,7 +255,7 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 	@Test(priority = 18)
 	public void IPV() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
-		WebElement IPV = driver.findElement(By.xpath("//*[@text='IPV (2/3)']"));
+		WebElement IPV = driver.findElement(By.xpath("//*[@text='IPV-2']"));
 		IPV.click();
 
 		Thread.sleep(2000);
@@ -264,7 +265,7 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 	@Test(priority = 19)
 	public void Rotavirus() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
-		WebElement Rotavirus = driver.findElement(By.xpath("//*[@text='Rotavirus (1/3)']"));
+		WebElement Rotavirus = driver.findElement(By.xpath("//*[@text='Rotavirus-1']"));
 		Rotavirus.click();
 
 		Thread.sleep(2000);
@@ -364,7 +365,7 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 	public void GallariesPhoto() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath(
-				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20230921-114316_Gallery.jpg, 704 kB, 21 Sep\"]"))
+				"(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[2]"))
 				.click();
 
 		Thread.sleep(5000);
@@ -431,7 +432,7 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 		 */
 
 		Thread.sleep(5000);
-		WebElement CameraClick = driver.findElement(By.xpath("//CenterButtonGroup[@content-desc=\"NONE\"]"));
+		WebElement CameraClick = driver.findElement(By.xpath("//android.view.View[@resource-id=\"com.sec.android.app.camera:id/bottom_background\"]"));
 		CameraClick.click();
 
 		Thread.sleep(5000);

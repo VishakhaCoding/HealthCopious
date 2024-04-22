@@ -135,8 +135,8 @@ public class PatientAppointmentPrescription {
 	public static String PopularMedicineClick = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[1]/div[3]/div[1]/div/img";
 	public static String FavouriteOption = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[1]/div/div[2]/div[3]";
 	public static String FavouriteSearch = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[1]/input";
-	public static String FavouriteClick = "mat-option-136";
-	public static String FavouriteClickMedicine = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[2]/div/div/img";
+	//public static String FavouriteClick = "mat-option-136";
+	//public static String FavouriteClickMedicine = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[2]/div/div/img";
 	
 	public static String DietaryAdviceOption = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[1]/mat-step-header[6]";
 	
@@ -178,9 +178,10 @@ public class PatientAppointmentPrescription {
 	public static String nextFollowupDate ="button.mat-focus-indicator.mat-icon-button";
 	public static String prefferedLanguage="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[7]/mat-form-field[2]/div/div[1]/div/mat-select/div/div[1]/span";
     public static String prefferedLanguageEnglish="/html/body/div[2]/div[4]/div/div/div/mat-option[1]/span";
+    public static String clickContinue="/html/body/ngb-modal-window/div/div/div[2]/div/div/div[5]/span";
 	
-	
-	
+	public static String FavouriteClick = "span.mat-option-text";
+	public static String FavouriteClickMedicine = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[2]/div/div/img";
 	public static void waitForVisibilityOf(By by) {
 		try {
 
@@ -208,14 +209,14 @@ public class PatientAppointmentPrescription {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("http://stage.copious.care:4200/");
+		//driver.get("http://stage.copious.care:4200/");
 		// driver.manage().window().fullscreen();
-		 //driver.get("https://opd.copious.care/");
+		 driver.get("https://app.copious.care/");
 		// driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
 	}
@@ -303,9 +304,11 @@ public class PatientAppointmentPrescription {
 	  waitForVisibilityOf(By.xpath(confirm));
 	  driver.findElement(By.xpath(confirm)); highlightElement(By.xpath(confirm));
 	  clickUsingJavaScript(By.xpath(confirm));
-	  waitForVisibilityOf(By.xpath(confirmPopup));
-	  highlightElement(By.xpath(confirmPopup));
-	  clickUsingJavaScript(By.xpath(confirmPopup));
+		/*
+		 * waitForVisibilityOf(By.xpath(confirmPopup));
+		 * highlightElement(By.xpath(confirmPopup));
+		 * clickUsingJavaScript(By.xpath(confirmPopup));
+		 */
 	  
 	  
 	  waitForVisibilityOf(By.xpath(proceedWithSameRMN));
@@ -323,7 +326,7 @@ public class PatientAppointmentPrescription {
 	  
 	  @Test(priority = 8,groups="Regression") public void firstName() {
 	  waitForVisibilityOf(By.xpath(firstName));
-	  driver.findElement(By.xpath(firstName)).sendKeys("Sampada"); ;
+	  driver.findElement(By.xpath(firstName)).sendKeys("PaApPr"); ;
 	  highlightElement(By.xpath(firstName));
 	  clickUsingJavaScript(By.xpath(firstName)); }
 	  
@@ -401,19 +404,20 @@ public class PatientAppointmentPrescription {
 			  driver.findElement(By.xpath(prefferedLanguageEnglish));
 			 clickUsingJavaScript(By.xpath(prefferedLanguageEnglish));
 			 
-	  waitForVisibilityOf(By.xpath(proceedWithSameRMN));
-	  
-	  highlightElement(By.xpath(proceedWithSameRMN));
-	  clickUsingJavaScript(By.xpath(proceedWithSameRMN));
+				/*
+				 * waitForVisibilityOf(By.xpath(proceedWithSameRMN));
+				 * 
+				 * highlightElement(By.xpath(proceedWithSameRMN));
+				 * clickUsingJavaScript(By.xpath(proceedWithSameRMN));
+				 */
 	  
 	  }
 	  
 	  @Test(priority = 19,groups="Regression") public void clickClose() {
-	  waitForVisibilityOf(By.xpath(clickClose));
-	  
-	  highlightElement(By.xpath(clickClose));
-	  clickUsingJavaScript(By.xpath(clickClose));
-	  
+  waitForVisibilityOf(By.xpath(clickContinue));
+		  
+		  highlightElement(By.xpath(clickContinue));
+		  clickUsingJavaScript(By.xpath(clickContinue));
 	  }
 	  
 	  @Test(priority = 20) public void fillVitalForm() throws InterruptedException
@@ -743,7 +747,7 @@ public class PatientAppointmentPrescription {
 			  
 			  
 			  
-			  
+			  Thread.sleep(5000);
 			  
 			  driver.findElement(By.xpath(Diagnosis));
 			  highlightElement(By.xpath(Diagnosis));
@@ -805,7 +809,7 @@ public class PatientAppointmentPrescription {
 			  
 			  waitForVisibilityOf(By.xpath(PopularSearch));
 			  highlightElement(By.xpath(PopularSearch));
-			  driver.findElement(By.xpath(PopularSearch)).sendKeys("new");
+			  driver.findElement(By.xpath(PopularSearch)).sendKeys("cro");
 			  
 			  waitForVisibilityOf(By.xpath(PopularMedicineClick));
 			  highlightElement(By.xpath(PopularMedicineClick));
@@ -821,17 +825,17 @@ public class PatientAppointmentPrescription {
 			  
 			  waitForVisibilityOf(By.xpath(FavouriteSearch));
 			  highlightElement(By.xpath(FavouriteSearch));
-			  driver.findElement(By.xpath(FavouriteSearch)).sendKeys("test");
+			  driver.findElement(By.xpath(FavouriteSearch)).sendKeys("temp");
 			  
-			  waitForVisibilityOf(By.id(FavouriteClick));
-			  highlightElement(By.id(FavouriteClick));
-			  driver.findElement(By.id(FavouriteClick));
-			  clickUsingJavaScript(By.id(FavouriteClick));
-			  
-			  waitForVisibilityOf(By.xpath(FavouriteClickMedicine));
-			  highlightElement(By.xpath(FavouriteClickMedicine));
-			  driver.findElement(By.xpath(FavouriteClickMedicine));
-			  clickUsingJavaScript(By.xpath(FavouriteClickMedicine));
+			  waitForVisibilityOf(By.cssSelector(FavouriteClick));
+				highlightElement(By.cssSelector(FavouriteClick));
+				driver.findElement(By.cssSelector(FavouriteClick));
+				clickUsingJavaScript(By.cssSelector(FavouriteClick));
+
+				waitForVisibilityOf(By.xpath(FavouriteClickMedicine));
+				highlightElement(By.xpath(FavouriteClickMedicine));
+				driver.findElement(By.xpath(FavouriteClickMedicine));
+				clickUsingJavaScript(By.xpath(FavouriteClickMedicine));
 			  
 			
 			  

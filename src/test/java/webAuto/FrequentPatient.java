@@ -127,7 +127,7 @@ public class FrequentPatient {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 		
 		/*
 		 * DesiredCapabilities cap = DesiredCapabilities.chrome();

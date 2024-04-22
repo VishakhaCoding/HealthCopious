@@ -43,7 +43,7 @@ public class DashBoard extends AppiumServerStart{
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
 	//dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-release-31-Oct.apk");
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-2-nov-production.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage","com.calculator_apps");
 	dc.setCapability("appActivity","com.calculator_apps.MainActivity");

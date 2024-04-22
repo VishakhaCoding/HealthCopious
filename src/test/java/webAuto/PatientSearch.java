@@ -54,7 +54,7 @@ public class PatientSearch {
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 			
 			/*
 			 * DesiredCapabilities cap = DesiredCapabilities.chrome();
@@ -67,9 +67,9 @@ public class PatientSearch {
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			//driver.get("http://stage.copious.care:4200/");
-			driver.get("https://stage.copious.care/");
+			//driver.get("https://stage.copious.care/");
 			driver.manage().window().fullscreen();
-			 //driver.get("https://opd.copious.care/");
+			 driver.get("https://app.copious.care/");
 		}
 
 		/*
@@ -137,7 +137,7 @@ public class PatientSearch {
 		@Test(priority = 4)
 		public  void searchBar1() {
 			waitForVisibilityOf(By.xpath(searchBar));
-			driver.findElement(By.xpath(searchBar)).sendKeys("Disha");
+			driver.findElement(By.xpath(searchBar)).sendKeys("test");
 			
 			//driver.findElement(By.xpath(searchBar)).sendKeys("pres");
 			highlightElement(By.xpath(searchBar));

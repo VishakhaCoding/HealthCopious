@@ -81,7 +81,7 @@ public class MoreInformation {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 		driver = new ChromeDriver();
 
@@ -90,7 +90,7 @@ public class MoreInformation {
 		// driver.get("http://stage.copious.care:4200/");
 		// driver.get("https://stage.copious.care/");
 		
-		driver.get("https://opd.copious.care/");
+		driver.get("https://app.copious.care/");
 		driver.manage().window().fullscreen();
 	}
 
@@ -153,7 +153,7 @@ Thread.sleep(1000);
 	@Test(priority = 4)
 	public void searchBar() {
 		waitForVisibilityOf(By.xpath(searchBar));
-		driver.findElement(By.xpath(searchBar)).sendKeys("Uopdtest");
+		driver.findElement(By.xpath(searchBar)).sendKeys("cccc");
 
 		highlightElement(By.xpath(searchBar));
 		clickUsingJavaScript(By.xpath(searchBar));

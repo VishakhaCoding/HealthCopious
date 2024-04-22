@@ -36,7 +36,7 @@ public class MultiplePatientCreation {
 		dc.setCapability("–session-override",true);
 		  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 		  dc.setCapability("noReset", false) ;
-		dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+		dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
 		dc.setCapability("appPackage","com.calculator_apps");
 		dc.setCapability("appActivity","com.calculator_apps.MainActivity");
@@ -253,11 +253,11 @@ public class MultiplePatientCreation {
 
 			  Thread.sleep(2000);
 			
-			  WebElement YearDropdown = driver.findElement(By.xpath("//*[@text='2023']"));
+			  WebElement YearDropdown = driver.findElement(By.xpath("//*[@text='2024']"));
 			  YearDropdown.click();
 
 			  Thread.sleep(2000);
-			  WebElement Year= driver.findElement(By.xpath("//*[@text='2021']"));
+			  WebElement Year= driver.findElement(By.xpath("//*[@text='2022']"));
 			  Year.click();
 
 			}
@@ -265,7 +265,7 @@ public class MultiplePatientCreation {
 			public void Birthok() throws InterruptedException {
 				Thread.sleep(2000);
 
-				
+														
 
 				WebElement Birthok = driver.findElement(By.xpath("//*[@text='Ok']"));
 				 Birthok.click();

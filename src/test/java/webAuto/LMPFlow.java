@@ -218,7 +218,7 @@ public class LMPFlow {
 		
 		public static String LMP="//*[text()='MIN']/following::span[7]";
 		
-		public static String LMPDate="//*[text()=' 13 ']"; 
+		public static String LMPDate="//*[text()=' 2 ']"; 
 		public static String Age="/html/body/div[4]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[5]/div[1]/mat-form-field[2]/div/div[1]/div/input";
 		 public static String AdultbirthDate="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[5]/div[1]/mat-form-field[1]/div/div[1]/div[1]/input";
 		 public static String AdultSelectDate="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-month-view/table/tbody/tr[3]/td[3]/div[1]";		
@@ -257,7 +257,7 @@ public class LMPFlow {
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -374,7 +374,7 @@ public class LMPFlow {
 		@Test(priority = 8, groups = "Regression")
 		public void firstName() {
 			waitForVisibilityOf(By.xpath(firstName));
-			driver.findElement(By.xpath(firstName)).sendKeys("LmpSeptWebopdtest");
+			driver.findElement(By.xpath(firstName)).sendKeys("cccc");
 			;
 			highlightElement(By.xpath(firstName));
 			clickUsingJavaScript(By.xpath(firstName));
@@ -670,7 +670,7 @@ public class LMPFlow {
 			  driver.findElement(By.xpath(clickEditProfile));
 			  highlightElement(By.xpath(clickEditProfile));
 			  clickUsingJavaScript(By.xpath(clickEditProfile));
-			  
+			  Thread.sleep(10000);
 			  waitForVisibilityOf(By.xpath(Next));
 			  driver.findElement(By.xpath(Next));
 			  	highlightElement(By.xpath(Next));

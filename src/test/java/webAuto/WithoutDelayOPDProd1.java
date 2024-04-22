@@ -206,7 +206,7 @@ public class WithoutDelayOPDProd1 {
 	public static String PaymentMethodDropdown = "/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[1]/mat-form-field[2]/div/div[1]/div/mat-select";
 	public static String PaymentMethod = "/html/body/div[2]/div[4]/div/div/div/mat-option[1]/span";
 	public static String CreateReceipt = "/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[3]/button[2]";
-	public static String CloseReceipt = "//*[text()='×']";
+	public static String CloseReceipt = "//*[text()='ï¿½']";
 	public static String OtheCharges = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-receipt/div/div[2]/div/div[10]/div[3]/input";
 	public static String AddMoreButton = "//*[text()='Add More']";
 	public static String ExtraOtherCharges = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-receipt/div/div[2]/div/div[11]/div[2]/div/input";
@@ -231,15 +231,15 @@ public class WithoutDelayOPDProd1 {
 	public static String ReferralPreview = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[7]/button";
 	public static String ReferralSaveAndShare = "/html/body/div[2]/div[4]/div/mat-dialog-container/div/div[2]/div[2]/div";
 	public static String ViewReceipt = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-receipt/div/div[1]/div[3]/div/table/tbody/tr/td[4]/div";
-	public static String CloseCertificate = "//*[text()='×']";
+	public static String CloseCertificate = "//*[text()='ï¿½']";
 	public static String ViewCirtificate = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-certificate/div/div[2]/div/table/tbody/tr/td[5]/div";
-	public static String CloseCirtificate = "//*[text()='×']";
+	public static String CloseCirtificate = "//*[text()='ï¿½']";
 	public static String ViewReceiptDoc = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-history/div/mat-tab-group/div/mat-tab-body[1]/div/div/div/table/tbody/tr[1]/td[5]/div";
-	public static String CloseReceipt1 = "//*[text()='×']";
+	public static String CloseReceipt1 = "//*[text()='ï¿½']";
 	public static String AllDocuments = "//*[text()='All Documents']";
 	public static String CertificateOption = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-history/div/mat-tab-group/mat-tab-header/div[2]/div/div/div[5]";
 	public static String ViewCirtificateDoc = "//*[text()=' View ']";
-	public static String CloseCirtificateDoc = "//*[text()='×']";
+	public static String CloseCirtificateDoc = "//*[text()='ï¿½']";
 	public static String InstructionAdd = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[7]/div/div/div/div[1]/div[3]/div/div/button";
 	
 	public static String AddNewAppointment="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[2]/div[2]/div[1]/app-patient/div/div/div/div/div[2]/div/div/ul/a/li/a/div/div[3]/figure/a[2]";
@@ -284,7 +284,7 @@ public class WithoutDelayOPDProd1 {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

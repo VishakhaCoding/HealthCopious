@@ -70,7 +70,7 @@ public class PreviDateReceipt {
 	public static String PaymentMethodDropdown = "/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[1]/mat-form-field[2]/div/div[1]/div/mat-select";
 	public static String PaymentMethod = "/html/body/div[2]/div[4]/div/div/div/mat-option[1]/span";
 	public static String CreateReceipt = "/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[3]/button[2]";
-	public static String CloseReceipt = "//*[text()='�']";
+	public static String CloseReceipt = "//*[text()='×']";
 	public static String OtheCharges = "//div[@class='searchBox']//following::input[7]";
 	public static String AddMoreButton = "//*[text()='Add More']";
 	public static String ExtraOtherCharges = "//div[@class='searchBox']//following::input[8]";
@@ -152,7 +152,7 @@ public static void waitForVisibilityOf(By by) {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -230,7 +230,7 @@ public static void waitForVisibilityOf(By by) {
 	@Test(priority = 4)
 	public void searchBar1() {
 		waitForVisibilityOf(By.xpath(searchBar));
-		driver.findElement(By.xpath(searchBar)).sendKeys("Gopdtest");
+		driver.findElement(By.xpath(searchBar)).sendKeys("test");
 		highlightElement(By.xpath(searchBar));
 		clickUsingJavaScript(By.xpath(searchBar));
 	}

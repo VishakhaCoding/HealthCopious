@@ -13,6 +13,7 @@
             <configuration>
                 <suiteXmlFiles>
                     <suiteXmlFile>AppEnd1.xml</suiteXmlFile>
+                     <suiteXmlFile>PivotalEnd1.xml</suiteXmlFile>
                 </suiteXmlFiles>
             </configuration>
         </plugin>

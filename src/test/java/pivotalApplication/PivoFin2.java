@@ -103,7 +103,7 @@ public void Search() throws InterruptedException {
 
 	WebElement SearchBar =  driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
 	//SearchBar.sendKeys("PivoTotal119Automations");
-	SearchBar.sendKeys("Pivota22April");
+	SearchBar.sendKeys("Pivotal21May");
 
 	Thread.sleep(2000);
 	WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -737,7 +737,7 @@ public void Gallery() throws InterruptedException, IndexOutOfBoundsException {
 @Test(priority = 60)
 public void photo() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(10000);
- driver.findElement(By.xpath("(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[2]")).click();
+ driver.findElement(By.xpath("(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[1]")).click();
 
 	
 

@@ -35,7 +35,7 @@ public class BookLabTest extends AppiumServerStart{
 	dc.setCapability("–session-override",true);
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-release-16-Aug.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\healthapp-release-23-apr.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage", "com.calculator_parent_apps");
 	dc.setCapability("appActivity", "com.calculator_parent_apps.MainActivity");
@@ -135,9 +135,9 @@ public void Verify() throws MalformedURLException, InterruptedException {
 public void SelectFamilyMember() throws MalformedURLException, InterruptedException {
 
 
-	List<WebElement> SelectFamilyMember =driver.findElements(By.className(
-			"android.view.ViewGroup"));
-	SelectFamilyMember.get(8).click();
+	 Thread.sleep(5000);
+	 List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+		SelectFamilyMember.get(0).click();
 
 	
 	  Thread.sleep(5000);
@@ -149,7 +149,7 @@ public void AddButton() throws MalformedURLException, InterruptedException {
 
 	List<WebElement> AddButton =driver.findElements(By.className(
 			"android.widget.TextView"));
-	AddButton.get(78).click();
+	AddButton.get(62).click();
 
 	
 	  Thread.sleep(5000);
@@ -215,18 +215,18 @@ public void VaccineLabel() throws InterruptedException, IndexOutOfBoundsExceptio
 	Thread.sleep(2000);
 	WebElement allow
 
-			= driver.findElement(By.xpath("//*[@text='Allow']"));
+			= driver.findElement(By.xpath("//*[@text='While using the app']"));
 	allow.click();
 
-	WebElement allow1
+	/*
+	 * WebElement allow1
+	 * 
+	 * = driver.findElement(By.xpath("//*[@text='Allow']")); allow1.click();
+	 * Thread.sleep(2000); ;
+	 */
 
-			= driver.findElement(By.xpath("//*[@text='Allow']"));
-	allow1.click();
 	Thread.sleep(2000);
-	;
-
-	Thread.sleep(2000);
-	WebElement CameraClick = driver.findElement(By.xpath("//CenterButtonGroup[@content-desc=\"NONE\"]"));
+	WebElement CameraClick = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Take picture\"]"));
 	CameraClick.click();
 
 	Thread.sleep(5000);

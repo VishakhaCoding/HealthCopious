@@ -1,18 +1,18 @@
 package healthApp;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class HealthLogout extends HealthLogin {
 	
-	@Test(priority = 1)
+	
+	
+	@Test(priority = 5)
 	public void menu() throws InterruptedException {
 	
 
-	Thread.sleep(2000);
+	Thread.sleep(10000);
 	WebElement menu
 	=driver.findElement(By.xpath("//*[@text='Menu']"));
 	menu.click();

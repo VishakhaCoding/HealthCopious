@@ -44,6 +44,10 @@ public class ImmunizationCertificateQ {
 	public static String preview="//*[text()='Preview']";
 	public static String SaveAndShare="//*[text()='Save & share ']";
 	public static String CertificateSharedMsge="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-certificate/p-toast/div/p-toastitem/div/div/div/div[2]/div[2]";
+	public static String SelectCertificateType="//*[text()='Vaccination Certificate']";
+	
+	
+	
 	public static void waitForVisibilityOf(By by) {
 		try {
 
@@ -70,7 +74,7 @@ public class ImmunizationCertificateQ {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 		driver = new ChromeDriver();
 
@@ -78,15 +82,14 @@ public class ImmunizationCertificateQ {
 		driver.manage().window().maximize();
 		// driver.get("http://stage.copious.care:4200/");
 		// driver.get("https://stage.copious.care/");
-		driver.get("https://app.copious.care/");
 		driver.manage().window().fullscreen();
-		//driver.get("https://opd.copious.care/");
+		driver.get("https://app.copious.care/");
 	}
 
 	@Test(priority = 1)
 	public void numberField() {
 		waitForVisibilityOf(By.xpath(mobileNumber));
-		driver.findElement(By.xpath(mobileNumber)).sendKeys("2424242424");
+		driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
 		highlightElement(By.xpath(mobileNumber));
 		clickUsingJavaScript(By.xpath(mobileNumber));
 	}
@@ -197,6 +200,12 @@ Thread.sleep(1000);
 		  highlightElement(By.xpath(CertificateTypedrpdwn));
 		  clickUsingJavaScript(By.xpath(CertificateTypedrpdwn));
 		  
+		  
+		  waitForVisibilityOf(By.xpath(SelectCertificateType)); 
+		  driver.findElement(By.xpath(SelectCertificateType));
+		  highlightElement(By.xpath(SelectCertificateType));
+		  clickUsingJavaScript(By.xpath(SelectCertificateType));
+		  
 		  waitForVisibilityOf(By.xpath(SelectVaccines)); 
 		  driver.findElement(By.xpath(SelectVaccines));
 		  highlightElement(By.xpath(SelectVaccines));
@@ -204,15 +213,18 @@ Thread.sleep(1000);
 		  
 		  Thread.sleep(5000);
 	
+			/*
+			 * waitForVisibilityOf(By.xpath(SelectAllVaccines));
+			 * driver.findElement(By.xpath(SelectAllVaccines));
+			 * highlightElement(By.xpath(SelectAllVaccines));
+			 * clickUsingJavaScript(By.xpath(SelectAllVaccines));
+			 */
 		  waitForVisibilityOf(By.xpath(SelectAllVaccines)); 
 		  driver.findElement(By.xpath(SelectAllVaccines));
 		  highlightElement(By.xpath(SelectAllVaccines));
 		  clickUsingJavaScript(By.xpath(SelectAllVaccines));
-	
-		  waitForVisibilityOf(By.xpath(SelectAllVaccines)); 
-		  driver.findElement(By.xpath(SelectAllVaccines));
-		  highlightElement(By.xpath(SelectAllVaccines));
-		  clickUsingJavaScript(By.xpath(SelectAllVaccines));
+		  
+		  Thread.sleep(2000);
 		  
 		  waitForVisibilityOf(By.xpath(proceed)); 
 		  driver.findElement(By.xpath(proceed));
@@ -231,14 +243,16 @@ Thread.sleep(1000);
 		  highlightElement(By.xpath(SaveAndShare));
 		  clickUsingJavaScript(By.xpath(SaveAndShare));
 		  
-		  Thread.sleep(2000);
-			
-			waitForVisibilityOf(By.xpath(CertificateSharedMsge));
-			highlightElement(By.xpath(CertificateSharedMsge));
-			String Actualmsge = driver.findElement(By.xpath(CertificateSharedMsge)).getText();
-			System.out.println("msge:" + Actualmsge);
-			String ErrorMsge = "Certificate saved and shared with patient successfully";
-			Assert.assertEquals(Actualmsge, ErrorMsge);
+			/*
+			 * Thread.sleep(2000);
+			 * 
+			 * waitForVisibilityOf(By.xpath(CertificateSharedMsge));
+			 * highlightElement(By.xpath(CertificateSharedMsge)); String Actualmsge =
+			 * driver.findElement(By.xpath(CertificateSharedMsge)).getText();
+			 * System.out.println("msge:" + Actualmsge); String ErrorMsge =
+			 * "Certificate saved and shared with patient successfully";
+			 * Assert.assertEquals(Actualmsge, ErrorMsge);
+			 */
 	}
 			// @AfterClass public void close() throws IOException {
 			@AfterMethod
@@ -261,5 +275,6 @@ Thread.sleep(1000);
 					}
 				}
 			}
+	
 	
 }

@@ -120,14 +120,14 @@ public class EditCancelQ {
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			//driver.get("http://stage.copious.care:4200/");
 			//driver.get("https://stage.copious.care/");
+			//driver.get("https://opd.copious.care/");
 			driver.get("https://app.copious.care/");
-			driver.get("https://opd.copious.care/");
 			 driver.manage().window().fullscreen();
 		}
 
@@ -191,7 +191,7 @@ public class EditCancelQ {
 			
 			
 			waitForVisibilityOf(By.xpath(searchBar));
-			driver.findElement(By.xpath(searchBar)).sendKeys("Bopdtest");
+			driver.findElement(By.xpath(searchBar)).sendKeys("test");
 			highlightElement(By.xpath(searchBar));
 			clickUsingJavaScript(By.xpath(searchBar));
 		}
@@ -205,7 +205,7 @@ public class EditCancelQ {
 			clickUsingJavaScript(By.xpath(searchOpt));
 		}
 
-		  @Test(priority = 6) public void clickPatient() throws InterruptedException {
+		@Test(priority = 6) public void clickPatient() throws InterruptedException {
 		  Thread.sleep(10000);
 		  
 		  waitForVisibilityOf(By.cssSelector(clickPatient));

@@ -56,7 +56,7 @@ public class LogIn1 {
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 			
 		
 			 

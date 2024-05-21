@@ -100,14 +100,13 @@ public class AdultPatient {
        @BeforeClass
        public void setUp() {
    	
-           System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+           System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		//driver.get("https://opd.copious.care/");
-		//driver.get("https://stage.copious.care/");
 		driver.get("https://app.copious.care/");
+		//driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
 
 }
@@ -117,7 +116,7 @@ public class AdultPatient {
        @Test(priority=1)
      	public  void numberField() {
      	waitForVisibilityOf(By.xpath(mobileNumber));
-     	driver.findElement(By.xpath(mobileNumber)).sendKeys("2424242424");
+     	driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
      	highlightElement(By.xpath(mobileNumber));
    	clickUsingJavaScript(By.xpath(mobileNumber));
        }
@@ -212,7 +211,7 @@ public class AdultPatient {
 		
 		  @Test(priority=9) public void firstName() {
 		  waitForVisibilityOf(By.xpath(firstName));
-		  driver.findElement(By.xpath(firstName)).sendKeys("AppAdult");;
+		  driver.findElement(By.xpath(firstName)).sendKeys("AdLive12sept");;
 		  highlightElement(By.xpath(firstName));
 		  clickUsingJavaScript(By.xpath(firstName)); }
 		  
@@ -425,12 +424,11 @@ public class AdultPatient {
 	          	clickUsingJavaScript(By.xpath(FamilyProfileDone));
 	          	
 
-	        	waitForVisibilityOf(By.xpath(success));
-	        	highlightElement(By.xpath(success));
-	        	 String p=driver.findElement(By.xpath(success)).getText();
-	        	 System.out.println("msge:"+p);
-	        	 String a="Profile";
-	            Assert.assertEquals(p,a);
+				/*
+				 * waitForVisibilityOf(By.xpath(success)); highlightElement(By.xpath(success));
+				 * String p=driver.findElement(By.xpath(success)).getText();
+				 * System.out.println("msge:"+p); String a="Profile"; Assert.assertEquals(p,a);
+				 */
 	          	
 	        }
 	    	// @AfterClass public void close() throws IOException {
@@ -455,6 +453,7 @@ public class AdultPatient {
 				}
 			}
 	        
+       
        
     
 

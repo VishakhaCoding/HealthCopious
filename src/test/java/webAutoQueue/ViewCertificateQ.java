@@ -33,8 +33,8 @@ public class ViewCertificateQ {
 	public static String MessagePreviewclick="/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[4]/div";
 	public static String cirtificatePreview="/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/button";
 	public static String SaveAndShare="//*[text()='Save & share ']";
-	public static String ViewCirtificate="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-certificate/div/div[2]/div/table/tbody/tr/td[5]/div";
-	public static String CloseCirtificate="//*[text()='×']";
+	public static String ViewCirtificate="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/app-patient-certificate/div/div[2]/div/table/tbody/tr/td[5]/div";
+	public static String CloseCirtificate="//*[text()='Ã—']";
 	
 	public static String OTP1="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]"; 
 	   public static String OTP2="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[2]"; 
@@ -42,7 +42,7 @@ public class ViewCertificateQ {
 	   public static String OTP4="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
 	   public static String OTP5="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
 	   public static String OTP6="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]"; 
-	   public static String Document="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[1]/app-top-info-navbar/div/div[2]/div[5]";
+	   public static String Document="//*[text()='Documents']";
 	public static void waitForVisibilityOf(By by) {
 		try {
 
@@ -69,7 +69,7 @@ public class ViewCertificateQ {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 		
 	
 		
@@ -79,16 +79,15 @@ public class ViewCertificateQ {
 		driver.manage().window().maximize();
 		//driver.get("http://stage.copious.care:4200/");
 		//driver.get("https://stage.copious.care/");
-		driver.get("https://app.copious.care/");
 		driver.manage().window().fullscreen();
-		 //driver.get("https://opd.copious.care/");
+		 driver.get("https://app.copious.care/");
 	}
 
 	
 	@Test(priority = 1)
 	public void numberField() {
 		waitForVisibilityOf(By.xpath(mobileNumber));
-		driver.findElement(By.xpath(mobileNumber)).sendKeys("2424242424");
+		driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
 		highlightElement(By.xpath(mobileNumber));
 		clickUsingJavaScript(By.xpath(mobileNumber));
 	}
@@ -139,7 +138,7 @@ public class ViewCertificateQ {
 	@Test(priority = 4)
 	public void searchBar() {
 		waitForVisibilityOf(By.xpath(searchBar));
-		driver.findElement(By.xpath(searchBar)).sendKeys("test");
+		driver.findElement(By.xpath(searchBar)).sendKeys("Test");
 		
 		//driver.findElement(By.xpath(searchBar)).sendKeys("pres");
 		highlightElement(By.xpath(searchBar));
@@ -217,5 +216,4 @@ public class ViewCertificateQ {
 				}
 			}
 		}
-	  
 }

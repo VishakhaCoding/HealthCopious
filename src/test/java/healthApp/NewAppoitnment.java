@@ -30,7 +30,7 @@ public class NewAppoitnment extends AppiumServerStart {
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
 	//dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-release-16-Aug.apk");
-	dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-Stage-24-Nov.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\healthapp-release-23-apr.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage", "com.calculator_parent_apps");
 	dc.setCapability("appActivity", "com.calculator_parent_apps.MainActivity");
@@ -144,11 +144,12 @@ public void BookAppointment() throws MalformedURLException, InterruptedException
 @Test(priority = 6)
 public void SelectFamilyMember() throws MalformedURLException, InterruptedException {
 	
-	List<WebElement> SelectFamilyMember =driver.findElements(By.className(
-			"android.view.ViewGroup"));
-	SelectFamilyMember.get(15).click();
-
-	
+	/*
+	 * List<WebElement> SelectFamilyMember =driver.findElements(By.className(
+	 * "android.view.ViewGroup")); SelectFamilyMember.get(15).click();
+	 */
+	List<WebElement> els1 = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+	els1.get(0).click();
 	  Thread.sleep(2000);
 
 }
@@ -168,7 +169,7 @@ public void Doctor() throws MalformedURLException, InterruptedException {
 	
 
 	List<WebElement> Doctor =driver.findElements(By.xpath(
-			"//*[@text='Dr. Vishakha  Nawale ']"));
+			"//*[@text='Dr. vishakha Nawale']"));
 	Doctor.get(0).click();
 
 	
@@ -201,14 +202,22 @@ public void Time() throws MalformedURLException, InterruptedException {
 }
 @Test(priority = 11)
 public void PurposeVisit() throws MalformedURLException, InterruptedException {
-	List<WebElement> NewVisit =driver.findElements(By.xpath(
-			"//*[@text='New Visit']"));
-	NewVisit.get(0).clear();
 	
-	 Thread.sleep(2000);
-	List<WebElement> AddVisit =driver.findElements(By.xpath(
-			"//*[@text='󰐙']"));
-	AddVisit.get(0).click();
+	
+	List<WebElement> els1 = driver.findElements(By.xpath("(//android.widget.TextView[@text=\"󰐙\"])[1]"));
+	els1.get(0).click();
+	
+	/*
+	 * Thread.sleep(5000); List<WebElement> ScheduledVisit
+	 * =driver.findElements(By.xpath( "//*[@text='Scheduled Visit']"));
+	 * ScheduledVisit.get(0).clear();
+	 * 
+	 * Thread.sleep(2000);
+	 */
+		/*
+		 * List<WebElement> AddVisit =driver.findElements(By.xpath( "//*[@text='󰐙']"));
+		 * AddVisit.get(0).click();
+		 */
 	 Thread.sleep(2000);
 	 
 	 List<WebElement> Followup =driver.findElements(By.xpath(
@@ -232,8 +241,9 @@ public void PurposeVisit() throws MalformedURLException, InterruptedException {
 					 Thread.sleep(2000);
 					 
 					 List<WebElement> CfMild =driver.findElements(By.xpath(
-								"//*[@text='Mild']"));
+								"(//android.widget.TextView[@text='󰄳'])[3]"));
 					 CfMild.get(0).click();
+					 
 						 Thread.sleep(2000);
 						 
 						 List<WebElement> CfVomitting =driver.findElements(By.xpath(

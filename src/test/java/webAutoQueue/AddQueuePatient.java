@@ -15,7 +15,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class QueuePatient {
+public class AddQueuePatient {
 	public static WebDriver driver;
 
 	public static String doctorLoginLink = "/html/body/app-root/app-home-page/div/div/div/header[2]/div/div[4]/button";
@@ -64,7 +64,7 @@ public class QueuePatient {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();

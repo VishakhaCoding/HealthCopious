@@ -143,7 +143,7 @@ public class OpdEndToEndWorkFlow1 {
 
 	public static String DietaryAdviceOption = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[1]/mat-step-header[6]";
 
-	public static String DietaryAdd = "//*[text()='Eat green vegetables ']";
+	public static String DietaryAdd = "//*[text()='Balanced diet ']";
 	public static String DietaryAdvice = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[6]/div/div/div/div[2]/div[1]/div/div/div[1]/app-cutom-card/div";
 	public static String GeneralInstruction = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[1]/mat-step-header[7]/div[1]";
 	public static String GenInstruction = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[7]/div/div/div/div[2]/div[1]/div/div/div[1]/app-cutom-card/div";
@@ -372,7 +372,7 @@ public class OpdEndToEndWorkFlow1 {
 	@Test(priority = 8, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("MWebTest22April");
+		driver.findElement(By.xpath(firstName)).sendKeys("GWebTest15May");
 		;
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));
@@ -1077,7 +1077,7 @@ public class OpdEndToEndWorkFlow1 {
 
 		waitForVisibilityOf(By.xpath(FavouriteSearch));
 		highlightElement(By.xpath(FavouriteSearch));
-		driver.findElement(By.xpath(FavouriteSearch)).sendKeys("temp");
+		driver.findElement(By.xpath(FavouriteSearch)).sendKeys("Temp");
 
 		waitForVisibilityOf(By.cssSelector(FavouriteClick));
 		highlightElement(By.cssSelector(FavouriteClick));

@@ -32,10 +32,10 @@ public class RescheduleAppointment extends AppiumServerStart{
 	DesiredCapabilities dc = new DesiredCapabilities();
 	dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 	dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
 	//dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-release-16-Aug.apk");
-	dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-Stage-24-Nov.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\healthapp-release-23-apr.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage", "com.calculator_parent_apps");
 	dc.setCapability("appActivity", "com.calculator_parent_apps.MainActivity");
@@ -147,7 +147,7 @@ public void Verify() throws MalformedURLException, InterruptedException {
 		  List<WebElement> RescheduleAp =driver.findElements(By.xpath(
 					"//*[@text='Reschedule Appointment']"));
 		  RescheduleAp.get(0).click();
-
+		  Thread.sleep(5000);
 	}
 	
 	@Test(priority = 6)
@@ -166,7 +166,7 @@ public void Verify() throws MalformedURLException, InterruptedException {
 	public void Time1() throws MalformedURLException, InterruptedException {
 		
 
-		List<WebElement> Time =driver.findElements(By.xpath("//*[@text='04:20 pm']"
+		List<WebElement> Time =driver.findElements(By.xpath("//*[@text='04:00 pm']"
 				));
 		Time.get(0).click();
 
@@ -218,6 +218,7 @@ public void Verify() throws MalformedURLException, InterruptedException {
 						 
 						 List<WebElement> CfMild =driver.findElements(By.xpath(
 									"//*[@text='Persistant']"));
+						 CfMild.get(0).click();
 						 CfMild.get(0).click();
 							 Thread.sleep(2000);
 							 
@@ -287,7 +288,7 @@ public void Verify() throws MalformedURLException, InterruptedException {
 		  List<WebElement> EditComplaints1 =driver.findElements(By.xpath(
 					"//*[@text='󰅜']"));
 			EditComplaints1.get(0).click();
-		  
+			 Thread.sleep(5000);
 			List<WebElement> Yes =driver.findElements(By.xpath(
 					"//*[@text='YES']"));
 			Yes.get(0).click();
@@ -312,9 +313,10 @@ public void Verify() throws MalformedURLException, InterruptedException {
 	@Test(priority = 12)
 	public void UpdateComplaints() throws MalformedURLException, InterruptedException {
 		
-		List<WebElement> Done =driver.findElements(By.xpath(
-				"//*[@text='󰅜']"));
-		Done.get(0).click();
+		/*
+		 * List<WebElement> Done =driver.findElements(By.xpath( "//*[@text='󰅜']"));
+		 * Done.get(0).click();
+		 */
 		
 		 List<WebElement> CfFever =driver.findElements(By.xpath(
 					"//*[@text='Fever']"));
@@ -328,6 +330,7 @@ public void Verify() throws MalformedURLException, InterruptedException {
 				 
 				 List<WebElement> CfMild =driver.findElements(By.xpath(
 							"//*[@text='Mild']"));
+				 CfMild.get(0).click();
 				 CfMild.get(0).click();
 					 Thread.sleep(2000);
 					 

@@ -77,7 +77,7 @@ public class QMarathiCreatePatient {
 	public static String age = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[5]/div[1]/mat-form-field[2]/div/div[1]/div/input";
 	public static String familyProfile = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[1]/mat-step-header[4]/div[3]/div";
 	public static String Done = "/html/body/ngb-modal-window/div/div/div[3]/div";
-	public static String SelectDate = "/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-month-view/table/tbody/tr[1]/td[2]/div[1]";
+	public static String SelectDate = "//*[text()=' 1 ']";
 	public static String SelectMonth = "/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-year-view/table/tbody/tr[3]/td[4]/div[1]";
 	public static String ClickYearDropdown = "/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/mat-calendar-header/div/div/button[1]";
 	public static String AddNewPrescription = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[2]/div[2]/div[1]/app-patient/div/div/div/div/div[2]/div/div/ul/a/li/a/div/div[3]/figure/a[1]/img";
@@ -190,7 +190,12 @@ public class QMarathiCreatePatient {
 	public static String Queue="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[2]/div[2]/div[1]/app-patient/div/div/div/div/div[2]/div/div/ul/a[1]/li/a/div/div[3]/figure/a[2]/img";
 	public static String Join="//*[text()='Join']";
 	public static String JoinOk="//*[text()='Ok']";
-    public static void waitForVisibilityOf(By by) {
+	
+	
+	
+	
+	
+	public static void waitForVisibilityOf(By by) {
     	 try {
     	    	driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
     	      //  JavascriptExecutor jse = (JavascriptExecutor)driver;
@@ -215,13 +220,13 @@ public class QMarathiCreatePatient {
         @BeforeClass
         public void setUp() {
     	
-            System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
+		
 		driver.get("https://app.copious.care/");
-		//driver.get("https://opd.copious.care/");
 		//driver.get("http://stage.copious.care:4200/");
 		//driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
@@ -573,31 +578,47 @@ public class QMarathiCreatePatient {
     	}
 
     	@Test(priority = 24)
-    	public void Queue() throws InterruptedException {
+    	public void AddNewAppointment() throws InterruptedException {
+    		Thread.sleep(10000);
+
     		Thread.sleep(3000);
     		waitForVisibilityOf(By.xpath(Queue));
     		driver.findElement(By.xpath(Queue));
     		highlightElement(By.xpath(Queue));
     		clickUsingJavaScript(By.xpath(Queue));
-    	}
-    	@Test(priority = 25)
-    	public void Join() throws InterruptedException {
+    
+    	
     		Thread.sleep(3000);
     		waitForVisibilityOf(By.xpath(Join));
     		driver.findElement(By.xpath(Join));
     		highlightElement(By.xpath(Join));
     		clickUsingJavaScript(By.xpath(Join));
-    	}
-    	@Test(priority = 26)
-    	public void JoinOk() throws InterruptedException {
+    	
     		Thread.sleep(3000);
     		waitForVisibilityOf(By.xpath(JoinOk));
     		driver.findElement(By.xpath(JoinOk));
     		highlightElement(By.xpath(JoinOk));
     		clickUsingJavaScript(By.xpath(JoinOk));
+    		
+    		
+    		
+    		
+    		
+    		/*
+    		 * waitForVisibilityOf(By.xpath(AppointmentBooked));
+    		 * 
+    		 * highlightElement(By.xpath(AppointmentBooked)); String
+    		 * Actualmsge=driver.findElement(By.xpath(AppointmentBooked)).getText();
+    		 * System.out.println("msge:"+Actualmsge); String
+    		 * ErrorMsge="Appointment Created"; Assert.assertEquals(Actualmsge,ErrorMsge);
+    		 */
+    		 
+    		 
+    		 
+    		 
     	}
 
-    	@Test(priority = 27)
+    	@Test(priority = 25)
     	public void AddPrescription() throws InterruptedException {
     		Thread.sleep(15000);
     		waitForVisibilityOf(By.xpath(AddNewPrescription));
@@ -607,7 +628,7 @@ public class QMarathiCreatePatient {
 
     	}
 
-    	@Test(priority = 28)
+    	@Test(priority = 26)
     	public void Complaints() throws InterruptedException {
 
     		Thread.sleep(3000);
@@ -629,7 +650,7 @@ public class QMarathiCreatePatient {
 
     	}
 
-    	@Test(priority = 29)
+    	@Test(priority = 27)
     	public void VitalsOption() throws InterruptedException {
 
     		Thread.sleep(3000); // driver.manage().window().fullscreen();
@@ -669,7 +690,7 @@ public class QMarathiCreatePatient {
 
     	}
 
-    	@Test(priority = 30)
+    	@Test(priority = 28)
     	public void BpandHeartOption() throws InterruptedException {
 
     		Thread.sleep(15000);
@@ -696,7 +717,7 @@ public class QMarathiCreatePatient {
 
     	}
 
-    	@Test(priority = 31)
+    	@Test(priority = 29)
     	public void BloodAndAnalysis() throws InterruptedException {
 
     		Thread.sleep(15000);
@@ -727,7 +748,7 @@ public class QMarathiCreatePatient {
 
     	}
 
-    	@Test(priority = 32)
+    	@Test(priority = 30)
     	public void LipidProfile() throws InterruptedException {
 
     		Thread.sleep(15000);
@@ -754,7 +775,7 @@ public class QMarathiCreatePatient {
 
     	}
 
-    	@Test(priority = 33)
+    	@Test(priority = 31)
     	public void OnExamination() throws InterruptedException {
 
     		Thread.sleep(15000);
@@ -769,7 +790,7 @@ public class QMarathiCreatePatient {
 
     	}
 
-    	@Test(priority = 34)
+    	@Test(priority = 32)
     	public void Diagnosis() throws InterruptedException {
 
     		Thread.sleep(15000);
@@ -785,7 +806,7 @@ public class QMarathiCreatePatient {
 
     	}
 
-    	@Test(priority = 35)
+    	@Test(priority = 34)
     	public void Medicine1() throws InterruptedException {
 
     		Thread.sleep(15000);
@@ -854,7 +875,7 @@ public class QMarathiCreatePatient {
 
     	}
 
-    	@Test(priority = 36)
+    	@Test(priority = 35)
     	public void DietaryAdvice() throws InterruptedException {
 
     		Thread.sleep(15000);
@@ -871,7 +892,7 @@ public class QMarathiCreatePatient {
 
     	}
 
-    	@Test(priority = 37)
+    	@Test(priority = 36)
     	public void GeneralInstruction() throws InterruptedException {
 
     		Thread.sleep(15000);
@@ -893,7 +914,7 @@ public class QMarathiCreatePatient {
 
     	}
 
-    	@Test(priority = 38)
+    	@Test(priority = 37)
     	public void SaveandProceed() throws InterruptedException {
     		/*
     		 * waitForVisibilityOf(By.xpath(prescriptionSave));
@@ -909,7 +930,7 @@ public class QMarathiCreatePatient {
 
     	}
 
-    	@Test(priority = 39)
+    	@Test(priority = 38)
     	public void ConfirmPrescription() throws InterruptedException {
 
     		Thread.sleep(5000);

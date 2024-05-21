@@ -59,14 +59,13 @@ public static WebDriver driver;
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			//driver.get("http://stage.copious.care:4200/");
 			// driver.manage().window().fullscreen();
-			//driver.get("https://opd.copious.care/");
 			driver.get("https://app.copious.care/");
 			//driver.get("https://stage.copious.care/");
 			driver.manage().window().fullscreen();
@@ -136,7 +135,7 @@ public static WebDriver driver;
 			clickUsingJavaScript(By.xpath(Favourite));
 			
 			waitForVisibilityOf(By.xpath(favouriteSearch));
-			driver.findElement(By.xpath(favouriteSearch)).sendKeys("April");;
+			driver.findElement(By.xpath(favouriteSearch)).sendKeys("fav");;
 			List<WebElement> Autos =driver.findElements(By.xpath("//div[@class='mat-list-item-content']"));
 			System.out.println("total suggestions="+Autos.size());
 			for(int i=0; i<Autos.size();i++)

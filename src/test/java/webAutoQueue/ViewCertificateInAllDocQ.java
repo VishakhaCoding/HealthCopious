@@ -30,7 +30,7 @@ public class ViewCertificateInAllDocQ {
 	
 	public static String SaveAndShare="//*[text()='Save & share ']";
 	public static String ViewCirtificateDoc="//*[text()=' View ']";
-	public static String CloseCirtificateDoc="//*[text()='×']";
+	public static String CloseCirtificateDoc="//*[text()='Ã—']";
 	
 	public static String OTP1="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]"; 
 	   public static String OTP2="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[2]"; 
@@ -38,8 +38,8 @@ public class ViewCertificateInAllDocQ {
 	   public static String OTP4="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
 	   public static String OTP5="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
 	   public static String OTP6="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]"; 
-	   public static String Document="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[1]/app-top-info-navbar/div/div[2]/div[5]";
-	public static String CertificateOption="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-history/div/mat-tab-group/mat-tab-header/div[2]/div/div/div[5]";
+	   public static String Document="//*[text()='Documents']";
+	public static String CertificateOption="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/app-patient-history/div/mat-tab-group/mat-tab-header/div[2]/div/div/div[5]/div";
 	   
 	   public static void waitForVisibilityOf(By by) {
 		try {
@@ -67,7 +67,7 @@ public class ViewCertificateInAllDocQ {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 		
 	
 		
@@ -76,9 +76,8 @@ public class ViewCertificateInAllDocQ {
 		driver.manage().window().maximize();
 		//driver.get("http://stage.copious.care:4200/");
 		//driver.get("https://stage.copious.care/");
-		driver.get("https://app.copious.care/");
 		driver.manage().window().fullscreen();
-		 //driver.get("https://opd.copious.care/");
+		 driver.get("https://app.copious.care/");
 	}
 
 	
@@ -86,7 +85,7 @@ public class ViewCertificateInAllDocQ {
 	@Test(priority = 1)
 	public void numberField() {
 		waitForVisibilityOf(By.xpath(mobileNumber));
-		driver.findElement(By.xpath(mobileNumber)).sendKeys("2424242424");
+		driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
 		highlightElement(By.xpath(mobileNumber));
 		clickUsingJavaScript(By.xpath(mobileNumber));
 	}
@@ -219,6 +218,5 @@ public class ViewCertificateInAllDocQ {
 				}
 			}
 		}
-	  
 
 }

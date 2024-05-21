@@ -41,16 +41,16 @@ public class Immunization {
 	public static String HealthProfile = "//*[text()='Health Profile']";
 	public static String ImmunizationOption = "//*[text()='Immunization']";
 	public static String ConfirmVaccinationDate = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/button";
-	public static String VaccineRecord = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/patient-immunization/div/div[3]/div/table/tbody/tr[1]/td[8]/div";
+	public static String VaccineRecord = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/patient-immunization/div/mat-tab-group/div/mat-tab-body[1]/div/div/div/table/tbody/tr[2]/td[8]/div";
 	public static String RecievedDate = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/div/img";
-	public static String ClickDate = "//*[text()='2']";
+	public static String ClickDate = "//*[text()='1']";
 	public static String SaveVaccine = "//*[text()='Save Vaccine']";
 	public static String SpecialVaccineClick = "//*[text()='Special Vaccines']";
 	public static String CholeraVacccine = "//*[text()='Meningococcal Vaccine']";
-	public static String SelectDate = "//*[text()='2']";
-	public static String ClickCalender = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[4]/div/img";
+	public static String SelectDate = "//*[text()='1']";
+	public static String ClickCalender = "html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[4]/div/img";
 	public static String SaveSpecialVaccine = "//*[text()='Save Vaccine']";
-
+	public static String BrandName="//*[text()='Tubaervac BCG']";
 	public static void waitForVisibilityOf(By by) {
 		try {
 
@@ -77,7 +77,7 @@ public class Immunization {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
 		driver = new ChromeDriver();
 
@@ -85,9 +85,8 @@ public class Immunization {
 		driver.manage().window().maximize();
 		// driver.get("http://stage.copious.care:4200/");
 		// driver.get("https://stage.copious.care/");
-		driver.get("https://app.copious.care/");
 		driver.manage().window().fullscreen();
-		//driver.get("https://opd.copious.care/");
+		driver.get("https://app.copious.care/");
 	}
 
 	@Test(priority = 1)
@@ -149,7 +148,7 @@ public class Immunization {
 	@Test(priority = 4)
 	public void searchBar() {
 		waitForVisibilityOf(By.xpath(searchBar));
-		driver.findElement(By.xpath(searchBar)).sendKeys("Test");
+		driver.findElement(By.xpath(searchBar)).sendKeys("immunization");
 
 		highlightElement(By.xpath(searchBar));
 		clickUsingJavaScript(By.xpath(searchBar));
@@ -220,26 +219,31 @@ public class Immunization {
 		driver.findElement(By.xpath(SaveSpecialVaccine));
 		highlightElement(By.xpath(SaveSpecialVaccine));
 		clickUsingJavaScript(By.xpath(SaveSpecialVaccine));
-
+Thread.sleep(5000);
 		waitForVisibilityOf(By.xpath(VaccineRecord));
-		driver.findElement(By.xpath(VaccineRecord));
-		highlightElement(By.xpath(VaccineRecord));
-		clickUsingJavaScript(By.xpath(VaccineRecord));
-
-		waitForVisibilityOf(By.xpath(RecievedDate));
-		driver.findElement(By.xpath(RecievedDate));
-		highlightElement(By.xpath(RecievedDate));
-		clickUsingJavaScript(By.xpath(RecievedDate));
-
-		waitForVisibilityOf(By.xpath(ClickDate));
-		driver.findElement(By.xpath(ClickDate));
-		highlightElement(By.xpath(ClickDate));
-		clickUsingJavaScript(By.xpath(ClickDate));
-
-		waitForVisibilityOf(By.xpath(SaveVaccine));
-		driver.findElement(By.xpath(SaveVaccine));
-		highlightElement(By.xpath(SaveVaccine));
-		clickUsingJavaScript(By.xpath(SaveVaccine));
+		  driver.findElement(By.xpath(VaccineRecord));
+		  highlightElement(By.xpath(VaccineRecord));
+		  clickUsingJavaScript(By.xpath(VaccineRecord));
+		  
+		  waitForVisibilityOf(By.xpath(BrandName));
+		  driver.findElement(By.xpath(BrandName));
+		  highlightElement(By.xpath(BrandName));
+		  clickUsingJavaScript(By.xpath(BrandName));
+		  
+		  waitForVisibilityOf(By.xpath(RecievedDate));
+		  driver.findElement(By.xpath(RecievedDate));
+		  highlightElement(By.xpath(RecievedDate));
+		  clickUsingJavaScript(By.xpath(RecievedDate));
+		  
+		  waitForVisibilityOf(By.xpath(ClickDate));
+		  driver.findElement(By.xpath(ClickDate));
+		  highlightElement(By.xpath(ClickDate));
+		  clickUsingJavaScript(By.xpath(ClickDate));
+		  
+		  waitForVisibilityOf(By.xpath(SaveVaccine));
+		  driver.findElement(By.xpath(SaveVaccine));
+		  highlightElement(By.xpath(SaveVaccine));
+		  clickUsingJavaScript(By.xpath(SaveVaccine));
 
 		/*
 		 * waitForVisibilityOf(By.xpath(BulkUpdate));

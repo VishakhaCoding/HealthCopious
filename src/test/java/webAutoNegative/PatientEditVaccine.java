@@ -24,6 +24,7 @@ public class PatientEditVaccine {
 	public static String searchBar = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[1]/div/div[1]/div[1]/input";
 	public static String searchOpt = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[1]/div/div[1]/div[3]/button";
 	public static String clickPatient = "li.clearfix";
+	public static String VaccineBrand = "//*[text()='Tubaervac BCG']";
 	public static String LinkPatient="button.new_btn";
 	public static String SearchDoctorMobile="/html/body/div[2]/div[2]/div/mat-dialog-container/div[1]/div/h4/div/div/div[1]/input";
 	public static String LinkOption="div.new_btn.ng-star-inserted";
@@ -51,7 +52,7 @@ public class PatientEditVaccine {
     public static String HealthProfile = "//*[text()='Health Profile']";
 	public static String ImmunizationOption = "//*[text()='Immunization']";
 	public static String ConfirmVaccinationDate = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/button";
-	public static String VaccineRecord = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/patient-immunization/div/div[3]/div/table/tbody/tr[1]/td[8]/div";
+	public static String VaccineRecord = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/patient-immunization/div/mat-tab-group/div/mat-tab-body[1]/div/div/div/table/tbody/tr[2]/td[8]/div";
 	public static String RecievedDate = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/div/img";
 	public static String ClickDate = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/div/ngb-datepicker/div[2]/div/ngb-datepicker-month/div[2]/div[3]/div";
 	public static String SaveVaccine = "//*[text()='Save Vaccine']";
@@ -130,13 +131,13 @@ public class PatientEditVaccine {
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			//driver.get("http://stage.copious.care:4200/");
 			//driver.get("https://stage.copious.care/");
-			driver.get("https://opd.copious.care/");
+			driver.get("https://app.copious.care/");
 			 driver.manage().window().fullscreen();
 		}
 
@@ -243,7 +244,7 @@ public class PatientEditVaccine {
 			
 			  @Test(priority=8) public void firstName() {
 			  waitForVisibilityOf(By.xpath(firstName));
-			  driver.findElement(By.xpath(firstName)).sendKeys("test");;
+			  driver.findElement(By.xpath(firstName)).sendKeys("EditVaccine");;
 			  highlightElement(By.xpath(firstName));
 			  clickUsingJavaScript(By.xpath(firstName)); }
 			  
@@ -511,11 +512,19 @@ public class PatientEditVaccine {
 	    		driver.findElement(By.xpath(SaveSpecialVaccine));
 	    		highlightElement(By.xpath(SaveSpecialVaccine));
 	    		clickUsingJavaScript(By.xpath(SaveSpecialVaccine));
+	    		
+	    		Thread.sleep(5000);
 
 	    		waitForVisibilityOf(By.xpath(VaccineRecord));
 	    		driver.findElement(By.xpath(VaccineRecord));
 	    		highlightElement(By.xpath(VaccineRecord));
 	    		clickUsingJavaScript(By.xpath(VaccineRecord));
+	    		
+	    		
+	    		waitForVisibilityOf(By.xpath(VaccineBrand));
+	    		driver.findElement(By.xpath(VaccineBrand));
+	    		highlightElement(By.xpath(VaccineBrand));
+	    		clickUsingJavaScript(By.xpath(VaccineBrand));
 
 	    		waitForVisibilityOf(By.xpath(RecievedDate));
 	    		driver.findElement(By.xpath(RecievedDate));
@@ -531,7 +540,7 @@ public class PatientEditVaccine {
 	    		driver.findElement(By.xpath(SaveVaccine));
 	    		highlightElement(By.xpath(SaveVaccine));
 	    		clickUsingJavaScript(By.xpath(SaveVaccine));
-	    		
+	    		Thread.sleep(10000);
 	    		 waitForVisibilityOf(By.xpath(clickEditProfile));
 				  driver.findElement(By.xpath(clickEditProfile));
 				  highlightElement(By.xpath(clickEditProfile));
@@ -541,7 +550,7 @@ public class PatientEditVaccine {
 				  driver.findElement(By.xpath(Next));
 				  	highlightElement(By.xpath(Next));
 					clickUsingJavaScript(By.xpath(Next));
-					
+					Thread.sleep(10000);
 					 highlightElement(By.xpath(height));
 					String h= driver.findElement(By.xpath(height)).getAttribute(height);
 					 System.out.println(h);
@@ -552,26 +561,4 @@ public class PatientEditVaccine {
 					  System.out.println(W);
 	            
 	        }
-	     // @AfterClass public void close() throws IOException {
-			@AfterMethod
-			public void screenShot(ITestResult result) { // using ITestResult.FAILURE is equals to result.getStatus then it
-				// enter into if condition
-				if (ITestResult.FAILURE == result.getStatus()) {
-					try { // To create reference of TakesScreenshot
-						EventFiringWebDriver edriver = new EventFiringWebDriver(driver); // Call method to capture screenshot
-						File src = edriver.getScreenshotAs(OutputType.FILE); // Copy files to specific location
-						// result.getName() will return name of test case so that screenshot name will
-						// be same as test case name
-						FileUtils.copyFile(src, new File("C:\\ScreenShotFolder\\" + result.getName() + ".png"));
-						System.out.println("Successfully captured a screenshot"); // driver.quit();
-					} catch (Exception e) {
-						System.out.println("Exception while taking screenshot " + e.getMessage());
-
-						// driver.quit();
-						// Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T"); }
-
-					}
-				}
-			}
-
 }

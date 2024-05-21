@@ -120,9 +120,9 @@ public class QLogIn {
 		}
 
 		@BeforeClass
-		public void setUp() {
+		public void setUp() throws InterruptedException {
 
-			System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 			
 			
 			driver = new ChromeDriver();
@@ -130,9 +130,9 @@ public class QLogIn {
 			driver.manage().window().maximize();
 			//driver.get("http://stage.copious.care:4200/");
 			//driver.get("https://stage.copious.care/");
-			driver.get("https://app.copious.care/");
 			driver.manage().window().fullscreen();
-			 //driver.get("https://opd.copious.care/");
+			 driver.get("https://app.copious.care/");
+			 Thread.sleep(5000);
 		}
 		@Test(priority = 1)
 		public void numberField1() {
@@ -255,7 +255,7 @@ public class QLogIn {
 		public void numberField6() {
 			driver.findElement(By.xpath(mobileNumber)).clear();
 			waitForVisibilityOf(By.xpath(mobileNumber));
-			driver.findElement(By.xpath(mobileNumber)).sendKeys("2424242424");
+			driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
 			highlightElement(By.xpath(mobileNumber));
 			clickUsingJavaScript(By.xpath(mobileNumber));
 		

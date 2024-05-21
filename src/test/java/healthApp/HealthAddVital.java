@@ -36,7 +36,7 @@ public class HealthAddVital extends AppiumServerStart   {
 	dc.setCapability("–session-override",true);
 	  dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 	  dc.setCapability("noReset", false) ;
-	dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-release-16-Aug.apk");
+	dc.setCapability(MobileCapabilityType.APP, "C:\\healthapp-release-23-apr.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage", "com.calculator_parent_apps");
 	dc.setCapability("appActivity", "com.calculator_parent_apps.MainActivity");
@@ -140,13 +140,16 @@ public void AddButton2() throws MalformedURLException, InterruptedException {
 	 * BackArrow.get(0).click();
 	 */
 	Thread.sleep(10000);
-	List<WebElement> SelectFamilyMember = driver.findElements(By.className("android.view.ViewGroup"));
-	SelectFamilyMember.get(8).click();
+	//List<WebElement> SelectFamilyMember = driver.findElements(By.className("android.view.ViewGroup"));
+	//SelectFamilyMember.get(8).click();
+	
+	List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+	SelectFamilyMember.get(0).click();
 
 	Thread.sleep(5000);
 
-	List<WebElement> AddButton = driver.findElements(By.className("android.widget.TextView"));
-	AddButton.get(78).click();
+	List<WebElement> AddButton = driver.findElements(By.xpath("(//android.widget.TextView[@text=\"󰐕\"])[2]"));
+	AddButton.get(0).click();
 
 	Thread.sleep(5000);
 
@@ -198,10 +201,16 @@ public void AddVitals() throws MalformedURLException, InterruptedException {
 
 	List<WebElement> HeartRate = driver.findElements(By.xpath("//*[@text='Heart Rate']"));
 	HeartRate.get(1).sendKeys("72");
+	
+	//List<WebElement> HeartRatetext = driver.findElements(By.xpath("//*[@text='Heart Rate']"));
+	//HeartRatetext.get(0).click();
 
+	//List<WebElement> Pulse1 = driver.findElements(By.xpath("//*[@text='Pulse']"));
+	//Pulse1.get(0).click();
+	
 	System.out.println("Before scrolling ....");
 	driver.findElement(AppiumBy.androidUIAutomator(
-			"new UiScrollable(new UiSelector().scrollable(false).instance(0)).scrollIntoView(new UiSelector().textContains(\"Save\").instance(0))"));
+			"new UiScrollable(new UiSelector().scrollable(false).instance(0)).scrollIntoView(new UiSelector().textContains(\"Bloodsugar (F)\").instance(0))"));
 	// Thread.sleep(10000);
 	// driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new
 	// UiSelector().scrollable(false).instance(0)).scrollIntoView(new

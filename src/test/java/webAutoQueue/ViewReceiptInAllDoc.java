@@ -33,9 +33,9 @@ public class ViewReceiptInAllDoc {
 	   public static String OTP4="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
 	   public static String OTP5="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
 	   public static String OTP6="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]"; 
-	   public static String Document="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[1]/app-top-info-navbar/div/div[2]/div[5]";
-	public static String ViewReceiptDoc="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-history/div/mat-tab-group/div/mat-tab-body[1]/div/div/div/table/tbody/tr[1]/td[5]/div";
-	public static String CloseReceipt="//*[text()='×']";
+	   public static String Document="//*[text()='Documents']";
+	public static String ViewReceiptDoc="//*[text()=' View ']";
+	public static String CloseReceipt="//*[text()='Ã—']";
 	   
 	   
 	   
@@ -65,7 +65,7 @@ public class ViewReceiptInAllDoc {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 		
 		
 		
@@ -74,8 +74,7 @@ public class ViewReceiptInAllDoc {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		//driver.get("http://stage.copious.care:4200/");
-		driver.get("https://app.copious.care/");
-		//driver.get("https://stage.copious.care/");
+		driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
 		 //driver.get("https://opd.copious.care/");
 	}
@@ -83,7 +82,7 @@ public class ViewReceiptInAllDoc {
 	@Test(priority = 1)
 	public void numberField() {
 		waitForVisibilityOf(By.xpath(mobileNumber));
-		driver.findElement(By.xpath(mobileNumber)).sendKeys("2424242424");
+		driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
 		highlightElement(By.xpath(mobileNumber));
 		clickUsingJavaScript(By.xpath(mobileNumber));
 	}

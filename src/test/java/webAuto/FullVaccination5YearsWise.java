@@ -262,7 +262,7 @@ public static String HPV1by2Record="//*[text()=' HPV (1/2) (10 years) ']//follow
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 
-		driver.get("https://opd.copious.care/");
+		driver.get("https://app.copious.care/");
 		// driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
 
@@ -370,7 +370,7 @@ public static String HPV1by2Record="//*[text()=' HPV (1/2) (10 years) ']//follow
 	@Test(priority = 8)
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("zzzz");
+		driver.findElement(By.xpath(firstName)).sendKeys("HHHH");
 
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));

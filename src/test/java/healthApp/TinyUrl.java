@@ -13,8 +13,9 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import pivotalApplication.AppiumServerStart;
 
-public class TinyUrl  {
+public class TinyUrl extends AppiumServerStart {
 	
 	static AppiumDriver driver;
 
@@ -33,7 +34,7 @@ public class TinyUrl  {
 		dc.setCapability("–session-override",true);
 		dc.setCapability("noReset", false) ;
 		//dc.setCapability("FullReset", false) ;
-		dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-release-16-Aug.apk");
+		dc.setCapability(MobileCapabilityType.APP, "C:\\healthapp-release-23-apr.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
 		dc.setCapability("appPackage", "com.calculator_parent_apps");
 		dc.setCapability("appActivity", "com.calculator_parent_apps.MainActivity");

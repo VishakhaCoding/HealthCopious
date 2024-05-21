@@ -190,7 +190,7 @@ public class PivoFin1 extends AppiumServerStart {
 		Thread.sleep(2000);
 
 		WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-		FirstName.sendKeys("Pivota22April");
+		FirstName.sendKeys("Pivotal21May");
 		//FirstName.sendKeys("abhaPatient1Dec");
 		Thread.sleep(2000);
 
@@ -877,7 +877,7 @@ public class PivoFin1 extends AppiumServerStart {
 		SelectPatient.get(0).click();
 		Thread.sleep(5000);
 		List<WebElement> Seatchbar = driver.findElements(By.xpath("//*[@text='Name / Mobile']"));
-		Seatchbar.get(0).sendKeys("Pivota22April");
+		Seatchbar.get(0).sendKeys("Pivotal21May");
 		Thread.sleep(5000);
 		List<WebElement> Search = driver.findElements(By.className("android.widget.TextView"));
 		Search.get(1).click();
@@ -1349,7 +1349,7 @@ public class PivoFin1 extends AppiumServerStart {
 
 	@Test(priority = 128)
 	public void AtBirth() throws InterruptedException, IndexOutOfBoundsException {
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		WebElement AtBirth = driver.findElement(By.xpath("//*[@text='At Birth']"));
 		AtBirth.click();
 
@@ -1441,16 +1441,17 @@ Thread.sleep(2000);
 	 * }
 	 */
 
-	@Test(priority = 134)
-	public void BulkUpdate() throws InterruptedException, IndexOutOfBoundsException {
-		Thread.sleep(2000);
-		WebElement BulkUpdate = driver.findElement(By.xpath("//*[@text='Bulk-Update']"));
-		BulkUpdate.click();
-
-		Thread.sleep(5000);
-
-	}
-
+	
+	
+	  @Test(priority = 134) public void BulkUpdate() throws InterruptedException,
+	  IndexOutOfBoundsException { Thread.sleep(5000); WebElement BulkUpdate =
+	  driver.findElement(By.xpath("//*[@text='Bulk-Update']")); BulkUpdate.click();
+	  
+	  Thread.sleep(5000);
+	  
+	  }
+	  
+	 
 	@Test(priority = 135)
 	public void PCV() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
@@ -1578,7 +1579,7 @@ Thread.sleep(2000);
 	public void GallariesPhoto() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(
-				"(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[2]"))
+				"(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[1]"))
 				.click();
 
 		Thread.sleep(5000);
@@ -1687,6 +1688,9 @@ Thread.sleep(2000);*/
 
 	
 	
+	
+	
+	
 	  @Test(priority = 150) public void BulkCancel() throws InterruptedException,
 	  IndexOutOfBoundsException { Thread.sleep(5000);
 	  
@@ -1698,6 +1702,9 @@ Thread.sleep(2000);*/
 	  
 	  
 	  }
+	 
+	 
+	 
 	 
 	 
 		
@@ -1885,7 +1892,7 @@ Thread.sleep(2000);*/
 	public void photo() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(10000);
 		driver.findElement(By.xpath(
-				"(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[2]"))
+				"(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[1]"))
 				.click();
 
 	}

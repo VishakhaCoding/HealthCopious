@@ -108,13 +108,12 @@ public class EditPatientProfile {
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			//driver.get("http://stage.copious.care:4200/");
 			//driver.get("https://stage.copious.care/");
-			//driver.get("https://opd.copious.care/");
 			driver.get("https://app.copious.care/");
 			 driver.manage().window().fullscreen();
 		}
@@ -123,7 +122,7 @@ public class EditPatientProfile {
 		@Test(priority = 1,groups="log")
 		public void numberField() {
 			waitForVisibilityOf(By.xpath(mobileNumber));
-			driver.findElement(By.xpath(mobileNumber)).sendKeys("2424242424");
+			driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
 			highlightElement(By.xpath(mobileNumber));
 			clickUsingJavaScript(By.xpath(mobileNumber));
 		}
@@ -174,7 +173,7 @@ public class EditPatientProfile {
 		@Test(priority = 4,groups="log")
 		public void searchBar() {
 			waitForVisibilityOf(By.xpath(searchBar));
-			driver.findElement(By.xpath(searchBar)).sendKeys("test");
+			driver.findElement(By.xpath(searchBar)).sendKeys("Test");
 			
 			//driver.findElement(By.xpath(searchBar)).sendKeys("pres");
 			highlightElement(By.xpath(searchBar));
@@ -209,7 +208,7 @@ public class EditPatientProfile {
 		  @Test(priority=7) public void firstName() {
 			  waitForVisibilityOf(By.xpath(firstName));
 			  driver.findElement(By.xpath(firstName)).clear();
-			  driver.findElement(By.xpath(firstName)).sendKeys("Edit");
+			  driver.findElement(By.xpath(firstName)).sendKeys("WeightEdit");
 			  highlightElement(By.xpath(firstName));
 			  clickUsingJavaScript(By.xpath(firstName)); 
 			  

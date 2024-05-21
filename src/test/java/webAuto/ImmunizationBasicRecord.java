@@ -1,6 +1,9 @@
 package webAuto;
 
 import java.io.File;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -8,10 +11,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -150,7 +153,7 @@ public class ImmunizationBasicRecord {
 	@Test(priority = 4)
 	public void searchBar() {
 		waitForVisibilityOf(By.xpath(searchBar));
-		driver.findElement(By.xpath(searchBar)).sendKeys("BBBB");
+		driver.findElement(By.xpath(searchBar)).sendKeys("SystemDate");
 
 		highlightElement(By.xpath(searchBar));
 		clickUsingJavaScript(By.xpath(searchBar));
@@ -207,16 +210,49 @@ public class ImmunizationBasicRecord {
 		highlightElement(By.xpath(CholeraVacccine));
 		clickUsingJavaScript(By.xpath(CholeraVacccine));
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		waitForVisibilityOf(By.xpath(ClickCalender));
 		driver.findElement(By.xpath(ClickCalender));
 		highlightElement(By.xpath(ClickCalender));
 		clickUsingJavaScript(By.xpath(ClickCalender));
+		
+		
+		
+		System.out.print("Dateclick");
+		
+		
+		  LocalDate currentDate = LocalDate.now();
 
-		waitForVisibilityOf(By.xpath(SelectDate));
-		driver.findElement(By.xpath(SelectDate));
-		highlightElement(By.xpath(SelectDate));
-		clickUsingJavaScript(By.xpath(SelectDate));
+	        // Format current date to match expected format in the calendar
+	        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("d");
+	        String formattedDay = currentDate.format(dateFormatter);
 
+	        // Locate the calendar element
+	       // WebElement calendar = driver.findElement(By.xpath(ClickCalender));
+
+	        // Find and click the day element corresponding to the current date
+	       // WebElement dayElement = calendar.findElement(By.xpath("//*[text()='" + formattedDay + "']"));
+	        //dayElement.click();
+		 
+	        clickUsingJavaScript(By.xpath("//*[text()='" + formattedDay + "']"));
+		  System.out.print("Dateclicked");
+
+			
+				/*
+				 * waitForVisibilityOf(By.xpath(SelectDate));
+				 * driver.findElement(By.xpath(SelectDate));
+				 * highlightElement(By.xpath(SelectDate));
+				 * clickUsingJavaScript(By.xpath(SelectDate));
+				 */
+			 
 		waitForVisibilityOf(By.xpath(SaveSpecialVaccine));
 		driver.findElement(By.xpath(SaveSpecialVaccine));
 		highlightElement(By.xpath(SaveSpecialVaccine));
@@ -237,11 +273,23 @@ Thread.sleep(5000);
 		  highlightElement(By.xpath(RecievedDate));
 		  clickUsingJavaScript(By.xpath(RecievedDate));
 		  
-		  waitForVisibilityOf(By.xpath(ClickDate));
-		  driver.findElement(By.xpath(ClickDate));
-		  highlightElement(By.xpath(ClickDate));
-		  clickUsingJavaScript(By.xpath(ClickDate));
 		  
+		  LocalDate currentDate1 = LocalDate.now();
+
+	        // Format current date to match expected format in the calendar
+	        DateTimeFormatter dateFormatter1 = DateTimeFormatter.ofPattern("d");
+	        String formattedDay1 = currentDate1.format(dateFormatter1);
+
+	        
+		 
+	        clickUsingJavaScript(By.xpath("//*[text()='" + formattedDay1 + "']"));
+		  
+			/*
+			 * waitForVisibilityOf(By.xpath(ClickDate));
+			 * driver.findElement(By.xpath(ClickDate));
+			 * highlightElement(By.xpath(ClickDate));
+			 * clickUsingJavaScript(By.xpath(ClickDate));
+			 */
 		  waitForVisibilityOf(By.xpath(SaveVaccine));
 		  driver.findElement(By.xpath(SaveVaccine));
 		  highlightElement(By.xpath(SaveVaccine));

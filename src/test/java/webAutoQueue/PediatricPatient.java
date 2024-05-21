@@ -71,18 +71,18 @@ public class PediatricPatient {
     public static String age="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[5]/div[1]/mat-form-field[2]/div/div[1]/div/input";
     public static String familyProfile="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[1]/mat-step-header[4]/div[3]/div";
     public static String Done="/html/body/ngb-modal-window/div/div/div[3]/div";
-    public static String SelectDate="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-month-view/table/tbody/tr[1]/td[2]/div[1]";		
+    public static String SelectDate="//*[text()=' 1 ']";		
 	  public static String SelectMonth ="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-year-view/table/tbody/tr[3]/td[4]/div[1]";
 	   public static String ClickYearDropdown="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/mat-calendar-header/div/div/button[1]";
 	   public static String clickYear="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-multi-year-view/table/tbody/tr[5]/td[3]/div[1]";
 	  public static String clickContinue="/html/body/ngb-modal-window/div/div/div[2]/div/div/div[5]/span";
 	  public static String prefferedLanguage="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[7]/mat-form-field[2]/div/div[1]/div/mat-select/div/div[1]/span";
-	    public static String prefferedLanguageEnglish="/html/body/div[2]/div[4]/div/div/div/mat-option[1]/span"; 
+	    public static String prefferedLanguageEnglish="/html/body/div[2]/div[4]/div/div/div/mat-option[1]/span";
 	    public static String FamilyMedicalHistory = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[4]/div[2]/div[3]/mat-form-field/div/div[1]/div[1]/input";
-		public static String EnterDisorder = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[4]/div[2]/div[4]/mat-form-field/div/div[1]/div[1]/input";
-		public static String AnyGeneticDisorder = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[3]/form/div[2]/div[5]/mat-form-field/div/div[1]/div[1]/input";
-		
-		public static String OTP1="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]"; 
+	  		public static String EnterDisorder = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[4]/div[2]/div[4]/mat-form-field/div/div[1]/div[1]/input";
+	  		public static String AnyGeneticDisorder = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[3]/form/div[2]/div[5]/mat-form-field/div/div[1]/div[1]/input";
+	   
+	   public static String OTP1="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]"; 
 	   public static String OTP2="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[2]"; 
 	   public static String OTP3="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[3]"; 
 	   public static String OTP4="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
@@ -113,14 +113,14 @@ public class PediatricPatient {
         @BeforeClass
         public void setUp() {
     	
-            System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		
-		//driver.get("https://opd.copious.care/");
 		driver.get("https://app.copious.care/");
+		//driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
 
  }
@@ -131,7 +131,7 @@ public class PediatricPatient {
         @Test(priority=1)
       	public  void numberField() {
       	waitForVisibilityOf(By.xpath(mobileNumber));
-      	driver.findElement(By.xpath(mobileNumber)).sendKeys("2424242424");
+      	driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
       	highlightElement(By.xpath(mobileNumber));
     	clickUsingJavaScript(By.xpath(mobileNumber));
         }
@@ -223,7 +223,7 @@ public class PediatricPatient {
 		
 		  @Test(priority=8) public void firstName() {
 		  waitForVisibilityOf(By.xpath(firstName));
-		  driver.findElement(By.xpath(firstName)).sendKeys("pedAppTest");;
+		  driver.findElement(By.xpath(firstName)).sendKeys("QueueTest");;
 		  highlightElement(By.xpath(firstName));
 		  clickUsingJavaScript(By.xpath(firstName)); }
 		  
@@ -414,6 +414,7 @@ public class PediatricPatient {
     		driver.findElement(By.xpath(AnyGeneticDisorder)).sendKeys("Dementia");
     		;
           	
+          	
         	highlightElement(By.xpath(healthNext));
           	driver.findElement(By.xpath(healthNext));
           	clickUsingJavaScript(By.xpath(healthNext));
@@ -444,7 +445,6 @@ public class PediatricPatient {
 
     		highlightElement(By.xpath(EnterDisorder));
     		driver.findElement(By.xpath(EnterDisorder)).sendKeys("Physically Challenged");
-
         	
         	highlightElement(By.xpath(familyNext));
         	driver.findElement(By.xpath(familyNext));

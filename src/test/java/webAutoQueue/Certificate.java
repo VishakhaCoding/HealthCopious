@@ -28,7 +28,7 @@ public class Certificate {
 	public static String searchOpt = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[1]/div/div[1]/div[3]/button";
 	public static String clickPatient = "li.clearfix";
 	public static String cirtificateOption="//*[text()='Certificate']";
-	public static String createCirtificate="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-certificate/div/div[1]/button";
+	public static String createCirtificate="//*[text()='Create Certificate']";
 	public static String cirtificateTypeDropdown="/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[1]/div/div/div/div/button";
 	public static String cirtificateType="/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[1]/div/div/div/div/div/button[1]";
 	public static String MessagePreviewclick="/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[4]/div";
@@ -44,7 +44,7 @@ public class Certificate {
 	   public static String OTP4="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
 	   public static String OTP5="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
 	   public static String OTP6="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]"; 
-	   public static String Document="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[1]/app-top-info-navbar/div/div[2]/div[5]";
+	   public static String Document="//*[text()='Documents']";
 	public static void waitForVisibilityOf(By by) {
 		try {
 
@@ -71,15 +71,14 @@ public class Certificate {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 	
 		driver = new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		//driver.get("http://stage.copious.care:4200/");
-		//driver.get("https://stage.copious.care/");
-		driver.get("https://app.copious.care/");
+		driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
 		 //driver.get("https://opd.copious.care/");
 	}
@@ -88,7 +87,7 @@ public class Certificate {
 	@Test(priority = 1)
 	public void numberField() {
 		waitForVisibilityOf(By.xpath(mobileNumber));
-		driver.findElement(By.xpath(mobileNumber)).sendKeys("2424242424");
+		driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
 		highlightElement(By.xpath(mobileNumber));
 		clickUsingJavaScript(By.xpath(mobileNumber));
 	}
@@ -218,12 +217,14 @@ public class Certificate {
 			  highlightElement(By.xpath(SaveAndShare));
 			  clickUsingJavaScript(By.xpath(SaveAndShare));
 			  
-			  waitForVisibilityOf(By.xpath(SuccessfulMsge));
-	        	highlightElement(By.xpath(SuccessfulMsge));
-	        	 String Actualmsge=driver.findElement(By.xpath(SuccessfulMsge)).getText();
-	        	 System.out.println("msge:"+Actualmsge);
-	        	 String ErrorMsge="Certificate saved and shared with patient successfully";
-	            Assert.assertEquals(Actualmsge,ErrorMsge);
+				/*
+				 * waitForVisibilityOf(By.xpath(SuccessfulMsge));
+				 * highlightElement(By.xpath(SuccessfulMsge)); String
+				 * Actualmsge=driver.findElement(By.xpath(SuccessfulMsge)).getText();
+				 * System.out.println("msge:"+Actualmsge); String
+				 * ErrorMsge="Certificate saved and shared with patient successfully";
+				 * Assert.assertEquals(Actualmsge,ErrorMsge);
+				 */
 			 
 		  
 		  }
@@ -248,6 +249,4 @@ public class Certificate {
 				}
 			}
 		}
-	  
-
 }

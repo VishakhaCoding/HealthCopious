@@ -17,7 +17,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-public class Vaccination5YearWise {
+public class Vaccination5YearWiseNew {
 	public static WebDriver driver;
 
 	public static String doctorLoginLink = "/html/body/app-root/app-home-page/div/div/div/header[2]/div/div[4]/button";
@@ -105,7 +105,7 @@ public class Vaccination5YearWise {
 	public static String MeningococcalVaccine = "//*[text()='Meningococcal Vaccine']";
 	public static String RabiesVaccine = "//*[text()='Rabies Vaccine']";
 	// birth
-	public static String OPV1by4 = "//*[text()='Vaccines']//following::span[2]";
+	public static String OPV1 = "//*[text()='Vaccines']//following::span[2]";
 	public static String OPV1by4Record = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/patient-immunization/div/div[3]/div/table/tbody/tr[2]/td[8]/div";
 	public static String HepB1by5Record = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/patient-immunization/div/div[3]/div/table/tbody/tr[3]/td[8]/div";
 	public static String HepB1by5 = "//*[text()='Vaccines']//following::span[3]";
@@ -231,6 +231,31 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 	public static String OTP5 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
 	public static String OTP6 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]";
 
+//Brands
+	public static String TubaervacBCG = "//*[text()='Tubaervac BCG']";
+	
+	public static String OPV1Bipollio = "//*[text()='Biopolio']";
+	public static String GenevacB = "//*[text()='Genevac B']";
+	public static String EasySix = "//*[text()='Easy Six']";
+	public static String Rotavac = "//*[text()='Rotavac']";
+	
+	
+	public static String Prevnar13 = "//*[text()='Prevnar 13 ']";
+	public static String Biopollio = "//*[text()='Biopolio']";
+	public static String influvac = "//*[text()='Influvac']";
+	public static String TyphoidConjugateVaccine = "//*[text()='Enteroshield']";
+	public static String Menactra = "//*[text()='Tubaervac BCG']";
+	public static String Enteroshield = "//*[text()='Enteroshield']";
+	public static String Biovac = "//*[text()='Menactra']";
+	public static String TresivacMMR = "//*[text()='Tubaervac BCG']";
+	public static String Varilix = "//*[text()='Varilix']";
+	public static String Jenvac = "//*[text()='Tubaervac BCG']";
+	public static String Varicella2Record = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/patient-immunization/div/mat-tab-group/div/mat-tab-body[1]/div/div/div/table/tbody/tr[41]/td[8]/div";
+	public static String Varicella2 = "//*[text()='Varilix']";
+	public static String BcgRecord = "//*[text()='Varilix']";
+	//public static String Rotavac = "";
+	
+	
 	public static void waitForVisibilityOf(By by) {
 		try {
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -370,7 +395,7 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 	@Test(priority = 8)
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("zzzz");
+		driver.findElement(By.xpath(firstName)).sendKeys("kkkk");
 
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));
@@ -637,27 +662,36 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(ImmunizationOption));
 		highlightElement(By.xpath(ImmunizationOption));
 		clickUsingJavaScript(By.xpath(ImmunizationOption));
-
-		waitForVisibilityOf(By.xpath(BCG));
-		driver.findElement(By.xpath(BCG));
-		highlightElement(By.xpath(BCG));
-		clickUsingJavaScript(By.xpath(BCG));
-
-		waitForVisibilityOf(By.xpath(RecievedDate));
-		driver.findElement(By.xpath(RecievedDate));
-		highlightElement(By.xpath(RecievedDate));
-		clickUsingJavaScript(By.xpath(RecievedDate));
-
-		waitForVisibilityOf(By.xpath(ClickDate));
-		driver.findElement(By.xpath(ClickDate));
-		highlightElement(By.xpath(ClickDate));
-		clickUsingJavaScript(By.xpath(ClickDate));
-
-		waitForVisibilityOf(By.xpath(SaveVaccine));
-		driver.findElement(By.xpath(SaveVaccine));
-		highlightElement(By.xpath(SaveVaccine));
-		clickUsingJavaScript(By.xpath(SaveVaccine));
-
+		
+		/*
+		 * waitForVisibilityOf(By.xpath(BcgRecord));
+		 * driver.findElement(By.xpath(BcgRecord));
+		 * highlightElement(By.xpath(BcgRecord));
+		 * clickUsingJavaScript(By.xpath(BcgRecord));
+		 * 
+		 * waitForVisibilityOf(By.xpath(BCG)); driver.findElement(By.xpath(BCG));
+		 * highlightElement(By.xpath(BCG)); clickUsingJavaScript(By.xpath(BCG));
+		 * 
+		 * waitForVisibilityOf(By.xpath(TubaervacBCG));
+		 * driver.findElement(By.xpath(TubaervacBCG));
+		 * highlightElement(By.xpath(TubaervacBCG));
+		 * clickUsingJavaScript(By.xpath(TubaervacBCG));
+		 * 
+		 * waitForVisibilityOf(By.xpath(RecievedDate));
+		 * driver.findElement(By.xpath(RecievedDate));
+		 * highlightElement(By.xpath(RecievedDate));
+		 * clickUsingJavaScript(By.xpath(RecievedDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(ClickDate));
+		 * driver.findElement(By.xpath(ClickDate));
+		 * highlightElement(By.xpath(ClickDate));
+		 * clickUsingJavaScript(By.xpath(ClickDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(SaveVaccine));
+		 * driver.findElement(By.xpath(SaveVaccine));
+		 * highlightElement(By.xpath(SaveVaccine));
+		 * clickUsingJavaScript(By.xpath(SaveVaccine));
+		 */
 		Thread.sleep(5000);
 
 		waitForVisibilityOf(By.xpath(OPV1by4Record));
@@ -665,10 +699,15 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		highlightElement(By.xpath(OPV1by4Record));
 		clickUsingJavaScript(By.xpath(OPV1by4Record));
 
-		waitForVisibilityOf(By.xpath(OPV1by4));
-		driver.findElement(By.xpath(OPV1by4));
-		highlightElement(By.xpath(OPV1by4));
-		clickUsingJavaScript(By.xpath(OPV1by4));
+		waitForVisibilityOf(By.xpath(OPV1));
+		driver.findElement(By.xpath(OPV1));
+		highlightElement(By.xpath(OPV1));
+		clickUsingJavaScript(By.xpath(OPV1));
+		
+		waitForVisibilityOf(By.xpath(OPV1Bipollio));
+		driver.findElement(By.xpath(OPV1Bipollio));
+		highlightElement(By.xpath(OPV1Bipollio));
+		clickUsingJavaScript(By.xpath(OPV1Bipollio));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -697,6 +736,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		highlightElement(By.xpath(HepB1by5));
 		clickUsingJavaScript(By.xpath(HepB1by5));
 
+		waitForVisibilityOf(By.xpath(GenevacB));
+		driver.findElement(By.xpath(GenevacB));
+		highlightElement(By.xpath(GenevacB));
+		clickUsingJavaScript(By.xpath(GenevacB));
+		
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
 		highlightElement(By.xpath(RecievedDate));
@@ -716,170 +760,6 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 
 	@Test(priority = 25)
 	public void Health6WeekVisitVaccine() throws InterruptedException {
-		Thread.sleep(5000);
-		waitForVisibilityOf(By.xpath(HealthProfile));
-		driver.findElement(By.xpath(HealthProfile));
-		highlightElement(By.xpath(HealthProfile));
-		clickUsingJavaScript(By.xpath(HealthProfile));
-
-		waitForVisibilityOf(By.xpath(ImmunizationOption));
-		driver.findElement(By.xpath(ImmunizationOption));
-		highlightElement(By.xpath(ImmunizationOption));
-		clickUsingJavaScript(By.xpath(ImmunizationOption));
-
-		waitForVisibilityOf(By.xpath(DTWP1by3Record));
-		driver.findElement(By.xpath(DTWP1by3Record));
-		highlightElement(By.xpath(DTWP1by3Record));
-		clickUsingJavaScript(By.xpath(DTWP1by3Record));
-
-		waitForVisibilityOf(By.xpath(DTWP1by3));
-		driver.findElement(By.xpath(DTWP1by3));
-		highlightElement(By.xpath(DTWP1by3));
-		clickUsingJavaScript(By.xpath(DTWP1by3));
-
-		waitForVisibilityOf(By.xpath(RecievedDate));
-		driver.findElement(By.xpath(RecievedDate));
-		highlightElement(By.xpath(RecievedDate));
-		clickUsingJavaScript(By.xpath(RecievedDate));
-
-		waitForVisibilityOf(By.xpath(ClickDate));
-		driver.findElement(By.xpath(ClickDate));
-		highlightElement(By.xpath(ClickDate));
-		clickUsingJavaScript(By.xpath(ClickDate));
-
-		waitForVisibilityOf(By.xpath(SaveVaccine));
-		driver.findElement(By.xpath(SaveVaccine));
-		highlightElement(By.xpath(SaveVaccine));
-		clickUsingJavaScript(By.xpath(SaveVaccine));
-		Thread.sleep(5000);
-		waitForVisibilityOf(By.xpath(IPV1by3Record));
-		driver.findElement(By.xpath(IPV1by3Record));
-		highlightElement(By.xpath(IPV1by3Record));
-		clickUsingJavaScript(By.xpath(IPV1by3Record));
-
-		waitForVisibilityOf(By.xpath(IPV1by3));
-		driver.findElement(By.xpath(IPV1by3));
-		highlightElement(By.xpath(IPV1by3));
-		clickUsingJavaScript(By.xpath(IPV1by3));
-
-		waitForVisibilityOf(By.xpath(RecievedDate));
-		driver.findElement(By.xpath(RecievedDate));
-		highlightElement(By.xpath(RecievedDate));
-		clickUsingJavaScript(By.xpath(RecievedDate));
-
-		waitForVisibilityOf(By.xpath(ClickDate));
-		driver.findElement(By.xpath(ClickDate));
-		highlightElement(By.xpath(ClickDate));
-		clickUsingJavaScript(By.xpath(ClickDate));
-
-		waitForVisibilityOf(By.xpath(SaveVaccine));
-		driver.findElement(By.xpath(SaveVaccine));
-		highlightElement(By.xpath(SaveVaccine));
-		clickUsingJavaScript(By.xpath(SaveVaccine));
-		Thread.sleep(5000);
-		waitForVisibilityOf(By.xpath(HepB2by5Record));
-		driver.findElement(By.xpath(HepB2by5Record));
-		highlightElement(By.xpath(HepB2by5Record));
-		clickUsingJavaScript(By.xpath(HepB2by5Record));
-
-		waitForVisibilityOf(By.xpath(HepB2by5));
-		driver.findElement(By.xpath(HepB2by5));
-		highlightElement(By.xpath(HepB2by5));
-		clickUsingJavaScript(By.xpath(HepB2by5));
-
-		waitForVisibilityOf(By.xpath(RecievedDate));
-		driver.findElement(By.xpath(RecievedDate));
-		highlightElement(By.xpath(RecievedDate));
-		clickUsingJavaScript(By.xpath(RecievedDate));
-
-		waitForVisibilityOf(By.xpath(ClickDate));
-		driver.findElement(By.xpath(ClickDate));
-		highlightElement(By.xpath(ClickDate));
-		clickUsingJavaScript(By.xpath(ClickDate));
-
-		waitForVisibilityOf(By.xpath(SaveVaccine));
-		driver.findElement(By.xpath(SaveVaccine));
-		highlightElement(By.xpath(SaveVaccine));
-		clickUsingJavaScript(By.xpath(SaveVaccine));
-		Thread.sleep(5000);
-		waitForVisibilityOf(By.xpath(HIB1by3Record));
-		driver.findElement(By.xpath(HIB1by3Record));
-		highlightElement(By.xpath(HIB1by3Record));
-		clickUsingJavaScript(By.xpath(HIB1by3Record));
-
-		waitForVisibilityOf(By.xpath(HIB1by3));
-		driver.findElement(By.xpath(HIB1by3));
-		highlightElement(By.xpath(HIB1by3));
-		clickUsingJavaScript(By.xpath(HIB1by3));
-
-		waitForVisibilityOf(By.xpath(RecievedDate));
-		driver.findElement(By.xpath(RecievedDate));
-		highlightElement(By.xpath(RecievedDate));
-		clickUsingJavaScript(By.xpath(RecievedDate));
-
-		waitForVisibilityOf(By.xpath(ClickDate));
-		driver.findElement(By.xpath(ClickDate));
-		highlightElement(By.xpath(ClickDate));
-		clickUsingJavaScript(By.xpath(ClickDate));
-
-		waitForVisibilityOf(By.xpath(SaveVaccine));
-		driver.findElement(By.xpath(SaveVaccine));
-		highlightElement(By.xpath(SaveVaccine));
-		clickUsingJavaScript(By.xpath(SaveVaccine));
-		Thread.sleep(5000);
-		waitForVisibilityOf(By.xpath(Rotavirus1by3Record));
-		driver.findElement(By.xpath(Rotavirus1by3Record));
-		highlightElement(By.xpath(Rotavirus1by3Record));
-		clickUsingJavaScript(By.xpath(Rotavirus1by3Record));
-
-		waitForVisibilityOf(By.xpath(Rotavirus1by3));
-		driver.findElement(By.xpath(Rotavirus1by3));
-		highlightElement(By.xpath(Rotavirus1by3));
-		clickUsingJavaScript(By.xpath(Rotavirus1by3));
-
-		waitForVisibilityOf(By.xpath(RecievedDate));
-		driver.findElement(By.xpath(RecievedDate));
-		highlightElement(By.xpath(RecievedDate));
-		clickUsingJavaScript(By.xpath(RecievedDate));
-
-		waitForVisibilityOf(By.xpath(ClickDate));
-		driver.findElement(By.xpath(ClickDate));
-		highlightElement(By.xpath(ClickDate));
-		clickUsingJavaScript(By.xpath(ClickDate));
-
-		waitForVisibilityOf(By.xpath(SaveVaccine));
-		driver.findElement(By.xpath(SaveVaccine));
-		highlightElement(By.xpath(SaveVaccine));
-		clickUsingJavaScript(By.xpath(SaveVaccine));
-		Thread.sleep(5000);
-		waitForVisibilityOf(By.xpath(PCV1by3Record));
-		driver.findElement(By.xpath(PCV1by3Record));
-		highlightElement(By.xpath(PCV1by3Record));
-		clickUsingJavaScript(By.xpath(PCV1by3Record));
-
-		waitForVisibilityOf(By.xpath(PCV1by3));
-		driver.findElement(By.xpath(PCV1by3));
-		highlightElement(By.xpath(PCV1by3));
-		clickUsingJavaScript(By.xpath(PCV1by3));
-
-		waitForVisibilityOf(By.xpath(RecievedDate));
-		driver.findElement(By.xpath(RecievedDate));
-		highlightElement(By.xpath(RecievedDate));
-		clickUsingJavaScript(By.xpath(RecievedDate));
-
-		waitForVisibilityOf(By.xpath(ClickDate));
-		driver.findElement(By.xpath(ClickDate));
-		highlightElement(By.xpath(ClickDate));
-		clickUsingJavaScript(By.xpath(ClickDate));
-
-		waitForVisibilityOf(By.xpath(SaveVaccine));
-		driver.findElement(By.xpath(SaveVaccine));
-		highlightElement(By.xpath(SaveVaccine));
-		clickUsingJavaScript(By.xpath(SaveVaccine));
-	}
-
-	@Test(priority = 26)
-	public void Health10WeekVisitVaccine() throws InterruptedException {
 		Thread.sleep(10000);
 		Thread.sleep(5000);
 		waitForVisibilityOf(By.xpath(HealthProfile));
@@ -901,6 +781,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(DTWP2by3));
 		highlightElement(By.xpath(DTWP2by3));
 		clickUsingJavaScript(By.xpath(DTWP2by3));
+		
+		waitForVisibilityOf(By.xpath(EasySix));
+		driver.findElement(By.xpath(EasySix));
+		highlightElement(By.xpath(EasySix));
+		clickUsingJavaScript(By.xpath(EasySix));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -918,57 +803,55 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		clickUsingJavaScript(By.xpath(SaveVaccine));
 
 		Thread.sleep(10000);
-		waitForVisibilityOf(By.xpath(IPV2by3Record));
-		driver.findElement(By.xpath(IPV2by3Record));
-		highlightElement(By.xpath(IPV2by3Record));
-		clickUsingJavaScript(By.xpath(IPV2by3Record));
-
-		waitForVisibilityOf(By.xpath(IPV2by3));
-		driver.findElement(By.xpath(IPV2by3));
-		highlightElement(By.xpath(IPV2by3));
-		clickUsingJavaScript(By.xpath(IPV2by3));
-
-		waitForVisibilityOf(By.xpath(RecievedDate));
-		driver.findElement(By.xpath(RecievedDate));
-		highlightElement(By.xpath(RecievedDate));
-		clickUsingJavaScript(By.xpath(RecievedDate));
-
-		waitForVisibilityOf(By.xpath(ClickDate));
-		driver.findElement(By.xpath(ClickDate));
-		highlightElement(By.xpath(ClickDate));
-		clickUsingJavaScript(By.xpath(ClickDate));
-
-		waitForVisibilityOf(By.xpath(SaveVaccine));
-		driver.findElement(By.xpath(SaveVaccine));
-		highlightElement(By.xpath(SaveVaccine));
-		clickUsingJavaScript(By.xpath(SaveVaccine));
-
-		Thread.sleep(10000);
-		waitForVisibilityOf(By.xpath(HIB2by3Record));
-		driver.findElement(By.xpath(HIB2by3Record));
-		highlightElement(By.xpath(HIB2by3Record));
-		clickUsingJavaScript(By.xpath(HIB2by3Record));
-
-		waitForVisibilityOf(By.xpath(HIB2by3));
-		driver.findElement(By.xpath(HIB2by3));
-		highlightElement(By.xpath(HIB2by3));
-		clickUsingJavaScript(By.xpath(HIB2by3));
-
-		waitForVisibilityOf(By.xpath(RecievedDate));
-		driver.findElement(By.xpath(RecievedDate));
-		highlightElement(By.xpath(RecievedDate));
-		clickUsingJavaScript(By.xpath(RecievedDate));
-
-		waitForVisibilityOf(By.xpath(ClickDate));
-		driver.findElement(By.xpath(ClickDate));
-		highlightElement(By.xpath(ClickDate));
-		clickUsingJavaScript(By.xpath(ClickDate));
-
-		waitForVisibilityOf(By.xpath(SaveVaccine));
-		driver.findElement(By.xpath(SaveVaccine));
-		highlightElement(By.xpath(SaveVaccine));
-		clickUsingJavaScript(By.xpath(SaveVaccine));
-
+		/*
+		 * waitForVisibilityOf(By.xpath(IPV2by3Record));
+		 * driver.findElement(By.xpath(IPV2by3Record));
+		 * highlightElement(By.xpath(IPV2by3Record));
+		 * clickUsingJavaScript(By.xpath(IPV2by3Record));
+		 * 
+		 * waitForVisibilityOf(By.xpath(IPV2by3));
+		 * driver.findElement(By.xpath(IPV2by3)); highlightElement(By.xpath(IPV2by3));
+		 * clickUsingJavaScript(By.xpath(IPV2by3));
+		 * 
+		 * waitForVisibilityOf(By.xpath(RecievedDate));
+		 * driver.findElement(By.xpath(RecievedDate));
+		 * highlightElement(By.xpath(RecievedDate));
+		 * clickUsingJavaScript(By.xpath(RecievedDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(ClickDate));
+		 * driver.findElement(By.xpath(ClickDate));
+		 * highlightElement(By.xpath(ClickDate));
+		 * clickUsingJavaScript(By.xpath(ClickDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(SaveVaccine));
+		 * driver.findElement(By.xpath(SaveVaccine));
+		 * highlightElement(By.xpath(SaveVaccine));
+		 * clickUsingJavaScript(By.xpath(SaveVaccine));
+		 * 
+		 * Thread.sleep(10000); waitForVisibilityOf(By.xpath(HIB2by3Record));
+		 * driver.findElement(By.xpath(HIB2by3Record));
+		 * highlightElement(By.xpath(HIB2by3Record));
+		 * clickUsingJavaScript(By.xpath(HIB2by3Record));
+		 * 
+		 * waitForVisibilityOf(By.xpath(HIB2by3));
+		 * driver.findElement(By.xpath(HIB2by3)); highlightElement(By.xpath(HIB2by3));
+		 * clickUsingJavaScript(By.xpath(HIB2by3));
+		 * 
+		 * waitForVisibilityOf(By.xpath(RecievedDate));
+		 * driver.findElement(By.xpath(RecievedDate));
+		 * highlightElement(By.xpath(RecievedDate));
+		 * clickUsingJavaScript(By.xpath(RecievedDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(ClickDate));
+		 * driver.findElement(By.xpath(ClickDate));
+		 * highlightElement(By.xpath(ClickDate));
+		 * clickUsingJavaScript(By.xpath(ClickDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(SaveVaccine));
+		 * driver.findElement(By.xpath(SaveVaccine));
+		 * highlightElement(By.xpath(SaveVaccine));
+		 * clickUsingJavaScript(By.xpath(SaveVaccine));
+		 */
 		Thread.sleep(10000);
 		waitForVisibilityOf(By.xpath(Rotavirus2by3Record));
 		driver.findElement(By.xpath(Rotavirus2by3Record));
@@ -979,6 +862,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(Rotavirus2by3));
 		highlightElement(By.xpath(Rotavirus2by3));
 		clickUsingJavaScript(By.xpath(Rotavirus2by3));
+		
+		waitForVisibilityOf(By.xpath(Rotavac));
+		driver.findElement(By.xpath(Rotavac));
+		highlightElement(By.xpath(Rotavac));
+		clickUsingJavaScript(By.xpath(Rotavac));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1005,6 +893,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(PCV2by3));
 		highlightElement(By.xpath(PCV2by3));
 		clickUsingJavaScript(By.xpath(PCV2by3));
+		
+		waitForVisibilityOf(By.xpath(Prevnar13));
+		driver.findElement(By.xpath(Prevnar13));
+		highlightElement(By.xpath(Prevnar13));
+		clickUsingJavaScript(By.xpath(Prevnar13));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1022,15 +915,64 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		clickUsingJavaScript(By.xpath(SaveVaccine));
 
 		Thread.sleep(10000);
-		waitForVisibilityOf(By.xpath(HepB3by5Record));
-		driver.findElement(By.xpath(HepB3by5Record));
-		highlightElement(By.xpath(HepB3by5Record));
-		clickUsingJavaScript(By.xpath(HepB3by5Record));
+		/*
+		 * waitForVisibilityOf(By.xpath(HepB3by5Record));
+		 * driver.findElement(By.xpath(HepB3by5Record));
+		 * highlightElement(By.xpath(HepB3by5Record));
+		 * clickUsingJavaScript(By.xpath(HepB3by5Record));
+		 * 
+		 * waitForVisibilityOf(By.xpath(HepB3by5));
+		 * driver.findElement(By.xpath(HepB3by5)); highlightElement(By.xpath(HepB3by5));
+		 * clickUsingJavaScript(By.xpath(HepB3by5));
+		 * 
+		 * waitForVisibilityOf(By.xpath(RecievedDate));
+		 * driver.findElement(By.xpath(RecievedDate));
+		 * highlightElement(By.xpath(RecievedDate));
+		 * clickUsingJavaScript(By.xpath(RecievedDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(ClickDate));
+		 * driver.findElement(By.xpath(ClickDate));
+		 * highlightElement(By.xpath(ClickDate));
+		 * clickUsingJavaScript(By.xpath(ClickDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(SaveVaccine));
+		 * driver.findElement(By.xpath(SaveVaccine));
+		 * highlightElement(By.xpath(SaveVaccine));
+		 * clickUsingJavaScript(By.xpath(SaveVaccine));
+		 */
 
-		waitForVisibilityOf(By.xpath(HepB3by5));
-		driver.findElement(By.xpath(HepB3by5));
-		highlightElement(By.xpath(HepB3by5));
-		clickUsingJavaScript(By.xpath(HepB3by5));
+	}
+
+
+	
+	@Test(priority = 26)
+	public void Health10WeekVisitVaccine() throws InterruptedException {
+		Thread.sleep(10000);
+		Thread.sleep(5000);
+		waitForVisibilityOf(By.xpath(HealthProfile));
+		driver.findElement(By.xpath(HealthProfile));
+		highlightElement(By.xpath(HealthProfile));
+		clickUsingJavaScript(By.xpath(HealthProfile));
+
+		waitForVisibilityOf(By.xpath(ImmunizationOption));
+		driver.findElement(By.xpath(ImmunizationOption));
+		highlightElement(By.xpath(ImmunizationOption));
+		clickUsingJavaScript(By.xpath(ImmunizationOption));
+
+		waitForVisibilityOf(By.xpath(DTWP2by3Record));
+		driver.findElement(By.xpath(DTWP2by3Record));
+		highlightElement(By.xpath(DTWP2by3Record));
+		clickUsingJavaScript(By.xpath(DTWP2by3Record));
+
+		waitForVisibilityOf(By.xpath(DTWP2by3));
+		driver.findElement(By.xpath(DTWP2by3));
+		highlightElement(By.xpath(DTWP2by3));
+		clickUsingJavaScript(By.xpath(DTWP2by3));
+		
+		waitForVisibilityOf(By.xpath(EasySix));
+		driver.findElement(By.xpath(EasySix));
+		highlightElement(By.xpath(EasySix));
+		clickUsingJavaScript(By.xpath(EasySix));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1047,10 +989,149 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		highlightElement(By.xpath(SaveVaccine));
 		clickUsingJavaScript(By.xpath(SaveVaccine));
 
+		Thread.sleep(10000);
+		/*
+		 * waitForVisibilityOf(By.xpath(IPV2by3Record));
+		 * driver.findElement(By.xpath(IPV2by3Record));
+		 * highlightElement(By.xpath(IPV2by3Record));
+		 * clickUsingJavaScript(By.xpath(IPV2by3Record));
+		 * 
+		 * waitForVisibilityOf(By.xpath(IPV2by3));
+		 * driver.findElement(By.xpath(IPV2by3)); highlightElement(By.xpath(IPV2by3));
+		 * clickUsingJavaScript(By.xpath(IPV2by3));
+		 * 
+		 * waitForVisibilityOf(By.xpath(RecievedDate));
+		 * driver.findElement(By.xpath(RecievedDate));
+		 * highlightElement(By.xpath(RecievedDate));
+		 * clickUsingJavaScript(By.xpath(RecievedDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(ClickDate));
+		 * driver.findElement(By.xpath(ClickDate));
+		 * highlightElement(By.xpath(ClickDate));
+		 * clickUsingJavaScript(By.xpath(ClickDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(SaveVaccine));
+		 * driver.findElement(By.xpath(SaveVaccine));
+		 * highlightElement(By.xpath(SaveVaccine));
+		 * clickUsingJavaScript(By.xpath(SaveVaccine));
+		 * 
+		 * Thread.sleep(10000); waitForVisibilityOf(By.xpath(HIB2by3Record));
+		 * driver.findElement(By.xpath(HIB2by3Record));
+		 * highlightElement(By.xpath(HIB2by3Record));
+		 * clickUsingJavaScript(By.xpath(HIB2by3Record));
+		 * 
+		 * waitForVisibilityOf(By.xpath(HIB2by3));
+		 * driver.findElement(By.xpath(HIB2by3)); highlightElement(By.xpath(HIB2by3));
+		 * clickUsingJavaScript(By.xpath(HIB2by3));
+		 * 
+		 * waitForVisibilityOf(By.xpath(RecievedDate));
+		 * driver.findElement(By.xpath(RecievedDate));
+		 * highlightElement(By.xpath(RecievedDate));
+		 * clickUsingJavaScript(By.xpath(RecievedDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(ClickDate));
+		 * driver.findElement(By.xpath(ClickDate));
+		 * highlightElement(By.xpath(ClickDate));
+		 * clickUsingJavaScript(By.xpath(ClickDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(SaveVaccine));
+		 * driver.findElement(By.xpath(SaveVaccine));
+		 * highlightElement(By.xpath(SaveVaccine));
+		 * clickUsingJavaScript(By.xpath(SaveVaccine));
+		 */
+		Thread.sleep(10000);
+		waitForVisibilityOf(By.xpath(Rotavirus2by3Record));
+		driver.findElement(By.xpath(Rotavirus2by3Record));
+		highlightElement(By.xpath(Rotavirus2by3Record));
+		clickUsingJavaScript(By.xpath(Rotavirus2by3Record));
+
+		waitForVisibilityOf(By.xpath(Rotavirus2by3));
+		driver.findElement(By.xpath(Rotavirus2by3));
+		highlightElement(By.xpath(Rotavirus2by3));
+		clickUsingJavaScript(By.xpath(Rotavirus2by3));
+		
+		waitForVisibilityOf(By.xpath(Rotavac));
+		driver.findElement(By.xpath(Rotavac));
+		highlightElement(By.xpath(Rotavac));
+		clickUsingJavaScript(By.xpath(Rotavac));
+
+		waitForVisibilityOf(By.xpath(RecievedDate));
+		driver.findElement(By.xpath(RecievedDate));
+		highlightElement(By.xpath(RecievedDate));
+		clickUsingJavaScript(By.xpath(RecievedDate));
+
+		waitForVisibilityOf(By.xpath(ClickDate));
+		driver.findElement(By.xpath(ClickDate));
+		highlightElement(By.xpath(ClickDate));
+		clickUsingJavaScript(By.xpath(ClickDate));
+
+		waitForVisibilityOf(By.xpath(SaveVaccine));
+		driver.findElement(By.xpath(SaveVaccine));
+		highlightElement(By.xpath(SaveVaccine));
+		clickUsingJavaScript(By.xpath(SaveVaccine));
+
+		Thread.sleep(10000);
+		waitForVisibilityOf(By.xpath(PCV2by3Record));
+		driver.findElement(By.xpath(PCV2by3Record));
+		highlightElement(By.xpath(PCV2by3Record));
+		clickUsingJavaScript(By.xpath(PCV2by3Record));
+
+		waitForVisibilityOf(By.xpath(PCV2by3));
+		driver.findElement(By.xpath(PCV2by3));
+		highlightElement(By.xpath(PCV2by3));
+		clickUsingJavaScript(By.xpath(PCV2by3));
+		
+		waitForVisibilityOf(By.xpath(Prevnar13));
+		driver.findElement(By.xpath(Prevnar13));
+		highlightElement(By.xpath(Prevnar13));
+		clickUsingJavaScript(By.xpath(Prevnar13));
+
+		waitForVisibilityOf(By.xpath(RecievedDate));
+		driver.findElement(By.xpath(RecievedDate));
+		highlightElement(By.xpath(RecievedDate));
+		clickUsingJavaScript(By.xpath(RecievedDate));
+
+		waitForVisibilityOf(By.xpath(ClickDate));
+		driver.findElement(By.xpath(ClickDate));
+		highlightElement(By.xpath(ClickDate));
+		clickUsingJavaScript(By.xpath(ClickDate));
+
+		waitForVisibilityOf(By.xpath(SaveVaccine));
+		driver.findElement(By.xpath(SaveVaccine));
+		highlightElement(By.xpath(SaveVaccine));
+		clickUsingJavaScript(By.xpath(SaveVaccine));
+
+		Thread.sleep(10000);
+		/*
+		 * waitForVisibilityOf(By.xpath(HepB3by5Record));
+		 * driver.findElement(By.xpath(HepB3by5Record));
+		 * highlightElement(By.xpath(HepB3by5Record));
+		 * clickUsingJavaScript(By.xpath(HepB3by5Record));
+		 * 
+		 * waitForVisibilityOf(By.xpath(HepB3by5));
+		 * driver.findElement(By.xpath(HepB3by5)); highlightElement(By.xpath(HepB3by5));
+		 * clickUsingJavaScript(By.xpath(HepB3by5));
+		 * 
+		 * waitForVisibilityOf(By.xpath(RecievedDate));
+		 * driver.findElement(By.xpath(RecievedDate));
+		 * highlightElement(By.xpath(RecievedDate));
+		 * clickUsingJavaScript(By.xpath(RecievedDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(ClickDate));
+		 * driver.findElement(By.xpath(ClickDate));
+		 * highlightElement(By.xpath(ClickDate));
+		 * clickUsingJavaScript(By.xpath(ClickDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(SaveVaccine));
+		 * driver.findElement(By.xpath(SaveVaccine));
+		 * highlightElement(By.xpath(SaveVaccine));
+		 * clickUsingJavaScript(By.xpath(SaveVaccine));
+		 */
+
 	}
 
 	@Test(priority = 27)
-	public void Health14WeekVisitVaccine() throws InterruptedException {
+	public void Health114WeekVisitVaccine() throws InterruptedException {
 		Thread.sleep(10000);
 
 		waitForVisibilityOf(By.xpath(HealthProfile));
@@ -1218,9 +1299,10 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		highlightElement(By.xpath(SaveVaccine));
 		clickUsingJavaScript(By.xpath(SaveVaccine));
 
+
 	}
 	
-	  @Test(priority = 28) public void HealthSpecialVaccine() throws
+	  @Test(priority = 43) public void HealthSpecialVaccine() throws
 	  InterruptedException { Thread.sleep(10000);
 	 
 	 
@@ -1363,99 +1445,151 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 	 
 
 
+	
+	  @Test(priority = 28) public void Health6MonthVisitVaccine() throws
+	  InterruptedException { Thread.sleep(10000);
+	  
+	  
+	  waitForVisibilityOf(By.xpath(HealthProfile));
+	  driver.findElement(By.xpath(HealthProfile));
+	  highlightElement(By.xpath(HealthProfile));
+	  clickUsingJavaScript(By.xpath(HealthProfile));
+	  
+	  waitForVisibilityOf(By.xpath(ImmunizationOption));
+	  driver.findElement(By.xpath(ImmunizationOption));
+	  highlightElement(By.xpath(ImmunizationOption));
+	  clickUsingJavaScript(By.xpath(ImmunizationOption));
+	  
+	  waitForVisibilityOf(By.xpath(OPV2by4Record));
+	  driver.findElement(By.xpath(OPV2by4Record));
+	  highlightElement(By.xpath(OPV2by4Record));
+	  clickUsingJavaScript(By.xpath(OPV2by4Record));
+	  
+	  waitForVisibilityOf(By.xpath(OPV2by4));
+	  driver.findElement(By.xpath(OPV2by4)); highlightElement(By.xpath(OPV2by4));
+	  clickUsingJavaScript(By.xpath(OPV2by4));
+	  
+	  waitForVisibilityOf(By.xpath(Biopollio));
+	  driver.findElement(By.xpath(Biopollio)); highlightElement(By.xpath(Biopollio));
+	  clickUsingJavaScript(By.xpath(Biopollio));
+	  
+	  waitForVisibilityOf(By.xpath(RecievedDate));
+	  driver.findElement(By.xpath(RecievedDate));
+	  highlightElement(By.xpath(RecievedDate));
+	  clickUsingJavaScript(By.xpath(RecievedDate));
+	  
+	  waitForVisibilityOf(By.xpath(ClickDate));
+	  driver.findElement(By.xpath(ClickDate));
+	  highlightElement(By.xpath(ClickDate));
+	  clickUsingJavaScript(By.xpath(ClickDate));
+	  
+	  waitForVisibilityOf(By.xpath(SaveVaccine));
+	  driver.findElement(By.xpath(SaveVaccine));
+	  highlightElement(By.xpath(SaveVaccine));
+	  clickUsingJavaScript(By.xpath(SaveVaccine));
+	  
+	//Thread.sleep(10000);
 	/*
-	 * @Test(priority = 28) public void Health6MonthVisitVaccine() throws
-	 * InterruptedException { Thread.sleep(10000);
-	 * 
-	 * 
-	 * waitForVisibilityOf(By.xpath(HealthProfile));
-	 * driver.findElement(By.xpath(HealthProfile));
-	 * highlightElement(By.xpath(HealthProfile));
-	 * clickUsingJavaScript(By.xpath(HealthProfile));
-	 * 
-	 * waitForVisibilityOf(By.xpath(ImmunizationOption));
-	 * driver.findElement(By.xpath(ImmunizationOption));
-	 * highlightElement(By.xpath(ImmunizationOption));
-	 * clickUsingJavaScript(By.xpath(ImmunizationOption));
-	 * 
-	 * waitForVisibilityOf(By.xpath(OPV2by4Record));
-	 * driver.findElement(By.xpath(OPV2by4Record));
-	 * highlightElement(By.xpath(OPV2by4Record));
-	 * clickUsingJavaScript(By.xpath(OPV2by4Record));
-	 * 
-	 * waitForVisibilityOf(By.xpath(OPV2by4));
-	 * driver.findElement(By.xpath(OPV2by4)); highlightElement(By.xpath(OPV2by4));
-	 * clickUsingJavaScript(By.xpath(OPV2by4));
-	 * 
-	 * waitForVisibilityOf(By.xpath(RecievedDate));
-	 * driver.findElement(By.xpath(RecievedDate));
-	 * highlightElement(By.xpath(RecievedDate));
-	 * clickUsingJavaScript(By.xpath(RecievedDate));
-	 * 
-	 * waitForVisibilityOf(By.xpath(ClickDate));
-	 * driver.findElement(By.xpath(ClickDate));
-	 * highlightElement(By.xpath(ClickDate));
-	 * clickUsingJavaScript(By.xpath(ClickDate));
-	 * 
-	 * waitForVisibilityOf(By.xpath(SaveVaccine));
-	 * driver.findElement(By.xpath(SaveVaccine));
-	 * highlightElement(By.xpath(SaveVaccine));
-	 * clickUsingJavaScript(By.xpath(SaveVaccine));
-	 * 
-	 * Thread.sleep(10000); waitForVisibilityOf(By.xpath(HepB5by5Record));
-	 * driver.findElement(By.xpath(HepB5by5Record));
-	 * highlightElement(By.xpath(HepB5by5Record));
-	 * clickUsingJavaScript(By.xpath(HepB5by5Record));
-	 * 
-	 * waitForVisibilityOf(By.xpath(HepB5by5));
-	 * driver.findElement(By.xpath(HepB5by5)); highlightElement(By.xpath(HepB5by5));
-	 * clickUsingJavaScript(By.xpath(HepB5by5));
-	 * 
-	 * waitForVisibilityOf(By.xpath(RecievedDate));
-	 * driver.findElement(By.xpath(RecievedDate));
-	 * highlightElement(By.xpath(RecievedDate));
-	 * clickUsingJavaScript(By.xpath(RecievedDate));
-	 * 
-	 * waitForVisibilityOf(By.xpath(ClickDate));
-	 * driver.findElement(By.xpath(ClickDate));
-	 * highlightElement(By.xpath(ClickDate));
-	 * clickUsingJavaScript(By.xpath(ClickDate));
-	 * 
-	 * waitForVisibilityOf(By.xpath(SaveVaccine));
-	 * driver.findElement(By.xpath(SaveVaccine));
-	 * highlightElement(By.xpath(SaveVaccine));
-	 * clickUsingJavaScript(By.xpath(SaveVaccine));
-	 * 
-	 * 
-	 * Thread.sleep(10000); waitForVisibilityOf(By.xpath(influenza1by6Record));
-	 * driver.findElement(By.xpath(influenza1by6Record));
-	 * highlightElement(By.xpath(influenza1by6Record));
-	 * clickUsingJavaScript(By.xpath(influenza1by6Record));
-	 * 
-	 * waitForVisibilityOf(By.xpath(influenza1by6));
-	 * driver.findElement(By.xpath(influenza1by6));
-	 * highlightElement(By.xpath(influenza1by6));
-	 * clickUsingJavaScript(By.xpath(influenza1by6));
-	 * 
-	 * waitForVisibilityOf(By.xpath(RecievedDate));
-	 * driver.findElement(By.xpath(RecievedDate));
-	 * highlightElement(By.xpath(RecievedDate));
-	 * clickUsingJavaScript(By.xpath(RecievedDate));
-	 * 
-	 * waitForVisibilityOf(By.xpath(ClickDate));
-	 * driver.findElement(By.xpath(ClickDate));
-	 * highlightElement(By.xpath(ClickDate));
-	 * clickUsingJavaScript(By.xpath(ClickDate));
-	 * 
-	 * waitForVisibilityOf(By.xpath(SaveVaccine));
-	 * driver.findElement(By.xpath(SaveVaccine));
-	 * highlightElement(By.xpath(SaveVaccine));
-	 * clickUsingJavaScript(By.xpath(SaveVaccine));
-	 * 
-	 * }
-	 */
-	@Ignore
-	@Test(priority = 29)
+								 * waitForVisibilityOf(By.xpath(HepB5by5Record));
+								 * driver.findElement(By.xpath(HepB5by5Record));
+								 * highlightElement(By.xpath(HepB5by5Record));
+								 * clickUsingJavaScript(By.xpath(HepB5by5Record));
+								 * 
+								 * waitForVisibilityOf(By.xpath(HepB5by5));
+								 * driver.findElement(By.xpath(HepB5by5)); highlightElement(By.xpath(HepB5by5));
+								 * clickUsingJavaScript(By.xpath(HepB5by5));
+								 * 
+								 * waitForVisibilityOf(By.xpath(RecievedDate));
+								 * driver.findElement(By.xpath(RecievedDate));
+								 * highlightElement(By.xpath(RecievedDate));
+								 * clickUsingJavaScript(By.xpath(RecievedDate));
+								 * 
+								 * waitForVisibilityOf(By.xpath(ClickDate));
+								 * driver.findElement(By.xpath(ClickDate));
+								 * highlightElement(By.xpath(ClickDate));
+								 * clickUsingJavaScript(By.xpath(ClickDate));
+								 * 
+								 * waitForVisibilityOf(By.xpath(SaveVaccine));
+								 * driver.findElement(By.xpath(SaveVaccine));
+								 * highlightElement(By.xpath(SaveVaccine));
+								 * clickUsingJavaScript(By.xpath(SaveVaccine));
+								 */
+	  
+	  Thread.sleep(10000); waitForVisibilityOf(By.xpath(influenza1by6Record));
+	  driver.findElement(By.xpath(influenza1by6Record));
+	  highlightElement(By.xpath(influenza1by6Record));
+	  clickUsingJavaScript(By.xpath(influenza1by6Record));
+	  
+	  waitForVisibilityOf(By.xpath(influenza1by6));
+	  driver.findElement(By.xpath(influenza1by6));
+	  highlightElement(By.xpath(influenza1by6));
+	  clickUsingJavaScript(By.xpath(influenza1by6));
+	  
+	  waitForVisibilityOf(By.xpath(influvac));
+	  driver.findElement(By.xpath(influvac));
+	  highlightElement(By.xpath(influvac));
+	  clickUsingJavaScript(By.xpath(influvac));
+	  
+	  waitForVisibilityOf(By.xpath(RecievedDate));
+	  driver.findElement(By.xpath(RecievedDate));
+	  highlightElement(By.xpath(RecievedDate));
+	  clickUsingJavaScript(By.xpath(RecievedDate));
+	  
+	  waitForVisibilityOf(By.xpath(ClickDate));
+	  driver.findElement(By.xpath(ClickDate));
+	  highlightElement(By.xpath(ClickDate));
+	  clickUsingJavaScript(By.xpath(ClickDate));
+	  
+	  waitForVisibilityOf(By.xpath(SaveVaccine));
+	  driver.findElement(By.xpath(SaveVaccine));
+	  highlightElement(By.xpath(SaveVaccine));
+	  clickUsingJavaScript(By.xpath(SaveVaccine));
+	  
+	  }
+	  @Test(priority = 29)
+		public void Health6to9MonthVisitVaccine() throws InterruptedException {
+			Thread.sleep(10000);
+
+
+			waitForVisibilityOf(By.xpath(HealthProfile));
+			driver.findElement(By.xpath(HealthProfile));
+			highlightElement(By.xpath(HealthProfile));
+			clickUsingJavaScript(By.xpath(HealthProfile));
+
+			waitForVisibilityOf(By.xpath(ImmunizationOption));
+			driver.findElement(By.xpath(ImmunizationOption));
+			highlightElement(By.xpath(ImmunizationOption));
+			clickUsingJavaScript(By.xpath(ImmunizationOption));
+
+			waitForVisibilityOf(By.xpath(TyphoidConjugateVaccine));
+			driver.findElement(By.xpath(TyphoidConjugateVaccine));
+			highlightElement(By.xpath(TyphoidConjugateVaccine));
+			clickUsingJavaScript(By.xpath(TyphoidConjugateVaccine));
+			
+			waitForVisibilityOf(By.xpath(Enteroshield));
+			driver.findElement(By.xpath(Enteroshield));
+			highlightElement(By.xpath(Enteroshield));
+			clickUsingJavaScript(By.xpath(Enteroshield));
+
+			waitForVisibilityOf(By.xpath(RecievedDate));
+			driver.findElement(By.xpath(RecievedDate));
+			highlightElement(By.xpath(RecievedDate));
+			clickUsingJavaScript(By.xpath(RecievedDate));
+
+			waitForVisibilityOf(By.xpath(ClickDate));
+			driver.findElement(By.xpath(ClickDate));
+			highlightElement(By.xpath(ClickDate));
+			clickUsingJavaScript(By.xpath(ClickDate));
+
+			waitForVisibilityOf(By.xpath(SaveVaccine));
+			driver.findElement(By.xpath(SaveVaccine));
+			highlightElement(By.xpath(SaveVaccine));
+			clickUsingJavaScript(By.xpath(SaveVaccine));
+
+		}
+	 
+	
+	@Test(priority = 30)
 	public void Health7MonthVisitVaccine() throws InterruptedException {
 		Thread.sleep(10000);
 
@@ -1474,6 +1608,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(influenza2by6Record));
 		highlightElement(By.xpath(influenza2by6Record));
 		clickUsingJavaScript(By.xpath(influenza2by6Record));
+		
+		waitForVisibilityOf(By.xpath(influvac));
+		driver.findElement(By.xpath(influvac));
+		highlightElement(By.xpath(influvac));
+		clickUsingJavaScript(By.xpath(influvac));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1492,7 +1631,7 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 
 	}
 	@Ignore
-	@Test(priority = 30)
+	@Test(priority = 31)
 	public void Health9MonthVisitVaccine() throws InterruptedException {
 		Thread.sleep(10000);
 
@@ -1505,6 +1644,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(OPV3by4));
 		highlightElement(By.xpath(OPV3by4));
 		clickUsingJavaScript(By.xpath(OPV3by4));
+		
+		waitForVisibilityOf(By.xpath(Biopollio));
+		driver.findElement(By.xpath(Biopollio));
+		highlightElement(By.xpath(Biopollio));
+		clickUsingJavaScript(By.xpath(Biopollio));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1531,6 +1675,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(MMR1by3));
 		highlightElement(By.xpath(MMR1by3));
 		clickUsingJavaScript(By.xpath(MMR1by3));
+		
+		waitForVisibilityOf(By.xpath(TresivacMMR));
+		driver.findElement(By.xpath(TresivacMMR));
+		highlightElement(By.xpath(TresivacMMR));
+		clickUsingJavaScript(By.xpath(TresivacMMR));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1557,6 +1706,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(MeningococcalMCV1by2));
 		highlightElement(By.xpath(MeningococcalMCV1by2));
 		clickUsingJavaScript(By.xpath(MeningococcalMCV1by2));
+		
+		waitForVisibilityOf(By.xpath(Menactra));
+		driver.findElement(By.xpath(Menactra));
+		highlightElement(By.xpath(Menactra));
+		clickUsingJavaScript(By.xpath(Menactra));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1574,43 +1728,44 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		clickUsingJavaScript(By.xpath(SaveVaccine));
 
 	}
-	@Ignore
-	@Test(priority = 31)
-	public void Health9To12MonthVisitVaccine() throws InterruptedException {
-		Thread.sleep(10000);
-
-		waitForVisibilityOf(By.xpath(HealthProfile));
-		driver.findElement(By.xpath(HealthProfile));
-		highlightElement(By.xpath(HealthProfile));
-		clickUsingJavaScript(By.xpath(HealthProfile));
-
-		waitForVisibilityOf(By.xpath(ImmunizationOption));
-		driver.findElement(By.xpath(ImmunizationOption));
-		highlightElement(By.xpath(ImmunizationOption));
-		clickUsingJavaScript(By.xpath(ImmunizationOption));
-
-		waitForVisibilityOf(By.xpath(TyphoidConjugateV1by2ecord));
-		driver.findElement(By.xpath(TyphoidConjugateV1by2ecord));
-		highlightElement(By.xpath(TyphoidConjugateV1by2ecord));
-		clickUsingJavaScript(By.xpath(TyphoidConjugateV1by2ecord));
-
-		waitForVisibilityOf(By.xpath(RecievedDate));
-		driver.findElement(By.xpath(RecievedDate));
-		highlightElement(By.xpath(RecievedDate));
-		clickUsingJavaScript(By.xpath(RecievedDate));
-
-		waitForVisibilityOf(By.xpath(ClickDate));
-		driver.findElement(By.xpath(ClickDate));
-		highlightElement(By.xpath(ClickDate));
-		clickUsingJavaScript(By.xpath(ClickDate));
-
-		waitForVisibilityOf(By.xpath(SaveVaccine));
-		driver.findElement(By.xpath(SaveVaccine));
-		highlightElement(By.xpath(SaveVaccine));
-		clickUsingJavaScript(By.xpath(SaveVaccine));
-
-	}
-	@Ignore
+	
+	/*
+	 * @Test(priority = 32) public void Health12MonthVisitVaccine() throws
+	 * InterruptedException { Thread.sleep(10000);
+	 * 
+	 * waitForVisibilityOf(By.xpath(HealthProfile));
+	 * driver.findElement(By.xpath(HealthProfile));
+	 * highlightElement(By.xpath(HealthProfile));
+	 * clickUsingJavaScript(By.xpath(HealthProfile));
+	 * 
+	 * waitForVisibilityOf(By.xpath(ImmunizationOption));
+	 * driver.findElement(By.xpath(ImmunizationOption));
+	 * highlightElement(By.xpath(ImmunizationOption));
+	 * clickUsingJavaScript(By.xpath(ImmunizationOption));
+	 * 
+	 * waitForVisibilityOf(By.xpath(TyphoidConjugateV1by2ecord));
+	 * driver.findElement(By.xpath(TyphoidConjugateV1by2ecord));
+	 * highlightElement(By.xpath(TyphoidConjugateV1by2ecord));
+	 * clickUsingJavaScript(By.xpath(TyphoidConjugateV1by2ecord));
+	 * 
+	 * waitForVisibilityOf(By.xpath(RecievedDate));
+	 * driver.findElement(By.xpath(RecievedDate));
+	 * highlightElement(By.xpath(RecievedDate));
+	 * clickUsingJavaScript(By.xpath(RecievedDate));
+	 * 
+	 * waitForVisibilityOf(By.xpath(ClickDate));
+	 * driver.findElement(By.xpath(ClickDate));
+	 * highlightElement(By.xpath(ClickDate));
+	 * clickUsingJavaScript(By.xpath(ClickDate));
+	 * 
+	 * waitForVisibilityOf(By.xpath(SaveVaccine));
+	 * driver.findElement(By.xpath(SaveVaccine));
+	 * highlightElement(By.xpath(SaveVaccine));
+	 * clickUsingJavaScript(By.xpath(SaveVaccine));
+	 * 
+	 * }
+	 */
+	
 	@Test(priority = 32)
 	public void Health12MonthVisitVaccine() throws InterruptedException {
 		Thread.sleep(10000);
@@ -1624,6 +1779,7 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(ImmunizationOption));
 		highlightElement(By.xpath(ImmunizationOption));
 		clickUsingJavaScript(By.xpath(ImmunizationOption));
+		
 		waitForVisibilityOf(By.xpath(HepA1by2Record));
 		driver.findElement(By.xpath(HepA1by2Record));
 		highlightElement(By.xpath(HepA1by2Record));
@@ -1633,6 +1789,12 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(HepA1by2));
 		highlightElement(By.xpath(HepA1by2));
 		clickUsingJavaScript(By.xpath(HepA1by2));
+		
+		waitForVisibilityOf(By.xpath(Biovac));
+		driver.findElement(By.xpath(Biovac));
+		highlightElement(By.xpath(Biovac));
+		clickUsingJavaScript(By.xpath(Biovac
+				));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1658,6 +1820,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(JapaneseEncephalitis));
 		highlightElement(By.xpath(JapaneseEncephalitis));
 		clickUsingJavaScript(By.xpath(JapaneseEncephalitis));
+		
+		waitForVisibilityOf(By.xpath(Jenvac));
+		driver.findElement(By.xpath(Jenvac));
+		highlightElement(By.xpath(Jenvac));
+		clickUsingJavaScript(By.xpath(Jenvac));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1683,6 +1850,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(MeningococcalMCV2by2));
 		highlightElement(By.xpath(MeningococcalMCV2by2));
 		clickUsingJavaScript(By.xpath(MeningococcalMCV2by2));
+		
+		waitForVisibilityOf(By.xpath(Menactra));
+		driver.findElement(By.xpath(Menactra));
+		highlightElement(By.xpath(Menactra));
+		clickUsingJavaScript(By.xpath(Menactra));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1714,6 +1886,7 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(ImmunizationOption));
 		highlightElement(By.xpath(ImmunizationOption));
 		clickUsingJavaScript(By.xpath(ImmunizationOption));
+		
 		waitForVisibilityOf(By.xpath(MMR2by3Record));
 		driver.findElement(By.xpath(MMR2by3Record));
 		highlightElement(By.xpath(MMR2by3Record));
@@ -1723,6 +1896,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(MMR2by3));
 		highlightElement(By.xpath(MMR2by3));
 		clickUsingJavaScript(By.xpath(MMR2by3));
+		
+		waitForVisibilityOf(By.xpath(TresivacMMR));
+		driver.findElement(By.xpath(TresivacMMR));
+		highlightElement(By.xpath(TresivacMMR));
+		clickUsingJavaScript(By.xpath(TresivacMMR));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1748,6 +1926,12 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(Varicella1by2));
 		highlightElement(By.xpath(Varicella1by2));
 		clickUsingJavaScript(By.xpath(Varicella1by2));
+		
+		waitForVisibilityOf(By.xpath(Varilix));
+		driver.findElement(By.xpath(Varilix));
+		highlightElement(By.xpath(Varilix));
+		clickUsingJavaScript(By.xpath(Varilix));
+
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1773,6 +1957,41 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(PCVBooster));
 		highlightElement(By.xpath(PCVBooster));
 		clickUsingJavaScript(By.xpath(PCVBooster));
+		
+		waitForVisibilityOf(By.xpath(Prevnar13));
+		driver.findElement(By.xpath(Prevnar13));
+		highlightElement(By.xpath(Prevnar13));
+		clickUsingJavaScript(By.xpath(Prevnar13));
+
+		waitForVisibilityOf(By.xpath(RecievedDate));
+		driver.findElement(By.xpath(RecievedDate));
+		highlightElement(By.xpath(RecievedDate));
+		clickUsingJavaScript(By.xpath(RecievedDate));
+
+		waitForVisibilityOf(By.xpath(ClickDate));
+		driver.findElement(By.xpath(ClickDate));
+		highlightElement(By.xpath(ClickDate));
+		clickUsingJavaScript(By.xpath(ClickDate));
+
+		waitForVisibilityOf(By.xpath(SaveVaccine));
+		driver.findElement(By.xpath(SaveVaccine));
+		highlightElement(By.xpath(SaveVaccine));
+		clickUsingJavaScript(By.xpath(SaveVaccine));
+		
+		waitForVisibilityOf(By.xpath(JapaneseEncephalitisRecord));
+		driver.findElement(By.xpath(JapaneseEncephalitisRecord));
+		highlightElement(By.xpath(JapaneseEncephalitisRecord));
+		clickUsingJavaScript(By.xpath(JapaneseEncephalitisRecord));
+
+		waitForVisibilityOf(By.xpath(JapaneseEncephalitis));
+		driver.findElement(By.xpath(JapaneseEncephalitis));
+		highlightElement(By.xpath(JapaneseEncephalitis));
+		clickUsingJavaScript(By.xpath(JapaneseEncephalitis));
+		
+		waitForVisibilityOf(By.xpath(Jenvac));
+		driver.findElement(By.xpath(Jenvac));
+		highlightElement(By.xpath(Jenvac));
+		clickUsingJavaScript(By.xpath(Jenvac));
 
 		waitForVisibilityOf(By.xpath(RecievedDate));
 		driver.findElement(By.xpath(RecievedDate));
@@ -1812,6 +2031,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 	  driver.findElement(By.xpath(DTPBosster));
 	  highlightElement(By.xpath(DTPBosster));
 	  clickUsingJavaScript(By.xpath(DTPBosster));
+	  
+	  waitForVisibilityOf(By.xpath(EasySix));
+	  driver.findElement(By.xpath(EasySix));
+	  highlightElement(By.xpath(EasySix));
+	  clickUsingJavaScript(By.xpath(EasySix));
 
 	  waitForVisibilityOf(By.xpath(RecievedDate));
 	  driver.findElement(By.xpath(RecievedDate));
@@ -1829,66 +2053,67 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 	  clickUsingJavaScript(By.xpath(SaveVaccine));
 
 
-	  waitForVisibilityOf(By.xpath(IPVBoosterRecord));
-	  driver.findElement(By.xpath(IPVBoosterRecord));
-	  highlightElement(By.xpath(IPVBoosterRecord));
-	  clickUsingJavaScript(By.xpath(IPVBoosterRecord));
-
-	  waitForVisibilityOf(By.xpath(IPVBooster));
-	  driver.findElement(By.xpath(IPVBooster));
-	  highlightElement(By.xpath(IPVBooster));
-	  clickUsingJavaScript(By.xpath(IPVBooster));
-
-	  waitForVisibilityOf(By.xpath(RecievedDate));
-	  driver.findElement(By.xpath(RecievedDate));
-	  highlightElement(By.xpath(RecievedDate));
-	  clickUsingJavaScript(By.xpath(RecievedDate));
-
-	  waitForVisibilityOf(By.xpath(ClickDate));
-	  driver.findElement(By.xpath(ClickDate));
-	  highlightElement(By.xpath(ClickDate));
-	  clickUsingJavaScript(By.xpath(ClickDate));
-
-	  waitForVisibilityOf(By.xpath(SaveVaccine));
-	  driver.findElement(By.xpath(SaveVaccine));
-	  highlightElement(By.xpath(SaveVaccine));
-	  clickUsingJavaScript(By.xpath(SaveVaccine));
-
-
-
-
-	  waitForVisibilityOf(By.xpath(HIBBoosterRecord));
-	  driver.findElement(By.xpath(HIBBoosterRecord));
-	  highlightElement(By.xpath(HIBBoosterRecord));
-	  clickUsingJavaScript(By.xpath(HIBBoosterRecord));
-
-	  waitForVisibilityOf(By.xpath(HIBBooster));
-	  driver.findElement(By.xpath(HIBBooster));
-	  highlightElement(By.xpath(HIBBooster));
-	  clickUsingJavaScript(By.xpath(HIBBooster));
-
-	  waitForVisibilityOf(By.xpath(RecievedDate));
-	  driver.findElement(By.xpath(RecievedDate));
-	  highlightElement(By.xpath(RecievedDate));
-	  clickUsingJavaScript(By.xpath(RecievedDate));
-
-	  waitForVisibilityOf(By.xpath(ClickDate));
-	  driver.findElement(By.xpath(ClickDate));
-	  highlightElement(By.xpath(ClickDate));
-	  clickUsingJavaScript(By.xpath(ClickDate));
-
-	  waitForVisibilityOf(By.xpath(SaveVaccine));
-	  driver.findElement(By.xpath(SaveVaccine));
-	  highlightElement(By.xpath(SaveVaccine));
-	  clickUsingJavaScript(By.xpath(SaveVaccine));
-
-
-
+		/*
+		 * waitForVisibilityOf(By.xpath(IPVBoosterRecord));
+		 * driver.findElement(By.xpath(IPVBoosterRecord));
+		 * highlightElement(By.xpath(IPVBoosterRecord));
+		 * clickUsingJavaScript(By.xpath(IPVBoosterRecord));
+		 * 
+		 * waitForVisibilityOf(By.xpath(IPVBooster));
+		 * driver.findElement(By.xpath(IPVBooster));
+		 * highlightElement(By.xpath(IPVBooster));
+		 * clickUsingJavaScript(By.xpath(IPVBooster));
+		 * 
+		 * waitForVisibilityOf(By.xpath(RecievedDate));
+		 * driver.findElement(By.xpath(RecievedDate));
+		 * highlightElement(By.xpath(RecievedDate));
+		 * clickUsingJavaScript(By.xpath(RecievedDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(ClickDate));
+		 * driver.findElement(By.xpath(ClickDate));
+		 * highlightElement(By.xpath(ClickDate));
+		 * clickUsingJavaScript(By.xpath(ClickDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(SaveVaccine));
+		 * driver.findElement(By.xpath(SaveVaccine));
+		 * highlightElement(By.xpath(SaveVaccine));
+		 * clickUsingJavaScript(By.xpath(SaveVaccine));
+		 * 
+		 * 
+		 * 
+		 * 
+		 * waitForVisibilityOf(By.xpath(HIBBoosterRecord));
+		 * driver.findElement(By.xpath(HIBBoosterRecord));
+		 * highlightElement(By.xpath(HIBBoosterRecord));
+		 * clickUsingJavaScript(By.xpath(HIBBoosterRecord));
+		 * 
+		 * waitForVisibilityOf(By.xpath(HIBBooster));
+		 * driver.findElement(By.xpath(HIBBooster));
+		 * highlightElement(By.xpath(HIBBooster));
+		 * clickUsingJavaScript(By.xpath(HIBBooster));
+		 * 
+		 * waitForVisibilityOf(By.xpath(RecievedDate));
+		 * driver.findElement(By.xpath(RecievedDate));
+		 * highlightElement(By.xpath(RecievedDate));
+		 * clickUsingJavaScript(By.xpath(RecievedDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(ClickDate));
+		 * driver.findElement(By.xpath(ClickDate));
+		 * highlightElement(By.xpath(ClickDate));
+		 * clickUsingJavaScript(By.xpath(ClickDate));
+		 * 
+		 * waitForVisibilityOf(By.xpath(SaveVaccine));
+		 * driver.findElement(By.xpath(SaveVaccine));
+		 * highlightElement(By.xpath(SaveVaccine));
+		 * clickUsingJavaScript(By.xpath(SaveVaccine));
+		 * 
+		 * 
+		 */
 
 	  }
 
 
-	  @Ignore
+	 
 	  @Test(priority = 35) public void Health18MonthVisitVaccine() throws
 	  InterruptedException { Thread.sleep(10000);
 
@@ -1901,7 +2126,8 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 		driver.findElement(By.xpath(ImmunizationOption));
 		highlightElement(By.xpath(ImmunizationOption));
 		clickUsingJavaScript(By.xpath(ImmunizationOption));
-	  waitForVisibilityOf(By.xpath(HepA2by2Record));
+	 
+		waitForVisibilityOf(By.xpath(HepA2by2Record));
 	  driver.findElement(By.xpath(HepA2by2Record));
 	  highlightElement(By.xpath(HepA2by2Record));
 	  clickUsingJavaScript(By.xpath(HepA2by2Record));
@@ -1909,6 +2135,10 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 	  waitForVisibilityOf(By.xpath(HepA2by2));
 	  driver.findElement(By.xpath(HepA2by2)); highlightElement(By.xpath(HepA2by2));
 	  clickUsingJavaScript(By.xpath(HepA2by2));
+	  
+	  waitForVisibilityOf(By.xpath(Biovac));
+	  driver.findElement(By.xpath(Biovac)); highlightElement(By.xpath(Biovac));
+	  clickUsingJavaScript(By.xpath(Biovac));
 
 	  waitForVisibilityOf(By.xpath(RecievedDate));
 	  driver.findElement(By.xpath(RecievedDate));
@@ -1935,6 +2165,42 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 	  driver.findElement(By.xpath(influenza3by6));
 	  highlightElement(By.xpath(influenza3by6));
 	  clickUsingJavaScript(By.xpath(influenza3by6));
+	  
+	  waitForVisibilityOf(By.xpath(influvac));
+	  driver.findElement(By.xpath(influvac));
+	  highlightElement(By.xpath(influvac));
+	  clickUsingJavaScript(By.xpath(influvac));
+
+	  waitForVisibilityOf(By.xpath(RecievedDate));
+	  driver.findElement(By.xpath(RecievedDate));
+	  highlightElement(By.xpath(RecievedDate));
+	  clickUsingJavaScript(By.xpath(RecievedDate));
+
+	  waitForVisibilityOf(By.xpath(ClickDate));
+	  driver.findElement(By.xpath(ClickDate));
+	  highlightElement(By.xpath(ClickDate));
+	  clickUsingJavaScript(By.xpath(ClickDate));
+
+	  waitForVisibilityOf(By.xpath(SaveVaccine));
+	  driver.findElement(By.xpath(SaveVaccine));
+	  highlightElement(By.xpath(SaveVaccine));
+	  clickUsingJavaScript(By.xpath(SaveVaccine));
+
+	  
+	  waitForVisibilityOf(By.xpath(Varicella2Record));
+	  driver.findElement(By.xpath(Varicella2Record));
+	  highlightElement(By.xpath(Varicella2Record));
+	  clickUsingJavaScript(By.xpath(Varicella2Record));
+
+	  waitForVisibilityOf(By.xpath(Varicella2));
+	  driver.findElement(By.xpath(Varicella2));
+	  highlightElement(By.xpath(Varicella2));
+	  clickUsingJavaScript(By.xpath(Varicella2));
+	  
+	  waitForVisibilityOf(By.xpath(Varilix));
+	  driver.findElement(By.xpath(Varilix));
+	  highlightElement(By.xpath(Varilix));
+	  clickUsingJavaScript(By.xpath(Varilix));
 
 	  waitForVisibilityOf(By.xpath(RecievedDate));
 	  driver.findElement(By.xpath(RecievedDate));
@@ -1979,6 +2245,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 	  driver.findElement(By.xpath(TyphoidConjugateV));
 	  highlightElement(By.xpath(TyphoidConjugateV));
 	  clickUsingJavaScript(By.xpath(TyphoidConjugateV));
+	  
+	  waitForVisibilityOf(By.xpath(Enteroshield));
+	  driver.findElement(By.xpath(Enteroshield));
+	  highlightElement(By.xpath(Enteroshield));
+	  clickUsingJavaScript(By.xpath(Enteroshield));
 
 	  waitForVisibilityOf(By.xpath(RecievedDate));
 	  driver.findElement(By.xpath(RecievedDate));
@@ -2005,6 +2276,11 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 	  driver.findElement(By.xpath(MeningococcalVac));
 	  highlightElement(By.xpath(MeningococcalVac));
 	  clickUsingJavaScript(By.xpath(MeningococcalVac));
+	  
+	  waitForVisibilityOf(By.xpath(Menactra));
+	  driver.findElement(By.xpath(Menactra));
+	  highlightElement(By.xpath(Menactra));
+	  clickUsingJavaScript(By.xpath(Menactra));
 
 	  waitForVisibilityOf(By.xpath(RecievedDate));
 	  driver.findElement(By.xpath(RecievedDate));
@@ -2044,7 +2320,10 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 	  highlightElement(By.xpath(Influenza4by6Record));
 	  clickUsingJavaScript(By.xpath(Influenza4by6Record));
 
-
+	  waitForVisibilityOf(By.xpath(influvac));
+	  driver.findElement(By.xpath(influvac));
+	  highlightElement(By.xpath(influvac));
+	  clickUsingJavaScript(By.xpath(influvac));
 
 	  waitForVisibilityOf(By.xpath(RecievedDate));
 	  driver.findElement(By.xpath(RecievedDate));
@@ -2090,7 +2369,10 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 	  highlightElement(By.xpath(Influenza5by6Record));
 	  clickUsingJavaScript(By.xpath(Influenza5by6Record));
 
-
+	  waitForVisibilityOf(By.xpath(influvac));
+	  driver.findElement(By.xpath(influvac));
+	  highlightElement(By.xpath(influvac));
+	  clickUsingJavaScript(By.xpath(influvac));
 
 	  waitForVisibilityOf(By.xpath(RecievedDate));
 	  driver.findElement(By.xpath(RecievedDate));

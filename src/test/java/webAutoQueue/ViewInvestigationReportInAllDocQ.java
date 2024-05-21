@@ -33,10 +33,10 @@ public class ViewInvestigationReportInAllDocQ {
 	   public static String OTP4="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
 	   public static String OTP5="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
 	   public static String OTP6="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]"; 
-	   public static String Document="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[1]/app-top-info-navbar/div/div[2]/div[5]";
+	   public static String Document="//*[text()='Documents']";
        public static String ViewInvestigationReport="//*[text()=' View ']";
-       public static String InvestigationReportClose="//*[text()='×']";
-       public static String ClickReport="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-history/div/mat-tab-group/mat-tab-header/div[2]/div/div/div[3]";
+       public static String InvestigationReportClose="//*[text()='Ã—']";
+       public static String ClickReport="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/app-patient-history/div/mat-tab-group/mat-tab-header/div[2]/div/div/div[3]/div";
 	   public static void waitForVisibilityOf(By by) {
 			try {
 
@@ -63,7 +63,7 @@ public class ViewInvestigationReportInAllDocQ {
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 			
 		
 			
@@ -73,9 +73,8 @@ public class ViewInvestigationReportInAllDocQ {
 			driver.manage().window().maximize();
 			//driver.get("http://stage.copious.care:4200/");
 			//driver.get("https://stage.copious.care/");
-			driver.get("https://app.copious.care/");
 			driver.manage().window().fullscreen();
-			 //driver.get("https://opd.copious.care/");
+			 driver.get("https://app.copious.care/");
 		}
 
 	
@@ -83,7 +82,7 @@ public class ViewInvestigationReportInAllDocQ {
 		@Test(priority = 1)
 		public void numberField() {
 			waitForVisibilityOf(By.xpath(mobileNumber));
-			driver.findElement(By.xpath(mobileNumber)).sendKeys("2424242424");
+			driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
 			highlightElement(By.xpath(mobileNumber));
 			clickUsingJavaScript(By.xpath(mobileNumber));
 		}
@@ -134,7 +133,7 @@ public class ViewInvestigationReportInAllDocQ {
 		@Test(priority = 4)
 		public void searchBar() {
 			waitForVisibilityOf(By.xpath(searchBar));
-			driver.findElement(By.xpath(searchBar)).sendKeys("test");
+			driver.findElement(By.xpath(searchBar)).sendKeys("Test");
 			
 			//driver.findElement(By.xpath(searchBar)).sendKeys("pres");
 			highlightElement(By.xpath(searchBar));
@@ -210,6 +209,4 @@ public class ViewInvestigationReportInAllDocQ {
 					}
 				}
 			}
-			 
-
 }

@@ -18,10 +18,13 @@ public class HealthImmunization extends HealthLogin{
 	public void SelectFamilyMember() throws MalformedURLException, InterruptedException {
 
 		 Thread.sleep(5000);
-		List<WebElement> SelectFamilyMember =driver.findElements(By.xpath(
-				"//android.view.ViewGroup[@index='3']"));
-		SelectFamilyMember.get(0).click();
-
+			/*
+			 * List<WebElement> SelectFamilyMember =driver.findElements(By.xpath(
+			 * "//android.view.ViewGroup[@index='3']")); SelectFamilyMember.get(0).click();
+			 */
+		 Thread.sleep(5000);
+		 List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+			SelectFamilyMember.get(0).click();
 		
 		  Thread.sleep(5000);
 
@@ -72,18 +75,19 @@ public class HealthImmunization extends HealthLogin{
 			Thread.sleep(2000);
 			WebElement allow
 
-					= driver.findElement(By.xpath("//*[@text='Allow']"));
+					= driver.findElement(By.xpath("//*[@text='While using the app']"));
 			allow.click();
 
-			WebElement allow1
-
-					= driver.findElement(By.xpath("//*[@text='Allow']"));
-			allow1.click();
-			Thread.sleep(2000);
+			/*
+			 * WebElement allow1
+			 * 
+			 * = driver.findElement(By.xpath("//*[@text='Allow']")); allow1.click();
+			 */
+			//Thread.sleep(2000);
 			;
 
 			Thread.sleep(2000);
-			WebElement CameraClick = driver.findElement(By.xpath("//CenterButtonGroup[@content-desc=\"NONE\"]"));
+			WebElement CameraClick = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Take picture\"]"));
 			CameraClick.click();
 
 			Thread.sleep(5000);

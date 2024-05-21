@@ -12,9 +12,10 @@ public class GrowthRecord extends HealthLogin{
 	public void SelectFamilyMember() throws MalformedURLException, InterruptedException {
 
 		 Thread.sleep(5000);
-		List<WebElement> SelectFamilyMember =driver.findElements(By.xpath(
-				"//android.view.ViewGroup[@index='4']"));
-		SelectFamilyMember.get(0).click();
+		 List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+			SelectFamilyMember.get(0).click();
+		
+		  Thread.sleep(5000);
 
 		
 		  Thread.sleep(5000);

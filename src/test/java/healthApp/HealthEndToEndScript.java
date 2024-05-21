@@ -39,7 +39,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		dc.setCapability("–session-override",true);
 		dc.setCapability("noReset", false) ;
 		//dc.setCapability("FullReset", false) ;
-		dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-release-16-Aug.apk");
+		dc.setCapability(MobileCapabilityType.APP, "C:\\healthapp-release-23-apr.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
 		dc.setCapability("appPackage", "com.calculator_parent_apps");
 		dc.setCapability("appActivity", "com.calculator_parent_apps.MainActivity");
@@ -143,7 +143,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 7)
 	public void FirstName() throws MalformedURLException, InterruptedException {
 		List<WebElement> FirstName = driver.findElements(By.xpath("//*[@text='Your First Name']"));
-		FirstName.get(0).sendKeys("pXHealth");
+		FirstName.get(0).sendKeys("VhealthRegression");
 
 		Thread.sleep(5000);
 
@@ -217,7 +217,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	@Test(priority = 15)
 	public void LinkDr() throws MalformedURLException, InterruptedException {
-		List<WebElement> LinkDr = driver.findElements(By.xpath("//*[@text='Dr. Vishakha  Nawale  ']"));
+		List<WebElement> LinkDr = driver.findElements(By.xpath("//*[@text='Dr. vishakha Nawale ']"));
 		LinkDr.get(0).click();
 		Thread.sleep(2000);
 		List<WebElement> Next = driver.findElements(By.xpath("//*[@text='Next']"));
@@ -534,8 +534,10 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 35)
 	public void SelectFamilyMember() throws MalformedURLException, InterruptedException {
 
-		List<WebElement> SelectFamilyMember = driver.findElements(By.className("android.view.ViewGroup"));
-		SelectFamilyMember.get(15).click();
+		List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+		SelectFamilyMember.get(0).click();
+	
+	  Thread.sleep(5000);
 
 		Thread.sleep(2000);
 
@@ -554,7 +556,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 37)
 	public void Doctor() throws MalformedURLException, InterruptedException {
 
-		List<WebElement> Doctor = driver.findElements(By.xpath("//*[@text='Dr. Vishakha  Nawale ']"));
+		List<WebElement> Doctor = driver.findElements(By.xpath("//*[@text='Dr. vishakha Nawale']"));
 		Doctor.get(0).click();
 
 		Thread.sleep(5000);
@@ -574,7 +576,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 39)
 	public void Time() throws MalformedURLException, InterruptedException {
 
-		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='01:40 pm']"));
+		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='02:50 pm']"));
 		Time.get(0).click();
 
 		Thread.sleep(5000);
@@ -587,44 +589,64 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		//NewVisit.get(0).clear();
 
 		Thread.sleep(2000);
-		List<WebElement> AddVisit = driver.findElements(By.xpath("//*[@text='󰐙']"));
-		AddVisit.get(0).click();
-		Thread.sleep(2000);
-
-		List<WebElement> Followup = driver.findElements(By.xpath("//*[@text='Follow Up']"));
-		Followup.get(0).click();
-		Thread.sleep(2000);
-
-		List<WebElement> CfAdd = driver.findElements(By.xpath("//*[@text='󰐙']"));
-		CfAdd.get(1).click();
-		Thread.sleep(2000);
-
-		List<WebElement> CfFever = driver.findElements(By.xpath("//*[@text='Fever']"));
-		CfFever.get(0).click();
-		Thread.sleep(2000);
-
+		List<WebElement> els1 = driver.findElements(By.xpath("(//android.widget.TextView[@text=\"󰐙\"])[1]"));
+		els1.get(0).click();
 		
-		  List<WebElement> CfSince =
-		  driver.findElements(By.className("android.widget.EditText"));
-		  CfSince.get(1).sendKeys("1"); Thread.sleep(2000);
-		  
-		  List<WebElement> CfMild = driver.findElements(By.xpath("//*[@text='Mild']"));
-		  CfMild.get(0).click(); 
-		  CfMild.get(0).click();
-		  
-		  Thread.sleep(2000);
-		  
-		  List<WebElement> CfVomitting =
-		  driver.findElements(By.xpath("//*[@text='Vomitting']"));
-		  CfVomitting.get(0).click(); Thread.sleep(2000);
-		  
-		  List<WebElement> CfSince1 =
-		  driver.findElements(By.className("android.widget.EditText"));
-		  CfSince1.get(1).sendKeys("1"); Thread.sleep(2000);
+		/*
+		 * Thread.sleep(5000); List<WebElement> ScheduledVisit
+		 * =driver.findElements(By.xpath( "//*[@text='Scheduled Visit']"));
+		 * ScheduledVisit.get(0).clear();
+		 * 
+		 * Thread.sleep(2000);
+		 */
+			/*
+			 * List<WebElement> AddVisit =driver.findElements(By.xpath( "//*[@text='󰐙']"));
+			 * AddVisit.get(0).click();
+			 */
+		 Thread.sleep(2000);
 		 
-		List<WebElement> CfAddComplains = driver.findElements(By.xpath("//*[@text='Add Complaints']"));
-		CfAddComplains.get(0).click();
-		Thread.sleep(2000);
+		 List<WebElement> Followup =driver.findElements(By.xpath(
+					"//*[@text='Follow Up']"));
+		 Followup.get(0).click();
+			 Thread.sleep(2000); 
+			 
+			 List<WebElement> CfAdd =driver.findElements(By.xpath(
+						"//*[@text='󰐙']"));
+			 CfAdd.get(1).click();
+				 Thread.sleep(2000); 
+				 
+				 List<WebElement> CfFever =driver.findElements(By.xpath(
+							"//*[@text='Fever']"));
+				 CfFever.get(0).click();
+					 Thread.sleep(2000); 
+					 
+					 List<WebElement> CfSince =driver.findElements(By.className(
+								"android.widget.EditText"));
+					 CfSince.get(1).sendKeys("1");
+						 Thread.sleep(2000);
+						 
+						 List<WebElement> CfMild =driver.findElements(By.xpath(
+									"(//android.widget.TextView[@text='󰄳'])[3]"));
+						 CfMild.get(0).click();
+						 CfMild.get(0).click();
+							 Thread.sleep(2000);
+							 
+							 List<WebElement> CfVomitting =driver.findElements(By.xpath(
+										"//*[@text='Vomitting']"));
+							 CfVomitting.get(0).click();
+								 Thread.sleep(2000);
+								 
+								 
+								 List<WebElement> CfSince1 =driver.findElements(By.className(
+											"android.widget.EditText"));
+								 CfSince1.get(1).sendKeys("1");
+									 Thread.sleep(2000);
+								 
+								 List<WebElement> CfAddComplains =driver.findElements(By.xpath(
+											"//*[@text='Add Complaints']"));
+								 CfAddComplains.get(0).click();
+									 Thread.sleep(2000);
+			
 
 		Thread.sleep(5000);
 
@@ -659,9 +681,10 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		 * "//android.view.ViewGroup[@index='4']")); SelectFamilyMember.get(0).click();
 		 */
 
-		List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.view.ViewGroup[@index='3']"));
+		List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
 		SelectFamilyMember.get(0).click();
-
+	
+	 
 		Thread.sleep(5000);
 
 	}
@@ -1020,7 +1043,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	public void photo() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(10000);
 		driver.findElement(By.xpath(
-				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20231214-124051_Gallery.jpg, 829 kB, 14 Dec 2023\"]"))
+				"(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[1]"))
 				.click();
 
 	}
@@ -1163,8 +1186,10 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	public void SelectFamilyMember3() throws MalformedURLException, InterruptedException {
 
 		Thread.sleep(5000);
-		List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.view.ViewGroup[@index='3']"));
+		List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
 		SelectFamilyMember.get(0).click();
+	
+	  Thread.sleep(5000);
 
 		Thread.sleep(5000);
 
@@ -1264,13 +1289,13 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		BackArrow.get(0).click();
 
 		Thread.sleep(10000);
-		List<WebElement> SelectFamilyMember = driver.findElements(By.className("android.view.ViewGroup"));
-		SelectFamilyMember.get(8).click();
+		 List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+			SelectFamilyMember.get(0).click();
 
 		Thread.sleep(5000);
 
 		List<WebElement> AddButton = driver.findElements(By.className("android.widget.TextView"));
-		AddButton.get(78).click();
+		AddButton.get(62).click();
 
 		Thread.sleep(5000);
 

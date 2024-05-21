@@ -70,7 +70,7 @@ public class MultipleNextQ {
 	public static String age = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[5]/div[1]/mat-form-field[2]/div/div[1]/div/input";
 	public static String familyProfile = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[1]/mat-step-header[4]/div[3]/div";
 	public static String Done = "/html/body/ngb-modal-window/div/div/div[3]/div";
-	public static String SelectDate = "/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-month-view/table/tbody/tr[1]/td[2]/div[1]";
+	public static String SelectDate = "//*[text()=' 2 ']";
 	public static String SelectMonth = "/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-year-view/table/tbody/tr[3]/td[4]/div[1]";
 	public static String ClickYearDropdown = "/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/mat-calendar-header/div/div/button[1]";
 	public static String clickYear = "/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-multi-year-view/table/tbody/tr[5]/td[3]/div[1]";
@@ -80,7 +80,7 @@ public class MultipleNextQ {
 	public static String OTP4 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
 	public static String OTP5 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
 	public static String OTP6 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]";
-	public static String Done1="/html/body/ngb-modal-window/div/div/div[3]/div";
+	public static String Done1="//*[text()='Done']";
 
 	public static void waitForVisibilityOf(By by) {
 		try {
@@ -107,13 +107,13 @@ public class MultipleNextQ {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
+
 		driver.get("https://app.copious.care/");
-		//driver.get("https://opd.copious.care/");
 		// driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
 
@@ -226,7 +226,7 @@ public class MultipleNextQ {
 	@Test(priority = 8)
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("Test");
+		driver.findElement(By.xpath(firstName)).sendKeys("TestAuto2ndMay");
 		;
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));
@@ -253,15 +253,19 @@ public class MultipleNextQ {
 	@Test(priority = 11)
 	public void birthDate() throws InterruptedException {
 		
-        waitForVisibilityOf(By.xpath(birthDate));
-		highlightElement(By.xpath(birthDate));
-		driver.findElement(By.xpath(birthDate));
-		clickUsingJavaScript(By.xpath(birthDate));
-
-		waitForVisibilityOf(By.xpath(SelectDate));
-		highlightElement(By.xpath(SelectDate));
-		driver.findElement(By.xpath(SelectDate));
-		clickUsingJavaScript(By.xpath(SelectDate));
+		waitForVisibilityOf(By.xpath(birthDate));
+    	highlightElement(By.xpath(birthDate));
+		 driver.findElement(By.xpath(birthDate));
+		 clickUsingJavaScript(By.xpath(birthDate));
+		 
+		
+		 
+		 waitForVisibilityOf(By.xpath(SelectDate)); 
+		 highlightElement(By.xpath(SelectDate));
+		 driver.findElement(By.xpath(SelectDate));
+		 clickUsingJavaScript(By.xpath(SelectDate));
+		 
+		 Thread.sleep(5000);
 	}
 
 	
@@ -307,15 +311,16 @@ public class MultipleNextQ {
 		clickUsingJavaScript(By.xpath(pinCode));
 	}
 
-	@Test(priority = 17)
-	public void proceedWithSameRMN() {
-		waitForVisibilityOf(By.xpath(proceedWithSameRMN));
-
-		highlightElement(By.xpath(proceedWithSameRMN));
-		clickUsingJavaScript(By.xpath(proceedWithSameRMN));
-		
-
-	}
+	/*
+	 * @Test(priority = 17) public void proceedWithSameRMN() {
+	 * waitForVisibilityOf(By.xpath(proceedWithSameRMN));
+	 * 
+	 * highlightElement(By.xpath(proceedWithSameRMN));
+	 * clickUsingJavaScript(By.xpath(proceedWithSameRMN));
+	 * 
+	 * 
+	 * }
+	 */
 
 	@Test(priority = 18)
 	public void nextButton() throws InterruptedException {

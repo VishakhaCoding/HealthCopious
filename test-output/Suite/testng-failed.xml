@@ -3,32 +3,31 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="webAuto.OPDEndToEndWorkFlow2">
+      <class name="pivotalApplication.PivoFin2">
         <methods>
-          <include name="AllDocuments1"/>
-          <include name="ReferralOption3"/>
-          <include name="Document2"/>
-          <include name="setUp"/>
-          <include name="AllDocuments"/>
-          <include name="cirtificateOption3"/>
+          <include name="Referrals"/>
+          <include name="close4"/>
+          <include name="ShareHealth"/>
+          <include name="Prescription"/>
+          <include name="ViewReports"/>
+          <include name="MyNotes"/>
+          <include name="VaccineInStore"/>
           <include name="screenShot"/>
-          <include name="cirtificateOption"/>
-          <include name="cirtificateOption1"/>
+          <include name="Appointments"/>
+          <include name="PatientList"/>
+          <include name="Reports"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- webAuto.OPDEndToEndWorkFlow2 -->
-      <class name="webAuto.OpdEndToEndWorkFlow1">
+      </class> <!-- pivotalApplication.PivoFin2 -->
+      <class name="pivotalApplication.PivoFin1">
         <methods>
-          <include name="SaveandProceed"/>
-          <include name="setUp"/>
-          <include name="OnExamination"/>
-          <include name="ConfirmPrescription"/>
-          <include name="GeneralInstruction"/>
-          <include name="Diagnosis"/>
-          <include name="DietaryAdvice"/>
-          <include name="Medicine1"/>
+          <include name="BulkCancel"/>
+          <include name="setup1"/>
           <include name="screenShot"/>
+          <include name="BfSuite"/>
+          <include name="AfterSuite"/>
         </methods>
-      </class> <!-- webAuto.OpdEndToEndWorkFlow1 -->
+      </class> <!-- pivotalApplication.PivoFin1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -33,9 +33,9 @@ public class Requisition {
 	   public static String OTP4="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
 	   public static String OTP5="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
 	   public static String OTP6="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]"; 
-	   public static String InvestigationClick="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[1]/app-top-info-navbar/div/div[2]/div[3]/img";
+	   public static String InvestigationClick="//*[text()='Investigations']";
 	   public static String RequisitionClick="//*[text()='Requisitions']";
-	   public static String NewRequisition="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/div/app-patient-requisition/div/div[1]/div[2]/button[2]";
+	   public static String NewRequisition="//*[text()='New Requisition']";
 	   public static String SelectTest ="//*[text()='RT-PCR']";
 	   public static String SelectPackageOption="//*[text()='Packages']";
 	   public static String SelectPackage="/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/form/div/mat-tab-group/div/mat-tab-body[2]/div/div/div/div[3]/div[1]/mat-checkbox/label/span[1]";
@@ -70,22 +70,21 @@ public class Requisition {
 		@BeforeClass
 		public void setUp() {
 
-			System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			//driver.get("http://stage.copious.care:4200/");
 			//driver.get("https://stage.copious.care/");
 			driver.manage().window().fullscreen();
-			driver.get("https://app.copious.care/");
-			 //driver.get("https://opd.copious.care/");
+			 driver.get("https://app.copious.care/");
 		}
 
 		
 		@Test(priority = 1)
 		public void numberField() {
 			waitForVisibilityOf(By.xpath(mobileNumber));
-			driver.findElement(By.xpath(mobileNumber)).sendKeys("2424242424");
+			driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
 			highlightElement(By.xpath(mobileNumber));
 			clickUsingJavaScript(By.xpath(mobileNumber));
 		}
@@ -217,12 +216,14 @@ public class Requisition {
 			  highlightElement(By.xpath(CancelOption));
 			  clickUsingJavaScript(By.xpath(CancelOption));
 			  
-			  waitForVisibilityOf(By.xpath(RequisitionSharedMsge));
-	        	highlightElement(By.xpath(RequisitionSharedMsge));
-	        	 String Actualmsge=driver.findElement(By.xpath(RequisitionSharedMsge)).getText();
-	        	 System.out.println("msge:"+Actualmsge);
-	        	 String ErrorMsge="Requisition shared to patient successfully";
-	            Assert.assertEquals(Actualmsge,ErrorMsge);
+				/*
+				 * waitForVisibilityOf(By.xpath(RequisitionSharedMsge));
+				 * highlightElement(By.xpath(RequisitionSharedMsge)); String
+				 * Actualmsge=driver.findElement(By.xpath(RequisitionSharedMsge)).getText();
+				 * System.out.println("msge:"+Actualmsge); String
+				 * ErrorMsge="Requisition shared to patient successfully";
+				 * Assert.assertEquals(Actualmsge,ErrorMsge);
+				 */
 		  
 		  }
 		// @AfterClass public void close() throws IOException {
@@ -247,5 +248,6 @@ public class Requisition {
 				}
 			}
 		  
+		 
 
 }

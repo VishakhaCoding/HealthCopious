@@ -1,72 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="pivotalApplicationNegative.PDeletePatient">
+      <class name="pivotalApplication.PivoFin2">
         <methods>
-          <include name="MiddleName"/>
-          <include name="Heightl"/>
+          <include name="Referrals"/>
+          <include name="close4"/>
+          <include name="ShareHealth"/>
+          <include name="Prescription"/>
+          <include name="ViewReports"/>
+          <include name="MyNotes"/>
+          <include name="VaccineInStore"/>
           <include name="screenShot"/>
-          <include name="MedicalConditionSelect"/>
-          <include name="RecurringComplaints"/>
-          <include name="helathNext"/>
-          <include name="CC"/>
-          <include name="Neweptient"/>
-          <include name="Address"/>
-          <include name="ContinueProfile"/>
-          <include name="Fatherheight"/>
-          <include name="HospitalizationHistory"/>
-          <include name="OTP"/>
-          <include name="BPDia"/>
-          <include name="AfterSuite"/>
-          <include name="confirm"/>
-          <include name="FamailyNedicalHistory"/>
-          <include name="AddMedicalCondition"/>
-          <include name="Next"/>
-          <include name="Close"/>
-          <include name="HC"/>
+          <include name="Appointments"/>
+          <include name="PatientList"/>
+          <include name="Reports"/>
           <include name="setup"/>
-          <include name="HealthHistory"/>
-          <include name="AddGeneticdisoredr"/>
-          <include name="TypeOfDelivery"/>
-          <include name="FirstName"/>
-          <include name="City"/>
-          <include name="DeleteOption"/>
-          <include name="FathersName"/>
-          <include name="GeneticdisoredrAdd"/>
-          <include name="MedicalConditionAdd"/>
-          <include name="BPSYS"/>
-          <include name="BloodGroup"/>
-          <include name="Mothersheight"/>
-          <include name="Reactions"/>
-          <include name="submit"/>
-          <include name="TypeOfDeliveryNormal"/>
-          <include name="BloodGroupA"/>
-          <include name="BirthHistoryNext"/>
-          <include name="Createptient"/>
-          <include name="EnterDisorders"/>
-          <include name="PinCode"/>
-          <include name="Area"/>
-          <include name="BirthCalender"/>
-          <include name="IAgree"/>
-          <include name="proceedButton"/>
-          <include name="LastName"/>
-          <include name="BfSuite"/>
-          <include name="BfSuite"/>
-          <include name="Birthok"/>
-          <include name="OtherEmailId"/>
-          <include name="confirmPopup"/>
-          <include name="AdditionalNumber1"/>
-          <include name="weightl"/>
-          <include name="GeneticdisoredrSelect"/>
-          <include name="MobileNumber1"/>
-          <include name="GenFemale"/>
-          <include name="MothersName"/>
-          <include name="NumberField"/>
-          <include name="Allergies"/>
         </methods>
-      </class> <!-- pivotalApplicationNegative.PDeletePatient -->
+      </class> <!-- pivotalApplication.PivoFin2 -->
+      <class name="pivotalApplication.PivoFin1">
+        <methods>
+          <include name="BulkCancel"/>
+          <include name="setup1"/>
+          <include name="screenShot"/>
+          <include name="BfSuite"/>
+          <include name="AfterSuite"/>
+        </methods>
+      </class> <!-- pivotalApplication.PivoFin1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

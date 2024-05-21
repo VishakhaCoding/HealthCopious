@@ -19,7 +19,7 @@ public class HealthChat extends HealthLogin{
 	@Test(priority = 6)
 	public void SelectFamilyMember() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
-		WebElement SelectFamilyMember = driver.findElement(By.xpath("//*[@text='Dr. Vishakha  Nawale  (For TestDoc)']"));
+		WebElement SelectFamilyMember = driver.findElement(By.xpath("//android.widget.TextView[@text=\"Dr. vishakha Nawale (For ReHealth16feb)\"]"));
 		SelectFamilyMember.click();
 
 		Thread.sleep(5000);
@@ -46,22 +46,24 @@ public class HealthChat extends HealthLogin{
 				  
 			WebElement allow
 			
-			  = driver.findElement(By.xpath("//*[@text='Allow']"));
+			  = driver.findElement(By.xpath("//*[@text='While using the app']"));
 			allow.click();
 			  
 		  Thread.sleep(5000);}
-	  @Test(priority=9) public void CameraAllow1() throws InterruptedException {
-		  Thread.sleep(2000);
-		  
-				  
-				//working code for vdo call checkbox
-				  
-		  WebElement allow1
-			
-		  = driver.findElement(By.xpath("//*[@text='Allow']"));
-		allow1.click();
-			  
-		  Thread.sleep(5000);}
+
+		/*
+		 * @Test(priority=9) public void CameraAllow1() throws InterruptedException {
+		 * Thread.sleep(2000);
+		 * 
+		 * 
+		 * //working code for vdo call checkbox
+		 * 
+		 * WebElement allow1
+		 * 
+		 * = driver.findElement(By.xpath("//*[@text='Allow']")); allow1.click();
+		 * 
+		 * Thread.sleep(5000);}
+		 */
 	  @Test(priority=10) public void CameraClick() throws InterruptedException {
 		  Thread.sleep(2000);
 		  
@@ -69,7 +71,7 @@ public class HealthChat extends HealthLogin{
 				//working code for vdo call checkbox
 				  
 		  WebElement CameraClick
-		  = driver.findElement(By.xpath("//CenterButtonGroup[@content-desc=\"NONE\"]"));
+		  = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Take picture\"]"));
 		CameraClick.click();
 			  
 		  Thread.sleep(5000);}

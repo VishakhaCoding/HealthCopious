@@ -13,6 +13,8 @@
             <configuration>
                 <suiteXmlFiles>
                     <suiteXmlFile>AppEnd1.xml</suiteXmlFile>
+                    <suiteXmlFile>NewRxFlow.xml</suiteXmlFile>
+                    <suiteXmlFile>HealthAppium.xml</suiteXmlFile>
                      <suiteXmlFile>PivotalEnd1.xml</suiteXmlFile>
                 </suiteXmlFiles>
             </configuration>

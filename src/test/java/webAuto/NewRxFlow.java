@@ -563,7 +563,7 @@ public class NewRxFlow {
 	@Test(priority = 11, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("EUIRx116May");
+		driver.findElement(By.xpath(firstName)).sendKeys("GitUIRx116May");
 		;
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));

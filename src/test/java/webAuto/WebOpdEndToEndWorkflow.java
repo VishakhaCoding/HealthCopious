@@ -1,26 +1,23 @@
- package webAuto;
+package webAuto;
 
 import java.io.File;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.testng.Assert;
-//import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class OpdEndToEndWorkFlow1 {
-
+public class WebOpdEndToEndWorkflow {
 	public static WebDriver driver;
 
 	// public static String doctorLoginLink =
@@ -235,15 +232,15 @@ public class OpdEndToEndWorkFlow1 {
 	public static String InvestigationClick1 = "//*[text()='Investigations']";
 	public static String ReportsClick = "//div[div='Requisitions']/descendant::div[text()='Reports']";
 	public static String UploadReport = "//*[text()='Upload Report']";
-	public static String CreatedBy = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/mat-form-field[2]/div/div[1]/div/input";
-	public static String DocumentOn = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/mat-form-field[3]/div/div[1]/div[1]/input";
-	public static String BrownFile1 = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[4]/div[1]/div/div/div[1]/input";
+	public static String CreatedBy = "//*[text()='Upload health reports and related documents as photos,images and PDFs.']// following::input";
+	public static String DocumentOn = "//*[text()='Upload health reports and related documents as photos,images and PDFs.']// following::input[2]";
+	public static String BrownFile1 = "//*[text()='Upload health reports and related documents as photos,images and PDFs.']// following::input[3]";
 	public static String UploadReportDoc = "//*[text()='Upload']";
 	public static String RequisitionClick = "//*[text()='Requisitions']";
 	public static String NewRequisition = "//*[text()='New Requisition']";
 	public static String SelectTest = "//*[text()='RT-PCR']";
 	public static String SelectPackageOption = "//*[text()='Packages']";
-	public static String SelectPackage = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/form/div/mat-tab-group/div/mat-tab-body[2]/div/div/div/div[3]/div[1]/mat-checkbox/label/span[1]";
+	public static String SelectPackage = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/form/div/mat-tab-group/div/mat-tab-body[2]/div/div/div/div[1]/div[1]/mat-checkbox/label/span[1]";
 	public static String RequisitionSaveAndShare = "//*[text()='Save & Preview']";
 	public static String ShareRequisition = "//*[text()='Share Requisition']";
 	public static String CancelOption = "//*[text()='Cancel']";
@@ -251,13 +248,13 @@ public class OpdEndToEndWorkFlow1 {
 	public static String ImmunizationOption = "//*[text()='Immunization']";
 	public static String ConfirmVaccinationDate = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/button";
 	public static String VaccineRecord = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/patient-immunization/div/mat-tab-group/div/mat-tab-body[1]/div/div/div/table/tbody/tr[2]/td[8]/div";
-	public static String RecievedDate = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/div/img";
+	public static String RecievedDate = "//*[text()='Tubaervac BCG']// following::img";
 	public static String ClickDate = "//*[text()='1']";
 	public static String SaveVaccine = "//*[text()='Save Vaccine']";
 	public static String SpecialVaccineClick = "//*[text()='Special Vaccines']";
 	public static String CholeraVacccine = "//*[text()='Meningococcal Vaccine']";
 	public static String SelectDate1 = "//*[text()='1']";
-	public static String ClickCalender = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[4]/div/img";
+	public static String ClickCalender = "//*[text()='Other']// following::img";
 	public static String SaveSpecialVaccine = "//*[text()='Save Vaccine']";
 	public static String ReceiptOption = "//*[text()='Bill/Receipt']";
 	public static String ReceiptNo = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/app-patient-receipt/div/div[2]/div/div[2]/mat-form-field[2]/div/div[1]/div/input";
@@ -265,10 +262,10 @@ public class OpdEndToEndWorkFlow1 {
 	public static String Vaccination = "//div[@class='searchBox']//following::input[2]";
 	public static String VaccinationCheckboxClick = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/app-patient-receipt/div/div[2]/div/div[6]/img";
 	public static String previewReceipt = "//*[text()='Preview Receipt']";
-	public static String EnterPayerName = "/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[1]/mat-form-field[1]/div/div[1]/div/input";
-	public static String PaymentMethodDropdown = "/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[1]/mat-form-field[2]/div/div[1]/div/mat-select";
-	public static String PaymentMethod = "/html/body/div[2]/div[4]/div/div/div/mat-option[1]/span";
-	public static String CreateReceipt = "/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[3]/button[2]";
+	public static String EnterPayerName = "//*[text()='Create Receipt']// following::input";
+	public static String PaymentMethodDropdown = "//*[text()='Create Receipt']// following::span[3]";
+	public static String PaymentMethod = "//*[text()=' Cash ']";
+	public static String CreateReceipt = "//*[text()='Create Receipt']//following::button[2]";
 	public static String CloseReceipt = "//*[text()='×']";
 	public static String OtheCharges = "//div[@class='searchBox']//following::input[7]";
 	public static String AddMoreButton = "//*[text()='Add More']";
@@ -277,22 +274,22 @@ public class OpdEndToEndWorkFlow1 {
 	public static String Document = "//*[text()='Documents']";
 	public static String cirtificateOption = "//*[text()='Certificate']";
 	public static String createCirtificate = "//*[text()='Create Certificate']";
-	public static String cirtificateTypeDropdown = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[1]/div/div/div/div/button";
-	public static String cirtificateType = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[1]/div/div/div/div/div/button[1]";
-	public static String MessagePreviewclick = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[4]/div";
-	public static String cirtificatePreview = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/button";
+	public static String cirtificateTypeDropdown = "//*[text()='Select Certificate ']//following::button";
+	public static String cirtificateType = "//*[text()='Select Certificate ']//following::button[2]";
+	public static String MessagePreviewclick = "//*[text()='Preview']";
+	public static String cirtificatePreview = "//*[text()='Preview']";
 	public static String SaveAndShare = "//*[text()='Save & share ']";
 	public static String ReferralOption = "//*[text()='Referral']";
 	public static String TapToCreateReferral = "//*[text()='Tap to create Referral']";
-	public static String SpecialityDropdown = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[1]/div/div/button";
-	public static String SelectSpeciality = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[1]/div/div/div/button";
-	public static String RefferingDrName = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[2]/mat-form-field[1]/div/div[1]/div/input";
-	public static String RefferingDrEmail = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[2]/mat-form-field[2]/div/div[1]/div/input";
-	public static String RefferingDrMobileNo = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[3]/mat-form-field[1]/div/div[1]/div/input";
-	public static String HealthCondition = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[3]/mat-form-field[2]/div/div[1]/div/input";
-	public static String Duration1 = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[4]/mat-form-field/div/div[1]/div/input";
-	public static String ReferralPreview = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[7]/button";
-	public static String ReferralSaveAndShare = "/html/body/div[2]/div[4]/div/mat-dialog-container/div/div[2]/div[2]/div";
+	public static String SpecialityDropdown = "//*[text()='Create New Referral']//following::button";
+	public static String SelectSpeciality = "//*[text()='Create New Referral']//following::button[2]";
+	public static String RefferingDrName = "//*[text()='Create New Referral']//following::input";
+	public static String RefferingDrEmail = "//*[text()='Create New Referral']//following::input[2]";
+	public static String RefferingDrMobileNo = "//*[text()='Create New Referral']//following::input[3]";
+	public static String HealthCondition = "//*[text()='Create New Referral']//following::input[4]";
+	public static String Duration1 = "//*[text()='Create New Referral']//following::input[5]";
+	public static String ReferralPreview = "//*[text()='Preview']";
+	public static String ReferralSaveAndShare = "//*[text()='Save & Share']";
 	public static String ViewReceipt = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/app-patient-receipt/div/div[1]/div[3]/div/table/tbody/tr/td[4]/div";
 	public static String CloseCertificate = "//*[text()='×']";
 	public static String ViewCirtificate = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/app-patient-certificate/div/div[2]/div/table/tbody/tr/td[5]/div";
@@ -465,7 +462,7 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	@Test(priority = 8, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("LwebTestMay");
+		driver.findElement(By.xpath(firstName)).sendKeys("ZZwebTestMay");
 		;
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));
@@ -1289,7 +1286,606 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 		highlightElement(By.xpath(GoHome));
 		clickUsingJavaScript(By.xpath(GoHome));
 	}
+	@Test(priority = 43, groups = "Regression")
+	public void Investigation() throws InterruptedException {
+		Thread.sleep(10000);
+		waitForVisibilityOf(By.xpath(AddNewPrescription));
+		driver.findElement(By.xpath(AddNewPrescription));
+		highlightElement(By.xpath(AddNewPrescription));
+		clickUsingJavaScript(By.xpath(AddNewPrescription));
+		
+		Thread.sleep(5000);
+
+		waitForVisibilityOf(By.xpath(InvestigationClick1));
+		driver.findElement(By.xpath(InvestigationClick1));
+		highlightElement(By.xpath(InvestigationClick1));
+		clickUsingJavaScript(By.xpath(InvestigationClick1));
+
+		waitForVisibilityOf(By.xpath(ReportsClick));
+		driver.findElement(By.xpath(ReportsClick));
+		highlightElement(By.xpath(ReportsClick));
+		clickUsingJavaScript(By.xpath(ReportsClick));
+
+		waitForVisibilityOf(By.xpath(UploadReport));
+		driver.findElement(By.xpath(UploadReport));
+		highlightElement(By.xpath(UploadReport));
+		clickUsingJavaScript(By.xpath(UploadReport));
+
+		Thread.sleep(5000);
+		waitForVisibilityOf(By.xpath(CreatedBy));
+		driver.findElement(By.xpath(CreatedBy)).sendKeys("Abc");
+		highlightElement(By.xpath(CreatedBy));
+
+		waitForVisibilityOf(By.xpath(DocumentOn));
+		driver.findElement(By.xpath(DocumentOn)).sendKeys("01/01/2023");
+		highlightElement(By.xpath(DocumentOn));
+
+		waitForVisibilityOf(By.xpath(BrownFile1));
+		driver.findElement(By.xpath(BrownFile1)).sendKeys("C:\\Users\\91966\\Desktop\\nature.jpg");
+		highlightElement(By.xpath(BrownFile1));
+
+		Thread.sleep(15000);
+		waitForVisibilityOf(By.xpath(UploadReportDoc));
+		driver.findElement(By.xpath(UploadReportDoc));
+		highlightElement(By.xpath(UploadReportDoc));
+		clickUsingJavaScript(By.xpath(UploadReportDoc));
+
+		/*
+		 * waitForVisibilityOf(By.xpath(UploadDocMsge));
+		 * highlightElement(By.xpath(UploadDocMsge)); String Actualmsge =
+		 * driver.findElement(By.xpath(UploadDocMsge)).getText();
+		 * System.out.println("msge:" + Actualmsge); String ErrorMsge =
+		 * "Your document has been uploaded successfully";
+		 * Assert.assertEquals(Actualmsge, ErrorMsge);
+		 */
+
+	}
+
 	
+	
+	  @Test(priority = 44, groups = "Regression") public void Investigation1()
+	  throws InterruptedException {
+			
+	  Thread.sleep(5000);
+	  
+	  waitForVisibilityOf(By.xpath(InvestigationClick1));
+	  driver.findElement(By.xpath(InvestigationClick1));
+	  highlightElement(By.xpath(InvestigationClick1));
+	  clickUsingJavaScript(By.xpath(InvestigationClick1));
+	  
+	  waitForVisibilityOf(By.xpath(RequisitionClick));
+	  driver.findElement(By.xpath(RequisitionClick));
+	  highlightElement(By.xpath(RequisitionClick));
+	  clickUsingJavaScript(By.xpath(RequisitionClick));
+	  
+	  waitForVisibilityOf(By.xpath(NewRequisition));
+	  driver.findElement(By.xpath(NewRequisition));
+	  highlightElement(By.xpath(NewRequisition));
+	  clickUsingJavaScript(By.xpath(NewRequisition));
+	  
+	  Thread.sleep(3000); waitForVisibilityOf(By.xpath(SelectTest));
+	  driver.findElement(By.xpath(SelectTest));
+	  highlightElement(By.xpath(SelectTest));
+	  clickUsingJavaScript(By.xpath(SelectTest));
+	  
+	  waitForVisibilityOf(By.xpath(SelectPackageOption));
+	  driver.findElement(By.xpath(SelectPackageOption));
+	  highlightElement(By.xpath(SelectPackageOption));
+	  clickUsingJavaScript(By.xpath(SelectPackageOption));
+	  
+	  waitForVisibilityOf(By.xpath(SelectPackage));
+	  driver.findElement(By.xpath(SelectPackage));
+	  highlightElement(By.xpath(SelectPackage));
+	  clickUsingJavaScript(By.xpath(SelectPackage));
+	  
+	  Thread.sleep(15000);
+	  
+	  waitForVisibilityOf(By.xpath(RequisitionSaveAndShare));
+	  driver.findElement(By.xpath(RequisitionSaveAndShare));
+	  highlightElement(By.xpath(RequisitionSaveAndShare));
+	  clickUsingJavaScript(By.xpath(RequisitionSaveAndShare));
+	  
+	  Thread.sleep(10000); waitForVisibilityOf(By.xpath(ShareRequisition));
+	  driver.findElement(By.xpath(ShareRequisition));
+	  highlightElement(By.xpath(ShareRequisition));
+	  clickUsingJavaScript(By.xpath(ShareRequisition));
+	  
+		
+		
+		
+		/*
+		 * waitForVisibilityOf(By.xpath(ChooseLab));
+		 * driver.findElement(By.xpath(ChooseLab));
+		 * highlightElement(By.xpath(ChooseLab));
+		 * clickUsingJavaScript(By.xpath(ChooseLab));
+		 * 
+		 * waitForVisibilityOf(By.xpath(ChooseLab));
+		 * driver.findElement(By.xpath(ChooseLab));
+		 * highlightElement(By.xpath(ChooseLab));
+		 * clickUsingJavaScript(By.xpath(ChooseLab));
+		 * 
+		 * waitForVisibilityOf(By.xpath(DashLab));
+		 * driver.findElement(By.xpath(DashLab)); highlightElement(By.xpath(DashLab));
+		 * clickUsingJavaScript(By.xpath(DashLab));
+		 * 
+		 * waitForVisibilityOf(By.xpath(EmailOption));
+		 * driver.findElement(By.xpath(EmailOption));
+		 * highlightElement(By.xpath(EmailOption));
+		 * clickUsingJavaScript(By.xpath(EmailOption));
+		 * 
+		 */
+		 
+	  
+	  
+	  waitForVisibilityOf(By.xpath(CancelOption));
+	  driver.findElement(By.xpath(CancelOption));
+	  highlightElement(By.xpath(CancelOption));
+	  clickUsingJavaScript(By.xpath(CancelOption));
+	 
+	  
+		/*
+		 * Thread.sleep(2000); waitForVisibilityOf(By.xpath(RequisitionSharedMsge));
+		 * highlightElement(By.xpath(RequisitionSharedMsge)); String Actualmsge =
+		 * driver.findElement(By.xpath(RequisitionSharedMsge)).getText();
+		 * System.out.println("msge:" + Actualmsge); String ErrorMsge =
+		 * "Requisition shared to patient successfully"; Assert.assertEquals(Actualmsge,
+		 * ErrorMsge);
+		 */
+	  
+	  
+	 }
+	 
+	@Test(priority = 45, groups = "Regression")
+	public void HealthProfile() throws InterruptedException {
+		Thread.sleep(5000);
+
+		waitForVisibilityOf(By.xpath(HealthProfile));
+		driver.findElement(By.xpath(HealthProfile));
+		highlightElement(By.xpath(HealthProfile));
+		clickUsingJavaScript(By.xpath(HealthProfile));
+
+		waitForVisibilityOf(By.xpath(ImmunizationOption));
+		driver.findElement(By.xpath(ImmunizationOption));
+		highlightElement(By.xpath(ImmunizationOption));
+		clickUsingJavaScript(By.xpath(ImmunizationOption));
+
+		/*
+		 * waitForVisibilityOf(By.xpath(ConfirmVaccinationDate));
+		 * driver.findElement(By.xpath(ConfirmVaccinationDate));
+		 * highlightElement(By.xpath(ConfirmVaccinationDate));
+		 * clickUsingJavaScript(By.xpath(ConfirmVaccinationDate));
+		 */
+
+		Thread.sleep(3000);
+		waitForVisibilityOf(By.xpath(SpecialVaccineClick));
+		driver.findElement(By.xpath(SpecialVaccineClick));
+		highlightElement(By.xpath(SpecialVaccineClick));
+		clickUsingJavaScript(By.xpath(SpecialVaccineClick));
+
+		waitForVisibilityOf(By.xpath(CholeraVacccine));
+		driver.findElement(By.xpath(CholeraVacccine));
+		highlightElement(By.xpath(CholeraVacccine));
+		clickUsingJavaScript(By.xpath(CholeraVacccine));
+
+		waitForVisibilityOf(By.xpath(ClickCalender));
+		driver.findElement(By.xpath(ClickCalender));
+		highlightElement(By.xpath(ClickCalender));
+		clickUsingJavaScript(By.xpath(ClickCalender));
+
+		 LocalDate currentDate1 = LocalDate.now();
+
+	        // Format current date to match expected format in the calendar
+	        DateTimeFormatter dateFormatter1 = DateTimeFormatter.ofPattern("d");
+	        String formattedDay1 = currentDate1.format(dateFormatter1);
+
+	        
+		 
+	        clickUsingJavaScript(By.xpath("//*[text()='" + formattedDay1 + "']"));
+
+		waitForVisibilityOf(By.xpath(SaveSpecialVaccine));
+		driver.findElement(By.xpath(SaveSpecialVaccine));
+		highlightElement(By.xpath(SaveSpecialVaccine));
+		clickUsingJavaScript(By.xpath(SaveSpecialVaccine));
+
+		Thread.sleep(5000);
+		
+		  waitForVisibilityOf(By.xpath(VaccineRecord));
+		  driver.findElement(By.xpath(VaccineRecord));
+		  highlightElement(By.xpath(VaccineRecord));
+		  clickUsingJavaScript(By.xpath(VaccineRecord));
+		  
+		  waitForVisibilityOf(By.xpath(BrandName));
+		  driver.findElement(By.xpath(BrandName));
+		  highlightElement(By.xpath(BrandName));
+		  clickUsingJavaScript(By.xpath(BrandName));
+		  
+		  waitForVisibilityOf(By.xpath(RecievedDate));
+		  driver.findElement(By.xpath(RecievedDate));
+		  highlightElement(By.xpath(RecievedDate));
+		  clickUsingJavaScript(By.xpath(RecievedDate));
+		  
+		  LocalDate currentDate2 = LocalDate.now();
+
+	        // Format current date to match expected format in the calendar
+	        DateTimeFormatter dateFormatter2 = DateTimeFormatter.ofPattern("d");
+	        String formattedDay2 = currentDate2.format(dateFormatter2);
+
+	        
+		 
+	        clickUsingJavaScript(By.xpath("//*[text()='" + formattedDay2 + "']"));
+		  
+		  waitForVisibilityOf(By.xpath(SaveVaccine));
+		  driver.findElement(By.xpath(SaveVaccine));
+		  highlightElement(By.xpath(SaveVaccine));
+		  clickUsingJavaScript(By.xpath(SaveVaccine));
+		 
+
+		/*
+		 * waitForVisibilityOf(By.xpath(BulkUpdate));
+		 * driver.findElement(By.xpath(BulkUpdate));
+		 * highlightElement(By.xpath(BulkUpdate));
+		 * clickUsingJavaScript(By.xpath(BulkUpdate));
+		 */
+		/*
+		 * waitForVisibilityOf(By.xpath(BulkVaccineOPV));
+		 * driver.findElement(By.xpath(BulkVaccineOPV));
+		 * highlightElement(By.xpath(BulkVaccineOPV));
+		 * clickUsingJavaScript(By.xpath(BulkVaccineOPV));
+		 */
+
+		// waitForVisibilityOf(By.xpath(BulkVaccineHepB));
+
+		/*
+		 * driver.findElement(By.xpath(BulkVaccineHepB));
+		 * highlightElement(By.xpath(BulkVaccineHepB));
+		 * 
+		 * driver.findElement(By.xpath(AddToSchedule));
+		 * highlightElement(By.xpath(AddToSchedule));
+		 * clickUsingJavaScript(By.xpath(AddToSchedule));
+		 */
+		// clickUsingJavaScript(By.xpath(BulkVaccineHepB));
+
+		/*
+		 * waitForVisibilityOf(By.xpath(BulkVaccineDTWP));
+		 * driver.findElement(By.xpath(BulkVaccineDTWP));
+		 * highlightElement(By.xpath(BulkVaccineDTWP));
+		 * clickUsingJavaScript(By.xpath(BulkVaccineDTWP));
+		 */
+		/*
+		 * Thread.sleep(5000); waitForVisibilityOf(By.xpath(AddToSchedule));
+		 * driver.findElement(By.xpath(AddToSchedule));
+		 * highlightElement(By.xpath(AddToSchedule));
+		 * clickUsingJavaScript(By.xpath(AddToSchedule));
+		 * 
+		 * Thread.sleep(10000);
+		 */
+
+	}
+
+	@Test(priority = 46, groups = "Regression")
+	public void Document1() throws InterruptedException {
+
+		waitForVisibilityOf(By.xpath(Document));
+		driver.findElement(By.xpath(Document));
+		highlightElement(By.xpath(Document));
+		clickUsingJavaScript(By.xpath(Document));
+	}
+
+	@Test(priority = 47)
+	public void ReceiptOption() throws InterruptedException {
+		Thread.sleep(5000);
+
+		waitForVisibilityOf(By.xpath(ReceiptOption));
+		driver.findElement(By.xpath(ReceiptOption));
+		highlightElement(By.xpath(ReceiptOption));
+		clickUsingJavaScript(By.xpath(ReceiptOption));
+
+		waitForVisibilityOf(By.xpath(ReceiptNo));
+		driver.findElement(By.xpath(ReceiptNo)).sendKeys("123456");
+		highlightElement(By.xpath(ReceiptNo));
+
+		waitForVisibilityOf(By.xpath(Consultation));
+		driver.findElement(By.xpath(Consultation)).sendKeys("100.5");
+		highlightElement(By.xpath(Consultation));
+
+		Thread.sleep(3000);
+		waitForVisibilityOf(By.xpath(Vaccination));
+		driver.findElement(By.xpath(Vaccination)).sendKeys("1000");
+		highlightElement(By.xpath(Vaccination));
+
+		waitForVisibilityOf(By.xpath(OtheCharges));
+		driver.findElement(By.xpath(OtheCharges)).sendKeys("500.5");
+		highlightElement(By.xpath(OtheCharges));
+
+		waitForVisibilityOf(By.xpath(AddMoreButton));
+		driver.findElement(By.xpath(AddMoreButton));
+		highlightElement(By.xpath(AddMoreButton));
+		clickUsingJavaScript(By.xpath(AddMoreButton));
+
+		Thread.sleep(5000);
+		waitForVisibilityOf(By.xpath(ExtraOtherCharges));
+		driver.findElement(By.xpath(ExtraOtherCharges)).sendKeys("Extra");
+		;
+		highlightElement(By.xpath(ExtraOtherCharges));
+
+		waitForVisibilityOf(By.xpath(ExtraCharges));
+		driver.findElement(By.xpath(ExtraCharges)).sendKeys("100.5");
+		;
+		highlightElement(By.xpath(ExtraCharges));
+
+	}
+
+	@Test(priority = 48, groups = "Regression")
+	public void previewReceipt() throws InterruptedException {
+
+		// Thread.sleep(5000);
+
+		waitForVisibilityOf(By.xpath(previewReceipt));
+		driver.findElement(By.xpath(previewReceipt));
+		highlightElement(By.xpath(previewReceipt));
+		clickUsingJavaScript(By.xpath(previewReceipt));
+
+		waitForVisibilityOf(By.xpath(EnterPayerName));
+		driver.findElement(By.xpath(EnterPayerName)).sendKeys("payer");
+		highlightElement(By.xpath(EnterPayerName));
+
+		waitForVisibilityOf(By.xpath(PaymentMethodDropdown));
+		driver.findElement(By.xpath(PaymentMethodDropdown));
+		highlightElement(By.xpath(PaymentMethodDropdown));
+		clickUsingJavaScript(By.xpath(PaymentMethodDropdown));
+
+		waitForVisibilityOf(By.xpath(PaymentMethod));
+		driver.findElement(By.xpath(PaymentMethod));
+		highlightElement(By.xpath(PaymentMethod));
+		clickUsingJavaScript(By.xpath(PaymentMethod));
+
+		Thread.sleep(15000);
+		waitForVisibilityOf(By.xpath(CreateReceipt));
+		driver.findElement(By.xpath(CreateReceipt));
+		highlightElement(By.xpath(CreateReceipt));
+		clickUsingJavaScript(By.xpath(CreateReceipt));
+
+		Thread.sleep(15000);
+		waitForVisibilityOf(By.xpath(CloseReceipt));
+		driver.findElement(By.xpath(CloseReceipt));
+		highlightElement(By.xpath(CloseReceipt));
+		clickUsingJavaScript(By.xpath(CloseReceipt));
+
+	}
+
+	@Test(priority = 49, groups = "Regression")
+	public void cirtificateOption1() throws InterruptedException {
+		Thread.sleep(5000);
+
+		waitForVisibilityOf(By.xpath(ViewReceipt));
+		driver.findElement(By.xpath(ViewReceipt));
+		highlightElement(By.xpath(ViewReceipt));
+		clickUsingJavaScript(By.xpath(ViewReceipt));
+
+		Thread.sleep(15000);
+		waitForVisibilityOf(By.xpath(CloseCertificate));
+		driver.findElement(By.xpath(CloseCertificate));
+		highlightElement(By.xpath(CloseCertificate));
+		clickUsingJavaScript(By.xpath(CloseCertificate));
+
+	}
+
+	@Test(priority = 50)
+	public void AllDocuments() throws InterruptedException {
+		waitForVisibilityOf(By.xpath(Document));
+		driver.findElement(By.xpath(Document));
+		highlightElement(By.xpath(Document));
+		clickUsingJavaScript(By.xpath(Document));
+
+		waitForVisibilityOf(By.xpath(AllDocuments));
+		driver.findElement(By.xpath(AllDocuments));
+		highlightElement(By.xpath(AllDocuments));
+		clickUsingJavaScript(By.xpath(AllDocuments));
+
+		waitForVisibilityOf(By.xpath(ViewReceiptDoc));
+		driver.findElement(By.xpath(ViewReceiptDoc));
+		highlightElement(By.xpath(ViewReceiptDoc));
+		clickUsingJavaScript(By.xpath(ViewReceiptDoc));
+
+		Thread.sleep(15000);
+		waitForVisibilityOf(By.xpath(CloseReceipt));
+		driver.findElement(By.xpath(CloseReceipt));
+		highlightElement(By.xpath(CloseReceipt));
+		clickUsingJavaScript(By.xpath(CloseReceipt));
+	}
+
+	@Test(priority = 51, groups = "Regression")
+	public void Document2() throws InterruptedException {
+
+		waitForVisibilityOf(By.xpath(Document));
+		driver.findElement(By.xpath(Document));
+		highlightElement(By.xpath(Document));
+		clickUsingJavaScript(By.xpath(Document));
+
+	}
+
+	@Test(priority = 52, groups = "Regression")
+	public void cirtificateOption() throws InterruptedException {
+		waitForVisibilityOf(By.xpath(cirtificateOption));
+		driver.findElement(By.xpath(cirtificateOption));
+		highlightElement(By.xpath(cirtificateOption));
+		clickUsingJavaScript(By.xpath(cirtificateOption));
+
+		waitForVisibilityOf(By.xpath(createCirtificate));
+		driver.findElement(By.xpath(createCirtificate));
+		highlightElement(By.xpath(createCirtificate));
+		clickUsingJavaScript(By.xpath(createCirtificate));
+
+		waitForVisibilityOf(By.xpath(cirtificateTypeDropdown));
+		driver.findElement(By.xpath(cirtificateTypeDropdown));
+		highlightElement(By.xpath(cirtificateTypeDropdown));
+		clickUsingJavaScript(By.xpath(cirtificateTypeDropdown));
+
+		waitForVisibilityOf(By.xpath(cirtificateType));
+		driver.findElement(By.xpath(cirtificateType));
+		highlightElement(By.xpath(cirtificateType));
+		clickUsingJavaScript(By.xpath(cirtificateType));
+
+		waitForVisibilityOf(By.xpath(cirtificateType));
+		driver.findElement(By.xpath(cirtificateType));
+		highlightElement(By.xpath(cirtificateType));
+		clickUsingJavaScript(By.xpath(cirtificateType));
+
+		/*
+		 * waitForVisibilityOf(By.xpath(MessagePreviewclick));
+		 * driver.findElement(By.xpath(MessagePreviewclick)); //
+		 * highlightElement(By.xpath(MessagePreviewclick));
+		 * clickUsingJavaScript(By.xpath(MessagePreviewclick));
+		 */
+		Thread.sleep(15000);
+		waitForVisibilityOf(By.xpath(cirtificatePreview));
+		driver.findElement(By.xpath(cirtificatePreview));
+		highlightElement(By.xpath(cirtificatePreview));
+		clickUsingJavaScript(By.xpath(cirtificatePreview));
+
+		Thread.sleep(15000);
+
+		waitForVisibilityOf(By.xpath(SaveAndShare));
+		driver.findElement(By.xpath(SaveAndShare));
+		highlightElement(By.xpath(SaveAndShare));
+		clickUsingJavaScript(By.xpath(SaveAndShare));
+
+		Thread.sleep(1000);
+		/*
+		 * waitForVisibilityOf(By.xpath(SuccessfulMsge));
+		 * highlightElement(By.xpath(SuccessfulMsge)); String Actualmsge =
+		 * driver.findElement(By.xpath(SuccessfulMsge)).getText();
+		 * System.out.println("msge:" + Actualmsge); String ErrorMsge =
+		 * "Certificate saved and shared with patient successfully";
+		 * Assert.assertEquals(Actualmsge, ErrorMsge);
+		 */
+
+	}
+
+	@Test(priority = 53, groups = "Regression")
+	public void cirtificateOption3() throws InterruptedException {
+		Thread.sleep(5000);
+
+		waitForVisibilityOf(By.xpath(ViewCirtificate));
+		driver.findElement(By.xpath(ViewCirtificate));
+		highlightElement(By.xpath(ViewCirtificate));
+		clickUsingJavaScript(By.xpath(ViewCirtificate));
+
+		Thread.sleep(15000);
+
+		waitForVisibilityOf(By.xpath(CloseCirtificate));
+		driver.findElement(By.xpath(CloseCirtificate));
+		highlightElement(By.xpath(CloseCirtificate));
+		clickUsingJavaScript(By.xpath(CloseCirtificate));
+
+	}
+
+	@Test(priority = 54)
+	public void AllDocuments1() throws InterruptedException {
+		waitForVisibilityOf(By.xpath(Document));
+		driver.findElement(By.xpath(Document));
+		highlightElement(By.xpath(Document));
+		clickUsingJavaScript(By.xpath(Document));
+
+		waitForVisibilityOf(By.xpath(AllDocuments1));
+		driver.findElement(By.xpath(AllDocuments1));
+		highlightElement(By.xpath(AllDocuments1));
+		clickUsingJavaScript(By.xpath(AllDocuments1));
+
+		waitForVisibilityOf(By.xpath(CertificateOption));
+		driver.findElement(By.xpath(CertificateOption));
+		highlightElement(By.xpath(CertificateOption));
+		clickUsingJavaScript(By.xpath(CertificateOption));
+Thread.sleep(5000);
+		waitForVisibilityOf(By.xpath(ViewCirtificateDoc));
+		driver.findElement(By.xpath(ViewCirtificateDoc));
+		highlightElement(By.xpath(ViewCirtificateDoc));
+		clickUsingJavaScript(By.xpath(ViewCirtificateDoc));
+
+		Thread.sleep(5000);
+
+		waitForVisibilityOf(By.xpath(CloseCirtificateDoc));
+		driver.findElement(By.xpath(CloseCirtificateDoc));
+		highlightElement(By.xpath(CloseCirtificateDoc));
+		clickUsingJavaScript(By.xpath(CloseCirtificateDoc));
+
+	}
+
+	@Test(priority = 55, groups = "Regression")
+	public void ReferralOption3() throws InterruptedException {
+
+		Thread.sleep(5000);
+		waitForVisibilityOf(By.xpath(Document));
+		driver.findElement(By.xpath(Document));
+		highlightElement(By.xpath(Document));
+		clickUsingJavaScript(By.xpath(Document));
+
+		Thread.sleep(5000);
+
+		waitForVisibilityOf(By.xpath(ReferralOption));
+		driver.findElement(By.xpath(ReferralOption));
+		highlightElement(By.xpath(ReferralOption));
+		clickUsingJavaScript(By.xpath(ReferralOption));
+
+		waitForVisibilityOf(By.xpath(TapToCreateReferral));
+		driver.findElement(By.xpath(TapToCreateReferral));
+		highlightElement(By.xpath(TapToCreateReferral));
+		clickUsingJavaScript(By.xpath(TapToCreateReferral));
+
+		waitForVisibilityOf(By.xpath(SpecialityDropdown));
+		driver.findElement(By.xpath(SpecialityDropdown));
+		highlightElement(By.xpath(SpecialityDropdown));
+		clickUsingJavaScript(By.xpath(SpecialityDropdown));
+
+		waitForVisibilityOf(By.xpath(SelectSpeciality));
+		driver.findElement(By.xpath(SelectSpeciality));
+		highlightElement(By.xpath(SelectSpeciality));
+		clickUsingJavaScript(By.xpath(SelectSpeciality));
+
+		waitForVisibilityOf(By.xpath(RefferingDrName));
+		driver.findElement(By.xpath(RefferingDrName)).sendKeys("Dr.Refer");
+		highlightElement(By.xpath(RefferingDrName));
+
+		waitForVisibilityOf(By.xpath(RefferingDrEmail));
+		driver.findElement(By.xpath(RefferingDrEmail)).sendKeys("refer@gmail.com");
+		highlightElement(By.xpath(RefferingDrEmail));
+
+		waitForVisibilityOf(By.xpath(RefferingDrMobileNo));
+		driver.findElement(By.xpath(RefferingDrMobileNo)).sendKeys("1234567891");
+		highlightElement(By.xpath(RefferingDrMobileNo));
+
+		waitForVisibilityOf(By.xpath(HealthCondition));
+		driver.findElement(By.xpath(HealthCondition)).sendKeys("Critical");
+		highlightElement(By.xpath(HealthCondition));
+
+		waitForVisibilityOf(By.xpath(Duration1));
+		driver.findElement(By.xpath(Duration1)).sendKeys("2");
+		highlightElement(By.xpath(Duration1));
+
+		Thread.sleep(15000);
+		waitForVisibilityOf(By.xpath(ReferralPreview));
+		driver.findElement(By.xpath(ReferralPreview));
+		highlightElement(By.xpath(ReferralPreview));
+		clickUsingJavaScript(By.xpath(ReferralPreview));
+
+		Thread.sleep(15000);
+		waitForVisibilityOf(By.xpath(ReferralSaveAndShare));
+		driver.findElement(By.xpath(ReferralSaveAndShare));
+		highlightElement(By.xpath(ReferralSaveAndShare));
+		clickUsingJavaScript(By.xpath(ReferralSaveAndShare));
+
+		Thread.sleep(2000);
+
+		/*
+		 * waitForVisibilityOf(By.cssSelector(ReferralSharedMsge));
+		 * highlightElement(By.cssSelector(ReferralSharedMsge)); String Actualmsge =
+		 * driver.findElement(By.cssSelector(ReferralSharedMsge)).getText();
+		 * System.out.println("msge:" + Actualmsge); String ErrorMsge =
+		 * "Certificate saved and shared with patient successfully";
+		 * Assert.assertEquals(Actualmsge, ErrorMsge);
+		 */
+
+	}
 	
 	
 
@@ -1316,3 +1912,6 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	}
 
 }
+
+
+

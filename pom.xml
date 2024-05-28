@@ -12,7 +12,7 @@
             <version>2.22.0</version>
             <configuration>
                 <suiteXmlFiles>
-                    <suiteXmlFile>AppEnd1.xml</suiteXmlFile>
+                    <suiteXmlFile>WebOpdEndToEndWorkflow</suiteXmlFile>
                     <suiteXmlFile>NewRxFlow.xml</suiteXmlFile>
                     <suiteXmlFile>HealthAppium.xml</suiteXmlFile>
                      <suiteXmlFile>PivotalEnd1.xml</suiteXmlFile>

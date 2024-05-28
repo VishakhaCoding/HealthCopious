@@ -1,6 +1,8 @@
 package webAuto;
 
 import java.io.File;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -19,7 +21,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-public class OPDEndToEndWorkFlow2 {
+public class OPDEndToEndWorkFlow2  {
 	public static WebDriver driver;
 
 	public static String mobileNumber = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div/form/div[2]/input";
@@ -125,136 +127,111 @@ public class OPDEndToEndWorkFlow2 {
 	public static String DashLab = "//*[text()=' Dash_lab ']";
 	public static String EmailOption = "/html/body/div[2]/div[4]/div/mat-dialog-container/div[2]/div[2]/div";
 public static String BrandName="//*[text()='Tubaervac BCG']";
-	public static void waitForVisibilityOf(By by) {
-		try {
 
-			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-			// JavascriptExecutor jse = (JavascriptExecutor)driver;
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+  public static void waitForVisibilityOf(By by) { try {
+  
+  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS); //
+  JavascriptExecutor jse = (JavascriptExecutor)driver; } catch (Exception e) {
+  e.printStackTrace(); }
+  
+  }
+  
+  public static void clickUsingJavaScript(By by) {
+  
+  JavascriptExecutor js = (JavascriptExecutor) driver;
+  js.executeScript("arguments[0].click();", driver.findElement(by)); }
+  
+  public static void highlightElement(By by) { JavascriptExecutor js =
+  (JavascriptExecutor) driver; js.
+  executeScript("arguments[0].setAttribute('style', 'background: grey; border: 2px solid black;');"
+  , driver.findElement(by)); }
+  
+  @BeforeClass public void setUp() {
+  
+  System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
+  
+  driver = new ChromeDriver(); driver.manage().timeouts().implicitlyWait(60,
+  TimeUnit.SECONDS); driver.manage().window().maximize();
+  //driver.get("http://stage.copious.care:4200/");
+  driver.manage().window().fullscreen();
+  driver.get("https://app.copious.care/");
+  //driver.get("https://opd.copious.care/");
+  //driver.get("https://stage.copious.care/");
+  driver.manage().window().fullscreen(); }
+ 
 
-	}
+	
+	 
 
-	public static void clickUsingJavaScript(By by) {
+	
+	  @Test(priority = 1, groups = "Regression") public void numberField() {
+	  waitForVisibilityOf(By.xpath(mobileNumber));
+	  driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
+	  highlightElement(By.xpath(mobileNumber));
+	  clickUsingJavaScript(By.xpath(mobileNumber)); }
+	  
+	  @Test(priority = 2, groups = "Regression") public void sendOTP() throws
+	  InterruptedException { Thread.sleep(5000);
+	  waitForVisibilityOf(By.xpath(sendOTP)); highlightElement(By.xpath(sendOTP));
+	  clickUsingJavaScript(By.xpath(sendOTP)); Thread.sleep(1000);
+	  waitForVisibilityOf(By.xpath(OTP1));
+	  driver.findElement(By.xpath(OTP1)).sendKeys("1");
+	  highlightElement(By.xpath(OTP1)); Thread.sleep(1000);
+	  waitForVisibilityOf(By.xpath(OTP2));
+	  driver.findElement(By.xpath(OTP2)).sendKeys("4");
+	  highlightElement(By.xpath(OTP2)); Thread.sleep(1000);
+	  waitForVisibilityOf(By.xpath(OTP3));
+	  driver.findElement(By.xpath(OTP3)).sendKeys("0");
+	  highlightElement(By.xpath(OTP3)); Thread.sleep(1000);
+	  waitForVisibilityOf(By.xpath(OTP4));
+	  driver.findElement(By.xpath(OTP4)).sendKeys("5");
+	  highlightElement(By.xpath(OTP4)); Thread.sleep(1000);
+	  waitForVisibilityOf(By.xpath(OTP5));
+	  driver.findElement(By.xpath(OTP5)).sendKeys("2");
+	  highlightElement(By.xpath(OTP5)); Thread.sleep(1000);
+	  waitForVisibilityOf(By.xpath(OTP6));
+	  driver.findElement(By.xpath(OTP6)).sendKeys("0");
+	  highlightElement(By.xpath(OTP6));
+	  
+	  }
+	  
+	  @Test(priority = 3, groups = "Regression") public void verifyButton() throws
+	  InterruptedException { Thread.sleep(10000);
+	  waitForVisibilityOf(By.xpath(verifyOTP));
+	  driver.findElement(By.xpath(verifyOTP));
+	  highlightElement(By.xpath(verifyOTP));
+	  clickUsingJavaScript(By.xpath(verifyOTP));
+	  
+	  }
+	 
 
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", driver.findElement(by));
-	}
+	
+	  @Test(priority = 4) public void searchBar1() {
+	  waitForVisibilityOf(By.xpath(searchBar));
+	  driver.findElement(By.xpath(searchBar)).sendKeys("LwebTestMay");
+	  highlightElement(By.xpath(searchBar));
+	  clickUsingJavaScript(By.xpath(searchBar)); }
+	 
 
-	public static void highlightElement(By by) {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].setAttribute('style', 'background: grey; border: 2px solid black;');",
-				driver.findElement(by));
-	}
-
-	@BeforeClass
-	public void setUp() {
-
-		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
-
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		 //driver.get("http://stage.copious.care:4200/");
-		 driver.manage().window().fullscreen();
-		driver.get("https://app.copious.care/");
-		//driver.get("https://opd.copious.care/");
-		 //driver.get("https://stage.copious.care/");
-		driver.manage().window().fullscreen();
-	}
-
-	/*
-	 * @Test(priority = 0,groups="Regression") public void clickDoctorLoginLink() {
-	 * 
-	 * waitForVisibilityOf(By.xpath(doctorLoginLink)); WebElement textbox =
-	 * driver.findElement(By.xpath(doctorLoginLink)); //
-	 * textbox.sendKeys(Keys.ENTER); highlightElement(By.xpath(doctorLoginLink));
-	 * clickUsingJavaScript(By.xpath(doctorLoginLink));
-	 * 
-	 * }
-	 */
-
-	@Test(priority = 1, groups = "Regression")
-	public void numberField() {
-		waitForVisibilityOf(By.xpath(mobileNumber));
-		driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
-		highlightElement(By.xpath(mobileNumber));
-		clickUsingJavaScript(By.xpath(mobileNumber));
-	}
-
-	@Test(priority = 2, groups = "Regression")
-	public void sendOTP() throws InterruptedException {
-		Thread.sleep(5000);
-		waitForVisibilityOf(By.xpath(sendOTP));
-		highlightElement(By.xpath(sendOTP));
-		clickUsingJavaScript(By.xpath(sendOTP));
-		Thread.sleep(1000);
-		waitForVisibilityOf(By.xpath(OTP1));
-		driver.findElement(By.xpath(OTP1)).sendKeys("1");
-		highlightElement(By.xpath(OTP1));
-		Thread.sleep(1000);
-		waitForVisibilityOf(By.xpath(OTP2));
-		driver.findElement(By.xpath(OTP2)).sendKeys("4");
-		highlightElement(By.xpath(OTP2));
-		Thread.sleep(1000);
-		waitForVisibilityOf(By.xpath(OTP3));
-		driver.findElement(By.xpath(OTP3)).sendKeys("0");
-		highlightElement(By.xpath(OTP3));
-		Thread.sleep(1000);
-		waitForVisibilityOf(By.xpath(OTP4));
-		driver.findElement(By.xpath(OTP4)).sendKeys("5");
-		highlightElement(By.xpath(OTP4));
-		Thread.sleep(1000);
-		waitForVisibilityOf(By.xpath(OTP5));
-		driver.findElement(By.xpath(OTP5)).sendKeys("2");
-		highlightElement(By.xpath(OTP5));
-		Thread.sleep(1000);
-		waitForVisibilityOf(By.xpath(OTP6));
-		driver.findElement(By.xpath(OTP6)).sendKeys("0");
-		highlightElement(By.xpath(OTP6));
-
-	}
-
-	@Test(priority = 3, groups = "Regression")
-	public void verifyButton() throws InterruptedException {
-		Thread.sleep(10000);
-		waitForVisibilityOf(By.xpath(verifyOTP));
-		driver.findElement(By.xpath(verifyOTP));
-		highlightElement(By.xpath(verifyOTP));
-		clickUsingJavaScript(By.xpath(verifyOTP));
-
-	}
-
-	@Test(priority = 4)
-	public void searchBar1() {
-		waitForVisibilityOf(By.xpath(searchBar));
-		driver.findElement(By.xpath(searchBar)).sendKeys("GitwebTestMay");
-		highlightElement(By.xpath(searchBar));
-		clickUsingJavaScript(By.xpath(searchBar));
-	}
-
-	@Test(priority = 5)
-	public void searchOpt() throws InterruptedException {
-		Thread.sleep(3000);
-		waitForVisibilityOf(By.xpath(searchOpt));
-		driver.findElement(By.xpath(searchOpt));
-		highlightElement(By.xpath(searchOpt));
-		clickUsingJavaScript(By.xpath(searchOpt));
-	}
-
-	@Test(priority = 6, groups = "Regression")
-	public void searchBar2() throws InterruptedException {
-		Thread.sleep(15000);
-
-		waitForVisibilityOf(By.cssSelector(clickPatient));
-		driver.findElement(By.cssSelector(clickPatient));
-		highlightElement(By.cssSelector(clickPatient));
-		clickUsingJavaScript(By.cssSelector(clickPatient));
-	}
+	
+	  @Test(priority = 5) public void searchOpt() throws InterruptedException {
+	  Thread.sleep(3000); waitForVisibilityOf(By.xpath(searchOpt));
+	  driver.findElement(By.xpath(searchOpt));
+	  highlightElement(By.xpath(searchOpt));
+	  clickUsingJavaScript(By.xpath(searchOpt)); }
+	  
+	  @Test(priority = 6, groups = "Regression") public void searchBar2() throws
+	  InterruptedException { Thread.sleep(15000);
+	  
+	  waitForVisibilityOf(By.cssSelector(clickPatient));
+	  driver.findElement(By.cssSelector(clickPatient));
+	  highlightElement(By.cssSelector(clickPatient));
+	  clickUsingJavaScript(By.cssSelector(clickPatient)); }
+	 
 
 	@Test(priority = 7, groups = "Regression")
 	public void Investigation() throws InterruptedException {
+		
 		Thread.sleep(5000);
 
 		waitForVisibilityOf(By.xpath(InvestigationClick));
@@ -304,7 +281,7 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 
 	
 	
-	  @Test(priority = 9, groups = "Regression") public void Investigation1()
+	  @Test(priority = 8, groups = "Regression") public void Investigation1()
 	  throws InterruptedException {
 	  
 	  Thread.sleep(5000);
@@ -433,10 +410,15 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 		highlightElement(By.xpath(ClickCalender));
 		clickUsingJavaScript(By.xpath(ClickCalender));
 
-		waitForVisibilityOf(By.xpath(SelectDate1));
-		driver.findElement(By.xpath(SelectDate1));
-		highlightElement(By.xpath(SelectDate1));
-		clickUsingJavaScript(By.xpath(SelectDate1));
+		 LocalDate currentDate1 = LocalDate.now();
+
+	        // Format current date to match expected format in the calendar
+	        DateTimeFormatter dateFormatter1 = DateTimeFormatter.ofPattern("d");
+	        String formattedDay1 = currentDate1.format(dateFormatter1);
+
+	        
+		 
+	        clickUsingJavaScript(By.xpath("//*[text()='" + formattedDay1 + "']"));
 
 		waitForVisibilityOf(By.xpath(SaveSpecialVaccine));
 		driver.findElement(By.xpath(SaveSpecialVaccine));
@@ -460,10 +442,15 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 		  highlightElement(By.xpath(RecievedDate));
 		  clickUsingJavaScript(By.xpath(RecievedDate));
 		  
-		  waitForVisibilityOf(By.xpath(ClickDate));
-		  driver.findElement(By.xpath(ClickDate));
-		  highlightElement(By.xpath(ClickDate));
-		  clickUsingJavaScript(By.xpath(ClickDate));
+		  LocalDate currentDate2 = LocalDate.now();
+
+	        // Format current date to match expected format in the calendar
+	        DateTimeFormatter dateFormatter2 = DateTimeFormatter.ofPattern("d");
+	        String formattedDay2 = currentDate2.format(dateFormatter2);
+
+	        
+		 
+	        clickUsingJavaScript(By.xpath("//*[text()='" + formattedDay2 + "']"));
 		  
 		  waitForVisibilityOf(By.xpath(SaveVaccine));
 		  driver.findElement(By.xpath(SaveVaccine));

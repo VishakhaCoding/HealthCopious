@@ -563,7 +563,7 @@ public class NewRxFlow {
 	@Test(priority = 11, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("kUIRx116May");
+		driver.findElement(By.xpath(firstName)).sendKeys("KUIRx116LiveMay");
 		;
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));
@@ -1051,7 +1051,7 @@ public class NewRxFlow {
 		highlightElement(By.xpath(QuickRx));
 		clickUsingJavaScript(By.xpath(QuickRx));
 		
-		Thread.sleep(15000);
+		Thread.sleep(20000);
 		waitForVisibilityOf(By.xpath(ConcernTabClick));
 		driver.findElement(By.xpath(ConcernTabClick));
 		highlightElement(By.xpath(ConcernTabClick));

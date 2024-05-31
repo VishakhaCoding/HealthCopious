@@ -465,7 +465,7 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	@Test(priority = 8, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("LwebTestMay");
+		driver.findElement(By.xpath(firstName)).sendKeys("MwebTestMay");
 		;
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));

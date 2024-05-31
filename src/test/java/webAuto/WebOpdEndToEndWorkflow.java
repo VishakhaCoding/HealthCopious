@@ -247,7 +247,7 @@ public class WebOpdEndToEndWorkflow {
 	public static String HealthProfile = "//*[text()='Health Profile']";
 	public static String ImmunizationOption = "//*[text()='Immunization']";
 	public static String ConfirmVaccinationDate = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/button";
-	public static String VaccineRecord = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/patient-immunization/div/mat-tab-group/div/mat-tab-body[1]/div/div/div/table/tbody/tr[2]/td[8]/div";
+	public static String VaccineRecord = "//*[text()='At Birth']//following::div[2]";
 	public static String RecievedDate = "//*[text()='Tubaervac BCG']// following::img";
 	public static String ClickDate = "//*[text()='1']";
 	public static String SaveVaccine = "//*[text()='Save Vaccine']";
@@ -462,7 +462,7 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	@Test(priority = 8, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("ZZwebTestMay");
+		driver.findElement(By.xpath(firstName)).sendKeys("CwebMayTest");
 		;
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));
@@ -1457,22 +1457,23 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 		 */
 
 		Thread.sleep(3000);
-		waitForVisibilityOf(By.xpath(SpecialVaccineClick));
-		driver.findElement(By.xpath(SpecialVaccineClick));
-		highlightElement(By.xpath(SpecialVaccineClick));
-		clickUsingJavaScript(By.xpath(SpecialVaccineClick));
-
-		waitForVisibilityOf(By.xpath(CholeraVacccine));
-		driver.findElement(By.xpath(CholeraVacccine));
-		highlightElement(By.xpath(CholeraVacccine));
-		clickUsingJavaScript(By.xpath(CholeraVacccine));
-
-		waitForVisibilityOf(By.xpath(ClickCalender));
-		driver.findElement(By.xpath(ClickCalender));
-		highlightElement(By.xpath(ClickCalender));
-		clickUsingJavaScript(By.xpath(ClickCalender));
-
-		 LocalDate currentDate1 = LocalDate.now();
+		
+		  waitForVisibilityOf(By.xpath(SpecialVaccineClick));
+		  driver.findElement(By.xpath(SpecialVaccineClick));
+		  highlightElement(By.xpath(SpecialVaccineClick));
+		  clickUsingJavaScript(By.xpath(SpecialVaccineClick));
+		  
+		  waitForVisibilityOf(By.xpath(CholeraVacccine));
+		  driver.findElement(By.xpath(CholeraVacccine));
+		  highlightElement(By.xpath(CholeraVacccine));
+		  clickUsingJavaScript(By.xpath(CholeraVacccine));
+		  
+		  waitForVisibilityOf(By.xpath(ClickCalender));
+		  driver.findElement(By.xpath(ClickCalender));
+		  highlightElement(By.xpath(ClickCalender));
+		  clickUsingJavaScript(By.xpath(ClickCalender));
+		  
+		  LocalDate currentDate1 = LocalDate.now();
 
 	        // Format current date to match expected format in the calendar
 	        DateTimeFormatter dateFormatter1 = DateTimeFormatter.ofPattern("d");
@@ -1481,13 +1482,15 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	        
 		 
 	        clickUsingJavaScript(By.xpath("//*[text()='" + formattedDay1 + "']"));
-
-		waitForVisibilityOf(By.xpath(SaveSpecialVaccine));
-		driver.findElement(By.xpath(SaveSpecialVaccine));
-		highlightElement(By.xpath(SaveSpecialVaccine));
-		clickUsingJavaScript(By.xpath(SaveSpecialVaccine));
-
-		Thread.sleep(5000);
+	       // clickUsingJavaScript(By.xpath("//*[text()='" + formattedDay1 + "']"));
+		  
+		  Thread.sleep(5000);
+		  waitForVisibilityOf(By.xpath(SaveSpecialVaccine));
+		  driver.findElement(By.xpath(SaveSpecialVaccine));
+		  highlightElement(By.xpath(SaveSpecialVaccine));
+		  clickUsingJavaScript(By.xpath(SaveSpecialVaccine));
+		 
+		Thread.sleep(10000);
 		
 		  waitForVisibilityOf(By.xpath(VaccineRecord));
 		  driver.findElement(By.xpath(VaccineRecord));
@@ -1513,7 +1516,8 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	        
 		 
 	        clickUsingJavaScript(By.xpath("//*[text()='" + formattedDay2 + "']"));
-		  
+	        //clickUsingJavaScript(By.xpath("//*[text()='" + formattedDay2 + "']"));
+		  Thread.sleep(10000);
 		  waitForVisibilityOf(By.xpath(SaveVaccine));
 		  driver.findElement(By.xpath(SaveVaccine));
 		  highlightElement(By.xpath(SaveVaccine));

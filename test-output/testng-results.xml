@@ -2,796 +2,796 @@
 <testng-results ignored="0" total="50" passed="50" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-28T15:13:23 IST" name="Default suite" finished-at="2024-05-28T15:23:54 IST" duration-ms="630430">
+  <suite started-at="2024-05-31T13:05:24 IST" name="Default suite" finished-at="2024-05-31T13:16:11 IST" duration-ms="646668">
     <groups>
       <group name="Regression">
-        <method signature="DummyWf.Document1()[pri:46, instance:webAuto.DummyWf@d86a6f]" name="Document1" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.Document2()[pri:51, instance:webAuto.DummyWf@d86a6f]" name="Document2" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.HealthProfile()[pri:45, instance:webAuto.DummyWf@d86a6f]" name="HealthProfile" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.Investigation()[pri:43, instance:webAuto.DummyWf@d86a6f]" name="Investigation" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.Investigation1()[pri:44, instance:webAuto.DummyWf@d86a6f]" name="Investigation1" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.Number1()[pri:5, instance:webAuto.DummyWf@d86a6f]" name="Number1" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.ReferralOption3()[pri:55, instance:webAuto.DummyWf@d86a6f]" name="ReferralOption3" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.address()[pri:13, instance:webAuto.DummyWf@d86a6f]" name="address" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.birthDate()[pri:11, instance:webAuto.DummyWf@d86a6f]" name="birthDate" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.cirtificateOption()[pri:52, instance:webAuto.DummyWf@d86a6f]" name="cirtificateOption" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.cirtificateOption1()[pri:49, instance:webAuto.DummyWf@d86a6f]" name="cirtificateOption1" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.cirtificateOption3()[pri:53, instance:webAuto.DummyWf@d86a6f]" name="cirtificateOption3" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.city()[pri:15, instance:webAuto.DummyWf@d86a6f]" name="city" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.clickClose()[pri:19, instance:webAuto.DummyWf@d86a6f]" name="clickClose" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.confirm()[pri:6, instance:webAuto.DummyWf@d86a6f]" name="confirm" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.createPatient()[pri:4, instance:webAuto.DummyWf@d86a6f]" name="createPatient" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.firstName()[pri:8, instance:webAuto.DummyWf@d86a6f]" name="firstName" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.genFemale()[pri:12, instance:webAuto.DummyWf@d86a6f]" name="genFemale" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.lastName()[pri:10, instance:webAuto.DummyWf@d86a6f]" name="lastName" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.locality()[pri:14, instance:webAuto.DummyWf@d86a6f]" name="locality" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.middleName()[pri:9, instance:webAuto.DummyWf@d86a6f]" name="middleName" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.nextButton()[pri:18, instance:webAuto.DummyWf@d86a6f]" name="nextButton" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.number2()[pri:7, instance:webAuto.DummyWf@d86a6f]" name="number2" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.numberField()[pri:1, instance:webAuto.DummyWf@d86a6f]" name="numberField" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.pinCode()[pri:16, instance:webAuto.DummyWf@d86a6f]" name="pinCode" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.previewReceipt()[pri:48, instance:webAuto.DummyWf@d86a6f]" name="previewReceipt" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.proceedWithSameRMN()[pri:17, instance:webAuto.DummyWf@d86a6f]" name="proceedWithSameRMN" class="webAuto.DummyWf"/>
-        <method signature="DummyWf.sendOTP()[pri:2, instance:webAuto.DummyWf@d86a6f]" name="sendOTP" class="webAuto.DummyWf"/>
+        <method signature="WebOpdEndToEndWorkflow.Document1()[pri:46, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="Document1" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.Document2()[pri:51, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="Document2" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.HealthProfile()[pri:45, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="HealthProfile" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.Investigation()[pri:43, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="Investigation" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.Investigation1()[pri:44, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="Investigation1" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.Number1()[pri:5, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="Number1" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.ReferralOption3()[pri:55, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="ReferralOption3" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.address()[pri:13, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="address" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.birthDate()[pri:11, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="birthDate" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.cirtificateOption()[pri:52, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="cirtificateOption" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.cirtificateOption1()[pri:49, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="cirtificateOption1" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.cirtificateOption3()[pri:53, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="cirtificateOption3" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.city()[pri:15, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="city" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.clickClose()[pri:19, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="clickClose" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.confirm()[pri:6, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="confirm" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.createPatient()[pri:4, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="createPatient" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.firstName()[pri:8, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="firstName" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.genFemale()[pri:12, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="genFemale" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.lastName()[pri:10, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="lastName" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.locality()[pri:14, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="locality" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.middleName()[pri:9, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="middleName" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.nextButton()[pri:18, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="nextButton" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.number2()[pri:7, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="number2" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.numberField()[pri:1, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="numberField" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.pinCode()[pri:16, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="pinCode" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.previewReceipt()[pri:48, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="previewReceipt" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.proceedWithSameRMN()[pri:17, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="proceedWithSameRMN" class="webAuto.WebOpdEndToEndWorkflow"/>
+        <method signature="WebOpdEndToEndWorkflow.sendOTP()[pri:2, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" name="sendOTP" class="webAuto.WebOpdEndToEndWorkflow"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-05-28T15:13:23 IST" name="Default test" finished-at="2024-05-28T15:23:54 IST" duration-ms="630430">
-      <class name="webAuto.DummyWf">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:24 IST" name="setUp" finished-at="2024-05-28T15:13:28 IST" duration-ms="4014" status="PASS">
+    <test started-at="2024-05-31T13:05:24 IST" name="Default test" finished-at="2024-05-31T13:16:11 IST" duration-ms="646668">
+      <class name="webAuto.WebOpdEndToEndWorkflow">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:24 IST" name="setUp" finished-at="2024-05-31T13:05:28 IST" duration-ms="3545" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="numberField()[pri:1, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:28 IST" name="numberField" finished-at="2024-05-28T15:13:28 IST" duration-ms="211" status="PASS">
+        <test-method signature="numberField()[pri:1, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:28 IST" name="numberField" finished-at="2024-05-31T13:05:28 IST" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- numberField -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:28 IST" name="screenShot" finished-at="2024-05-28T15:13:28 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:28 IST" name="screenShot" finished-at="2024-05-31T13:05:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=numberField status=SUCCESS method=DummyWf.numberField()[pri:1, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=numberField status=SUCCESS method=WebOpdEndToEndWorkflow.numberField()[pri:1, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="sendOTP()[pri:2, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:28 IST" name="sendOTP" finished-at="2024-05-28T15:13:40 IST" duration-ms="11843" status="PASS">
+        <test-method signature="sendOTP()[pri:2, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:28 IST" name="sendOTP" finished-at="2024-05-31T13:05:40 IST" duration-ms="11750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendOTP -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:40 IST" name="screenShot" finished-at="2024-05-28T15:13:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:40 IST" name="screenShot" finished-at="2024-05-31T13:05:40 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sendOTP status=SUCCESS method=DummyWf.sendOTP()[pri:2, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=sendOTP status=SUCCESS method=WebOpdEndToEndWorkflow.sendOTP()[pri:2, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="verifyButton()[pri:3, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:40 IST" name="verifyButton" finished-at="2024-05-28T15:13:50 IST" duration-ms="10107" status="PASS">
+        <test-method signature="verifyButton()[pri:3, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:40 IST" name="verifyButton" finished-at="2024-05-31T13:05:50 IST" duration-ms="10071" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyButton -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:50 IST" name="screenShot" finished-at="2024-05-28T15:13:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:50 IST" name="screenShot" finished-at="2024-05-31T13:05:50 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyButton status=SUCCESS method=DummyWf.verifyButton()[pri:3, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=verifyButton status=SUCCESS method=WebOpdEndToEndWorkflow.verifyButton()[pri:3, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="createPatient()[pri:4, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:50 IST" name="createPatient" finished-at="2024-05-28T15:13:50 IST" duration-ms="732" status="PASS">
+        <test-method signature="createPatient()[pri:4, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:50 IST" name="createPatient" finished-at="2024-05-31T13:05:51 IST" duration-ms="687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPatient -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:50 IST" name="screenShot" finished-at="2024-05-28T15:13:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:51 IST" name="screenShot" finished-at="2024-05-31T13:05:51 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createPatient status=SUCCESS method=DummyWf.createPatient()[pri:4, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=createPatient status=SUCCESS method=WebOpdEndToEndWorkflow.createPatient()[pri:4, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="Number1()[pri:5, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:50 IST" name="Number1" finished-at="2024-05-28T15:13:51 IST" duration-ms="311" status="PASS">
+        <test-method signature="Number1()[pri:5, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:51 IST" name="Number1" finished-at="2024-05-31T13:05:51 IST" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Number1 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:51 IST" name="screenShot" finished-at="2024-05-28T15:13:51 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:51 IST" name="screenShot" finished-at="2024-05-31T13:05:51 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Number1 status=SUCCESS method=DummyWf.Number1()[pri:5, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=Number1 status=SUCCESS method=WebOpdEndToEndWorkflow.Number1()[pri:5, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="confirm()[pri:6, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:51 IST" name="confirm" finished-at="2024-05-28T15:13:53 IST" duration-ms="2115" status="PASS">
+        <test-method signature="confirm()[pri:6, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:51 IST" name="confirm" finished-at="2024-05-31T13:05:53 IST" duration-ms="1954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirm -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:53 IST" name="screenShot" finished-at="2024-05-28T15:13:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:53 IST" name="screenShot" finished-at="2024-05-31T13:05:53 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=confirm status=SUCCESS method=DummyWf.confirm()[pri:6, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=confirm status=SUCCESS method=WebOpdEndToEndWorkflow.confirm()[pri:6, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="number2()[pri:7, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:53 IST" name="number2" finished-at="2024-05-28T15:13:53 IST" duration-ms="252" status="PASS">
+        <test-method signature="number2()[pri:7, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:53 IST" name="number2" finished-at="2024-05-31T13:05:53 IST" duration-ms="291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- number2 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:53 IST" name="screenShot" finished-at="2024-05-28T15:13:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:53 IST" name="screenShot" finished-at="2024-05-31T13:05:53 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=number2 status=SUCCESS method=DummyWf.number2()[pri:7, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=number2 status=SUCCESS method=WebOpdEndToEndWorkflow.number2()[pri:7, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="firstName()[pri:8, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:53 IST" name="firstName" finished-at="2024-05-28T15:13:53 IST" duration-ms="217" status="PASS">
+        <test-method signature="firstName()[pri:8, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:53 IST" name="firstName" finished-at="2024-05-31T13:05:53 IST" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstName -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:53 IST" name="screenShot" finished-at="2024-05-28T15:13:53 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=firstName status=SUCCESS method=DummyWf.firstName()[pri:8, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="middleName()[pri:9, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:53 IST" name="middleName" finished-at="2024-05-28T15:13:54 IST" duration-ms="168" status="PASS">
+        <test-method signature="middleName()[pri:9, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:53 IST" name="middleName" finished-at="2024-05-31T13:05:54 IST" duration-ms="133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- middleName -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:54 IST" name="screenShot" finished-at="2024-05-28T15:13:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:53 IST" name="screenShot" finished-at="2024-05-31T13:05:53 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=middleName status=SUCCESS method=DummyWf.middleName()[pri:9, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=firstName status=SUCCESS method=WebOpdEndToEndWorkflow.firstName()[pri:8, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="lastName()[pri:10, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:54 IST" name="lastName" finished-at="2024-05-28T15:13:54 IST" duration-ms="173" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="screenShot" finished-at="2024-05-31T13:05:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=middleName status=SUCCESS method=WebOpdEndToEndWorkflow.middleName()[pri:9, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="lastName()[pri:10, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="lastName" finished-at="2024-05-31T13:05:54 IST" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lastName -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:54 IST" name="screenShot" finished-at="2024-05-28T15:13:54 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=lastName status=SUCCESS method=DummyWf.lastName()[pri:10, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="birthDate()[pri:11, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:54 IST" name="birthDate" finished-at="2024-05-28T15:13:54 IST" duration-ms="358" status="PASS">
+        <test-method signature="birthDate()[pri:11, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="birthDate" finished-at="2024-05-31T13:05:54 IST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- birthDate -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:54 IST" name="screenShot" finished-at="2024-05-28T15:13:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="screenShot" finished-at="2024-05-31T13:05:54 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=birthDate status=SUCCESS method=DummyWf.birthDate()[pri:11, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=lastName status=SUCCESS method=WebOpdEndToEndWorkflow.lastName()[pri:10, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="genFemale()[pri:12, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:54 IST" name="genFemale" finished-at="2024-05-28T15:13:54 IST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="screenShot" finished-at="2024-05-31T13:05:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=birthDate status=SUCCESS method=WebOpdEndToEndWorkflow.birthDate()[pri:11, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="genFemale()[pri:12, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="genFemale" finished-at="2024-05-31T13:05:54 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- genFemale -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:54 IST" name="screenShot" finished-at="2024-05-28T15:13:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="screenShot" finished-at="2024-05-31T13:05:54 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=genFemale status=SUCCESS method=DummyWf.genFemale()[pri:12, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=genFemale status=SUCCESS method=WebOpdEndToEndWorkflow.genFemale()[pri:12, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="address()[pri:13, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:54 IST" name="address" finished-at="2024-05-28T15:13:54 IST" duration-ms="205" status="PASS">
+        <test-method signature="address()[pri:13, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="address" finished-at="2024-05-31T13:05:54 IST" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- address -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:54 IST" name="screenShot" finished-at="2024-05-28T15:13:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="screenShot" finished-at="2024-05-31T13:05:54 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=address status=SUCCESS method=DummyWf.address()[pri:13, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=address status=SUCCESS method=WebOpdEndToEndWorkflow.address()[pri:13, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="locality()[pri:14, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:54 IST" name="locality" finished-at="2024-05-28T15:13:55 IST" duration-ms="174" status="PASS">
+        <test-method signature="locality()[pri:14, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="locality" finished-at="2024-05-31T13:05:54 IST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locality -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:55 IST" name="screenShot" finished-at="2024-05-28T15:13:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="screenShot" finished-at="2024-05-31T13:05:54 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=locality status=SUCCESS method=DummyWf.locality()[pri:14, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=locality status=SUCCESS method=WebOpdEndToEndWorkflow.locality()[pri:14, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="city()[pri:15, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:55 IST" name="city" finished-at="2024-05-28T15:13:55 IST" duration-ms="153" status="PASS">
+        <test-method signature="city()[pri:15, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="city" finished-at="2024-05-31T13:05:54 IST" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- city -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:55 IST" name="screenShot" finished-at="2024-05-28T15:13:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="screenShot" finished-at="2024-05-31T13:05:54 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=city status=SUCCESS method=DummyWf.city()[pri:15, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=city status=SUCCESS method=WebOpdEndToEndWorkflow.city()[pri:15, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="pinCode()[pri:16, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:55 IST" name="pinCode" finished-at="2024-05-28T15:13:55 IST" duration-ms="191" status="PASS">
+        <test-method signature="pinCode()[pri:16, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="pinCode" finished-at="2024-05-31T13:05:54 IST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pinCode -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:55 IST" name="screenShot" finished-at="2024-05-28T15:13:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="screenShot" finished-at="2024-05-31T13:05:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=pinCode status=SUCCESS method=DummyWf.pinCode()[pri:16, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=pinCode status=SUCCESS method=WebOpdEndToEndWorkflow.pinCode()[pri:16, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="proceedWithSameRMN()[pri:17, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:55 IST" name="proceedWithSameRMN" finished-at="2024-05-28T15:13:55 IST" duration-ms="171" status="PASS">
+        <test-method signature="proceedWithSameRMN()[pri:17, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:54 IST" name="proceedWithSameRMN" finished-at="2024-05-31T13:05:55 IST" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- proceedWithSameRMN -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:55 IST" name="screenShot" finished-at="2024-05-28T15:13:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:55 IST" name="screenShot" finished-at="2024-05-31T13:05:55 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=proceedWithSameRMN status=SUCCESS method=DummyWf.proceedWithSameRMN()[pri:17, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=proceedWithSameRMN status=SUCCESS method=WebOpdEndToEndWorkflow.proceedWithSameRMN()[pri:17, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="nextButton()[pri:18, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:13:55 IST" name="nextButton" finished-at="2024-05-28T15:14:10 IST" duration-ms="15110" status="PASS">
+        <test-method signature="nextButton()[pri:18, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:05:55 IST" name="nextButton" finished-at="2024-05-31T13:06:10 IST" duration-ms="15078" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nextButton -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:14:10 IST" name="screenShot" finished-at="2024-05-28T15:14:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:06:10 IST" name="screenShot" finished-at="2024-05-31T13:06:10 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=nextButton status=SUCCESS method=DummyWf.nextButton()[pri:18, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=nextButton status=SUCCESS method=WebOpdEndToEndWorkflow.nextButton()[pri:18, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="clickClose()[pri:19, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:14:10 IST" name="clickClose" finished-at="2024-05-28T15:14:11 IST" duration-ms="1065" status="PASS">
+        <test-method signature="clickClose()[pri:19, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:06:10 IST" name="clickClose" finished-at="2024-05-31T13:06:11 IST" duration-ms="925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickClose -->
-        <test-method signature="fillVitalForm()[pri:20, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:14:11 IST" name="fillVitalForm" finished-at="2024-05-28T15:14:27 IST" duration-ms="16117" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:06:11 IST" name="screenShot" finished-at="2024-05-31T13:06:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickClose status=SUCCESS method=WebOpdEndToEndWorkflow.clickClose()[pri:19, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="fillVitalForm()[pri:20, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:06:11 IST" name="fillVitalForm" finished-at="2024-05-31T13:06:26 IST" duration-ms="15865" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillVitalForm -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:14:11 IST" name="screenShot" finished-at="2024-05-28T15:14:11 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:06:26 IST" name="screenShot" finished-at="2024-05-31T13:06:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickClose status=SUCCESS method=DummyWf.clickClose()[pri:19, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=fillVitalForm status=SUCCESS method=WebOpdEndToEndWorkflow.fillVitalForm()[pri:20, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:14:27 IST" name="screenShot" finished-at="2024-05-28T15:14:27 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillVitalForm status=SUCCESS method=DummyWf.fillVitalForm()[pri:20, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="fillHealthProfile()[pri:21, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:14:27 IST" name="fillHealthProfile" finished-at="2024-05-28T15:14:39 IST" duration-ms="11463" status="PASS">
+        <test-method signature="fillHealthProfile()[pri:21, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:06:26 IST" name="fillHealthProfile" finished-at="2024-05-31T13:06:38 IST" duration-ms="11072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillHealthProfile -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:14:39 IST" name="screenShot" finished-at="2024-05-28T15:14:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:06:38 IST" name="screenShot" finished-at="2024-05-31T13:06:38 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fillHealthProfile status=SUCCESS method=DummyWf.fillHealthProfile()[pri:21, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=fillHealthProfile status=SUCCESS method=WebOpdEndToEndWorkflow.fillHealthProfile()[pri:21, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="fillFamilyProfile()[pri:22, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:14:39 IST" name="fillFamilyProfile" finished-at="2024-05-28T15:14:56 IST" duration-ms="16871" status="PASS">
+        <test-method signature="fillFamilyProfile()[pri:22, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:06:38 IST" name="fillFamilyProfile" finished-at="2024-05-31T13:06:54 IST" duration-ms="16639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillFamilyProfile -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:14:56 IST" name="screenShot" finished-at="2024-05-28T15:14:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:06:54 IST" name="screenShot" finished-at="2024-05-31T13:06:54 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fillFamilyProfile status=SUCCESS method=DummyWf.fillFamilyProfile()[pri:22, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=fillFamilyProfile status=SUCCESS method=WebOpdEndToEndWorkflow.fillFamilyProfile()[pri:22, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="GoHome()[pri:23, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:14:56 IST" name="GoHome" finished-at="2024-05-28T15:14:56 IST" duration-ms="229" status="PASS">
+        <test-method signature="GoHome()[pri:23, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:06:54 IST" name="GoHome" finished-at="2024-05-31T13:06:54 IST" duration-ms="211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoHome -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:14:56 IST" name="screenShot" finished-at="2024-05-28T15:14:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:06:54 IST" name="screenShot" finished-at="2024-05-31T13:06:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GoHome status=SUCCESS method=DummyWf.GoHome()[pri:23, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=GoHome status=SUCCESS method=WebOpdEndToEndWorkflow.GoHome()[pri:23, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="AddNewAppointment()[pri:29, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:14:56 IST" name="AddNewAppointment" finished-at="2024-05-28T15:15:21 IST" duration-ms="25506" status="PASS">
+        <test-method signature="AddNewAppointment()[pri:29, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:06:54 IST" name="AddNewAppointment" finished-at="2024-05-31T13:07:20 IST" duration-ms="25458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddNewAppointment -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:15:21 IST" name="screenShot" finished-at="2024-05-28T15:15:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:07:20 IST" name="screenShot" finished-at="2024-05-31T13:07:20 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddNewAppointment status=SUCCESS method=DummyWf.AddNewAppointment()[pri:29, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=AddNewAppointment status=SUCCESS method=WebOpdEndToEndWorkflow.AddNewAppointment()[pri:29, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="AddPrescription()[pri:30, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:15:21 IST" name="AddPrescription" finished-at="2024-05-28T15:15:37 IST" duration-ms="15483" status="PASS">
+        <test-method signature="AddPrescription()[pri:30, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:07:20 IST" name="AddPrescription" finished-at="2024-05-31T13:07:35 IST" duration-ms="15553" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddPrescription -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:15:37 IST" name="screenShot" finished-at="2024-05-28T15:15:37 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:07:35 IST" name="screenShot" finished-at="2024-05-31T13:07:35 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddPrescription status=SUCCESS method=DummyWf.AddPrescription()[pri:30, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=AddPrescription status=SUCCESS method=WebOpdEndToEndWorkflow.AddPrescription()[pri:30, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="Complaints()[pri:31, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:15:37 IST" name="Complaints" finished-at="2024-05-28T15:15:40 IST" duration-ms="3307" status="PASS">
+        <test-method signature="Complaints()[pri:31, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:07:35 IST" name="Complaints" finished-at="2024-05-31T13:07:39 IST" duration-ms="3428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Complaints -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:15:40 IST" name="screenShot" finished-at="2024-05-28T15:15:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:07:39 IST" name="screenShot" finished-at="2024-05-31T13:07:39 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Complaints status=SUCCESS method=DummyWf.Complaints()[pri:31, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=Complaints status=SUCCESS method=WebOpdEndToEndWorkflow.Complaints()[pri:31, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="VitalsOption()[pri:32, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:15:40 IST" name="VitalsOption" finished-at="2024-05-28T15:15:45 IST" duration-ms="4370" status="PASS">
+        <test-method signature="VitalsOption()[pri:32, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:07:39 IST" name="VitalsOption" finished-at="2024-05-31T13:07:43 IST" duration-ms="3915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VitalsOption -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:15:45 IST" name="screenShot" finished-at="2024-05-28T15:15:45 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:07:43 IST" name="screenShot" finished-at="2024-05-31T13:07:43 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VitalsOption status=SUCCESS method=DummyWf.VitalsOption()[pri:32, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=VitalsOption status=SUCCESS method=WebOpdEndToEndWorkflow.VitalsOption()[pri:32, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="BpandHeartOption()[pri:33, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:15:45 IST" name="BpandHeartOption" finished-at="2024-05-28T15:16:01 IST" duration-ms="15860" status="PASS">
+        <test-method signature="BpandHeartOption()[pri:33, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:07:43 IST" name="BpandHeartOption" finished-at="2024-05-31T13:07:58 IST" duration-ms="15616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BpandHeartOption -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:16:01 IST" name="screenShot" finished-at="2024-05-28T15:16:01 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BpandHeartOption status=SUCCESS method=DummyWf.BpandHeartOption()[pri:33, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="BloodAndAnalysis()[pri:34, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:16:01 IST" name="BloodAndAnalysis" finished-at="2024-05-28T15:16:17 IST" duration-ms="15987" status="PASS">
+        <test-method signature="BloodAndAnalysis()[pri:34, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:07:58 IST" name="BloodAndAnalysis" finished-at="2024-05-31T13:08:14 IST" duration-ms="15750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BloodAndAnalysis -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:16:17 IST" name="screenShot" finished-at="2024-05-28T15:16:17 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:07:58 IST" name="screenShot" finished-at="2024-05-31T13:07:58 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=BloodAndAnalysis status=SUCCESS method=DummyWf.BloodAndAnalysis()[pri:34, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=BpandHeartOption status=SUCCESS method=WebOpdEndToEndWorkflow.BpandHeartOption()[pri:33, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="LipidProfile()[pri:35, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:16:17 IST" name="LipidProfile" finished-at="2024-05-28T15:16:32 IST" duration-ms="15865" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:08:14 IST" name="screenShot" finished-at="2024-05-31T13:08:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BloodAndAnalysis status=SUCCESS method=WebOpdEndToEndWorkflow.BloodAndAnalysis()[pri:34, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="LipidProfile()[pri:35, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:08:14 IST" name="LipidProfile" finished-at="2024-05-31T13:08:30 IST" duration-ms="15708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LipidProfile -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:16:32 IST" name="screenShot" finished-at="2024-05-28T15:16:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:08:30 IST" name="screenShot" finished-at="2024-05-31T13:08:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LipidProfile status=SUCCESS method=DummyWf.LipidProfile()[pri:35, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=LipidProfile status=SUCCESS method=WebOpdEndToEndWorkflow.LipidProfile()[pri:35, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="OnExamination()[pri:36, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:16:32 IST" name="OnExamination" finished-at="2024-05-28T15:16:48 IST" duration-ms="15665" status="PASS">
+        <test-method signature="OnExamination()[pri:36, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:08:30 IST" name="OnExamination" finished-at="2024-05-31T13:08:46 IST" duration-ms="15770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnExamination -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:16:48 IST" name="screenShot" finished-at="2024-05-28T15:16:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:08:46 IST" name="screenShot" finished-at="2024-05-31T13:08:46 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=OnExamination status=SUCCESS method=DummyWf.OnExamination()[pri:36, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=OnExamination status=SUCCESS method=WebOpdEndToEndWorkflow.OnExamination()[pri:36, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="Diagnosis()[pri:37, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:16:48 IST" name="Diagnosis" finished-at="2024-05-28T15:17:03 IST" duration-ms="15311" status="PASS">
+        <test-method signature="Diagnosis()[pri:37, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:08:46 IST" name="Diagnosis" finished-at="2024-05-31T13:09:01 IST" duration-ms="15255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Diagnosis -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:17:03 IST" name="screenShot" finished-at="2024-05-28T15:17:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:09:01 IST" name="screenShot" finished-at="2024-05-31T13:09:01 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Diagnosis status=SUCCESS method=DummyWf.Diagnosis()[pri:37, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=Diagnosis status=SUCCESS method=WebOpdEndToEndWorkflow.Diagnosis()[pri:37, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="Medicine1()[pri:38, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:17:03 IST" name="Medicine1" finished-at="2024-05-28T15:17:50 IST" duration-ms="47094" status="PASS">
+        <test-method signature="Medicine1()[pri:38, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:09:01 IST" name="Medicine1" finished-at="2024-05-31T13:09:48 IST" duration-ms="46904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Medicine1 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:17:50 IST" name="screenShot" finished-at="2024-05-28T15:17:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:09:48 IST" name="screenShot" finished-at="2024-05-31T13:09:48 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Medicine1 status=SUCCESS method=DummyWf.Medicine1()[pri:38, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=Medicine1 status=SUCCESS method=WebOpdEndToEndWorkflow.Medicine1()[pri:38, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="DietaryAdvice()[pri:39, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:17:50 IST" name="DietaryAdvice" finished-at="2024-05-28T15:18:06 IST" duration-ms="15285" status="PASS">
+        <test-method signature="DietaryAdvice()[pri:39, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:09:48 IST" name="DietaryAdvice" finished-at="2024-05-31T13:10:03 IST" duration-ms="15484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DietaryAdvice -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:18:06 IST" name="screenShot" finished-at="2024-05-28T15:18:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:10:03 IST" name="screenShot" finished-at="2024-05-31T13:10:03 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DietaryAdvice status=SUCCESS method=DummyWf.DietaryAdvice()[pri:39, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=DietaryAdvice status=SUCCESS method=WebOpdEndToEndWorkflow.DietaryAdvice()[pri:39, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="GeneralInstruction()[pri:40, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:18:06 IST" name="GeneralInstruction" finished-at="2024-05-28T15:18:21 IST" duration-ms="15275" status="PASS">
+        <test-method signature="GeneralInstruction()[pri:40, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:10:03 IST" name="GeneralInstruction" finished-at="2024-05-31T13:10:19 IST" duration-ms="15329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GeneralInstruction -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:18:21 IST" name="screenShot" finished-at="2024-05-28T15:18:21 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:10:19 IST" name="screenShot" finished-at="2024-05-31T13:10:19 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GeneralInstruction status=SUCCESS method=DummyWf.GeneralInstruction()[pri:40, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=GeneralInstruction status=SUCCESS method=WebOpdEndToEndWorkflow.GeneralInstruction()[pri:40, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="SaveandProceed()[pri:41, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:18:21 IST" name="SaveandProceed" finished-at="2024-05-28T15:18:21 IST" duration-ms="160" status="PASS">
+        <test-method signature="SaveandProceed()[pri:41, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:10:19 IST" name="SaveandProceed" finished-at="2024-05-31T13:10:19 IST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SaveandProceed -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:18:21 IST" name="screenShot" finished-at="2024-05-28T15:18:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:10:19 IST" name="screenShot" finished-at="2024-05-31T13:10:19 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SaveandProceed status=SUCCESS method=DummyWf.SaveandProceed()[pri:41, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=SaveandProceed status=SUCCESS method=WebOpdEndToEndWorkflow.SaveandProceed()[pri:41, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="ConfirmPrescription()[pri:42, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:18:21 IST" name="ConfirmPrescription" finished-at="2024-05-28T15:19:17 IST" duration-ms="56044" status="PASS">
+        <test-method signature="ConfirmPrescription()[pri:42, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:10:19 IST" name="ConfirmPrescription" finished-at="2024-05-31T13:11:15 IST" duration-ms="55839" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfirmPrescription -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:19:17 IST" name="screenShot" finished-at="2024-05-28T15:19:17 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:11:15 IST" name="screenShot" finished-at="2024-05-31T13:11:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ConfirmPrescription status=SUCCESS method=DummyWf.ConfirmPrescription()[pri:42, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=ConfirmPrescription status=SUCCESS method=WebOpdEndToEndWorkflow.ConfirmPrescription()[pri:42, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="Investigation()[pri:43, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:19:17 IST" name="Investigation" finished-at="2024-05-28T15:19:54 IST" duration-ms="37265" status="PASS">
+        <test-method signature="Investigation()[pri:43, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:11:15 IST" name="Investigation" finished-at="2024-05-31T13:11:52 IST" duration-ms="36932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Investigation -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:19:55 IST" name="screenShot" finished-at="2024-05-28T15:19:55 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:11:52 IST" name="screenShot" finished-at="2024-05-31T13:11:52 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Investigation status=SUCCESS method=DummyWf.Investigation()[pri:43, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=Investigation status=SUCCESS method=WebOpdEndToEndWorkflow.Investigation()[pri:43, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="Investigation1()[pri:44, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:19:55 IST" name="Investigation1" finished-at="2024-05-28T15:20:29 IST" duration-ms="34250" status="PASS">
+        <test-method signature="Investigation1()[pri:44, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:11:52 IST" name="Investigation1" finished-at="2024-05-31T13:12:26 IST" duration-ms="34188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Investigation1 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:20:29 IST" name="screenShot" finished-at="2024-05-28T15:20:29 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:12:26 IST" name="screenShot" finished-at="2024-05-31T13:12:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Investigation1 status=SUCCESS method=DummyWf.Investigation1()[pri:44, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=Investigation1 status=SUCCESS method=WebOpdEndToEndWorkflow.Investigation1()[pri:44, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="HealthProfile()[pri:45, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:20:29 IST" name="HealthProfile" finished-at="2024-05-28T15:20:43 IST" duration-ms="14651" status="PASS">
+        <test-method signature="HealthProfile()[pri:45, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:12:26 IST" name="HealthProfile" finished-at="2024-05-31T13:13:01 IST" duration-ms="34869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HealthProfile -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:20:43 IST" name="screenShot" finished-at="2024-05-28T15:20:43 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:13:01 IST" name="screenShot" finished-at="2024-05-31T13:13:01 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HealthProfile status=SUCCESS method=DummyWf.HealthProfile()[pri:45, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=HealthProfile status=SUCCESS method=WebOpdEndToEndWorkflow.HealthProfile()[pri:45, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="Document1()[pri:46, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:20:43 IST" name="Document1" finished-at="2024-05-28T15:20:44 IST" duration-ms="89" status="PASS">
+        <test-method signature="Document1()[pri:46, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:13:01 IST" name="Document1" finished-at="2024-05-31T13:13:01 IST" duration-ms="73" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Document1 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:20:44 IST" name="screenShot" finished-at="2024-05-28T15:20:44 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:13:01 IST" name="screenShot" finished-at="2024-05-31T13:13:01 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Document1 status=SUCCESS method=DummyWf.Document1()[pri:46, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=Document1 status=SUCCESS method=WebOpdEndToEndWorkflow.Document1()[pri:46, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="ReceiptOption()[pri:47, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:20:44 IST" name="ReceiptOption" finished-at="2024-05-28T15:20:59 IST" duration-ms="15004" status="PASS">
+        <test-method signature="ReceiptOption()[pri:47, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:13:01 IST" name="ReceiptOption" finished-at="2024-05-31T13:13:15 IST" duration-ms="14590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReceiptOption -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:20:59 IST" name="screenShot" finished-at="2024-05-28T15:20:59 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:13:15 IST" name="screenShot" finished-at="2024-05-31T13:13:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ReceiptOption status=SUCCESS method=DummyWf.ReceiptOption()[pri:47, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=ReceiptOption status=SUCCESS method=WebOpdEndToEndWorkflow.ReceiptOption()[pri:47, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="previewReceipt()[pri:48, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:20:59 IST" name="previewReceipt" finished-at="2024-05-28T15:21:29 IST" duration-ms="30583" status="PASS">
+        <test-method signature="previewReceipt()[pri:48, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:13:15 IST" name="previewReceipt" finished-at="2024-05-31T13:13:46 IST" duration-ms="30706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- previewReceipt -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:21:29 IST" name="screenShot" finished-at="2024-05-28T15:21:29 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:13:46 IST" name="screenShot" finished-at="2024-05-31T13:13:46 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=previewReceipt status=SUCCESS method=DummyWf.previewReceipt()[pri:48, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=previewReceipt status=SUCCESS method=WebOpdEndToEndWorkflow.previewReceipt()[pri:48, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="cirtificateOption1()[pri:49, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:21:29 IST" name="cirtificateOption1" finished-at="2024-05-28T15:21:49 IST" duration-ms="20219" status="PASS">
+        <test-method signature="cirtificateOption1()[pri:49, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:13:46 IST" name="cirtificateOption1" finished-at="2024-05-31T13:14:06 IST" duration-ms="20271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cirtificateOption1 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:21:49 IST" name="screenShot" finished-at="2024-05-28T15:21:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:14:06 IST" name="screenShot" finished-at="2024-05-31T13:14:06 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=cirtificateOption1 status=SUCCESS method=DummyWf.cirtificateOption1()[pri:49, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=cirtificateOption1 status=SUCCESS method=WebOpdEndToEndWorkflow.cirtificateOption1()[pri:49, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="AllDocuments()[pri:50, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:21:49 IST" name="AllDocuments" finished-at="2024-05-28T15:22:05 IST" duration-ms="16160" status="PASS">
+        <test-method signature="AllDocuments()[pri:50, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:14:06 IST" name="AllDocuments" finished-at="2024-05-31T13:14:23 IST" duration-ms="16319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AllDocuments -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:22:05 IST" name="screenShot" finished-at="2024-05-28T15:22:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:14:23 IST" name="screenShot" finished-at="2024-05-31T13:14:23 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AllDocuments status=SUCCESS method=DummyWf.AllDocuments()[pri:50, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=AllDocuments status=SUCCESS method=WebOpdEndToEndWorkflow.AllDocuments()[pri:50, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="Document2()[pri:51, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:22:05 IST" name="Document2" finished-at="2024-05-28T15:22:06 IST" duration-ms="66" status="PASS">
+        <test-method signature="Document2()[pri:51, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:14:23 IST" name="Document2" finished-at="2024-05-31T13:14:23 IST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Document2 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:22:06 IST" name="screenShot" finished-at="2024-05-28T15:22:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:14:23 IST" name="screenShot" finished-at="2024-05-31T13:14:23 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Document2 status=SUCCESS method=DummyWf.Document2()[pri:51, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=Document2 status=SUCCESS method=WebOpdEndToEndWorkflow.Document2()[pri:51, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="cirtificateOption()[pri:52, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:22:06 IST" name="cirtificateOption" finished-at="2024-05-28T15:22:38 IST" duration-ms="32466" status="PASS">
+        <test-method signature="cirtificateOption()[pri:52, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:14:23 IST" name="cirtificateOption" finished-at="2024-05-31T13:14:55 IST" duration-ms="32444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cirtificateOption -->
-        <test-method signature="cirtificateOption3()[pri:53, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:22:38 IST" name="cirtificateOption3" finished-at="2024-05-28T15:22:58 IST" duration-ms="20287" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:14:55 IST" name="screenShot" finished-at="2024-05-31T13:14:55 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cirtificateOption status=SUCCESS method=WebOpdEndToEndWorkflow.cirtificateOption()[pri:52, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="cirtificateOption3()[pri:53, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:14:55 IST" name="cirtificateOption3" finished-at="2024-05-31T13:15:15 IST" duration-ms="20306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cirtificateOption3 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:22:38 IST" name="screenShot" finished-at="2024-05-28T15:22:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:15:15 IST" name="screenShot" finished-at="2024-05-31T13:15:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=cirtificateOption status=SUCCESS method=DummyWf.cirtificateOption()[pri:52, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=cirtificateOption3 status=SUCCESS method=WebOpdEndToEndWorkflow.cirtificateOption3()[pri:53, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:22:58 IST" name="screenShot" finished-at="2024-05-28T15:22:58 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=cirtificateOption3 status=SUCCESS method=DummyWf.cirtificateOption3()[pri:53, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method signature="AllDocuments1()[pri:54, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:22:58 IST" name="AllDocuments1" finished-at="2024-05-28T15:23:10 IST" duration-ms="11288" status="PASS">
+        <test-method signature="AllDocuments1()[pri:54, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:15:15 IST" name="AllDocuments1" finished-at="2024-05-31T13:15:27 IST" duration-ms="11283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AllDocuments1 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:23:10 IST" name="screenShot" finished-at="2024-05-28T15:23:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:15:27 IST" name="screenShot" finished-at="2024-05-31T13:15:27 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AllDocuments1 status=SUCCESS method=DummyWf.AllDocuments1()[pri:54, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=AllDocuments1 status=SUCCESS method=WebOpdEndToEndWorkflow.AllDocuments1()[pri:54, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="ReferralOption3()[pri:55, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:23:10 IST" name="ReferralOption3" finished-at="2024-05-28T15:23:54 IST" duration-ms="44295" status="PASS">
+        <test-method signature="ReferralOption3()[pri:55, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:15:27 IST" name="ReferralOption3" finished-at="2024-05-31T13:16:11 IST" duration-ms="44378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReferralOption3 -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.DummyWf@d86a6f]" started-at="2024-05-28T15:23:54 IST" name="screenShot" finished-at="2024-05-28T15:23:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f]" started-at="2024-05-31T13:16:11 IST" name="screenShot" finished-at="2024-05-31T13:16:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ReferralOption3 status=SUCCESS method=DummyWf.ReferralOption3()[pri:55, instance:webAuto.DummyWf@d86a6f] output={null}]]]>
+                <![CDATA[[TestResult name=ReferralOption3 status=SUCCESS method=WebOpdEndToEndWorkflow.ReferralOption3()[pri:55, instance:webAuto.WebOpdEndToEndWorkflow@d86a6f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-      </class> <!-- webAuto.DummyWf -->
+      </class> <!-- webAuto.WebOpdEndToEndWorkflow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

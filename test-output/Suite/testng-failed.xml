@@ -3,22 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="pivotalApplication.PivoFin2">
+      <class name="pivotalApplication.PivoFin1">
         <methods>
-          <include name="Referrals"/>
-          <include name="close4"/>
-          <include name="ShareHealth"/>
-          <include name="Prescription"/>
-          <include name="ViewReports"/>
-          <include name="MyNotes"/>
-          <include name="VaccineInStore"/>
+          <include name="BulkCancel"/>
+          <include name="setup1"/>
           <include name="screenShot"/>
-          <include name="Appointments"/>
-          <include name="PatientList"/>
-          <include name="Reports"/>
-          <include name="setup"/>
+          <include name="BfSuite"/>
+          <include name="AfterSuite"/>
         </methods>
-      </class> <!-- pivotalApplication.PivoFin2 -->
+      </class> <!-- pivotalApplication.PivoFin1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

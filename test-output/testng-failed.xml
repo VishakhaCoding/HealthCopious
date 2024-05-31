@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webAuto.DummyWf">
+      <class name="webAuto.A">
         <methods>
-          <include name="ReferralOption3"/>
-          <include name="screenShot"/>
           <include name="setUp"/>
+          <include name="HealthProfile"/>
+          <include name="screenShot"/>
         </methods>
-      </class> <!-- webAuto.DummyWf -->
+      </class> <!-- webAuto.A -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

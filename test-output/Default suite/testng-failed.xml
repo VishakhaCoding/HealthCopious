@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webAuto.A">
+      <class name="webAuto.NewRxFlow">
         <methods>
           <include name="setUp"/>
-          <include name="HealthProfile"/>
           <include name="screenShot"/>
+          <include name="DietaryAdvice"/>
+          <include name="Medicine1"/>
         </methods>
-      </class> <!-- webAuto.A -->
+      </class> <!-- webAuto.NewRxFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

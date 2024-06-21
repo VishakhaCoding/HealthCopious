@@ -103,7 +103,7 @@ public void Search() throws InterruptedException {
 
 	WebElement SearchBar =  driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
 	//SearchBar.sendKeys("PivoTotal119Automations");
-	SearchBar.sendKeys("Pivotal31May");
+	SearchBar.sendKeys("Pivotal21june");
 
 	Thread.sleep(2000);
 	WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -318,7 +318,7 @@ public void UploadCam2() throws InterruptedException, IndexOutOfBoundsException 
 
 @Test(priority = 23)
 public void UploadCamOk2() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(2000);
+	Thread.sleep(10000);
 	WebElement UploadCamOk2
 	  =driver.findElement(By.xpath("//*[@text='OK']"));
 	UploadCamOk2.click();

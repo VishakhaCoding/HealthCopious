@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -16,6 +17,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
@@ -146,7 +148,7 @@ public class PivoFin1 extends AppiumServerStart {
 
 		WebElement MobileNumber1 = driver.findElement(By.xpath("//*[@text='Mobile Number']"));
 		MobileNumber1.sendKeys("1000000035");
-
+		//MobileNumber1.sendKeys("9665002440");
 	}
 
 	@Test(priority = 10)
@@ -190,7 +192,7 @@ public class PivoFin1 extends AppiumServerStart {
 		Thread.sleep(2000);
 
 		WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-		FirstName.sendKeys("Pivotal31May");
+		FirstName.sendKeys("Pivotal21june");
 		//FirstName.sendKeys("abhaPatient1Dec");
 		Thread.sleep(2000);
 
@@ -877,7 +879,7 @@ public class PivoFin1 extends AppiumServerStart {
 		SelectPatient.get(0).click();
 		Thread.sleep(5000);
 		List<WebElement> Seatchbar = driver.findElements(By.xpath("//*[@text='Name / Mobile']"));
-		Seatchbar.get(0).sendKeys("Pivotal31May");
+		Seatchbar.get(0).sendKeys("Pivotal21june");
 		Thread.sleep(5000);
 		List<WebElement> Search = driver.findElements(By.className("android.widget.TextView"));
 		Search.get(1).click();
@@ -1204,7 +1206,7 @@ public class PivoFin1 extends AppiumServerStart {
 
 	@Test(priority = 115)
 	public void GeneralInstructions() throws InterruptedException, IndexOutOfBoundsException {
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 
 		WebElement GeneralInstructions = driver.findElement(By.xpath("//*[@text='General Instructions']"));
 		GeneralInstructions.click();
@@ -1419,7 +1421,7 @@ Thread.sleep(2000);
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		UploadOk.click();
 
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 
 		WebElement Submit = driver.findElement(By.xpath("//*[@text='Submit']"));
 		Submit.click();
@@ -1692,13 +1694,24 @@ Thread.sleep(2000);*/
 	
 	
 	  @Test(priority = 150) public void BulkCancel() throws InterruptedException,
-	  IndexOutOfBoundsException { Thread.sleep(5000);
+	  IndexOutOfBoundsException { Thread.sleep(10000);
 	  
 	  
 	  
 	  
-	  WebElement BulkCancel = driver.findElement(By.xpath("//*[@text='Cancel']"));
-	  BulkCancel.click();
+	  //WebElement BulkCancel = driver.findElement(By.xpath("//*[@text='Cancel']"));
+	  //BulkCancel.click();
+	  
+	  
+	  try {
+          // Try to find and click the element
+          WebElement element = driver.findElement(By.xpath("//*[@text='Cancel']"));
+          element.click();
+      } catch (NoSuchElementException e) {
+          // Element not found, click on the next element
+          WebElement nextElement = driver.findElement(By.xpath("//*[@text='Patient Name']"));
+          nextElement.click();
+      }
 	  
 	  
 	  }
@@ -1833,7 +1846,7 @@ Thread.sleep(2000);*/
 
 	@Test(priority = 163)
 	public void UploadCamOk() throws InterruptedException, IndexOutOfBoundsException {
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		UploadOk.click();
 

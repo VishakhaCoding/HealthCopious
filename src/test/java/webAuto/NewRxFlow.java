@@ -1,13 +1,19 @@
 package webAuto;
 
+import java.io.File;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -368,7 +374,7 @@ public class NewRxFlow {
 	
 	public static String LMP="/html/body/app-root/app-new-rx-sidebar/ng-sidebar-container/div/div/div/app-new-quick-rx/div[1]/div[2]/div[1]/mat-accordion/mat-expansion-panel[2]/div/div/mat-vertical-stepper/div[1]/div/div/div/div/div/mat-form-field/div/div[1]/div[4]/mat-datepicker-toggle/button/span[1]";
 	
-	public static String LMPDate="//*[text()=' 8 ']"; 
+	public static String LMPDate="//*[text()='M']//following::div[5]"; 
 	public static String DiagnosisTabClick="/html/body/app-root/app-new-rx-sidebar/ng-sidebar-container/div/div/div/app-new-quick-rx/div[1]/div[2]/div[1]/mat-accordion/mat-expansion-panel[3]/mat-expansion-panel-header"; 
 	
 	
@@ -423,11 +429,11 @@ public class NewRxFlow {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		 //driver.get("http://stage.copious.care:4200/");
+		 driver.get("http://stage.copious.care:4200/");
 		 driver.manage().window().fullscreen();
 		//driver.get("https://app.copious.care/");
-		driver.get("https://app.copious.care/");
-		//driver.get("https://stage.copious.care/");
+		//driver.get("https://app.copious.care/");
+		// driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
 	}
 
@@ -563,7 +569,7 @@ public class NewRxFlow {
 	@Test(priority = 11, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("KUIRx116LiveMay");
+		driver.findElement(By.xpath(firstName)).sendKeys("NewRx22june");
 		;
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));
@@ -1057,6 +1063,8 @@ public class NewRxFlow {
 		highlightElement(By.xpath(ConcernTabClick));
 		clickUsingJavaScript(By.xpath(ConcernTabClick));
 
+		
+		Thread.sleep(5000);
 		driver.findElement(By.xpath(Examination));
 		highlightElement(By.xpath(Examination));
 		clickUsingJavaScript(By.xpath(Examination));
@@ -1124,10 +1132,29 @@ public class NewRxFlow {
 		driver.findElement(By.xpath(LMP));
 		clickUsingJavaScript(By.xpath(LMP));
 		
-		highlightElement(By.xpath(LMPDate));
-		//driver.findElement(By.xpath(LMPDate)).clear();
-		driver.findElement(By.xpath(LMPDate));
-		clickUsingJavaScript(By.xpath(LMPDate));
+		
+		Thread.sleep(5000);
+		
+		
+		
+		  LocalDate currentDate5 = LocalDate.now();
+		  
+		  // Format current date to match expected format in the calendar
+		  DateTimeFormatter dateFormatter5 = DateTimeFormatter.ofPattern("d"); String
+		  formattedDay5 = currentDate5.format(dateFormatter5);
+		  
+		  
+		  
+		  clickUsingJavaScript(By.xpath("//*[text()=' " + formattedDay5 + " ']"));
+		  
+		 
+			
+		/*
+		 * highlightElement(By.xpath(LMPDate));
+		 * //driver.findElement(By.xpath(LMPDate)).clear();
+		 * driver.findElement(By.xpath(LMPDate));
+		 * clickUsingJavaScript(By.xpath(LMPDate)); System.out.print("printfail");
+		 */
 	
 		highlightElement(By.xpath(AdBPSys));
 		driver.findElement(By.xpath(AdBPSys)).clear();
@@ -1846,8 +1873,32 @@ Thread.sleep(5000);
 				highlightElement(By.xpath(ViewLastPrescription));
 				clickUsingJavaScript(By.xpath(ViewLastPrescription));
 			}
+			// @AfterClass public void close() throws IOException {
+			@AfterMethod
+			public void screenShot(ITestResult result) { // using ITestResult.FAILURE is equals to result.getStatus then it
+				// enter into if condition
+				if (ITestResult.FAILURE == result.getStatus()) {
+					try { // To create reference of TakesScreenshot
+						EventFiringWebDriver edriver = new EventFiringWebDriver(driver); // Call method to capture screenshot
+						File src = edriver.getScreenshotAs(OutputType.FILE); // Copy files to specific location
+						// result.getName() will return name of test case so that screenshot name will
+						// be same as test case name
+						FileUtils.copyFile(src, new File("C:\\ScreenShotFolder\\" + result.getName() + ".png"));
+						System.out.println("Successfully captured a screenshot"); // driver.quit();
+					} catch (Exception e) {
+						System.out.println("Exception while taking screenshot " + e.getMessage());
+
+						// driver.quit();
+						// Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T"); }
+
+					}
+				}
+			}
+
+		}
+
 
 					 
-	}
+	
 
 

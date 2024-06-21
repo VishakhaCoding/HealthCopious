@@ -21,7 +21,8 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import pivotalApplication.AppiumServerStart;
 
-public class HealthEndToEndScript extends AppiumServerStart  {
+public class AndroidTrial extends AppiumServerStart{
+	
 	static AppiumDriver driver;
 
 	public Object MobileElement;
@@ -33,8 +34,8 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
-		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
+		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5556   device");
 		dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 1200);
 		dc.setCapability("–session-override",true);
 		dc.setCapability("noReset", false) ;
@@ -50,7 +51,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		Thread.sleep(5000);
 
 	}
-
+	
 	@Test(priority = 0)
 	public void NumberField() throws MalformedURLException, InterruptedException {
 		Thread.sleep(5000);
@@ -65,7 +66,6 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		Number.sendKeys("9665002440");
 		// highlightElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
 	}
-
 	@Test(priority = 1)
 	public void IAgree() throws MalformedURLException, InterruptedException {
 		WebElement Agree = driver.findElement(By.xpath("//android.widget.TextView[@index='1']"));
@@ -143,7 +143,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 7)
 	public void FirstName() throws MalformedURLException, InterruptedException {
 		List<WebElement> FirstName = driver.findElements(By.xpath("//*[@text='Your First Name']"));
-		FirstName.get(0).sendKeys("APhealthRegression");
+		FirstName.get(0).sendKeys("AIhealthRegression");
 
 		Thread.sleep(5000);
 
@@ -576,7 +576,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 39)
 	public void Time() throws MalformedURLException, InterruptedException {
 
-		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='01:20 pm']"));
+		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='05:10 pm']"));
 		Time.get(0).click();
 
 		Thread.sleep(5000);
@@ -1275,7 +1275,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		 * WebElement Submit =driver.findElement(By.xpath("//*[@text='Submit']"));
 		 * Submit.click(); Thread.sleep(2000);
 		 */
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		WebElement VaccineOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		VaccineOk.click();
 
@@ -1426,4 +1426,8 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 			}
 		}
 	}
+
+
+
+
 }

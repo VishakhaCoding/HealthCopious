@@ -146,7 +146,7 @@ public class WebOpdEndToEndWorkflow {
 	public static String GenInstruction = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[7]/div/div/div/div[2]/div[1]/div/div/div[1]/app-cutom-card/div";
 
 	public static String prescriptionSave = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/div[1]/div[1]";
-	public static String prescriptionProceed = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/div[1]/div[2]";
+	public static String prescriptionProceed = "//*[text()=' Proceed']";
 	public static String InstructionImpNote = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/div[2]/app-prescription-live-preview/div/div/mat-chip-list/div/mat-chip[2]";
 	public static String FollowupTypes = "//*[@class='ng-star-inserted']/ following::mat-select[5]";
 	public static String Appointment = "//*[text()=' Call ']";
@@ -462,8 +462,7 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	@Test(priority = 8, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("Zweb20Test");
-		;
+		driver.findElement(By.xpath(firstName)).sendKeys("web16july");
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));
 	}

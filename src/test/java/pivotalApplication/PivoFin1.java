@@ -164,7 +164,7 @@ public class PivoFin1 extends AppiumServerStart {
 
 	@Test(priority = 11)
 	public void confirmPopup() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 
 		// WebElement confirmPopup =
 		// driver.findElement(By.xpath("//*[@text='Confirm']"));
@@ -192,7 +192,7 @@ public class PivoFin1 extends AppiumServerStart {
 		Thread.sleep(2000);
 
 		WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-		FirstName.sendKeys("Pivotal21june");
+		FirstName.sendKeys("Pivotal16july");
 		//FirstName.sendKeys("abhaPatient1Dec");
 		Thread.sleep(2000);
 
@@ -870,7 +870,7 @@ public class PivoFin1 extends AppiumServerStart {
 		EveArrow.get(0).click();
 		
 		Thread.sleep(5000);
-		List<WebElement> SlotTime = driver.findElements(By.xpath("//*[@text='04:20 pm']"));
+		List<WebElement> SlotTime = driver.findElements(By.xpath("//*[@text='01:15 pm']"));
 		//List<WebElement> SlotTime = driver.findElements(By.className("android.widget.TextView"));
 		//SlotTime.get(30).click();
 		SlotTime.get(0).click();
@@ -879,7 +879,7 @@ public class PivoFin1 extends AppiumServerStart {
 		SelectPatient.get(0).click();
 		Thread.sleep(5000);
 		List<WebElement> Seatchbar = driver.findElements(By.xpath("//*[@text='Name / Mobile']"));
-		Seatchbar.get(0).sendKeys("Pivotal21june");
+		Seatchbar.get(0).sendKeys("Pivotal16july");
 		Thread.sleep(5000);
 		List<WebElement> Search = driver.findElements(By.className("android.widget.TextView"));
 		Search.get(1).click();
@@ -1446,7 +1446,7 @@ Thread.sleep(2000);
 	
 	
 	  @Test(priority = 134) public void BulkUpdate() throws InterruptedException,
-	  IndexOutOfBoundsException { Thread.sleep(5000); WebElement BulkUpdate =
+	  IndexOutOfBoundsException { Thread.sleep(10000); WebElement BulkUpdate =
 	  driver.findElement(By.xpath("//*[@text='Bulk-Update']")); BulkUpdate.click();
 	  
 	  Thread.sleep(5000);
@@ -1657,7 +1657,7 @@ Thread.sleep(2000);*/
 		WebElement CameraClick = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Take picture\"]"));
 		CameraClick.click();
 
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		UploadOk.click();
@@ -1830,7 +1830,7 @@ Thread.sleep(2000);*/
 		WebElement CameraClick = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Take picture\"]"));
 		CameraClick.click();
 
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		UploadOk.click();
@@ -1846,7 +1846,7 @@ Thread.sleep(2000);*/
 
 	@Test(priority = 163)
 	public void UploadCamOk() throws InterruptedException, IndexOutOfBoundsException {
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		UploadOk.click();
 
@@ -1920,7 +1920,7 @@ Thread.sleep(2000);*/
 
 	@Test(priority = 171)
 	public void UploadOk1() throws InterruptedException, IndexOutOfBoundsException {
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		UploadOk.click();
 

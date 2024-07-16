@@ -103,7 +103,7 @@ public void Search() throws InterruptedException {
 
 	WebElement SearchBar =  driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
 	//SearchBar.sendKeys("PivoTotal119Automations");
-	SearchBar.sendKeys("Pivotal21june");
+	SearchBar.sendKeys("Pivotal16july");
 
 	Thread.sleep(2000);
 	WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -255,7 +255,7 @@ public void DocumentOn2() throws InterruptedException, IndexOutOfBoundsException
 }
 @Test(priority = 20)
 public void popUpOk2() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(2000);
+	Thread.sleep(10000);
 	WebElement popUpOk
 	  = driver.findElement(By.xpath("//*[@text='Ok']"));
 	  popUpOk.click();
@@ -420,7 +420,7 @@ public void Upload3() throws InterruptedException, IndexOutOfBoundsException {
 }
 @Test(priority = 33)
 public void UploadOk3() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(2000);
+	Thread.sleep(10000);
 	WebElement UploadOk
 	  =driver.findElement(By.xpath("//*[@text='OK']"));
 	 UploadOk.click();
@@ -588,7 +588,7 @@ public void DocumentOn() throws InterruptedException, IndexOutOfBoundsException 
 }
 @Test(priority = 49)
 public void popUpOk() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(2000);
+	Thread.sleep(10000);
 	WebElement popUpOk
 	  = driver.findElement(By.xpath("//*[@text='Ok']"));
 	  popUpOk.click();
@@ -628,7 +628,7 @@ public void Camera() throws InterruptedException, IndexOutOfBoundsException {
 	  = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Take picture\"]"));
 	CameraClick1.click();
 
-	Thread.sleep(5000);
+	Thread.sleep(10000);
 	
 	WebElement UploadOk1
 	  =driver.findElement(By.xpath("//*[@text='OK']"));
@@ -754,7 +754,7 @@ public void Upload() throws InterruptedException, IndexOutOfBoundsException {
 }
 @Test(priority = 62)
 public void UploadOk() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(2000);
+	Thread.sleep(10000);
 	WebElement UploadOk
 	  =driver.findElement(By.xpath("//*[@text='OK']"));
 	 UploadOk.click();

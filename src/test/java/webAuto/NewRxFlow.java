@@ -172,7 +172,7 @@ public class NewRxFlow {
 
 	public static String AddNewAppointment = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[2]/div[2]/div[1]/app-patient/div/div/div/div/div[2]/div/div/ul/a/li/a/div/div[3]/figure/a[2]";
 	public static String EnterTime = "/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[2]/div[2]/div[2]/div[1]/input";
-	public static String SelectSlot = "/html/body/div[2]/div[4]/div/mat-dialog-container/div/div[2]/form[2]/div/div/div/div[39]/div";
+	public static String SelectSlot = "//*[text()=' 05:40 pm']";
 	public static String BookAppointment = "/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[2]/button";
 
 	public static String nextFollowupDate = "/html/body/app-root/app-new-rx-sidebar/ng-sidebar-container/div/div/div/app-new-quick-rx/div[1]/div[2]/div[1]/mat-accordion/mat-expansion-panel[7]/div/div/div/div[2]/div[3]/mat-form-field/div/div[1]/div[2]/mat-datepicker-toggle/button";
@@ -429,11 +429,11 @@ public class NewRxFlow {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		 driver.get("http://stage.copious.care:4200/");
+		// driver.get("http://stage.copious.care:4200/");
 		 driver.manage().window().fullscreen();
 		//driver.get("https://app.copious.care/");
-		//driver.get("https://app.copious.care/");
-		// driver.get("https://stage.copious.care/");
+		driver.get("https://app.copious.care/");
+		//driver.get("https://stage.copious.care/");
 		driver.manage().window().fullscreen();
 	}
 
@@ -569,7 +569,7 @@ public class NewRxFlow {
 	@Test(priority = 11, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("NewRx22june");
+		driver.findElement(By.xpath(firstName)).sendKeys("NewRx16july");
 		;
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));

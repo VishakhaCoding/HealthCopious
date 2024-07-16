@@ -143,7 +143,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 7)
 	public void FirstName() throws MalformedURLException, InterruptedException {
 		List<WebElement> FirstName = driver.findElements(By.xpath("//*[@text='Your First Name']"));
-		FirstName.get(0).sendKeys("APhealthRegression");
+		FirstName.get(0).sendKeys("RAhealthRegression");
 
 		Thread.sleep(5000);
 
@@ -576,7 +576,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 39)
 	public void Time() throws MalformedURLException, InterruptedException {
 
-		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='01:20 pm']"));
+		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='11:25 am']"));
 		Time.get(0).click();
 
 		Thread.sleep(5000);
@@ -965,7 +965,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	@Test(priority = 60)
 	public void UploadCamOk() throws InterruptedException, IndexOutOfBoundsException {
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		UploadOk.click();
 
@@ -1058,7 +1058,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	@Test(priority = 70)
 	public void UploadOk() throws InterruptedException, IndexOutOfBoundsException {
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		UploadOk.click();
 
@@ -1148,12 +1148,12 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		WebElement CameraClick = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Take picture\"]"));
 		CameraClick.click();
 
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		UploadOk.click();
 
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 
 		/*
 		 * WebElement Submit = driver.findElement(By.xpath("//*[@text='Submit']"));
@@ -1168,7 +1168,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		List<WebElement> BookLabTest1 = driver.findElements(By.xpath("//*[@text='Book Lab Test']"));
 		BookLabTest1.get(1).click();
 
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 
 	}
 
@@ -1279,7 +1279,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		WebElement VaccineOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		VaccineOk.click();
 
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 
 	}
 

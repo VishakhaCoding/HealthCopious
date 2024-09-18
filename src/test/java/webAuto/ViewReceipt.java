@@ -21,23 +21,23 @@ public class ViewReceipt {
 	public static WebDriver driver;
 
 	public static String doctorLoginLink = "/html/body/app-root/app-home-page/div/div/div/header[2]/div/div[4]/button";
-	public static String mobileNumber = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div/form/div[2]/input";
-	public static String sendOTP = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div/form/div[4]/button";
-	public static String verifyOTP = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[6]/button";
-	public static String createPatient = "createPatient";
-	public static String searchBar = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[1]/div/div[1]/div[1]/input";
-	public static String searchOpt = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[1]/div/div[1]/div[3]/button";
-	public static String clickPatient = "li.clearfix";
-	public static String OTP1="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]"; 
-	   public static String OTP2="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[2]"; 
-	   public static String OTP3="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[3]"; 
-	   public static String OTP4="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
-	   public static String OTP5="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
-	   public static String OTP6="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]"; 
+	public static String mobileNumber = "//*[text()='Login ']//following::input";
+	public static String sendOTP = "//*[text()='Send OTP']";
+	public static String verifyOTP = "//*[text()='Verify']";
+	
+	 public static String OTP1="//*[text()='Verify OTP ']//following::input[1]"; 
+	   public static String OTP2="//*[text()='Verify OTP ']//following::input[2]"; 
+	   public static String OTP3="//*[text()='Verify OTP ']//following::input[3]"; 
+	   public static String OTP4="//*[text()='Verify OTP ']//following::input[4]";
+	   public static String OTP5="//*[text()='Verify OTP ']//following::input[5]";
+	   public static String OTP6="//*[text()='Verify OTP ']//following::input[6]"; 
+	   public static String searchBar = "//*[text()=' Home']//following::input";
+		public static String searchOpt = "//*[text()=' Home']//following::img[7]";
 	   public static String Document="//*[text()='Documents']";
 	   public static String ReceiptOption="//*[text()='Bill/Receipt']";
 	   public static String ViewReceipt="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/app-patient-receipt/div/div[1]/div[3]/div/table/tbody/tr[1]/td[4]/div";
 	   public static String CloseCertificate="//*[text()='×']";
+		public static String clickPatient = "li.clearfix";
 	   public static void waitForVisibilityOf(By by) {
 			try {
 

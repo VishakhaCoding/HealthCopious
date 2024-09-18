@@ -47,22 +47,23 @@ public class RescheduleAppointment extends AppiumServerStart{
 
 }
 
-@Test(priority = 0)
-public void NumberField() throws MalformedURLException, InterruptedException {
-	
-	  List<WebElement> EnglishSelect = driver.findElements(By.className(
-	  "android.widget.TextView"
-	  )); EnglishSelect.get(10).click();
-	 
-	
-	
-	Thread.sleep(10000);
-	
-	WebElement Number = driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
-	Number.sendKeys("9665002440");
-}
-
+	@Test(priority = 0)
+	public void NumberField() throws MalformedURLException, InterruptedException {
+		
+		  List<WebElement> EnglishSelect = driver.findElements(By.xpath(
+		  "//*[@text='Select']"
+		  )); EnglishSelect.get(0).click();
+		 
+		
+		
+		Thread.sleep(10000);
+		//highlightElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
+		
+		WebElement Number = driver.findElement(By.xpath(
+				"//android.widget.EditText[@text=\"Mobile Number\"]"));
+		Number.sendKeys("9665002440");
+		//highlightElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
+	}
 @Test(priority = 1)
 public void IAgree() throws MalformedURLException, InterruptedException {
 	WebElement Agree = driver.findElement(By.xpath("//android.widget.TextView[@index='1']"));

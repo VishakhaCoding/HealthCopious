@@ -14,6 +14,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumDriver;
@@ -46,50 +47,56 @@ public class InvestigationReport extends AppiumServerStart{
 
 }
 
-@Test(priority = 0)
-public void NumberField() throws MalformedURLException, InterruptedException {
-	WebElement Number =  driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
-	Number.sendKeys("9665002440");
-}
+	@Test(priority = 0)
+	public void NumberField() throws MalformedURLException, InterruptedException {
+		WebElement Number = driver.findElement(By.xpath(
+				"//*[@text='Mobile Number']"));
+		Number.sendKeys("9665002440");
+	}
 
-@Test(priority = 1)
-public void IAgree() throws MalformedURLException, InterruptedException {
-	WebElement Agree =  driver.findElement(By.xpath("//android.widget.TextView[@index='1']"));
-	Agree.click();
-	Thread.sleep(1000);
-}
+	@Test(priority = 1)
+	public void IAgree() throws MalformedURLException, InterruptedException {
+		WebElement Agree = driver.findElement(By.xpath("//android.widget.TextView[@index='1']"));
+		Agree.click();
+		Thread.sleep(1000);
+	}
 
-@Test(priority = 2)
-public void proceedButton() throws MalformedURLException, InterruptedException {
-	WebElement proceed =  driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView"));
-	proceed.click();
-	Thread.sleep(2000);
-}
+	@Test(priority = 2)
+	public void proceedButton() throws MalformedURLException, InterruptedException {
+		WebElement proceed = driver.findElement(By.xpath(
+				"//android.widget.TextView[@text=\"\"]"));
+		proceed.click();
+		Thread.sleep(2000);
+	}
 
-@Test(priority = 3)
-public void OTP() throws MalformedURLException, InterruptedException {
-	WebElement otp =  driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.EditText"));
-	otp.sendKeys("140520");
+	@Test(priority = 3)
+	public void OTP() throws MalformedURLException, InterruptedException {
+		List<WebElement> otp =  driver.findElements(By.xpath(
+				"//*[@text='Enter OTP']"));
+		otp.get(1).sendKeys("140520");
+		
+		
+		
+	//	List<WebElement >otp = driver.findElements(By.xpath("//*[@text='Enter OTP']"));
+		//otp.get(0).sendKeys("140520");
 
-	Thread.sleep(10000);
-}
+		Thread.sleep(10000);
+	}
 
-@Test(priority = 4)
-public void submit() throws MalformedURLException, InterruptedException {
-	WebElement submit =  driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
-	submit.click();
+	@Test(priority = 4)
+	public void submit() throws MalformedURLException, InterruptedException {
+		
+		
+		
+		WebElement submit = driver.findElement(By.xpath(
+				"//*[@text='Submit']"));
+		submit.click();
+		Thread.sleep(5000);
+		List<WebElement> WhatsNewClose = driver.findElements(By.className("android.widget.TextView"));
+		WhatsNewClose.get(1).click();
+		Thread.sleep(2000);
 
-	Thread.sleep(10000);
-	 List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
-	  WhatsNewClose.get(1).click();
-	  Thread.sleep(2000);
-
-}
-
+	}
 @Test(priority = 5)
 public void Search() throws InterruptedException {
 
@@ -99,7 +106,7 @@ public void Search() throws InterruptedException {
 	Thread.sleep(2000);
 
 	WebElement SearchBar =  driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-	SearchBar.sendKeys("Pivo17AprilAutomation");
+	SearchBar.sendKeys("Pivotal16Aug");
 
 	Thread.sleep(2000);
 	WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -260,6 +267,7 @@ public void DocumentsDropDown() throws InterruptedException, IndexOutOfBoundsExc
 	
 
 }
+@Ignore
 @Test(priority = 26)
 public void LabReport() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
@@ -320,7 +328,7 @@ public void Gallery() throws InterruptedException, IndexOutOfBoundsException {
 @Test(priority = 31)
 public void photo() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(10000);
- driver.findElement(By.xpath("(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[2]")).click();
+ driver.findElement(By.xpath("//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"]")).click();
 
 	
 
@@ -337,6 +345,107 @@ public void Upload() throws InterruptedException, IndexOutOfBoundsException {
 }
 @Test(priority = 33)
 public void UploadOk() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	WebElement UploadOk
+	  =driver.findElement(By.xpath("//*[@text='OK']"));
+	 UploadOk.click();
+
+	
+}
+@Test(priority = 34)
+public void Transscript2() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	WebElement Transscript = driver.findElement(By.xpath("//*[@text='Upload Report']"));
+	Transscript.click();
+
+}
+@Test(priority = 35)
+public void DocumentsDropDown1() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(5000);
+	List<WebElement> DocumentsDropDown = driver.findElements(By.className("android.widget.TextView"));
+	DocumentsDropDown.get(2).click();
+
+	
+
+}
+@Ignore
+@Test(priority = 36)
+public void LabReport1() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	WebElement LabReport
+	  = driver.findElement(By.xpath("//*[@text='Lab Report']"));
+	LabReport.click();
+
+	
+
+}
+@Test(priority = 37)
+public void CreatedBy2() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	WebElement CreatedBy
+	  = driver.findElement(By.xpath("//*[@text='Created By']"));
+	  CreatedBy.sendKeys("Investigation");
+
+	
+
+}
+@Test(priority = 38)
+public void DocumentOn2() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	List<WebElement> DocumentOn =  driver.findElements(By.className("android.widget.TextView"));
+	DocumentOn.get(5).click();
+
+	
+
+}
+@Test(priority = 39)
+public void popUpOk2() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	WebElement popUpOk
+	  = driver.findElement(By.xpath("//*[@text='Ok']"));
+	  popUpOk.click();
+
+	
+
+}
+@Test(priority = 40)
+public void Files() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	WebElement Files
+	  = driver.findElement(By.xpath("//*[@text='Files']"));
+	Files.click();
+
+}
+
+/*
+ * @Test(priority = 24) public void CameraAllow() throws InterruptedException,
+ * IndexOutOfBoundsException { Thread.sleep(2000); WebElement CameraAllow =
+ * driver.findElement(By.xpath("//*[@text='Allow']")); CameraAllow.click();
+ * 
+ * 
+ * 
+ * }
+ */
+@Test(priority = 41)
+public void DocPdf() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(10000);
+	List<WebElement> docPdf=driver.findElements(By.className("android.widget.TextView"));
+	docPdf.get(11).click();
+	
+
+}
+@Test(priority = 42)
+public void Upload1() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	WebElement Upload
+	  = driver.findElement(By.xpath("//*[@text='Upload']"));
+	 Upload.click();
+
+	
+
+}
+@Test(priority = 43)
+public void UploadOk1() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement UploadOk
 	  =driver.findElement(By.xpath("//*[@text='OK']"));

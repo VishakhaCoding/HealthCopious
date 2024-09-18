@@ -37,7 +37,7 @@ import org.testng.annotations.Test;
   if (browserName.equals("chrome")) {
   
   System.setProperty("webdriver.chrome.driver",
-  "C:\\Users\\Lenovo\\Desktop\\PracticeHealth\\src\\test\\resources\\Browser\\chromedriver.exe");
+  "C:\\chromedriver.exe");
   
   driver = new ChromeDriver();
   

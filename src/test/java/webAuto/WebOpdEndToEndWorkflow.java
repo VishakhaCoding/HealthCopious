@@ -6,6 +6,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -317,7 +318,8 @@ public class WebOpdEndToEndWorkflow {
 	public static String EmailOption = "/html/body/div[2]/div[4]/div/mat-dialog-container/div[2]/div[2]/div";
 public static String BrandName="//*[text()='Tubaervac BCG']";
 
-	
+public static String ReceiptDots="//*[text()='Done']// following::img[1]";
+public static String ReceiptReceiptOption="//*[text()='Create Receipt']";
 	
 	public static void waitForVisibilityOf(By by) {
 		try {
@@ -462,7 +464,7 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	@Test(priority = 8, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("web16july");
+		driver.findElement(By.xpath(firstName)).sendKeys("web18Sept");
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));
 	}
@@ -1878,6 +1880,12 @@ Thread.sleep(5000);
 		clickUsingJavaScript(By.xpath(ReferralSaveAndShare));
 
 		Thread.sleep(2000);
+		/*
+		 * Alert alert = driver.switchTo().alert();
+		 * 
+		 * String alertText = alert.getText(); System.out.println("Alert text: " +
+		 * alertText);
+		 */
 
 		/*
 		 * waitForVisibilityOf(By.cssSelector(ReferralSharedMsge));
@@ -1891,6 +1899,99 @@ Thread.sleep(5000);
 	}
 	
 	
+	/*
+	 * @Test(priority = 56) public void GoHome1() throws InterruptedException {
+	 * waitForVisibilityOf(By.xpath(ClickHome));
+	 * driver.findElement(By.xpath(ClickHome));
+	 * highlightElement(By.xpath(ClickHome));
+	 * clickUsingJavaScript(By.xpath(ClickHome));
+	 * 
+	 * waitForVisibilityOf(By.xpath(ReceiptDots));
+	 * driver.findElement(By.xpath(ReceiptDots));
+	 * highlightElement(By.xpath(ReceiptDots));
+	 * clickUsingJavaScript(By.xpath(ReceiptDots));
+	 * 
+	 * waitForVisibilityOf(By.xpath(ReceiptReceiptOption));
+	 * driver.findElement(By.xpath(ReceiptReceiptOption));
+	 * highlightElement(By.xpath(ReceiptReceiptOption));
+	 * clickUsingJavaScript(By.xpath(ReceiptReceiptOption));
+	 * 
+	 * Thread.sleep(5000); waitForVisibilityOf(By.xpath(ReceiptNo));
+	 * driver.findElement(By.xpath(ReceiptNo)).sendKeys("11111");
+	 * highlightElement(By.xpath(ReceiptNo));
+	 * 
+	 * waitForVisibilityOf(By.xpath(Consultation));
+	 * driver.findElement(By.xpath(Consultation)).sendKeys("101.5");
+	 * highlightElement(By.xpath(Consultation));
+	 * 
+	 * Thread.sleep(3000); waitForVisibilityOf(By.xpath(Vaccination));
+	 * driver.findElement(By.xpath(Vaccination)).sendKeys("1005");
+	 * highlightElement(By.xpath(Vaccination));
+	 * 
+	 * waitForVisibilityOf(By.xpath(OtheCharges));
+	 * driver.findElement(By.xpath(OtheCharges)).sendKeys("505.5");
+	 * highlightElement(By.xpath(OtheCharges));
+	 * 
+	 * waitForVisibilityOf(By.xpath(AddMoreButton));
+	 * driver.findElement(By.xpath(AddMoreButton));
+	 * highlightElement(By.xpath(AddMoreButton));
+	 * clickUsingJavaScript(By.xpath(AddMoreButton));
+	 * 
+	 * Thread.sleep(5000); waitForVisibilityOf(By.xpath(ExtraOtherCharges));
+	 * driver.findElement(By.xpath(ExtraOtherCharges)).sendKeys("Extra"); ;
+	 * highlightElement(By.xpath(ExtraOtherCharges));
+	 * 
+	 * waitForVisibilityOf(By.xpath(ExtraCharges));
+	 * driver.findElement(By.xpath(ExtraCharges)).sendKeys("105.5"); ;
+	 * highlightElement(By.xpath(ExtraCharges));
+	 * 
+	 * 
+	 * waitForVisibilityOf(By.xpath(previewReceipt));
+	 * driver.findElement(By.xpath(previewReceipt));
+	 * highlightElement(By.xpath(previewReceipt));
+	 * clickUsingJavaScript(By.xpath(previewReceipt));
+	 * 
+	 * waitForVisibilityOf(By.xpath(EnterPayerName));
+	 * driver.findElement(By.xpath(EnterPayerName)).sendKeys("payer");
+	 * highlightElement(By.xpath(EnterPayerName));
+	 * 
+	 * waitForVisibilityOf(By.xpath(PaymentMethodDropdown));
+	 * driver.findElement(By.xpath(PaymentMethodDropdown));
+	 * highlightElement(By.xpath(PaymentMethodDropdown));
+	 * clickUsingJavaScript(By.xpath(PaymentMethodDropdown));
+	 * 
+	 * waitForVisibilityOf(By.xpath(PaymentMethod));
+	 * driver.findElement(By.xpath(PaymentMethod));
+	 * highlightElement(By.xpath(PaymentMethod));
+	 * clickUsingJavaScript(By.xpath(PaymentMethod));
+	 * 
+	 * Thread.sleep(15000); waitForVisibilityOf(By.xpath(CreateReceipt));
+	 * driver.findElement(By.xpath(CreateReceipt));
+	 * highlightElement(By.xpath(CreateReceipt));
+	 * clickUsingJavaScript(By.xpath(CreateReceipt));
+	 * 
+	 * Thread.sleep(15000); waitForVisibilityOf(By.xpath(CloseReceipt));
+	 * driver.findElement(By.xpath(CloseReceipt));
+	 * highlightElement(By.xpath(CloseReceipt));
+	 * clickUsingJavaScript(By.xpath(CloseReceipt));
+	 * 
+	 * 
+	 * 
+	 * Thread.sleep(5000); waitForVisibilityOf(By.xpath(ViewReceipt));
+	 * driver.findElement(By.xpath(ViewReceipt));
+	 * highlightElement(By.xpath(ViewReceipt));
+	 * clickUsingJavaScript(By.xpath(ViewReceipt));
+	 * 
+	 * Thread.sleep(15000); waitForVisibilityOf(By.xpath(CloseCertificate));
+	 * driver.findElement(By.xpath(CloseCertificate));
+	 * highlightElement(By.xpath(CloseCertificate));
+	 * clickUsingJavaScript(By.xpath(CloseCertificate));
+	 * 
+	 * 
+	 * }
+	 * 
+	 */
+
 
 	// @AfterClass public void close() throws IOException {
 	@AfterMethod

@@ -23,7 +23,7 @@ public class HealthImmunization extends HealthLogin{
 			 * "//android.view.ViewGroup[@index='3']")); SelectFamilyMember.get(0).click();
 			 */
 		 Thread.sleep(5000);
-		 List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+		 List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
 			SelectFamilyMember.get(0).click();
 		
 		  Thread.sleep(5000);

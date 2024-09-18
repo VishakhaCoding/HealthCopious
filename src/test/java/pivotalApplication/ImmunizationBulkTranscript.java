@@ -50,7 +50,7 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 	@Test(priority = 0)
 	public void NumberField() throws MalformedURLException, InterruptedException {
 		WebElement Number = driver.findElement(By.xpath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
+				"//*[@text='Mobile Number']"));
 		Number.sendKeys("9665002440");
 	}
 
@@ -64,30 +64,37 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 	@Test(priority = 2)
 	public void proceedButton() throws MalformedURLException, InterruptedException {
 		WebElement proceed = driver.findElement(By.xpath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView"));
+				"//android.widget.TextView[@text=\"\"]"));
 		proceed.click();
 		Thread.sleep(2000);
 	}
 
 	@Test(priority = 3)
 	public void OTP() throws MalformedURLException, InterruptedException {
-		WebElement otp = driver.findElement(By.xpath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.EditText"));
-		otp.sendKeys("140520");
+		List<WebElement> otp =  driver.findElements(By.xpath(
+				"//*[@text='Enter OTP']"));
+		otp.get(1).sendKeys("140520");
+		
+		
+		
+	//	List<WebElement >otp = driver.findElements(By.xpath("//*[@text='Enter OTP']"));
+		//otp.get(0).sendKeys("140520");
 
 		Thread.sleep(10000);
 	}
 
 	@Test(priority = 4)
 	public void submit() throws MalformedURLException, InterruptedException {
+		
+		
+		
 		WebElement submit = driver.findElement(By.xpath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
+				"//*[@text='Submit']"));
 		submit.click();
-
-		Thread.sleep(10000);
-		 List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
-		  WhatsNewClose.get(1).click();
-		  Thread.sleep(2000);
+		Thread.sleep(5000);
+		List<WebElement> WhatsNewClose = driver.findElements(By.className("android.widget.TextView"));
+		WhatsNewClose.get(1).click();
+		Thread.sleep(2000);
 
 	}
 
@@ -101,7 +108,7 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 		Thread.sleep(2000);
 
 		WebElement SearchBar = driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-		SearchBar.sendKeys("Pivo17AprilAutomation");
+		SearchBar.sendKeys("Pivotal");
 
 		Thread.sleep(2000);
 		WebElement SearchIcon1 = driver.findElement(
@@ -131,7 +138,7 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 
 	@Test(priority = 8)
 	public void ImmunizationClick() throws InterruptedException, IndexOutOfBoundsException {
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 		WebElement ImmunizationClick = driver.findElement(By.xpath("//*[@text='Immunization']"));
 		ImmunizationClick.click();
 
@@ -365,7 +372,7 @@ public class ImmunizationBulkTranscript extends AppiumServerStart{
 	public void GallariesPhoto() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath(
-				"(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[2]"))
+				"(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[1]"))
 				.click();
 
 		Thread.sleep(5000);

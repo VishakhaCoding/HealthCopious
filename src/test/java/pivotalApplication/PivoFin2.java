@@ -49,49 +49,57 @@ public class PivoFin2  {
 	//Thread.sleep(10000);
 
 }
-	@Ignore()
-@Test(priority = 0)
-public void NumberField() throws MalformedURLException, InterruptedException {
-	WebElement Number =  driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
-	Number.sendKeys("9665002440");
-}
 	@Ignore
-@Test(priority = 1)
-public void IAgree() throws MalformedURLException, InterruptedException {
-	WebElement Agree =  driver.findElement(By.xpath("//android.widget.TextView[@index='1']"));
-	Agree.click();
-	Thread.sleep(1000);
-}
+	@Test(priority = 0)
+	public void NumberField() throws MalformedURLException, InterruptedException {
+		WebElement Number = driver.findElement(By.xpath(
+				"//*[@text='Mobile Number']"));
+		Number.sendKeys("9665002440");
+	}
 	@Ignore
-@Test(priority = 2)
-public void proceedButton() throws MalformedURLException, InterruptedException {
-	WebElement proceed =  driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView"));
-	proceed.click();
-	Thread.sleep(5000);
-}
+	@Test(priority = 1)
+	public void IAgree() throws MalformedURLException, InterruptedException {
+		WebElement Agree = driver.findElement(By.xpath("//android.widget.TextView[@index='1']"));
+		Agree.click();
+		Thread.sleep(1000);
+	}
 	@Ignore
-@Test(priority = 3)
-public void OTP() throws MalformedURLException, InterruptedException {
-	WebElement otp =  driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.EditText"));
-	otp.sendKeys("140520");
+	@Test(priority = 2)
+	public void proceedButton() throws MalformedURLException, InterruptedException {
+		WebElement proceed = driver.findElement(By.xpath(
+				"//android.widget.TextView[@text=\"\"]"));
+		proceed.click();
+		Thread.sleep(2000);
+	}
+	@Ignore
+	@Test(priority = 3)
+	public void OTP() throws MalformedURLException, InterruptedException {
+		List<WebElement> otp =  driver.findElements(By.xpath(
+				"//*[@text='Enter OTP']"));
+		otp.get(1).sendKeys("140520");
+		
+		
+		
+	//	List<WebElement >otp = driver.findElements(By.xpath("//*[@text='Enter OTP']"));
+		//otp.get(0).sendKeys("140520");
 
-	Thread.sleep(10000);
-}
+		Thread.sleep(10000);
+	}
 	@Ignore
-@Test(priority = 4)
-public void submit() throws MalformedURLException, InterruptedException {
-	WebElement submit =  driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
-	submit.click();
+	@Test(priority = 4)
+	public void submit() throws MalformedURLException, InterruptedException {
+		
+		
+		
+		WebElement submit = driver.findElement(By.xpath(
+				"//*[@text='Submit']"));
+		submit.click();
+		Thread.sleep(5000);
+		List<WebElement> WhatsNewClose = driver.findElements(By.className("android.widget.TextView"));
+		WhatsNewClose.get(1).click();
+		Thread.sleep(2000);
 
-	//Thread.sleep(2000);
-	  Thread.sleep(5000);
-	  List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
-	  WhatsNewClose.get(1).click();
-
-}
+	}
 	@Ignore
 @Test(priority = 5)
 public void Search() throws InterruptedException {
@@ -103,7 +111,7 @@ public void Search() throws InterruptedException {
 
 	WebElement SearchBar =  driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
 	//SearchBar.sendKeys("PivoTotal119Automations");
-	SearchBar.sendKeys("Pivotal16july");
+	SearchBar.sendKeys("Pivotal4sept");
 
 	Thread.sleep(2000);
 	WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -425,13 +433,135 @@ public void UploadOk3() throws InterruptedException, IndexOutOfBoundsException {
 	  =driver.findElement(By.xpath("//*[@text='OK']"));
 	 UploadOk.click();
 	 Thread.sleep(2000);
+	 
+	 
+	 
+	 
+	 
+}
+	 
+
+	 @Test(priority = 34)
+	 public void Transscript2() throws InterruptedException, IndexOutOfBoundsException {
+	 	Thread.sleep(2000);
+	 	WebElement Transscript = driver.findElement(By.xpath("//*[@text='Upload Report']"));
+	 	Transscript.click();
+	 	
+	 }
+@Ignore
+	 @Test(priority = 35)
+	 public void DocumentsDropDown4() throws InterruptedException, IndexOutOfBoundsException {
+	 	Thread.sleep(5000);
+	 	List<WebElement> DocumentsDropDown = driver.findElements(By.className("android.widget.TextView"));
+	 	DocumentsDropDown.get(2).click();
+
+	 	
+
+	 }
+	@Ignore
+	 @Test(priority = 36)
+	 public void LabReport1() throws InterruptedException, IndexOutOfBoundsException {
+	 	Thread.sleep(2000);
+	 	WebElement LabReport
+	 	  = driver.findElement(By.xpath("//*[@text='Lab Report']"));
+	 	LabReport.click();
+
+	 	
+
+	 }
+	
+	 @Test(priority = 37)
+	 public void CreatedBy4() throws InterruptedException, IndexOutOfBoundsException {
+	 	Thread.sleep(2000);
+	 	WebElement CreatedBy
+	 	  = driver.findElement(By.xpath("//*[@text='Created By']"));
+	 	  CreatedBy.sendKeys("Investigation");
+
+	 	
+
+	 }
+
+	 @Test(priority = 38)
+	 public void DocumentOn4() throws InterruptedException, IndexOutOfBoundsException {
+	 	Thread.sleep(2000);
+	 	List<WebElement> DocumentOn =  driver.findElements(By.className("android.widget.TextView"));
+	 	DocumentOn.get(5).click();
+
+	 	
+
+	 }
+
+	 @Test(priority = 39)
+	 public void popUpOk4() throws InterruptedException, IndexOutOfBoundsException {
+	 	Thread.sleep(2000);
+	 	WebElement popUpOk
+	 	  = driver.findElement(By.xpath("//*[@text='Ok']"));
+	 	  popUpOk.click();
+
+	 	
+
+	 }
+	
+	 @Test(priority = 40)
+	 public void Files() throws InterruptedException, IndexOutOfBoundsException {
+	 	Thread.sleep(2000);
+	 	WebElement Files
+	 	  = driver.findElement(By.xpath("//*[@text='Files']"));
+	 	Files.click();
+
+	 }
+
+	 /*
+	  * @Test(priority = 24) public void CameraAllow() throws InterruptedException,
+	  * IndexOutOfBoundsException { Thread.sleep(2000); WebElement CameraAllow =
+	  * driver.findElement(By.xpath("//*[@text='Allow']")); CameraAllow.click();
+	  * 
+	  * 
+	  * 
+	  * }
+	  */
+
+	 @Test(priority = 41)
+	 public void DocPdf() throws InterruptedException, IndexOutOfBoundsException {
+	 	Thread.sleep(10000);
+	 	List<WebElement> docPdf=driver.findElements(By.className("android.widget.TextView"));
+	 	docPdf.get(11).click();
+	 	
+
+	 }
+	
+	 @Test(priority = 42)
+	 public void Upload1() throws InterruptedException, IndexOutOfBoundsException {
+	 	Thread.sleep(2000);
+	 	WebElement Upload
+	 	  = driver.findElement(By.xpath("//*[@text='Upload']"));
+	 	 Upload.click();
+
+	 	
+
+	 }
+
+	 @Test(priority = 43)
+	 public void UploadOk1() throws InterruptedException, IndexOutOfBoundsException {
+	 	Thread.sleep(2000);
+	 	WebElement UploadOk
+	 	  =driver.findElement(By.xpath("//*[@text='OK']"));
+	 	 UploadOk.click();
+
+	 	
+	 
+	 
+	
+}
+@Test(priority = 44)
+public void RffralCreation() throws InterruptedException, IndexOutOfBoundsException {
+	
 	 List<WebElement> Backward1 =
 			 driver.findElements(By.className("android.widget.TextView"));
 			 Backward1.get(0).click();
 			 Thread.sleep(5000);
-}
-@Test(priority = 34)
-public void RffralCreation() throws InterruptedException, IndexOutOfBoundsException {
+	
+	
 	
 	Thread.sleep(2000);
 	WebElement RffralCreation
@@ -441,7 +571,7 @@ public void RffralCreation() throws InterruptedException, IndexOutOfBoundsExcept
 	
 
 }
-@Test(priority = 35)
+@Test(priority = 45)
 public void DrName() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	List<WebElement> DrName = driver
@@ -451,21 +581,21 @@ public void DrName() throws InterruptedException, IndexOutOfBoundsException {
 	
 
 
-@Test(priority = 36)
+@Test(priority = 46)
 public void DrEmail() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	List<WebElement> DrEmail = driver
 			.findElements(By.className("android.widget.EditText"));
 	DrEmail.get(1).sendKeys("abc@gmail.com");}
 
-@Test(priority = 37)
+@Test(priority = 47)
 public void DrMobNumber() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	List<WebElement> DrMobNumber = driver
 			.findElements(By.className("android.widget.EditText"));
 	DrMobNumber.get(2).sendKeys("1234567891");
 }
-@Test(priority = 38)
+@Test(priority = 48)
 public void HealthCondition() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	List<WebElement> HealthCondition = driver
@@ -473,7 +603,7 @@ public void HealthCondition() throws InterruptedException, IndexOutOfBoundsExcep
 	HealthCondition.get(3).sendKeys("Critical");
 
 }
-@Test(priority = 39)
+@Test(priority = 49)
 public void Duration() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	List<WebElement> Duration = driver
@@ -481,7 +611,7 @@ public void Duration() throws InterruptedException, IndexOutOfBoundsException {
 	Duration.get(4).sendKeys("2");
 
 }
-@Test(priority = 40)
+@Test(priority = 50)
 public void Speciality() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	
@@ -505,7 +635,7 @@ public void Speciality() throws InterruptedException, IndexOutOfBoundsException 
 		 */
 
 }
-@Test(priority = 41)
+@Test(priority = 51)
 public void preview() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	
@@ -517,7 +647,7 @@ public void preview() throws InterruptedException, IndexOutOfBoundsException {
 }
 
 
-  @Test(priority = 42) public void Save() throws InterruptedException,
+  @Test(priority = 52) public void Save() throws InterruptedException,
   IndexOutOfBoundsException { Thread.sleep(5000);
 	WebElement Save
 	  = driver.findElement(By.xpath("//*[@text='Save']"));
@@ -536,7 +666,7 @@ public void preview() throws InterruptedException, IndexOutOfBoundsException {
 	 * Backward1 = driver.findElements(By.className("android.widget.TextView"));
 	 * Backward1.get(0).click(); Thread.sleep(5000);}
 	 */
-@Test(priority = 44)
+@Test(priority = 54)
 public void UploadDocuments() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(40000);
 	driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Special Situation Vaccine\").instance(0))"));
@@ -548,16 +678,16 @@ public void UploadDocuments() throws InterruptedException, IndexOutOfBoundsExcep
 	
 
 }
-@Test(priority = 45)
+@Test(priority = 55)
 public void DocumentsDropDown() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(5000);
-	List<WebElement> DocumentsDropDown = driver.findElements(By.className("android.widget.TextView"));
-	DocumentsDropDown.get(2).click();
+	List<WebElement> DocumentsDropDown = driver.findElements(By.xpath("//android.widget.TextView[@text=\"\"]"));
+	DocumentsDropDown.get(0).click();
 
 	
 
 }
-@Test(priority = 46)
+@Test(priority = 56)
 public void DischargeSummary() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement DischargeSummary
@@ -567,7 +697,7 @@ public void DischargeSummary() throws InterruptedException, IndexOutOfBoundsExce
 	
 
 }
-@Test(priority = 47)
+@Test(priority = 57)
 public void CreatedBy() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement CreatedBy
@@ -577,7 +707,7 @@ public void CreatedBy() throws InterruptedException, IndexOutOfBoundsException {
 	
 
 }
-@Test(priority = 48)
+@Test(priority = 58)
 public void DocumentOn() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	List<WebElement> DocumentOn =  driver.findElements(By.className("android.widget.TextView"));
@@ -586,7 +716,7 @@ public void DocumentOn() throws InterruptedException, IndexOutOfBoundsException 
 	
 
 }
-@Test(priority = 49)
+@Test(priority = 59)
 public void popUpOk() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(10000);
 	WebElement popUpOk
@@ -596,7 +726,7 @@ public void popUpOk() throws InterruptedException, IndexOutOfBoundsException {
 	
 
 }
-@Test(priority = 50)
+@Test(priority = 60)
 public void Camera() throws InterruptedException, IndexOutOfBoundsException {
 	
 	Thread.sleep(5000);
@@ -641,14 +771,14 @@ public void Camera() throws InterruptedException, IndexOutOfBoundsException {
 	
 
 }
-@Test(priority = 51)
+@Test(priority = 61)
 public void UploadCam() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement Upload
 	  = driver.findElement(By.xpath("//*[@text='Upload']"));
 	 Upload.click();}
 
-@Test(priority = 52)
+@Test(priority = 62)
 public void UploadCamOk() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(10000);
 	WebElement UploadOk
@@ -658,7 +788,7 @@ public void UploadCamOk() throws InterruptedException, IndexOutOfBoundsException
 	
 
 }
-@Test(priority = 53)
+@Test(priority = 63)
 public void UploadDocuments1() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(5000);
 	WebElement UploadDocuments1
@@ -668,16 +798,16 @@ public void UploadDocuments1() throws InterruptedException, IndexOutOfBoundsExce
 	
 
 }
-@Test(priority = 54)
+@Test(priority = 64)
 public void DocumentsDropDown1() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(5000);
-	List<WebElement> DocumentsDropDown1 = driver.findElements(By.className("android.widget.TextView"));
-	DocumentsDropDown1.get(2).click();
+	List<WebElement> DocumentsDropDown1 = driver.findElements(By.xpath("//android.widget.TextView[@text=\"\"]"));
+	DocumentsDropDown1.get(0).click();
 
 	
 
 }
-@Test(priority = 55)
+@Test(priority = 65)
 public void DischargeSummary1() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement DischargeSummary1
@@ -687,7 +817,7 @@ public void DischargeSummary1() throws InterruptedException, IndexOutOfBoundsExc
 	
 
 }
-@Test(priority = 56)
+@Test(priority = 66)
 public void CreatedBy1() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement CreatedBy1
@@ -697,7 +827,7 @@ public void CreatedBy1() throws InterruptedException, IndexOutOfBoundsException 
 	
 
 }
-@Test(priority = 57)
+@Test(priority = 67)
 public void DocumentOn1() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	List<WebElement> DocumentOn1 =  driver.findElements(By.className("android.widget.TextView"));
@@ -706,7 +836,7 @@ public void DocumentOn1() throws InterruptedException, IndexOutOfBoundsException
 	
 
 }
-@Test(priority = 58)
+@Test(priority = 68)
 public void popUpOk1() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement popUpOk1
@@ -716,7 +846,7 @@ public void popUpOk1() throws InterruptedException, IndexOutOfBoundsException {
 	
 
 }
-@Test(priority = 59)
+@Test(priority = 69)
 public void Gallery() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement Gallary
@@ -734,7 +864,7 @@ public void Gallery() throws InterruptedException, IndexOutOfBoundsException {
  * 
  * }
  */
-@Test(priority = 60)
+@Test(priority = 70)
 public void photo() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(10000);
  driver.findElement(By.xpath("(//android.widget.ImageView[@resource-id=\"com.google.android.documentsui:id/icon_thumb\"])[1]")).click();
@@ -742,7 +872,7 @@ public void photo() throws InterruptedException, IndexOutOfBoundsException {
 	
 
 }
-@Test(priority = 61)
+@Test(priority = 71)
 public void Upload() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement Upload
@@ -752,7 +882,7 @@ public void Upload() throws InterruptedException, IndexOutOfBoundsException {
 	
 
 }
-@Test(priority = 62)
+@Test(priority = 72)
 public void UploadOk() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(10000);
 	WebElement UploadOk
@@ -761,7 +891,121 @@ public void UploadOk() throws InterruptedException, IndexOutOfBoundsException {
 
 	
 }
-@Test(priority = 63)
+
+@Test(priority = 73)
+public void UploadDocuments2() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	WebElement UploadDocuments2
+	  =driver.findElement(By.xpath("//*[@text='Upload Documents']"));
+	UploadDocuments2.click();
+
+	
+
+}
+
+@Test(priority = 74)
+public void DocumentsDropDown2() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(5000);
+	List<WebElement> DocumentsDropDown2 = driver.findElements(By.xpath("//android.widget.TextView[@text=\"\"]"));
+	DocumentsDropDown2.get(0).click();
+
+	
+
+}
+
+@Test(priority = 75)
+public void LabReport2() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	WebElement LabReport2
+	  = driver.findElement(By.xpath("//*[@text='Lab Report']"));
+	LabReport2.click();
+
+	
+
+}
+
+@Test(priority = 76)
+public void CreatedBy5() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	WebElement CreatedBy2
+	  = driver.findElement(By.xpath("//*[@text='Created By']"));
+	CreatedBy2.sendKeys("DisSum");
+
+	
+
+}
+
+@Test(priority = 77)
+public void DocumentOn5() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	List<WebElement> DocumentOn2 =  driver.findElements(By.className("android.widget.TextView"));
+	DocumentOn2.get(5).click();
+
+	
+
+}
+
+@Test(priority = 78)
+public void popUpOk5() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(10000);
+	WebElement popUpOk2
+	  = driver.findElement(By.xpath("//*[@text='Ok']"));
+	popUpOk2.click();
+
+	
+
+}
+
+@Test(priority = 79)
+public void Files1() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	WebElement Files
+	  = driver.findElement(By.xpath("//*[@text='Files']"));
+	Files.click();
+
+}
+
+/*
+ * @Test(priority = 24) public void CameraAllow() throws InterruptedException,
+ * IndexOutOfBoundsException { Thread.sleep(2000); WebElement CameraAllow =
+ * driver.findElement(By.xpath("//*[@text='Allow']")); CameraAllow.click();
+ * 
+ * 
+ * 
+ * }
+ */
+
+@Test(priority = 80)
+public void docPdf() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(10000);
+	List<WebElement> docPdf=driver.findElements(By.className("android.widget.TextView"));
+	docPdf.get(11).click();
+
+	
+
+}
+
+@Test(priority = 81)
+public void Upload5() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	WebElement Upload
+	  = driver.findElement(By.xpath("//*[@text='Upload']"));
+	 Upload.click();
+
+	
+
+}
+
+@Test(priority = 82)
+public void UploadOk5() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(10000);
+	WebElement UploadOk
+	  =driver.findElement(By.xpath("//*[@text='OK']"));
+	 UploadOk.click();
+
+	
+}
+@Test(priority = 83)
 public void SpecialVaccine() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(5000);
 	driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Link Patient to Doctor\").instance(0))"));
@@ -773,7 +1017,7 @@ public void SpecialVaccine() throws InterruptedException, IndexOutOfBoundsExcept
 	  Thread.sleep(2000);
 
 }
-@Test(priority = 64)
+@Test(priority = 84)
 public void AdministeredDate() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(5000);
 	
@@ -781,7 +1025,7 @@ public void AdministeredDate() throws InterruptedException, IndexOutOfBoundsExce
 	 AdministeredDate.get(2).click();
 
 }
-@Test(priority = 65)
+@Test(priority = 85)
 public void PopUpOk() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement PopUpOk
@@ -791,18 +1035,18 @@ public void PopUpOk() throws InterruptedException, IndexOutOfBoundsException {
 	
 
 }
-@Test(priority = 66)
+@Test(priority = 86)
 public void VaccineDropdown() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	//List<WebElement> VaccineDropdown = (List<WebElement>)driver.findElement(By.xpath("android.widget.TextView"));
 	//VaccineDropdown.get(4).click();
 
-	List<WebElement> VaccineDropdown = driver.findElements(By.className("android.widget.TextView"));
-	VaccineDropdown.get(4).click();
+	List<WebElement> VaccineDropdown = driver.findElements(By.xpath("//android.widget.TextView[@text=\"\"]"));
+	VaccineDropdown.get(0).click();
 
 }
 
-@Test(priority = 67)
+@Test(priority = 87)
 public void CholeraVaccine() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement CholeraVaccine
@@ -812,7 +1056,7 @@ public void CholeraVaccine() throws InterruptedException, IndexOutOfBoundsExcept
 	
 
 }
-@Test(priority = 68)
+@Test(priority = 88)
 public void Submit() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement Submit
@@ -822,7 +1066,7 @@ public void Submit() throws InterruptedException, IndexOutOfBoundsException {
 	
 
 }
-@Test(priority = 69)
+@Test(priority = 89)
 public void VaccinationOk() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	WebElement VaccinationOk
@@ -862,7 +1106,7 @@ public void VaccinationOk() throws InterruptedException, IndexOutOfBoundsExcepti
  * 
  * }
  */
-@Test(priority = 74)
+@Test(priority = 90)
 public void Reciept() throws InterruptedException, IndexOutOfBoundsException {
 	
 	Thread.sleep(2000);
@@ -874,7 +1118,7 @@ public void Reciept() throws InterruptedException, IndexOutOfBoundsException {
 	
 	Thread.sleep(5000);
 }
-@Test(priority = 75)
+@Test(priority = 91)
 public void AddNewReceipt() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(5000);
 	WebElement AddNewReceipt =  driver.findElement(By.xpath("//*[@text='Add New Receipt']"));
@@ -883,7 +1127,7 @@ public void AddNewReceipt() throws InterruptedException, IndexOutOfBoundsExcepti
 	
 	Thread.sleep(5000);
 }
-@Test(priority = 76)
+@Test(priority = 92)
 public void ReceiptNo() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(5000);
 	List<WebElement> ReceiptNo =  driver.findElements(By.xpath("//*[@text='Enter receipt no. ']"));
@@ -892,7 +1136,7 @@ public void ReceiptNo() throws InterruptedException, IndexOutOfBoundsException {
 	
 	Thread.sleep(2000);
 }
-@Test(priority = 77)
+@Test(priority = 93)
 public void Consultation() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(2000);
 	List<WebElement> Consultation =  driver.findElements(By.className("android.widget.EditText"));
@@ -903,7 +1147,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 }
 
 
-  @Test(priority = 78) public void Vaccination() throws InterruptedException,
+  @Test(priority = 94) public void Vaccination() throws InterruptedException,
   IndexOutOfBoundsException { Thread.sleep(2000); List<WebElement> Vaccination
   = driver.findElements(By.className("android.widget.EditText"));
   
@@ -911,7 +1155,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
   
   Thread.sleep(2000); }
   
-  @Test(priority = 79) public void OtherReasons() throws InterruptedException,
+  @Test(priority = 95) public void OtherReasons() throws InterruptedException,
   IndexOutOfBoundsException { Thread.sleep(2000); List<WebElement> OtherReasons
   = driver.findElements(By.className("android.widget.EditText"));
   
@@ -919,7 +1163,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
   
   Thread.sleep(2000); }
   
-  @Test(priority = 80) public void Addmore() throws InterruptedException,
+  @Test(priority = 96) public void Addmore() throws InterruptedException,
   IndexOutOfBoundsException { Thread.sleep(2000); WebElement Addmore =
   driver.findElement(By.xpath("//*[@text='Add More']"));
   
@@ -937,7 +1181,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
  * Thread.sleep(2000); }
  */
  
-	@Test(priority = 81)
+	@Test(priority = 97)
 	public void Preview() throws InterruptedException, IndexOutOfBoundsException {
 		//Thread.sleep(5000);
 		WebElement Preview =  driver.findElement(By.xpath("//*[@text='Preview']"));
@@ -947,14 +1191,14 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 		Thread.sleep(35000);
 	}
 	
-	  @Test(priority = 82) public void PayerName() throws InterruptedException,
+	  @Test(priority = 98) public void PayerName() throws InterruptedException,
 	  IndexOutOfBoundsException { Thread.sleep(2000); List<WebElement> PayerName =
 	  driver.findElements(By.className("android.widget.EditText"));
 	  
 	  PayerName.get(0).sendKeys("abc");
 	  
 	  }
-	  @Test(priority = 83)
+	  @Test(priority = 99)
 		public void CreateReceipt() throws InterruptedException, IndexOutOfBoundsException {
 			Thread.sleep(1000);
 			List<WebElement> CreateReceipt =  driver.findElements(By.xpath("//*[@text='Create Receipt']"));
@@ -986,7 +1230,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 							 Backward2.get(0).click();
 							 Thread.sleep(5000);
 		}
-	  @Test(priority = 84)
+	  @Test(priority = 100)
 			public void Certificate() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(2000);
 				driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Certificates\").instance(0))"));
@@ -997,7 +1241,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				
 				Thread.sleep(25000);
 			}
-			@Test(priority = 85)
+			@Test(priority = 101)
 			public void CertificateDropdown() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(2000);
 				List<WebElement> CertificateDropdown =  driver.findElements(By.className("android.widget.EditText"));
@@ -1008,7 +1252,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				
 				Thread.sleep(20000);
 			}
-			@Test(priority = 86)
+			@Test(priority = 102)
 			public void CertificateType() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(2000);
 				WebElement CertificateType =  driver.findElement(By.xpath("//*[@text='Fitness Certificate']"));
@@ -1017,7 +1261,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				
 				Thread.sleep(20000);
 			}
-			@Test(priority = 87)
+			@Test(priority = 103)
 			public void Speciality1() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(2000);
 				List<WebElement> Speciality1 =  driver.findElements(By.xpath("//*[@text='Speciality']"));
@@ -1026,7 +1270,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				
 				Thread.sleep(30000);
 			}
-			@Test(priority = 88)
+			@Test(priority = 103)
 			public void SpecialitySelect() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(2000);
 				List<WebElement> SpecialitySelect =  driver.findElements(By.xpath("//*[@text='default.v3']"));
@@ -1035,7 +1279,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				
 				Thread.sleep(35000);
 			}
-			@Test(priority = 89)
+			@Test(priority = 104)
 			public void Preview1() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(2000);
 				List<WebElement> Preview1 =  driver.findElements(By.xpath("//*[@text='Preview']"));
@@ -1044,7 +1288,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				
 				Thread.sleep(10000);
 			}
-			@Test(priority = 90)
+			@Test(priority = 105)
 			public void Printclose() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(2000);
 				/*
@@ -1062,7 +1306,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 						 Thread.sleep(5000);
 				Thread.sleep(5000);
 			}
-			@Test(priority = 91)
+			@Test(priority = 106)
 			public void ClickHistory() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(2000);
 				List<WebElement> ClickHistory = driver
@@ -1074,21 +1318,21 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				Thread.sleep(2000);
 				//ClickHistory.get(12).click();
 			}
-			@Test(priority = 92)
+			@Test(priority = 107)
 			public void ViewDocument() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(2000);
 				WebElement ViewReferal = driver
 						.findElement(By.xpath("//*[@text='View Document']"));
 				ViewReferal.click();}
 			
-			@Test(priority = 93)
+			@Test(priority = 108)
 			public void close1() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(10000);
 				List<WebElement> close1 = driver
 						.findElements(By.className("android.widget.TextView"));
 				close1.get(2).click();
 			}
-			@Test(priority = 94)
+			@Test(priority = 109)
 			public void ViewReceipts() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(2000);
 				driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"View Receipt\").instance(0))"));
@@ -1096,7 +1340,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				WebElement ViewReceipts = driver
 						.findElement(By.xpath("//*[@text='View Receipt']"));
 				ViewReceipts.click();}
-			@Test(priority = 95)
+			@Test(priority = 110)
 			public void close2() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(10000);
 				List<WebElement> close2 = driver
@@ -1104,7 +1348,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				close2.get(2).click();
 				Thread.sleep(2000);
 			}
-			@Test(priority = 96)
+			@Test(priority = 111)
 			public void ViewReferal() throws InterruptedException, IndexOutOfBoundsException {
 				driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"View Referal Note\").instance(0))"));
 				Thread.sleep(10000);
@@ -1112,7 +1356,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				WebElement ViewReferal = driver
 						.findElement(By.xpath("//*[@text='View Referal Note']"));
 				ViewReferal.click();}
-			@Test(priority = 97)
+			@Test(priority = 112)
 			public void close4() throws InterruptedException, IndexOutOfBoundsException {
 				Thread.sleep(10000);
 				List<WebElement> close4 = driver
@@ -1171,7 +1415,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 			 * close5.get(2).click(); }
 			 */
 			
-			  @Test(priority=98) public void PatientList() throws MalformedURLException,
+			  @Test(priority=113) public void PatientList() throws MalformedURLException,
 			  InterruptedException {
 				;
 							 
@@ -1215,20 +1459,17 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				 Thread.sleep(1000);
 				 
 				 
-				List<WebElement> Date2= driver.findElements(By.className(
-									  "android.widget.TextView"
-									 ));
-				String Date22=Date2.get(6).getText();
-				System.out.println(Date22);
-									 
-			List<WebElement> time2= driver.findElements(By.className(
-											  "android.widget.TextView"
-											 )); 
-			String Time22=time2.get(7).getText();
-		 System.out.println(Time22);
-		 
-		 Thread.sleep(1000);
-				 
+					/*
+					 * List<WebElement> Date2= driver.findElements(By.className(
+					 * "android.widget.TextView" )); String Date22=Date2.get(6).getText();
+					 * System.out.println(Date22);
+					 * 
+					 * List<WebElement> time2= driver.findElements(By.className(
+					 * "android.widget.TextView" )); String Time22=time2.get(7).getText();
+					 * System.out.println(Time22);
+					 * 
+					 * Thread.sleep(1000);
+					 */
 			/*
 			 * List<WebElement> Date3= driver.findElements(By.className(
 			 * "android.widget.TextView" )); String Date33=Date3.get(10).getText();
@@ -1250,7 +1491,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 					
 			 }
 			
-			  @Test(priority=99) public void Appointments() throws MalformedURLException,
+			  @Test(priority=114) public void Appointments() throws MalformedURLException,
 			  InterruptedException { WebElement Appointments = driver.findElement(By.xpath(
 					  "//*[@text='Appointments']"
 					 )); Appointments.click();
@@ -1262,7 +1503,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 					 Thread.sleep(5000); 
 			  }
 			 
-			  @Test(priority=100) public void Prescription() throws MalformedURLException,
+			  @Test(priority=115) public void Prescription() throws MalformedURLException,
 			  InterruptedException { 
 				  
 				  
@@ -1305,18 +1546,15 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				 Thread.sleep(1000);
 				 
 				 
-				List<WebElement> PDate2= driver.findElements(By.className(
-									  "android.widget.TextView"
-									 ));
-				String PDate22=PDate2.get(10).getText();
-				System.out.println(PDate22);
-									 
-			List<WebElement> Ptime2= driver.findElements(By.className(
-											  "android.widget.TextView"
-											 )); 
-			String PTime22=Ptime2.get(11).getText();
-		System.out.println(PTime22);
-
+					/*
+					 * List<WebElement> PDate2= driver.findElements(By.className(
+					 * "android.widget.TextView" )); String PDate22=PDate2.get(10).getText();
+					 * System.out.println(PDate22);
+					 * 
+					 * List<WebElement> Ptime2= driver.findElements(By.className(
+					 * "android.widget.TextView" )); String PTime22=Ptime2.get(11).getText();
+					 * System.out.println(PTime22);
+					 */
 		Thread.sleep(2000);
 
 		WebElement View1 = driver.findElement(By.xpath(
@@ -1330,20 +1568,19 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 						 )); close1.click();
 						 
 						 Thread.sleep(5000);
-				 WebElement View2 = driver.findElement(By.xpath(
-						  "//*[@text='View']"
-						 )); View2.click();
-						 
-						 Thread.sleep(5000);
-						 
-						 WebElement close2 = driver.findElement(By.xpath(
-								  "//*[@text='']"
-								 )); close2.click();
-				 
-
+							/*
+							 * WebElement View2 = driver.findElement(By.xpath( "//*[@text='View']" ));
+							 * View2.click();
+							 * 
+							 * Thread.sleep(5000);
+							 * 
+							 * WebElement close2 = driver.findElement(By.xpath( "//*[@text='']" ));
+							 * close2.click();
+							 * 
+							 */
 				 
 					 
-									 Thread.sleep(5000); 
+									// Thread.sleep(5000); 
 									 
 										 List<WebElement> Backward5 = driver.findElements(By.className( "android.widget.TextView"
 										 )); Backward5.get(1).click();
@@ -1356,7 +1593,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 					 )); Backward.click();
 			  }
 			 
-			  @Test(priority=101) public void Reports() throws MalformedURLException,
+			  @Test(priority=116) public void Reports() throws MalformedURLException,
 			  InterruptedException { 
 				  
 				  
@@ -1399,17 +1636,15 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				 Thread.sleep(1000);
 				 
 				 
-				List<WebElement> RDate2= driver.findElements(By.className(
-									  "android.widget.TextView"
-									 ));
-				String RDate22=RDate2.get(10).getText();
-				System.out.println(RDate22);
-									 
-			List<WebElement> Rtime2= driver.findElements(By.className(
-											  "android.widget.TextView"
-											 )); 
-			String RTime22=Rtime2.get(11).getText();
-		System.out.println(RTime22);
+					/*
+					 * List<WebElement> RDate2= driver.findElements(By.className(
+					 * "android.widget.TextView" )); String RDate22=RDate2.get(10).getText();
+					 * System.out.println(RDate22);
+					 * 
+					 * List<WebElement> Rtime2= driver.findElements(By.className(
+					 * "android.widget.TextView" )); String RTime22=Rtime2.get(11).getText();
+					 * System.out.println(RTime22);
+					 */
 
 		Thread.sleep(2000);
 
@@ -1423,19 +1658,17 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 						  "//*[@text='']"
 						 )); close1.click();
 						 
-						 Thread.sleep(5000);
-				  List<WebElement> View2 = driver.findElements(By.xpath(
-						  "//*[@text='View']"
-						 )); View2.get(1).click();
-						 
-						 Thread.sleep(5000);
-						 
-						 WebElement close2 = driver.findElement(By.xpath(
-								  "//*[@text='']"
-								 )); close2.click();
-				 
-
-				 
+							/*
+							 * Thread.sleep(5000); List<WebElement> View2 = driver.findElements(By.xpath(
+							 * "//*[@text='View']" )); View2.get(1).click();
+							 * 
+							 * Thread.sleep(5000);
+							 * 
+							 * WebElement close2 = driver.findElement(By.xpath( "//*[@text='']" ));
+							 * close2.click();
+							 * 
+							 * 
+							 */
 					 
 									 Thread.sleep(5000); 
 									 
@@ -1451,7 +1684,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 					 
 			  }
 			@Ignore
-			  @Test(priority=102) public void HealthApp() throws MalformedURLException,
+			  @Test(priority=117) public void HealthApp() throws MalformedURLException,
 			  InterruptedException { WebElement HealthApp = driver.findElement(By.xpath(
 					  "//*[@text='HealthApp']"
 					 )); HealthApp.click();
@@ -1472,22 +1705,19 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 										 * WebElement Backward = driver.findElement(By.xpath( "android.widget.TextView"
 										 * )); Backward.click();
 										 */
-										System.out.println("Health Data"); 
-									 Thread.sleep(5000);	 
-									 
-						List<WebElement> Date1= driver.findElements(By.className(
-											  "android.widget.TextView"
-											 ));
-						String Date11=Date1.get(2).getText();
-						System.out.println(Date11);
-											 
-					List<WebElement> time1= driver.findElements(By.className(
-													  "android.widget.TextView"
-													 )); 
-					String Time11=time1.get(3).getText();
-				 System.out.println(Time11);
-				 
-				 Thread.sleep(1000);
+										/*
+										 * System.out.println("Health Data"); Thread.sleep(5000);
+										 * 
+										 * List<WebElement> Date1= driver.findElements(By.className(
+										 * "android.widget.TextView" )); String Date11=Date1.get(2).getText();
+										 * System.out.println(Date11);
+										 * 
+										 * List<WebElement> time1= driver.findElements(By.className(
+										 * "android.widget.TextView" )); String Time11=time1.get(3).getText();
+										 * System.out.println(Time11);
+										 * 
+										 * Thread.sleep(1000);
+										 */
 				 
 				 
 				
@@ -1503,7 +1733,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 					
 			 }
 			
-			  @Test(priority=103) public void Referrals() throws MalformedURLException,
+			  @Test(priority=117) public void Referrals() throws MalformedURLException,
 			  InterruptedException { WebElement PatientList = driver.findElement(By.xpath(
 					  "//*[@text='Referrals']"
 					 )); PatientList.click();
@@ -1542,18 +1772,15 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				 Thread.sleep(1000);
 				 
 				 
-				List<WebElement> Date2= driver.findElements(By.className(
-									  "android.widget.TextView"
-									 ));
-				String Date22=Date2.get(7).getText();
-				System.out.println(Date22);
-									 
-			List<WebElement> time2= driver.findElements(By.className(
-											  "android.widget.TextView"
-											 )); 
-			String Time22=time2.get(8).getText();
-		 System.out.println(Time22);
-		 
+					/*
+					 * List<WebElement> Date2= driver.findElements(By.className(
+					 * "android.widget.TextView" )); String Date22=Date2.get(7).getText();
+					 * System.out.println(Date22);
+					 * 
+					 * List<WebElement> time2= driver.findElements(By.className(
+					 * "android.widget.TextView" )); String Time22=time2.get(8).getText();
+					 * System.out.println(Time22);
+					 */
 		 Thread.sleep(1000);
 		 WebElement View1 = driver.findElement(By.xpath(
 				  "//*[@text='View']"
@@ -1566,22 +1793,22 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 						 )); close1.click();
 						 
 						 Thread.sleep(5000);
-				  List<WebElement> View2 = driver.findElements(By.xpath(
-						  "//*[@text='View']"
-						 )); View2.get(1).click();
-						 
-						 Thread.sleep(5000);
-						 
-						 WebElement close2 = driver.findElement(By.xpath(
-								  "//*[@text='']"
-								 )); close2.click();
-				 
-
-				 
-				 
-		 
-					 
-									 Thread.sleep(5000); 
+							/*
+							 * List<WebElement> View2 = driver.findElements(By.xpath( "//*[@text='View']"
+							 * )); View2.get(1).click();
+							 * 
+							 * Thread.sleep(5000);
+							 * 
+							 * WebElement close2 = driver.findElement(By.xpath( "//*[@text='']" ));
+							 * close2.click();
+							 * 
+							 * 
+							 * 
+							 * 
+							 * 
+							 * 
+							 * Thread.sleep(5000);
+							 */
 									 
 										 List<WebElement> Backward5 = driver.findElements(By.className( "android.widget.TextView"
 										 )); Backward5.get(1).click();
@@ -1591,7 +1818,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 					
 			 }
 			
-			  @Test(priority=104) public void VaccineInStore() throws MalformedURLException,
+			  @Test(priority=118) public void VaccineInStore() throws MalformedURLException,
 			  InterruptedException { 
 				  List<WebElement> VaccineInStore = driver.findElements(By.className(
 					  "android.widget.TextView")); 
@@ -1617,7 +1844,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 			  
 			  
 		}
-			  @Test(priority=105) public void ViewReports() throws MalformedURLException,
+			  @Test(priority=119) public void ViewReports() throws MalformedURLException,
 			  InterruptedException { 
 				  
 				  List<WebElement> ViewReports = driver.findElements(By.className(
@@ -1659,20 +1886,17 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				 Thread.sleep(1000);
 				 
 				 
-				List<WebElement> PDate2= driver.findElements(By.className(
-									  "android.widget.TextView"
-									 ));
-				String PDate22=PDate2.get(10).getText();
-				System.out.println(PDate22);
-									 
-			List<WebElement> Ptime2= driver.findElements(By.className(
-											  "android.widget.TextView"
-											 )); 
-			String PTime22=Ptime2.get(11).getText();
-		System.out.println(PTime22);
-
-		Thread.sleep(2000);
-
+					/*
+					 * List<WebElement> PDate2= driver.findElements(By.className(
+					 * "android.widget.TextView" )); String PDate22=PDate2.get(10).getText();
+					 * System.out.println(PDate22);
+					 * 
+					 * List<WebElement> Ptime2= driver.findElements(By.className(
+					 * "android.widget.TextView" )); String PTime22=Ptime2.get(11).getText();
+					 * System.out.println(PTime22);
+					 * 
+					 * Thread.sleep(2000);
+					 */
 		WebElement View1 = driver.findElement(By.xpath(
 				  "//*[@text='View']"
 				 )); View1.click();
@@ -1683,16 +1907,15 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 						  "//*[@text='']"
 						 )); close1.click();
 						 
-						 Thread.sleep(5000);
-				 WebElement View2 = driver.findElement(By.xpath(
-						  "//*[@text='View']"
-						 )); View2.click();
-						 
-						 Thread.sleep(5000);
-						 
-						 WebElement close2 = driver.findElement(By.xpath(
-								  "//*[@text='']"
-								 )); close2.click();
+							/*
+							 * Thread.sleep(5000); WebElement View2 = driver.findElement(By.xpath(
+							 * "//*[@text='View']" )); View2.click();
+							 * 
+							 * Thread.sleep(5000);
+							 * 
+							 * WebElement close2 = driver.findElement(By.xpath( "//*[@text='']" ));
+							 * close2.click();
+							 */
 				 
 
 				 
@@ -1712,7 +1935,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 					 
 			  }
 			 
-			  @Test(priority=106) public void MyNotes() throws MalformedURLException,
+			  @Test(priority=120) public void MyNotes() throws MalformedURLException,
 			  InterruptedException { 
 				  
 				  
@@ -1755,17 +1978,15 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 				 Thread.sleep(1000);
 				 
 				 
-				List<WebElement> PDate2= driver.findElements(By.className(
-									  "android.widget.TextView"
-									 ));
-				String PDate22=PDate2.get(8).getText();
-				System.out.println(PDate22);
-									 
-			List<WebElement> Notes2= driver.findElements(By.className(
-											  "android.widget.TextView"
-											 )); 
-			String Notes22=Notes2.get(9).getText();
-		System.out.println(Notes22);
+					/*
+					 * List<WebElement> PDate2= driver.findElements(By.className(
+					 * "android.widget.TextView" )); String PDate22=PDate2.get(8).getText();
+					 * System.out.println(PDate22);
+					 * 
+					 * List<WebElement> Notes2= driver.findElements(By.className(
+					 * "android.widget.TextView" )); String Notes22=Notes2.get(9).getText();
+					 * System.out.println(Notes22);
+					 */
 
 		Thread.sleep(2000);
 
@@ -1787,6 +2008,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 			 */ 		  
 					 
 			  }
+			  @Ignore
 			  @Test(priority=107) public void ShareHealth() throws MalformedURLException,
 			  InterruptedException { 
 				  
@@ -1807,7 +2029,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 									 
 									 Thread.sleep(5000);
 		}
-			  @Test(priority=108) public void WhatsNew() throws MalformedURLException,
+			  @Test(priority=121) public void WhatsNew() throws MalformedURLException,
 			  InterruptedException {
 				  
 				  List<WebElement> WhatsNew = driver.findElements(By.className(
@@ -1819,7 +2041,7 @@ public void Consultation() throws InterruptedException, IndexOutOfBoundsExceptio
 					  WhatsNewClose.get(1).click();
 					  Thread.sleep(5000);
 		}
-			  @Test(priority=109) public void DashboardData() throws MalformedURLException,
+			  @Test(priority=122) public void DashboardData() throws MalformedURLException,
 			  InterruptedException {
 				  System.out.println("Dashboard Data");
 				  List<WebElement> PatientData= driver.findElements(By.className(

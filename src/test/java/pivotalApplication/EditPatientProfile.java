@@ -47,49 +47,56 @@ public class EditPatientProfile {
 
 }
 
-@Test(priority = 0)
-public void NumberField() throws MalformedURLException, InterruptedException {
-	WebElement Number =  driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
-	Number.sendKeys("9665002440");
-}
+	@Test(priority = 0)
+	public void NumberField() throws MalformedURLException, InterruptedException {
+		WebElement Number = driver.findElement(By.xpath(
+				"//*[@text='Mobile Number']"));
+		Number.sendKeys("9665002440");
+	}
 
-@Test(priority = 1)
-public void IAgree() throws MalformedURLException, InterruptedException {
-	WebElement Agree =  driver.findElement(By.xpath("//android.widget.TextView[@index='1']"));
-	Agree.click();
-	Thread.sleep(1000);
-}
+	@Test(priority = 1)
+	public void IAgree() throws MalformedURLException, InterruptedException {
+		WebElement Agree = driver.findElement(By.xpath("//android.widget.TextView[@index='1']"));
+		Agree.click();
+		Thread.sleep(1000);
+	}
 
-@Test(priority = 2)
-public void proceedButton() throws MalformedURLException, InterruptedException {
-	WebElement proceed =  driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView"));
-	proceed.click();
-	Thread.sleep(5000);
-}
+	@Test(priority = 2)
+	public void proceedButton() throws MalformedURLException, InterruptedException {
+		WebElement proceed = driver.findElement(By.xpath(
+				"//android.widget.TextView[@text=\"\"]"));
+		proceed.click();
+		Thread.sleep(2000);
+	}
 
-@Test(priority = 3)
-public void OTP() throws MalformedURLException, InterruptedException {
-	WebElement otp =  driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.EditText"));
-	otp.sendKeys("140520");
+	@Test(priority = 3)
+	public void OTP() throws MalformedURLException, InterruptedException {
+		List<WebElement> otp =  driver.findElements(By.xpath(
+				"//*[@text='Enter OTP']"));
+		otp.get(1).sendKeys("140520");
+		
+		
+		
+	//	List<WebElement >otp = driver.findElements(By.xpath("//*[@text='Enter OTP']"));
+		//otp.get(0).sendKeys("140520");
 
-	Thread.sleep(10000);
-}
+		Thread.sleep(10000);
+	}
 
-@Test(priority = 4)
-public void submit() throws MalformedURLException, InterruptedException {
-	WebElement submit =  driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
-	submit.click();
+	@Test(priority = 4)
+	public void submit() throws MalformedURLException, InterruptedException {
+		
+		
+		
+		WebElement submit = driver.findElement(By.xpath(
+				"//*[@text='Submit']"));
+		submit.click();
+		Thread.sleep(5000);
+		List<WebElement> WhatsNewClose = driver.findElements(By.className("android.widget.TextView"));
+		WhatsNewClose.get(1).click();
+		Thread.sleep(2000);
 
-	//Thread.sleep(2000);
-	  Thread.sleep(10000);
-	  List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
-	  WhatsNewClose.get(1).click();
-
-}
+	}
 
 @Test(priority = 5)
 public void Search() throws InterruptedException {
@@ -126,10 +133,10 @@ public void ClickPatient() throws InterruptedException, IndexOutOfBoundsExceptio
 			.findElements(By.className("android.widget.TextView"));
 	Clickpatient.get(5).click();
 	Clickpatient.get(5).click();
-	Thread.sleep(5000);
+	Thread.sleep(15000);
 	
 	List<WebElement> els1 =  driver.findElements(By.className("android.view.ViewGroup"));
-	els1.get(12).click();
+	els1.get(5).click();
 	
 	Thread.sleep(5000);
 }
@@ -652,7 +659,7 @@ helathNext.click();}
 
 @Test(priority = 42)
 public void FathersName() throws InterruptedException {
-Thread.sleep(2000);
+Thread.sleep(5000);
 WebElement FathersName
 =driver.findElement(By.xpath("//android.widget.EditText[@index='0']"));
 FathersName.clear();

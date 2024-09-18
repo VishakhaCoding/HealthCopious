@@ -3,14 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webAuto.WebOpdEndToEndWorkflow">
+      <class name="healthApp.HealthEndToEndScript">
         <methods>
-          <include name="setUp"/>
-          <include name="BpandHeartOption"/>
+          <include name="setup"/>
+          <include name="LipidProfile"/>
+          <include name="AllVisits"/>
+          <include name="AddButton2"/>
+          <include name="AddVitalsClick"/>
+          <include name="BfSuite"/>
+          <include name="AfterSuite"/>
+          <include name="AddVitals"/>
           <include name="screenShot"/>
-          <include name="VitalsOption"/>
         </methods>
-      </class> <!-- webAuto.WebOpdEndToEndWorkflow -->
+      </class> <!-- healthApp.HealthEndToEndScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

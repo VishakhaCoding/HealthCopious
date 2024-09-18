@@ -9,10 +9,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-
-
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class BaseClass {
@@ -52,25 +51,25 @@ public class BaseClass {
 		}
 
 	
-		
+		@Ignore
 		@BeforeClass
-		public void setUp() {
-
-			System.setProperty("webdriver.chrome.driver","D://chromedriver.exe");
-			
-		
-			driver = new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
-			//driver.get("http://stage.copious.care:4200/");
-			driver.get("https://stage.copious.care/");
-			driver.manage().window().fullscreen();
-			 //driver.get("https://opd.copious.care/");
-		}
+		/*
+		 * public void setUp() {
+		 * 
+		 * System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
+		 * 
+		 * 
+		 * driver = new ChromeDriver(); driver.manage().timeouts().implicitlyWait(60,
+		 * TimeUnit.SECONDS); driver.manage().window().maximize();
+		 * //driver.get("http://stage.copious.care:4200/");
+		 * driver.get("https://stage.copious.care/");
+		 * driver.manage().window().fullscreen();
+		 * //driver.get("https://opd.copious.care/"); }
+		 */
 
 
 		@Test(priority=0)
-		public void clickDoctorLoginLink() throws InterruptedException {
+		public static void clickDoctorLoginLink() throws InterruptedException {
 
 			
 	
@@ -124,6 +123,15 @@ public class BaseClass {
 			
 			
 		}
+	    @AfterClass
+	    public static void tearDown() {
+	        if (driver != null) {
+	            driver.quit();
+	            
+	            
+	        }
+
 		
 		
+	    }
 }

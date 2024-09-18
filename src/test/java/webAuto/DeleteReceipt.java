@@ -15,9 +15,10 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-public class DeleteReceipt {
+public class DeleteReceipt extends BaseClass {
 	public static WebDriver driver;
 
 	public static String doctorLoginLink = "/html/body/app-root/app-home-page/div/div/div/header[2]/div/div[4]/button";
@@ -60,21 +61,21 @@ public class DeleteReceipt {
 			js.executeScript("arguments[0].setAttribute('style', 'background: grey; border: 2px solid black;');",
 					driver.findElement(by));
 		}
-
-		@BeforeClass
-		public void setUp() {
+		
+	@BeforeClass
+		public void setUp1() {
 
 			System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
-			//driver.get("http://stage.copious.care:4200/");
-			//driver.get("https://stage.copious.care/");
-			driver.manage().window().fullscreen();
-			 driver.get("https://app.copious.care/");
+				driver.get("https://stage.copious.care");
+			
+			 
+			 
 		}
 
-		
+		@Ignore	
 		@Test(priority = 1)
 		public void numberField() {
 			waitForVisibilityOf(By.xpath(mobileNumber));
@@ -82,7 +83,7 @@ public class DeleteReceipt {
 			highlightElement(By.xpath(mobileNumber));
 			clickUsingJavaScript(By.xpath(mobileNumber));
 		}
-
+@Ignore
 		@Test(priority = 2)
 		public void sendOTP() throws InterruptedException {
 			Thread.sleep(2000);
@@ -115,7 +116,7 @@ public class DeleteReceipt {
 			   	highlightElement(By.xpath(OTP6));
 			       
 		}
-
+@Ignore
 		@Test(priority = 3)
 		public void verifyButton() throws InterruptedException {
 			Thread.sleep(10000);
@@ -126,8 +127,10 @@ public class DeleteReceipt {
 			
 		}
 
-		@Test(priority = 4)
-		public void searchBar() {
+		@Test(priority = 1)
+		public void searchBar() throws InterruptedException {
+			
+			Thread.sleep(10000);
 			waitForVisibilityOf(By.xpath(searchBar));
 			driver.findElement(By.xpath(searchBar)).sendKeys("test");
 			

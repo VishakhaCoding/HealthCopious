@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -209,8 +210,7 @@ public class CreateRequisitions {
 			  highlightElement(By.xpath(ShareRequisition));
 			  clickUsingJavaScript(By.xpath(ShareRequisition));
 			  
-			  
-			  
+			 
 			  
 			  
 			  waitForVisibilityOf(By.xpath(CancelOption));
@@ -218,6 +218,8 @@ public class CreateRequisitions {
 			  highlightElement(By.xpath(CancelOption));
 			  clickUsingJavaScript(By.xpath(CancelOption));
 			  
+			  
+			
 				/*
 				 * waitForVisibilityOf(By.xpath(RequisitionSharedMsge));
 				 * highlightElement(By.xpath(RequisitionSharedMsge)); String

@@ -54,14 +54,14 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 0)
 	public void NumberField() throws MalformedURLException, InterruptedException {
 		Thread.sleep(5000);
-		List<WebElement> EnglishSelect = driver.findElements(By.className("android.widget.TextView"));
-		EnglishSelect.get(10).click();
+		List<WebElement> EnglishSelect = driver.findElements(By.xpath("//*[@text='Select']"));
+		EnglishSelect.get(0).click();
 
 		Thread.sleep(10000);
 		// highlightElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
 
 		WebElement Number = driver.findElement(By.xpath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
+				"//android.widget.EditText[@text=\"Mobile Number\"]"));
 		Number.sendKeys("9665002440");
 		// highlightElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
 	}
@@ -143,8 +143,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 7)
 	public void FirstName() throws MalformedURLException, InterruptedException {
 		List<WebElement> FirstName = driver.findElements(By.xpath("//*[@text='Your First Name']"));
-		FirstName.get(0).sendKeys("RAhealthRegression");
-
+		FirstName.get(0).sendKeys("DkhealthRegression");
 		Thread.sleep(5000);
 
 	}
@@ -324,7 +323,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	 */
 
 	@Test(priority = 29)
-	public void helathNext() throws InterruptedException {
+	public void healthNext() throws InterruptedException {
 		Thread.sleep(2000);
 		WebElement helathNext = driver.findElement(By.xpath("//*[@text='Next']"));
 		helathNext.click();
@@ -346,7 +345,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	@Test(priority = 30)
 	public void FamailyNedicalHistory() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		List<WebElement> FamailyNedicalHistory = driver.findElements(By.className("android.widget.TextView"));
 		FamailyNedicalHistory.get(2).click();
 
@@ -378,7 +377,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	}
 
 	@Test(priority = 32)
-	public void FathersName() throws InterruptedException {
+	public void FathersDetails() throws InterruptedException {
 		Thread.sleep(2000);
 		List<WebElement> Fathersheight = driver.findElements(By.className("android.widget.EditText"));
 		Fathersheight.get(2).sendKeys("5");
@@ -389,7 +388,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	}
 
 	@Test(priority = 33)
-	public void MothersName() throws InterruptedException {
+	public void MothersDetails() throws InterruptedException {
 		Thread.sleep(2000);
 		List<WebElement> Mothersheight = driver.findElements(By.className("android.widget.EditText"));
 		Mothersheight.get(5).sendKeys("5");
@@ -527,16 +526,20 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		List<WebElement> BookAppointment = driver.findElements(By.xpath("//*[@text='Book Appointment']"));
 		BookAppointment.get(0).click();
 
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 
 	}
 
 	@Test(priority = 35)
 	public void SelectFamilyMember() throws MalformedURLException, InterruptedException {
 
-		List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+		//List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+		//SelectFamilyMember.get(0).click();
+		//SelectFamilyMember.get(0).click();
+		
+		List<WebElement> SelectFamilyMember =driver.findElements(By.xpath(
+				"//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
 		SelectFamilyMember.get(0).click();
-	
 	  Thread.sleep(5000);
 
 		Thread.sleep(2000);
@@ -576,7 +579,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 39)
 	public void Time() throws MalformedURLException, InterruptedException {
 
-		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='11:25 am']"));
+		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='03:00 pm']"));
 		Time.get(0).click();
 
 		Thread.sleep(5000);
@@ -681,17 +684,16 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		 * "//android.view.ViewGroup[@index='4']")); SelectFamilyMember.get(0).click();
 		 */
 
-		List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
-		SelectFamilyMember.get(0).click();
-	
-	 
-		Thread.sleep(5000);
-
+		//List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+		//SelectFamilyMember.get(0);
+		
+		 List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+			SelectFamilyMember.get(0).click();
 	}
 
 	@Test(priority = 44)
 	public void AddButton1() throws MalformedURLException, InterruptedException {
-
+		Thread.sleep(5000);
 		List<WebElement> AddButton1 = driver.findElements(By.className("android.widget.TextView"));
 		AddButton1.get(62).click();
 
@@ -1186,7 +1188,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	public void SelectFamilyMember3() throws MalformedURLException, InterruptedException {
 
 		Thread.sleep(5000);
-		List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+		List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
 		SelectFamilyMember.get(0).click();
 	
 	  Thread.sleep(5000);
@@ -1252,7 +1254,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		WebElement CameraClick = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Take picture\"]"));
 		CameraClick.click();
 
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		UploadOk.click();
@@ -1289,7 +1291,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		BackArrow.get(0).click();
 
 		Thread.sleep(10000);
-		 List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+		 List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
 			SelectFamilyMember.get(0).click();
 
 		Thread.sleep(5000);

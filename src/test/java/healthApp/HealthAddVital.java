@@ -44,25 +44,24 @@ public class HealthAddVital extends AppiumServerStart   {
 	// URL("http://127.0.0.1:4723/wd/hub"), dc); //Create driver object
 	driver = new AppiumDriver(url, dc);
 
-	Thread.sleep(5000);
-
-}
-
-@Test(priority = 0)
-public void NumberField() throws MalformedURLException, InterruptedException {
-	
-	  List<WebElement> EnglishSelect = driver.findElements(By.className(
-	  "android.widget.TextView"
-	  )); EnglishSelect.get(10).click();
-	 
-	
-	
 	Thread.sleep(10000);
-	
-	WebElement Number = driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
-	Number.sendKeys("9665002440");
+
 }
+
+	@Test(priority = 0)
+	public void NumberField() throws MalformedURLException, InterruptedException {
+		Thread.sleep(5000);
+		List<WebElement> EnglishSelect = driver.findElements(By.xpath("//*[@text='Select']"));
+		EnglishSelect.get(0).click();
+
+		Thread.sleep(10000);
+		// highlightElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
+
+		WebElement Number = driver.findElement(By.xpath(
+				"//android.widget.EditText[@text=\"Mobile Number\"]"));
+		Number.sendKeys("9665002440");
+		// highlightElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
+	}
 
 @Test(priority = 1)
 public void IAgree() throws MalformedURLException, InterruptedException {
@@ -143,7 +142,7 @@ public void AddButton2() throws MalformedURLException, InterruptedException {
 	//List<WebElement> SelectFamilyMember = driver.findElements(By.className("android.view.ViewGroup"));
 	//SelectFamilyMember.get(8).click();
 	
-	List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+	List<WebElement> SelectFamilyMember = driver.findElements(By.xpath("//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
 	SelectFamilyMember.get(0).click();
 
 	Thread.sleep(5000);

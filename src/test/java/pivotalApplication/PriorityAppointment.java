@@ -36,7 +36,7 @@ public class PriorityAppointment extends AppiumServerStart {
 		dc.setCapability("–session-override", true);
 		dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120000);
 		dc.setCapability("noReset", false);
-		dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-2-nov-production.apk");
+		dc.setCapability(MobileCapabilityType.APP, "C:\\pivotalapp-stage-vishakha.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
 		dc.setCapability("appPackage", "com.calculator_apps");
 		dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
@@ -50,7 +50,7 @@ public class PriorityAppointment extends AppiumServerStart {
 	@Test(priority = 0)
 	public void NumberField() throws MalformedURLException, InterruptedException {
 		WebElement Number = driver.findElement(By.xpath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
+				"//*[@text='Mobile Number']"));
 		Number.sendKeys("9665002440");
 	}
 
@@ -64,27 +64,34 @@ public class PriorityAppointment extends AppiumServerStart {
 	@Test(priority = 2)
 	public void proceedButton() throws MalformedURLException, InterruptedException {
 		WebElement proceed = driver.findElement(By.xpath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView"));
+				"//android.widget.TextView[@text=\"\"]"));
 		proceed.click();
-		Thread.sleep(10000);
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 3)
 	public void OTP() throws MalformedURLException, InterruptedException {
-		WebElement otp = driver.findElement(By.xpath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.EditText"));
-		otp.sendKeys("140520");
+		List<WebElement> otp =  driver.findElements(By.xpath(
+				"//*[@text='Enter OTP']"));
+		otp.get(1).sendKeys("140520");
+		
+		
+		
+	//	List<WebElement >otp = driver.findElements(By.xpath("//*[@text='Enter OTP']"));
+		//otp.get(0).sendKeys("140520");
 
 		Thread.sleep(10000);
 	}
 
 	@Test(priority = 4)
 	public void submit() throws MalformedURLException, InterruptedException {
+		
+		
+		
 		WebElement submit = driver.findElement(By.xpath(
-				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
+				"//*[@text='Submit']"));
 		submit.click();
-
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		List<WebElement> WhatsNewClose = driver.findElements(By.className("android.widget.TextView"));
 		WhatsNewClose.get(1).click();
 		Thread.sleep(2000);
@@ -101,7 +108,7 @@ public class PriorityAppointment extends AppiumServerStart {
 		Thread.sleep(2000);
 
 		WebElement SearchBar = driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-		SearchBar.sendKeys("pedi59Automation");
+		SearchBar.sendKeys("pivotal1Aug");
 
 		Thread.sleep(2000);
 		WebElement SearchIcon1 = driver.findElement(
@@ -132,10 +139,11 @@ public class PriorityAppointment extends AppiumServerStart {
 
 		List<WebElement> Clickpatient = driver.findElements(By.className("android.widget.TextView"));
 		Clickpatient.get(5).click();
-		Thread.sleep(5000);
+		Clickpatient.get(5).click();
+		Thread.sleep(10000);
 
 		List<WebElement> Appointment = driver.findElements(By.className("android.view.ViewGroup"));
-		Appointment.get(0).click();
+		Appointment.get(2).click();
 
 		// Working code for prescription
 		// List<io.appium.java_client.MobileElement> els2 =
@@ -146,29 +154,29 @@ public class PriorityAppointment extends AppiumServerStart {
 
 	@Test(priority = 8)
 	public void PriorityTime() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(30000);
 		/*
 		 * MobileElement VideoCheckBox = driver .findElementByXPath(
 		 * "/hierarchy/android.widget.FrameLayout/android.widget.ScrollView/android.widget.CheckBox[2]"
 		 * ); VideoCheckBox.click();
 		 */
 
-		List<WebElement> PriorityTime = driver.findElements(By.className("android.widget.TextView"));
-		PriorityTime.get(7).click();
+		List<WebElement> PriorityTime = driver.findElements(By.xpath("(//android.widget.TextView[@text=\"\"])[1]"));
+		PriorityTime.get(0).click();
 
 	}
 
 	@Test(priority = 9)
 	public void PriorityTimeSlot() throws InterruptedException {
-		Thread.sleep(2000);
-		WebElement PriorityTimeSlot = driver.findElement(By.xpath("//*[@text='03:00 pm']"));
+		Thread.sleep(10000);
+		WebElement PriorityTimeSlot = driver.findElement(By.xpath("//*[@text='05:00 pm']"));
 		PriorityTimeSlot.click();
 
 	}
 
 	@Test(priority = 10)
 	public void PriorityBookAppointment() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 
 		WebElement PriorityBookAppointment = driver.findElement(By.xpath("//*[@text='Book Appointment']"));
 		PriorityBookAppointment.click();
@@ -177,7 +185,7 @@ public class PriorityAppointment extends AppiumServerStart {
 
 	@Test(priority = 11)
 	public void PopBookAppointment() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 
 		WebElement PopBookAppointment = driver.findElement(By.xpath("//*[@text='Ok']"));
 		PopBookAppointment.click();

@@ -19,17 +19,20 @@ import org.testng.annotations.Test;
 
 public class NewRxFlow {
 	public static WebDriver driver;
-	
-	public static String mobileNumber = "input#phoneNumberId";
-	public static String sendOTP = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div/form/div[4]/button";
-	public static String verifyOTP = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[6]/button";
 	public static String QuickRx = "//*[text()='Quick Rx']";
-	public static String OTP1 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]";
-	public static String OTP2 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[2]";
-	public static String OTP3 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[3]";
-	public static String OTP4 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
-	public static String OTP5 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
-	public static String OTP6 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]";
+	public static String doctorLoginLink = "/html/body/app-root/app-home-page/div/div/div/header[2]/div/div[4]/button";
+	public static String mobileNumber = "//*[text()='Login ']//following::input";
+	public static String sendOTP = "//*[text()='Send OTP']";
+	public static String verifyOTP = "//*[text()='Verify']";
+	
+	 public static String OTP1="//*[text()='Verify OTP ']//following::input[1]"; 
+	   public static String OTP2="//*[text()='Verify OTP ']//following::input[2]"; 
+	   public static String OTP3="//*[text()='Verify OTP ']//following::input[3]"; 
+	   public static String OTP4="//*[text()='Verify OTP ']//following::input[4]";
+	   public static String OTP5="//*[text()='Verify OTP ']//following::input[5]";
+	   public static String OTP6="//*[text()='Verify OTP ']//following::input[6]"; 
+	   public static String searchBar = "//*[text()=' Home']//following::input";
+		public static String searchOpt = "//*[text()=' Home']//following::img[7]";
 	public static String createPatient = "createPatient";
 	public static String Number1 = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[1]/div[1]/mat-form-field[2]/div/div[1]/div/input";
 	public static String confirm = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[1]/div[1]/div";
@@ -195,7 +198,7 @@ public class NewRxFlow {
 	public static String AdRxweight = "/html/body/div[2]/div[2]/div/mat-dialog-container/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[1]/div/div/div/div[3]/div/div[1]/div[2]/mat-form-field/div/div[1]/div[3]/input";
 	public static String AdRxBP = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[1]/div/div/div/div[3]/div/div[2]/div/mat-form-field/div/div[1]/div[3]/input";
 	public static String Advitals = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/mat-tab-header/div[2]/div/div/div[1]";
-	public static String AdvitalWeihgt = "/html/body/app-root/app-new-rx-sidebar/ng-sidebar-container/div/div/div/app-new-quick-rx/div[1]/div[2]/div[1]/mat-accordion/mat-expansion-panel[2]/div/div/mat-vertical-stepper/div[1]/div/div/div/div/mat-form-field[1]/div/div[1]/div[3]/input";
+	public static String AdvitalWeihgt = "//*[text()='Vitals']//following::input[1]";
 	public static String AdvitalHeihgt = "/html/body/app-root/app-new-rx-sidebar/ng-sidebar-container/div/div/div/app-new-quick-rx/div[1]/div[2]/div[1]/mat-accordion/mat-expansion-panel[2]/div/div/mat-vertical-stepper/div[1]/div/div/div/div/mat-form-field[2]/div/div[1]/div[3]/input";
 	public static String AdheadCircumferance = "/html/body/div[2]/div[2]/div/mat-dialog-container/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[1]/div/div/div/div[3]/div/div[3]/div[2]/mat-form-field/div/div[1]/div[3]/input";
 
@@ -272,8 +275,8 @@ public class NewRxFlow {
 		 * public static String OTP6 =
 		 * "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]";
 		 */
-		public static String searchBar = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[1]/div/div[1]/div[1]/input";
-		public static String searchOpt = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[1]/div/div[1]/div[3]/button";
+		//public static String searchBar = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[1]/div/div[1]/div[1]/input";
+		//public static String searchOpt = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[1]/div/div[1]/div[3]/button";
 		//public static String ClickHome = "//*[text()=' Home']";
 		//public static String clickPatient = "li.clearfix";
 		public static String InvestigationClick = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[1]/app-top-info-navbar/div/div[2]/div[3]/div[1]";
@@ -439,10 +442,10 @@ public class NewRxFlow {
 
 	@Test(priority = 1, groups = "Regression")
 	public void numberField() {
-		waitForVisibilityOf(By.cssSelector(mobileNumber));
-		driver.findElement(By.cssSelector(mobileNumber)).sendKeys("9665002440");
-		highlightElement(By.cssSelector(mobileNumber));
-		clickUsingJavaScript(By.cssSelector(mobileNumber));
+		waitForVisibilityOf(By.xpath(mobileNumber));
+		driver.findElement(By.xpath(mobileNumber)).sendKeys("9665002440");
+		highlightElement(By.xpath(mobileNumber));
+		clickUsingJavaScript(By.xpath(mobileNumber));
 	}
 
 	@Test(priority = 2, groups = "Regression")
@@ -569,7 +572,7 @@ public class NewRxFlow {
 	@Test(priority = 11, groups = "Regression")
 	public void firstName() {
 		waitForVisibilityOf(By.xpath(firstName));
-		driver.findElement(By.xpath(firstName)).sendKeys("NewRx16july");
+		driver.findElement(By.xpath(firstName)).sendKeys("NewRx18Sept");
 		;
 		highlightElement(By.xpath(firstName));
 		clickUsingJavaScript(By.xpath(firstName));
@@ -764,7 +767,7 @@ public class NewRxFlow {
 		driver.findElement(By.xpath(allergies)).sendKeys("Dust");
 
 		highlightElement(By.xpath(reactionToDrugs));
-		driver.findElement(By.xpath(reactionToDrugs)).sendKeys("Yes");
+		driver.findElement(By.xpath(reactionToDrugs)).sendKeys("Test");
 
 		highlightElement(By.xpath(recurringComplaints));
 		driver.findElement(By.xpath(recurringComplaints)).sendKeys("Test");

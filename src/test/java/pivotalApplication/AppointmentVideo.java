@@ -51,7 +51,7 @@ package pivotalApplication;
 		@Test(priority = 0)
 		public void NumberField() throws MalformedURLException, InterruptedException {
 			WebElement Number = driver.findElement(By.xpath(
-					"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
+					"//*[@text='Mobile Number']"));
 			Number.sendKeys("9665002440");
 		}
 
@@ -65,30 +65,37 @@ package pivotalApplication;
 		@Test(priority = 2)
 		public void proceedButton() throws MalformedURLException, InterruptedException {
 			WebElement proceed = driver.findElement(By.xpath(
-					"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView"));
+					"//android.widget.TextView[@text=\"\"]"));
 			proceed.click();
 			Thread.sleep(2000);
 		}
 
 		@Test(priority = 3)
 		public void OTP() throws MalformedURLException, InterruptedException {
-			WebElement otp = driver.findElement(By.xpath(
-					"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.EditText"));
-			otp.sendKeys("140520");
+			List<WebElement> otp =  driver.findElements(By.xpath(
+					"//*[@text='Enter OTP']"));
+			otp.get(1).sendKeys("140520");
+			
+			
+			
+		//	List<WebElement >otp = driver.findElements(By.xpath("//*[@text='Enter OTP']"));
+			//otp.get(0).sendKeys("140520");
 
 			Thread.sleep(10000);
 		}
 
 		@Test(priority = 4)
 		public void submit() throws MalformedURLException, InterruptedException {
+			
+			
+			
 			WebElement submit = driver.findElement(By.xpath(
-					"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
+					"//*[@text='Submit']"));
 			submit.click();
-
-			Thread.sleep(10000);
-			 List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
-			  WhatsNewClose.get(1).click();
-			  Thread.sleep(2000);
+			Thread.sleep(5000);
+			List<WebElement> WhatsNewClose = driver.findElements(By.className("android.widget.TextView"));
+			WhatsNewClose.get(1).click();
+			Thread.sleep(2000);
 
 		}
 
@@ -101,7 +108,7 @@ package pivotalApplication;
 			Thread.sleep(2000);
 
 			WebElement SearchBar = driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-			SearchBar.sendKeys("test");
+			SearchBar.sendKeys("Pivotal29Aug");
 
 			Thread.sleep(2000);
 			WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -125,17 +132,17 @@ package pivotalApplication;
 			List<WebElement> Appointment = driver.findElements(By.className("android.widget.TextView"));
 			Appointment.get(7).click();
 			Appointment.get(7).click();
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 			
 		}
 
 		
 		  @Test(priority=8) public void SlotTime() throws InterruptedException {
-		  Thread.sleep(20000); List<WebElement> SlotTime =
-		  driver.findElements(By.className("android.widget.EditText"));
+		  Thread.sleep(10000); List<WebElement> SlotTime =
+		  driver.findElements(By.xpath("//android.widget.EditText[@text=\"From\"]"));
 		  
 		  
-		  SlotTime.get(2).click();
+		  SlotTime.get(0).click();
 		  
 		  
 		  
@@ -143,12 +150,12 @@ package pivotalApplication;
 		  
 		  }
 		  
-		  @Test(priority=9) public void Time() throws InterruptedException {
-		  Thread.sleep(2000); List<WebElement> Time =
-		  driver.findElements(By.className("android.widget.TextView"));
+		  @Test(priority=9) public void EveningTime() throws InterruptedException {
+		  Thread.sleep(20000); List<WebElement> Time =
+		  driver.findElements(By.xpath("//android.widget.ImageView"));
 		  
 		  
-		  Time.get(10).click();
+		  Time.get(0).click();
 		  
 		  
 		  
@@ -157,12 +164,12 @@ package pivotalApplication;
 		  }
 		  
 		  @Test(priority=10) public void SlotBook() throws InterruptedException {
-		  Thread.sleep(2000); List<WebElement>  SlotBook =
-		  driver.findElements(By.className("android.widget.TextView"));
+		  Thread.sleep(10000); List<WebElement>  SlotBook =
+		  driver.findElements(By.xpath("//*[@text='02:20 pm']"));
 		  
 		  
 		  //SlotBook.get(36).click();//11;40
-		  SlotBook.get(9).click(); //11:10
+		  SlotBook.get(0).click(); //11:10
 		  
 		  
 		  
@@ -171,7 +178,7 @@ package pivotalApplication;
 		 
 		@Test(priority = 11)
 		public void VideoCheckBox() throws InterruptedException {
-			Thread.sleep(2000);
+			Thread.sleep(10000);
 			
 
 			List<WebElement> VideoCheckBox = driver.findElements(By.className("android.widget.TextView"));
@@ -181,7 +188,7 @@ package pivotalApplication;
 
 		@Test(priority = 12)
 		public void Book() throws InterruptedException {
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 
 			 WebElement BookAP = driver.findElement(By.xpath("//*[@text='Book Appointment']"));
 			 BookAP.click();
@@ -191,7 +198,7 @@ package pivotalApplication;
 
 		@Test(priority = 13)
 		public void AppointmentBookedPopup() throws InterruptedException {
-			Thread.sleep(2000);
+			Thread.sleep(30000);
 
 			
 

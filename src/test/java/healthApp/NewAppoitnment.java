@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumDriver;
@@ -18,8 +19,9 @@ public class NewAppoitnment extends AppiumServerStart {
 	AppiumDriver driver;
 	public Object MobileElement;
 //CertificateValid
+	
 	@BeforeClass
-	public void setup() throws MalformedURLException, InterruptedException {
+	public void setup1() throws MalformedURLException, InterruptedException {
 
 	DesiredCapabilities dc = new DesiredCapabilities();
 	dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
@@ -41,30 +43,28 @@ public class NewAppoitnment extends AppiumServerStart {
 	Thread.sleep(5000);
 
 }
+	
+	@Test(priority = 0)
+	public void NumberField() throws MalformedURLException, InterruptedException {
+		Thread.sleep(5000);
+		List<WebElement> EnglishSelect = driver.findElements(By.xpath("//*[@text='Select']"));
+		EnglishSelect.get(0).click();
 
-@Test(priority = 0)
-public void NumberField() throws MalformedURLException, InterruptedException {
-	
-	  List<WebElement> EnglishSelect = driver.findElements(By.className(
-	  "android.widget.TextView"
-	  )); EnglishSelect.get(10).click();
-	 
-	
-	
-	Thread.sleep(10000);
-	
-	WebElement Number = driver.findElement(By.xpath(
-			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
-	Number.sendKeys("9665002440");
-}
+		Thread.sleep(10000);
+		// highlightElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
 
+		WebElement Number = driver.findElement(By.xpath(
+				"//android.widget.EditText[@text=\"Mobile Number\"]"));
+		Number.sendKeys("9665002440");
+		// highlightElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"));
+	}
 @Test(priority = 1)
 public void IAgree() throws MalformedURLException, InterruptedException {
 	WebElement Agree = driver.findElement(By.xpath("//android.widget.TextView[@index='1']"));
 	Agree.click();
 	Thread.sleep(1000);
 }
-
+	
 @Test(priority = 2)
 public void proceedButton() throws MalformedURLException, InterruptedException {
 	List<WebElement> proceed = driver.findElements(By.className(
@@ -72,7 +72,7 @@ public void proceedButton() throws MalformedURLException, InterruptedException {
 	proceed.get(6).click();
 	Thread.sleep(5000);
 }
-
+	
 @Test(priority = 3)
 public void OTP() throws MalformedURLException, InterruptedException {
 	List<WebElement> otp1 =driver.findElements(By.className(
@@ -114,7 +114,7 @@ public void OTP() throws MalformedURLException, InterruptedException {
 
 	Thread.sleep(5000);
 }
-
+	
 @Test(priority = 4)
 public void Verify() throws MalformedURLException, InterruptedException {
 	List<WebElement> verify =driver.findElements(By.xpath(

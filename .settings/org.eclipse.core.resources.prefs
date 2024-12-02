@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
 encoding//src/test/java/pivotalApplication/FreshPrescription.java=UTF-8
-encoding//src/test/java/webAutoNegative/LMarathiCreatePatient.java=UTF-8
+encoding//src/test/java/webAutoNegative/CreatePatient_MarathiLanguage.java=UTF-8
 encoding//src/test/java/webAutoNegative/LogIn1.java=UTF-8
 encoding//src/test/java/webAutoQueueNegative/QLogIn.java=UTF-8
 encoding//src/test/java/webAutoQueueNegative/QMarathiCreatePatient.java=UTF-8

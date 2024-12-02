@@ -143,7 +143,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 7)
 	public void FirstName() throws MalformedURLException, InterruptedException {
 		List<WebElement> FirstName = driver.findElements(By.xpath("//*[@text='Your First Name']"));
-		FirstName.get(0).sendKeys("DkhealthRegression");
+		FirstName.get(0).sendKeys("QTwohealthRegression");
 		Thread.sleep(5000);
 
 	}
@@ -579,7 +579,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	@Test(priority = 39)
 	public void Time() throws MalformedURLException, InterruptedException {
 
-		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='03:00 pm']"));
+		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='11:50 am']"));
 		Time.get(0).click();
 
 		Thread.sleep(5000);
@@ -674,8 +674,125 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		Thread.sleep(5000);
 
 	}
-
 	@Test(priority = 43)
+	public void NextDayAppointment() throws MalformedURLException, InterruptedException {
+
+
+		List<WebElement> BookAppointment = driver.findElements(By.xpath("//*[@text='Book Appointment']"));
+		BookAppointment.get(0).click();
+
+		Thread.sleep(10000);
+
+		List<WebElement> SelectFamilyMember =driver.findElements(By.xpath(
+				"//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView"));
+		SelectFamilyMember.get(0).click();
+	  Thread.sleep(5000);
+
+		Thread.sleep(2000);
+		List<WebElement> SelectDoctor = driver.findElements(By.xpath("//*[@text='Select Doctor']"));
+		SelectDoctor.get(0).click();
+
+		Thread.sleep(5000);
+		
+		List<WebElement> Doctor = driver.findElements(By.xpath("//*[@text='Dr. vishakha Nawale']"));
+		Doctor.get(0).click();
+
+		Thread.sleep(5000);
+		
+		List<WebElement> DateClick = driver.findElements(By.xpath("//*[@text='DD/MM/YYYY']"));
+		DateClick.get(0).click();
+
+		Thread.sleep(5000);
+		List<WebElement> els1 = driver.findElements(AppiumBy.className("android.view.ViewGroup"));
+		els1.get(8).click();
+		Thread.sleep(5000);
+		System.out.println("Before scrolling ....");
+		driver.findElement(AppiumBy.androidUIAutomator(
+				"new UiScrollable(new UiSelector().scrollable(false).instance(0)).scrollIntoView(new UiSelector().textContains(\"09:00 am\").instance(0))"));
+		Thread.sleep(10000);
+
+		List<WebElement> Time = driver.findElements(By.xpath("//*[@text='09:15 am']"));
+		Time.get(0).click();
+
+		Thread.sleep(5000);
+		
+		Thread.sleep(2000);
+		List<WebElement> addPurposeofzzzzvisit = driver.findElements(By.xpath("(//android.widget.TextView[@text=\"󰐙\"])[1]"));
+		addPurposeofzzzzvisit.get(0).click();
+		
+		/*
+		 * Thread.sleep(5000); List<WebElement> ScheduledVisit
+		 * =driver.findElements(By.xpath( "//*[@text='Scheduled Visit']"));
+		 * ScheduledVisit.get(0).clear();
+		 * 
+		 * Thread.sleep(2000);
+		 */
+			/*
+			 * List<WebElement> AddVisit =driver.findElements(By.xpath( "//*[@text='󰐙']"));
+			 * AddVisit.get(0).click();
+			 */
+		 Thread.sleep(2000);
+		 
+		 List<WebElement> Followup =driver.findElements(By.xpath(
+					"//*[@text='Follow Up']"));
+		 Followup.get(0).click();
+			 Thread.sleep(2000); 
+			 
+			 List<WebElement> CfAdd =driver.findElements(By.xpath(
+						"//*[@text='󰐙']"));
+			 CfAdd.get(1).click();
+				 Thread.sleep(2000); 
+				 
+				 List<WebElement> CfFever =driver.findElements(By.xpath(
+							"//*[@text='Fever']"));
+				 CfFever.get(0).click();
+					 Thread.sleep(2000); 
+					 
+					 List<WebElement> CfSince =driver.findElements(By.className(
+								"android.widget.EditText"));
+					 CfSince.get(1).sendKeys("1");
+						 Thread.sleep(2000);
+						 
+						 List<WebElement> CfMild =driver.findElements(By.xpath(
+									"(//android.widget.TextView[@text='󰄳'])[3]"));
+						 CfMild.get(0).click();
+						 CfMild.get(0).click();
+							 Thread.sleep(2000);
+							 
+							 List<WebElement> CfVomitting =driver.findElements(By.xpath(
+										"//*[@text='Vomitting']"));
+							 CfVomitting.get(0).click();
+								 Thread.sleep(2000);
+								 
+								 
+								 List<WebElement> CfSince1 =driver.findElements(By.className(
+											"android.widget.EditText"));
+								 CfSince1.get(1).sendKeys("1");
+									 Thread.sleep(2000);
+								 
+								 List<WebElement> CfAddComplains =driver.findElements(By.xpath(
+											"//*[@text='Add Complaints']"));
+								 CfAddComplains.get(0).click();
+									 Thread.sleep(2000);
+			
+
+		Thread.sleep(5000);
+		
+
+		List<WebElement> CreateAppointment = driver.findElements(By.xpath("//*[@text='Create Appointment']"));
+		CreateAppointment.get(1).click();
+
+		Thread.sleep(5000);
+
+		
+		List<WebElement> Done = driver.findElements(By.xpath("//*[@text='Done']"));
+		Done.get(0).click();
+
+		Thread.sleep(5000);
+
+	}
+
+	@Test(priority = 44)
 	public void SelectFamilyMember2() throws MalformedURLException, InterruptedException {
 
 		Thread.sleep(5000);
@@ -691,7 +808,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 			SelectFamilyMember.get(0).click();
 	}
 
-	@Test(priority = 44)
+	@Test(priority = 45)
 	public void AddButton1() throws MalformedURLException, InterruptedException {
 		Thread.sleep(5000);
 		List<WebElement> AddButton1 = driver.findElements(By.className("android.widget.TextView"));
@@ -701,7 +818,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 45)
+	@Test(priority = 46)
 	public void GrowthRecord1() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> GrowthRecord1 = driver.findElements(By.xpath("//*[@text='New Growth Record']"));
@@ -711,7 +828,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 46)
+	@Test(priority = 47)
 	public void Vital() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> weight = driver.findElements(By.className("android.widget.EditText"));
@@ -857,7 +974,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	 * 
 	 * Thread.sleep(5000); }
 	 */
-	@Test(priority = 52)
+	@Test(priority = 53)
 	public void UploadDoc() throws MalformedURLException, InterruptedException {
 
 		/*
@@ -878,7 +995,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 53)
+	@Test(priority = 54)
 	public void DocumentsDropDown() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(5000);
 		List<WebElement> DocumentsDropDown = driver.findElements(By.className("android.widget.TextView"));
@@ -886,7 +1003,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 54)
+	@Test(priority = 55)
 	public void DischargeSummary() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		WebElement DischargeSummary = driver.findElement(By.xpath("//*[@text='Discharge Summary']"));
@@ -894,7 +1011,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 55)
+	@Test(priority = 56)
 	public void CreatedBy() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		WebElement CreatedBy = driver.findElement(By.xpath("//*[@text='Created By']"));
@@ -902,7 +1019,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 56)
+	@Test(priority = 57)
 	public void DocumentOn() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		List<WebElement> DocumentOn = driver.findElements(By.className("android.widget.TextView"));
@@ -910,7 +1027,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 57)
+	@Test(priority = 58)
 	public void popUpOk() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		WebElement popUpOk = driver.findElement(By.xpath("//*[@text='Okay']"));
@@ -919,7 +1036,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 58)
+	@Test(priority = 59)
 	public void Camera() throws InterruptedException, IndexOutOfBoundsException {
 		WebElement Camera
 		
@@ -956,7 +1073,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 59)
+	@Test(priority = 60)
 	public void UploadCam() throws InterruptedException, IndexOutOfBoundsException {
 
 		Thread.sleep(5000);
@@ -965,7 +1082,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		Upload.click();
 	}
 
-	@Test(priority = 60)
+	@Test(priority = 61)
 	public void UploadCamOk() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(10000);
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
@@ -974,7 +1091,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		Thread.sleep(5000);
 	}
 
-	@Test(priority = 61)
+	@Test(priority = 62)
 	public void UploadDocuments1() throws InterruptedException, IndexOutOfBoundsException {
 		List<WebElement> AddButton = driver.findElements(By.className("android.widget.TextView"));
 		AddButton.get(62).click();
@@ -984,7 +1101,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 62)
+	@Test(priority = 63)
 	public void DocumentsDropDown1() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(5000);
 		List<WebElement> DocumentsDropDown = driver.findElements(By.className("android.widget.TextView"));
@@ -992,7 +1109,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 63)
+	@Test(priority = 64)
 	public void DischargeSummary1() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		WebElement DischargeSummary1 = driver.findElement(By.xpath("//*[@text='Discharge Summary']"));
@@ -1000,7 +1117,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 64)
+	@Test(priority = 65)
 	public void CreatedBy1() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		WebElement CreatedBy1 = driver.findElement(By.xpath("//*[@text='Created By']"));
@@ -1008,7 +1125,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 65)
+	@Test(priority = 66)
 	public void DocumentOn1() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		List<WebElement> DocumentOn = driver.findElements(By.className("android.widget.TextView"));
@@ -1016,7 +1133,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 66)
+	@Test(priority = 67)
 	public void popUpOk1() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		WebElement popUpOk = driver.findElement(By.xpath("//*[@text='Okay']"));
@@ -1024,7 +1141,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 67)
+	@Test(priority = 68)
 	public void Gallery() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		WebElement Gallary = driver.findElement(By.xpath("//*[@text='Gallery']"));
@@ -1041,7 +1158,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 	 * 
 	 * }
 	 */
-	@Test(priority = 68)
+	@Test(priority = 69)
 	public void photo() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(10000);
 		driver.findElement(By.xpath(
@@ -1050,7 +1167,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 69)
+	@Test(priority = 70)
 	public void Upload() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		WebElement Upload = driver.findElement(By.xpath("//*[@text='Upload']"));
@@ -1058,7 +1175,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 70)
+	@Test(priority = 71)
 	public void UploadOk() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(10000);
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
@@ -1067,7 +1184,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 		Thread.sleep(10000);
 	}
 
-	@Test(priority = 71)
+	@Test(priority = 72)
 	public void AddButton4() throws MalformedURLException, InterruptedException {
 
 		Thread.sleep(5000);
@@ -1078,7 +1195,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 72)
+	@Test(priority = 73)
 	public void BookLabTest11() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> BookLabTest = driver.findElements(By.xpath("//*[@text='Book Lab Test']"));
@@ -1088,7 +1205,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 73)
+	@Test(priority = 74)
 	public void SelectLab() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> SelectLab = driver.findElements(By.xpath("//*[@text='Select Lab']"));
@@ -1098,7 +1215,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 74)
+	@Test(priority = 75)
 	public void ClickLab() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> ClickLab = driver.findElements(By.xpath("//*[@text='Uday_P_Labs']"));
@@ -1108,7 +1225,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 75)
+	@Test(priority = 76)
 	public void Comments() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> Comments = driver.findElements(By.xpath("//*[@text='Enter Comments']"));
@@ -1118,7 +1235,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 76)
+	@Test(priority = 77)
 	public void VaccineLabel() throws InterruptedException, IndexOutOfBoundsException {
 
 		Thread.sleep(5000);
@@ -1164,7 +1281,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 77)
+	@Test(priority = 78)
 	public void BookLabTest1() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> BookLabTest1 = driver.findElements(By.xpath("//*[@text='Book Lab Test']"));
@@ -1174,7 +1291,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 78)
+	@Test(priority = 79)
 	public void Done2() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> Done = driver.findElements(By.xpath("//*[@text='Done']"));
@@ -1184,7 +1301,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 79)
+	@Test(priority = 80)
 	public void SelectFamilyMember3() throws MalformedURLException, InterruptedException {
 
 		Thread.sleep(5000);
@@ -1197,7 +1314,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 80)
+	@Test(priority = 81)
 	public void Immunization() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> Immunization = driver.findElements(By.xpath("//*[@text='Immunization']"));
@@ -1207,7 +1324,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 81)
+	@Test(priority = 82)
 	public void Birth() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> Birth = driver.findElements(By.xpath("//*[@text='At Birth']"));
@@ -1266,7 +1383,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 82)
+	@Test(priority = 83)
 	public void PopUpOk() throws InterruptedException, IndexOutOfBoundsException {
 		/*
 		 * Thread.sleep(2000); WebElement PopUpOk1 =
@@ -1285,7 +1402,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 83)
+	@Test(priority = 84)
 	public void AddButton2() throws MalformedURLException, InterruptedException {
 		List<WebElement> BackArrow = driver.findElements(By.className("android.widget.TextView"));
 		BackArrow.get(0).click();
@@ -1303,7 +1420,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 84)
+	@Test(priority = 85)
 	public void AllVisits() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> AllVisits = driver.findElements(By.xpath("//*[@text='All Visits']"));
@@ -1313,7 +1430,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 85)
+	@Test(priority = 86)
 	public void AddVitalsClick() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> AddVitalsClick = driver.findElements(By.xpath("//*[@text='Add Vitals']"));
@@ -1323,7 +1440,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 86)
+	@Test(priority = 87)
 	public void AddVitals() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> Weight = driver.findElements(By.xpath("//*[@text='WT. (kg)']"));
@@ -1378,7 +1495,7 @@ public class HealthEndToEndScript extends AppiumServerStart  {
 
 	}
 
-	@Test(priority = 87)
+	@Test(priority = 88)
 	public void LipidProfile() throws MalformedURLException, InterruptedException {
 
 		List<WebElement> LipidArrow = driver.findElements(By.xpath("//*[@text='Lipid Profile']"));

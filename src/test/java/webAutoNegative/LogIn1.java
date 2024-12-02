@@ -27,21 +27,21 @@ public class LogIn1 {
 	public static String sendOTP = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div/form/div[4]/button";
 	public static String verifyOTP = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[6]/button";
 	 public static String createPatient="createPatient";
-	    public static String Number1="/html/body/div[3]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[1]/div[1]/mat-form-field[2]/div/div[1]/div/input";
-	    public static String confirm="/html/body/div[3]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[1]/div[1]/div/button";
+	    public static String Number1="//*[text()='Profile']//following::input[4]";
+	    public static String confirm="//*[text()='Confirm']";
 	    public static String confirmPopup="//button[text()='Confirm']";
-	    public static String number2="/html/body/div[3]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[1]/div[2]/mat-form-field[2]/div/div[1]/div/input";
-	    public static String firstName="/html/body/div[3]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[4]/mat-form-field[1]/div/div[1]/div/input";
-	    public static String middleName="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[4]/mat-form-field[2]/div/div[1]/div/input";
-	    public static String lastName="/html/body/div[3]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[4]/mat-form-field[3]/div/div[1]/div/input";
-	    public static String birthDate="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[5]/div[1]/mat-form-field[1]/div/div[1]/div[1]/input";
+	    public static String number2="//*[text()='Profile']//following::input[6]";
+	    public static String firstName="//*[text()='Profile']//following::input[7]";
+	    public static String middleName="//*[text()='Profile']//following::input[8]";
+	    public static String lastName="//*[text()='Profile']//following::input[9]";
+	    public static String birthDate="//*[text()='Profile']//following::button[5]";
 	    public static String genFemale="//*[text()='Female']";
-	    public static String address="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[6]/mat-form-field[1]/div/div[1]/div/input";
-	    public static String locality="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[6]/mat-form-field[2]/div/div[1]/div/input";
-	    public static String city="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[6]/mat-form-field[3]/div/div[1]/div/input";
-	    public static String pinCode="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[7]/mat-form-field/div/div[1]/div/input";
+	    public static String address="//*[text()='Profile']//following::input[12]";
+	    public static String locality="//*[text()='Profile']//following::input[13]";
+	    public static String city="//*[text()='Profile']//following::input[14]";
+	    public static String pinCode="//*[text()='Profile']//following::input[15]";
 	    public static String Next="//*[text()=' Next']";
-	    public static String proceedWithSameRMN="//*[text()='Proceed With same RMN']";
+	    public static String proceedWithSameRMN="//*[text()='Proceed With same RMN ']";
 	    public static String clickClose="/html/body/ngb-modal-window/div/div/div[1]/div/button";
 	    public static String selectDelivery="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[2]/form/div[2]/div[1]/mat-form-field[3]/div/div[1]/div/mat-select";
 	    public static String normalDelivery="//*[text()='Normal']";
@@ -71,20 +71,20 @@ public class LogIn1 {
 	    public static String motherHeightinch="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[4]/div[2]/div[2]/div[2]/mat-form-field[2]/div/div[1]/div/input";
 	    public static String familyNext="//*[@id='cdk-step-content-0-3']/div[2]/div[5]/button[2]";
 	    public static String success="//*[text()='Success']";
-	    public static String age="/html/body/div[3]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[5]/div[1]/mat-form-field[2]/div/div[1]/div/input";
+	    public static String age="//*[text()='Profile']//following::input[9]";
 	    public static String familyProfile="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[1]/mat-step-header[4]/div[3]/div";
 	    public static String Done="/html/body/ngb-modal-window/div/div/div[3]/div";
 	    public static String SelectDate="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-month-view/table/tbody/tr[1]/td[2]/div[1]";		
 		  public static String SelectMonth ="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-year-view/table/tbody/tr[3]/td[4]/div[1]";
 		   public static String ClickYearDropdown="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/mat-calendar-header/div/div/button[1]";
-		   public static String clickYear="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-multi-year-view/table/tbody/tr[5]/td[3]/div[1]";
+		   //public static String clickYear="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-multi-year-view/table/tbody/tr[5]/td[3]/div[1]";
 	public static String GenError="//*[text()=' Please Select Gender']";
 	public static String SendOTPError="//*[text()='User Not Exists Please Register.']";
 	public static String SendOTPError1="//*[text()='Please Enter 10 Digit of Phone Number']";
 	public static String ErrorEnterNo="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div/form/div[3]/div";
 	public static String PatientListEmpty="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[2]/div[2]/div[1]/app-patient/div/div/div/div/div[1]/div/div/app-alertbox/div/div[2]/div[1]";
-	public static String PatientAge="/html/body/div[3]/div[2]/div/mat-dialog-container/app-new-onboard-patient/p-toast/div/p-toastitem/div/div/div/div[2]/div[2]";
-	public static String UseDOBError="/html/body/div[3]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/p";
+	public static String PatientAge="//*[text()=' Please Enter Patient Age']";
+	public static String UseDOBError="//*[text()='Use DOB for age less than 2 yrs']";
 	public static String genmaleSelect="/html/body/div[3]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[5]/div[2]/div";
 	
 	public static String OTP1="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]"; 
@@ -359,7 +359,7 @@ public class LogIn1 {
 			@Test(priority = 9)
 			public  void searchBar1() {
 				waitForVisibilityOf(By.xpath(searchBar));
-				driver.findElement(By.xpath(searchBar)).sendKeys("ppppppp");
+				driver.findElement(By.xpath(searchBar)).sendKeys("test");
 				
 				//driver.findElement(By.xpath(searchBar)).sendKeys("pres");
 				highlightElement(By.xpath(searchBar));
@@ -436,58 +436,50 @@ public class LogIn1 {
 			  waitForVisibilityOf(By.xpath(lastName));
 			  driver.findElement(By.xpath(lastName)).sendKeys("Test");;
 			  highlightElement(By.xpath(lastName));
-			  clickUsingJavaScript(By.xpath(lastName)); }
+			  clickUsingJavaScript(By.xpath(lastName)); 
+			  
+			  
+			  waitForVisibilityOf(By.xpath(genFemale));
+	    		driver.findElement(By.xpath(genFemale));
+	    		highlightElement(By.xpath(genFemale));
+	    		clickUsingJavaScript(By.xpath(genFemale));
+			  
+			  
+			  
+			  
+			  }
 		
-	        @Test(priority=16)
-	     @Ignore
-	      	public  void genFemale() {
-	      	waitForVisibilityOf(By.xpath(genFemale));
-	      	driver.findElement(By.xpath(genFemale));
-	      	highlightElement(By.xpath(genFemale));
-	    	clickUsingJavaScript(By.xpath(genFemale));
-	      	boolean as=driver.findElement(By.xpath(genFemale)).isDisplayed();
-	      	Assert.assertEquals(as,true);
-	      	driver.findElement(By.xpath(genFemale)).getText();
-	        }
-	     
-			/*
-			 * @Test(priority=17) public void proceedWithSameRMN() {
-			 * waitForVisibilityOf(By.xpath(proceedWithSameRMN));
-			 * 
-			 * highlightElement(By.xpath(proceedWithSameRMN));
-			 * clickUsingJavaScript(By.xpath(proceedWithSameRMN));
-			 * 
-			 * }
-			 */
+	       
 	        @Test(priority=17)
 	        public void nextButton() throws InterruptedException {
-	        	//Thread.sleep(15000);
-	            waitForVisibilityOf(By.xpath(Next));
-	          driver.findElement(By.xpath(Next));
-	          	highlightElement(By.xpath(Next));
-	        	clickUsingJavaScript(By.xpath(Next));
-	        	
+	        	Thread.sleep(15000);
 				
-				  highlightElement(By.xpath(GenError)); String actualMsg =
+				  waitForVisibilityOf(By.xpath(Next)); driver.findElement(By.xpath(Next));
+				  highlightElement(By.xpath(Next)); clickUsingJavaScript(By.xpath(Next));
+				  
+				  Thread.sleep(3000); highlightElement(By.xpath(GenError)); String actualMsg =
 				  driver.findElement(By.xpath(GenError)).getText();
 				  System.out.println("actual Msg :"+actualMsg); Object errorMessage =
 				  "Please Select Gender"; Assert.assertEquals(actualMsg,errorMessage);
 				  
-					
-					
-					  waitForVisibilityOf(By.xpath(genFemale));
-					  driver.findElement(By.xpath(genFemale));
-					  highlightElement(By.xpath(genFemale));
-					  clickUsingJavaScript(By.xpath(genFemale));
-					 
+				
+				
+				 
 					 
 		    	
-		    	boolean as=driver.findElement(By.xpath(genmaleSelect)).isDisplayed();
-		      	Assert.assertEquals(as,true);
-		      	String p=driver.findElement(By.xpath(genmaleSelect)).getText();
-		      	System.out.println(""+p);
+						/*
+						 * boolean as=driver.findElement(By.xpath(genmaleSelect)).isDisplayed();
+						 * Assert.assertEquals(as,true); String
+						 * p=driver.findElement(By.xpath(genmaleSelect)).getText();
+						 * System.out.println(""+p);
+						 */
+	        	Thread.sleep(5000);
+	        	waitForVisibilityOf(By.xpath(genFemale));
+	    		driver.findElement(By.xpath(genFemale));
+	    		highlightElement(By.xpath(genFemale));
+	    		clickUsingJavaScript(By.xpath(genFemale));
 		    	
-		    	Thread.sleep(2000);
+		    	Thread.sleep(5000);
 		    	
 		    	waitForVisibilityOf(By.xpath(Next));
 		          driver.findElement(By.xpath(Next));
@@ -509,7 +501,7 @@ public class LogIn1 {
 			      	highlightElement(By.xpath(UseDOBError));
 		        	 String actualMsg2 = driver.findElement(By.xpath(UseDOBError)).getText();
 		             System.out.println("actual Msg :"+actualMsg2);
-		             Object errorMessage2 = "Use DOB for age less than 1 yrs";
+		             Object errorMessage2 = "Use DOB for age less than 2 yrs";
 					Assert.assertEquals(actualMsg2,errorMessage2);
 					
 				

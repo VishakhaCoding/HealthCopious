@@ -67,9 +67,9 @@ public class LogIn{
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			//driver.get("http://stage.copious.care:4200/");
-			driver.get("https://stage.copious.care/");
+			//driver.get("https://stage.copious.care/");
 			driver.manage().window().fullscreen();
-			 //driver.get("https://opd.copious.care/");
+			 driver.get("https://app.copious.care/");
 		}
 
 

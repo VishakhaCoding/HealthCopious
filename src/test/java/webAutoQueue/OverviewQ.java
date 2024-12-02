@@ -691,7 +691,7 @@ public class OverviewQ {
 		  
 		  }
 		 
-       @Test(priority=19,retryAnalyzer = webAutoNegative.MyRetry.class)
+       @Test(priority=19,retryAnalyzer = webAutoNegative.Demo_MyRetry.class)
        public void fillVitalForm() throws InterruptedException {
            waitForVisibilityOf(By.xpath(selectDelivery));
           

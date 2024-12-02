@@ -31,7 +31,9 @@ public static WebDriver driver; static String doctorLoginLink = "/html/body/app-
 		public static String BookAppointment="/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[2]/button";
 		public static String CancelAppointment="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[2]/div[2]/div[2]/app-appointments/div/mat-tab-group/div/mat-tab-body[1]/div/div/div[1]/app-appointment-progress-card/div/div[4]/img[2]";
 		public static String CancelYes="/html/body/div[2]/div[2]/div/mat-dialog-container/div/div[2]/button[2]";
-		public static String OTP1="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]"; 
+		   
+		
+		  public static String OTP1="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]"; 
 		   public static String OTP2="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[2]"; 
 		   public static String OTP3="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[3]"; 
 		   public static String OTP4="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";

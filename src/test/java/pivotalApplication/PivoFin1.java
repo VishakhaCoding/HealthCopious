@@ -200,7 +200,7 @@ public class PivoFin1 extends AppiumServerStart {
 		Thread.sleep(2000);
 
 		WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-		FirstName.sendKeys("Pivotal18septBuild");
+		FirstName.sendKeys("Pivotal29Nov");
 		//FirstName.sendKeys("abhaPatient1Dec");
 		Thread.sleep(2000);
 
@@ -887,7 +887,7 @@ public class PivoFin1 extends AppiumServerStart {
 		SelectPatient.get(0).click();
 		Thread.sleep(5000);
 		List<WebElement> Seatchbar = driver.findElements(By.xpath("//*[@text='Name / Mobile']"));
-		Seatchbar.get(0).sendKeys("Pivotal18septBuild");
+		Seatchbar.get(0).sendKeys("Pivotal29Nov");
 		Thread.sleep(5000);
 		List<WebElement> Search = driver.findElements(By.className("android.widget.TextView"));
 		Search.get(1).click();

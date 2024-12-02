@@ -64,7 +64,7 @@ public class AdultPatient {
     public static String HealthProfileNext="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[3]/form/div[2]/div[6]/button[2]";
     public static String FamilyProfileNext="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[4]/form/div/div[3]/button[2]";
     public static String FamilyProfileDone="/html/body/ngb-modal-window/div/div/div[3]/div";
-    public static String clickContinue="/html/body/ngb-modal-window/div/div/div[2]/div/div/div[5]/span";
+    public static String clickContinue="//*[text()='Continue to complete detail profile']";
     public static String success="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-profile-summary/div/div[2]/div[1]/div[1]/div[1]/div[1]/div";
     public static String OTP1="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]"; 
 	   public static String OTP2="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[2]"; 

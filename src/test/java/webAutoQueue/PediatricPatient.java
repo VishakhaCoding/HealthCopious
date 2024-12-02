@@ -75,7 +75,7 @@ public class PediatricPatient {
 	  public static String SelectMonth ="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-year-view/table/tbody/tr[3]/td[4]/div[1]";
 	   public static String ClickYearDropdown="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/mat-calendar-header/div/div/button[1]";
 	   public static String clickYear="/html/body/div[2]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-multi-year-view/table/tbody/tr[5]/td[3]/div[1]";
-	  public static String clickContinue="/html/body/ngb-modal-window/div/div/div[2]/div/div/div[5]/span";
+	  public static String clickContinue="//*[text()='Continue to complete detail profile']";
 	  public static String prefferedLanguage="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[7]/mat-form-field[2]/div/div[1]/div/mat-select/div/div[1]/span";
 	    public static String prefferedLanguageEnglish="/html/body/div[2]/div[4]/div/div/div/mat-option[1]/span";
 	    public static String FamilyMedicalHistory = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[4]/div[2]/div[3]/mat-form-field/div/div[1]/div[1]/input";
@@ -334,7 +334,7 @@ public class PediatricPatient {
 		  
 		  }
 		 
-        @Test(priority=20,retryAnalyzer = webAutoNegative.MyRetry.class)
+        @Test(priority=20,retryAnalyzer = webAutoNegative.Demo_MyRetry.class)
         public void fillVitalForm() throws InterruptedException {
             waitForVisibilityOf(By.xpath(selectDelivery));
            

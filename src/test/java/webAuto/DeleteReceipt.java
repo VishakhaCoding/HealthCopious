@@ -18,7 +18,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-public class DeleteReceipt extends BaseClass {
+public class DeleteReceipt extends Demo_BaseClass {
 	public static WebDriver driver;
 
 	public static String doctorLoginLink = "/html/body/app-root/app-home-page/div/div/div/header[2]/div/div[4]/button";

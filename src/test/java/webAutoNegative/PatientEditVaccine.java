@@ -69,7 +69,7 @@ public class PatientEditVaccine {
 	public static String clickEditProfile="//*[text()='Edit ']";
 	 public static String weight="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[2]/form/div[2]/div[5]/mat-form-field[1]/div/div[1]/div/input";
 	    public static String height="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[2]/form/div[2]/div[5]/mat-form-field[2]/div/div[1]/div/input";
-    public static String clickContinue="/html/body/ngb-modal-window/div/div/div[2]/div/div/div[5]/span";
+    public static String clickContinue="//*[text()='Continue to complete detail profile']";
     public static String selectDelivery="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[2]/form/div[2]/div[1]/mat-form-field[3]/div/div[1]/div/mat-select";
     public static String normalDelivery="//*[text()='Normal']";
     public static String HC="/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[2]/form/div[2]/div[5]/mat-form-field[3]/div/div[1]/div/input";
@@ -348,7 +348,7 @@ public class PatientEditVaccine {
 	       		  
 	       		  }
 	       		 
-	               @Test(priority=20,retryAnalyzer = webAutoNegative.MyRetry.class)
+	               @Test(priority=20,retryAnalyzer = webAutoNegative.Demo_MyRetry.class)
 	               public void fillVitalForm() throws InterruptedException {
 	                   waitForVisibilityOf(By.xpath(selectDelivery));
 	                  

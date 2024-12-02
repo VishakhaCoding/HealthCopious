@@ -30,136 +30,106 @@ public class AddNewPrescription {
 	public static String searchOpt = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[1]/div/div[1]/div[3]/button";
 	public static String clickPatient = "li.clearfix";
 	public static String AddNewPrescription = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[2]/div[2]/div[1]/app-patient/div/div/div/div/div[2]/div/div/ul/a/li/a/div/div[3]/figure/a[1]/img";
-	public static String ClearCompalaint = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/div[2]/app-prescription-live-preview/div/div/div[1]/div[2]/label[2]/span[2]";
-	public static String clearOnExamination = "";
-	public static String ClearWorkingDiagnosis = "";
-	public static String DeleteMedicine = "";
-	public static String DeletePopularMedicine = "";
-	public static String DeleteFavouriteMedicine = "";
-	public static String ChiefComplaints = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[1]/div/div/div/div[2]/div[1]/div/div/div/div[8]/app-cutom-card/div";
-	public static String ComplaintDetails = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/div/div[1]";
-	public static String MoreSymptoms = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[1]/div/div/div/div[2]/div[3]/div/div/div[8]";
-	public static String VitalsOption = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[1]/mat-step-header[2]";
-	public static String VitalsButton = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/mat-tab-header/div[2]/div/div/div[1]";
-	public static String weight = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[1]/div/div/div/div[3]/div/div[1]/div/div[2]/mat-form-field/div/div[1]/div[3]/input";
-	public static String BP = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[1]/div/div/div/div[3]/div/div[2]/div/mat-form-field/div/div[1]/div[3]/input";
+	//public static String ClearCompalaint = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/div[2]/app-prescription-live-preview/div/div/div[1]/div[2]/label[2]/span[2]";
+	
+	public static String InstructionAdd = "//*[text()='Can mix all supplements except iron supplement ']";
+	public static String BP = "//*[text()='Vitals']//following::input[2]";
+	public static String VitalsOption = "//*[text()='Vitals']";
+	public static String VitalsButton = "//*[text()='Vital']";
 	public static String vitals = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/mat-tab-header/div[2]/div/div/div[1]";
-	public static String vitalWeihgt = "mat-input-0";
-	public static String vitalHeihgt = "mat-input-1";
-	public static String headCircumferance = "mat-input-17";
-	public static String CC = "mat-input-18";
-	public static String temperature = "mat-input-2";
-	public static String BpAndHeart = "mat-tab-label-0-1";
-	public static String BPSys = "mat-input-4";
-	public static String BPDia = "mat-input-5";
-	public static String heartRate = "mat-input-6";
-	public static String pulse = "mat-input-7";
-	public static String BloodAndAnalysis = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/mat-tab-header/div[2]/div/div/div[3]";
-	public static String Haemoglobin = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[3]/div/div/div/div/div[1]/mat-form-field/div/div[1]/div[3]/input";
-	public static String BloodSugarRandom = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[3]/div/div/div/div/div[2]/mat-form-field/div/div[1]/div[3]/input";
-	public static String BloodSugarF = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[3]/div/div/div/div/div[3]/mat-form-field/div/div[1]/div[3]/input";
-	public static String BloodSugarPP = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[3]/div/div/div/div/div[4]/mat-form-field/div/div[1]/div[3]/input";
-	public static String Blood = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[3]/div/div/div/div/div[5]/mat-form-field/div/div[1]/div[3]/input";
-	public static String LipidProfile = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/mat-tab-header/div[2]/div/div/div[4]";
-	public static String CholestrerolHDL = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[4]/div/div/div/div/div[1]/mat-form-field/div/div[1]/div[3]/input";
-	public static String CholestrerolLDL = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[4]/div/div/div/div/div[2]/mat-form-field/div/div[1]/div[3]/input";
-	public static String totalCholesterol = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[4]/div/div/div/div/div[3]/mat-form-field/div/div[1]/div[3]/input";
-	public static String Triglycerides = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[4]/div/div/div/div/div[4]/mat-form-field/div/div[1]/div[3]/input";
-	public static String OnExamination = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[1]/mat-step-header[3]";
-	public static String SearchExamination = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[3]/div/div/div/div[1]/div[2]/div/div/input";
-	public static String ExaminationNew = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[3]/div/div/div/div[1]/div[2]/button";
-	public static String Examination = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[3]/div/div/div/div[2]/div[1]/div[1]/div/div[4]/app-cutom-card/div";
-	public static String DiagnosisOption = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[1]/mat-step-header[4]";
-	public static String SearchDiagnosis = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[4]/div/div/div/div[1]/div[2]/div/div/input";
-	public static String DiagnosisNew = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[4]/div/div/div/div[1]/div[2]/button";
-	public static String Diagnosis = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[4]/div/div/div/div[2]/div[1]/div/div/div[2]/app-cutom-card/div";
-	public static String Medicine = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[1]/mat-step-header[5]";
-	public static String medicineSearch = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div/div/div[2]/div/input";
-	public static String Dolocare = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div/div/div[2]/div/ngb-typeahead-window/button[1]/ngb-highlight[1]";
-	public static String MedAddtoList = "//div[text()='Add to List']";
-	public static String newDrug = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div/div/div[1]/div[2]/div";
-	public static String DrugName = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/form/div/div[1]/div[1]/div[1]/input";
-	public static String DrugType = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/form/div/div[1]/div[1]/div[2]/div[2]/input";
-	public static String GenericName = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/form/div/div[1]/div[2]/div[1]/input";
-	public static String DrugCompany = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/form/div/div[1]/div[2]/div[2]/div[2]/input";
-	public static String Unit = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/form/div/div[2]/div/input";
-	public static String Frequency = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/form/div/div[2]/div/mat-form-field[1]/div/div[1]/div/mat-select/div/div[1]/span";
-	public static String Night = "/html/body/div[4]/div[4]/div/div/div/mat-option[1]";
-	public static String Duration = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/form/div/div[2]/div/mat-form-field[2]/div/div[1]/div/mat-select/div/div[1]";
-	public static String TwoDays = "//span[text()=' 1 Day(s) ']";
-	public static String WhenToTake = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/form/div/div[2]/div/mat-form-field[3]/div/div[1]/div/mat-select/div/div[1]/span";
-	public static String AfterFood = "/html/body/div[4]/div[4]/div/div/div/mat-option[2]/span";
-	public static String Instruction = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div/div/div[4]/div/app-language-select-textbox/div/input";
-	public static String AddNewDrug = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[3]/div";
-	public static String MedDrugType = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div/div/div[2]/mat-form-field/div/div[1]/div/mat-select";
-	public static String Capsule = "/html/body/div[4]/div[2]/div/div/div/mat-option[1]/span";
-	public static String MedDrugUnit = "mat-select-value-15";
-	public static String Medml = "mat-option-50";
-	public static String MedWhenToTake = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div/div/div[3]/div[2]/mat-form-field[2]/div/div[1]/div/mat-select/div/div[1]";
-	public static String MedAfterFood = "/html/body/div[4]/div[2]/div/div/div/mat-option[3]/span";
-	public static String MedDuration = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div/div/div[3]/div[2]/mat-form-field[3]/div/div[1]/div/mat-select/div/div[1]";
-	public static String MedTwoDays = "/html/body/div[4]/div[2]/div/div/div/mat-option[3]/span";
-	public static String MedDrugDose = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div/div/div[3]/div[1]/div[1]/div[1]/input";
-	public static String Footer = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[3]";
-	public static String PopularOption = "//div[text()=' Popular ']";
-	public static String PopularSearch = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[1]/div[1]/input";
-	public static String PopularMedicineClick = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[1]/div[3]/div[1]/div/img";
-	public static String FavouriteOption = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[1]/div/div[2]/div[3]";
-	public static String FavouriteSearch = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[1]/input";
-	public static String FavouriteClick = "mat-option-136";
-	public static String FavouriteClickMedicine = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[2]/div/div/img";
-	public static String previousOption = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[1]/div/div[2]/div[4]";
-	public static String previousSearch = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[1]/div[1]/mat-form-field/div/div[1]/div/mat-select/div/div[1]/span";
-	public static String previousResultClick = "/html/body/div[4]/div[2]/div/div/div/mat-option[1]/span/div/div";
-	public static String previousMedicineClick = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[2]/div/div/img";
-	public static String previousViewPDF = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div[1]/div[2]";
-	public static String DietaryAdviceOption = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[1]/mat-step-header[6]";
-	public static String DietarySearch = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[6]/div/div/div/div[1]/div[3]/div/app-language-select-textbox/div/input";
-	public static String DietaryLanguage = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[6]/div/div/div/div[1]/div[3]/div/app-language-select-textbox/div/div/div/mat-form-field/div/div[1]/div/mat-select/div/div[1]";
-	public static String DietaryLanguageMarathi = "/html/body/div[4]/div[2]/div/div/div/mat-option[2]/span";
-	public static String DietaryAdd = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[6]/div/div/div/div[2]/div[1]/div/div/div[4]/app-cutom-card";
-	public static String DietaryAdvice = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[6]/div/div/div/div[2]/div[1]/div/div/div[1]/app-cutom-card/div";
-	public static String GeneralInstruction = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[1]/mat-step-header[7]/div[1]";
-	public static String GenInstruction = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[7]/div/div/div/div[2]/div[1]/div/div/div[1]/app-cutom-card/div";
-	public static String InstructionLanguage = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[7]/div/div/div/div[1]/div[3]/div/app-language-select-textbox/div/div/div/mat-form-field";
-	public static String InstructionLanguageMarathi = "/html/body/div[5]/div[2]/div/div/div/mat-option[2]/span";
-	public static String InstructionSearch = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[7]/div/div/div/div[1]/div[3]/div/app-language-select-textbox/div/input";
-	public static String InstructionAdd = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[7]/div/div/div/div[1]/div[3]/div/div/button";
-	public static String prescriptionSave = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/div[1]/div[1]";
-	public static String prescriptionProceed = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/div[1]/div[2]";
-	public static String InstructionImpNote = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/div[2]/app-prescription-live-preview/div/div/mat-chip-list/div/mat-chip[2]";
-	public static String FollowupTypes = "/html/body/div[4]/div[2]/div/mat-dialog-container/div/div[2]/div[1]/div[1]/div[2]/div[1]/mat-form-field[2]/div/div[1]/div/mat-select/div";
-	public static String Appointment = "//*[text()=' Call ']";
-	public static String FollowupMessage = "/html/body/div[4]/div[2]/div/mat-dialog-container/div/div[2]/div[1]/div[1]/div[2]/div[2]/mat-chip-list/div/mat-chip[2]";
-	public static String CustomisePrescription = "/html/body/div[4]/div[2]/div/mat-dialog-container/div/div[2]/div[1]/div[3]/mat-form-field[1]/div/div[1]/div/mat-select/div/div[1]/span/span";
-	public static String HeightDisable = "/html/body/div[4]/div[4]/div/div/div/mat-option[2]/span";
-	public static String confirmPrescrFooter = "/html/body/div[4]/div[2]/div/mat-dialog-container/div/div[2]/div[1]/div[3]/div[2]";
-	public static String SelectedFields = "/html/body/div[4]/div[2]/div/mat-dialog-container/div/div[2]/div[1]/div[3]/mat-form-field[2]/div/div[1]/div/mat-select/div/div[1]/span/span";
-	public static String onExaminationDisable = "/html/body/div[4]/div[4]/div/div/div/mat-option[2]/span";
-	public static String SpecialityLocation = "/html/body/div[4]/div[2]/div/mat-dialog-container/div/div[2]/div[1]/div[3]/div[1]/mat-form-field[1]/div/div[1]/div/mat-select/div/div[1]";
-	public static String AnkurV3 = "/html/body/div[4]/div[4]/div/div/div/mat-option[1]/span";
-	public static String RxLanguage = "/html/body/div[4]/div[2]/div/mat-dialog-container/div/div[2]/div[1]/div[3]/div[1]/mat-form-field[2]/div/div[1]/div/mat-select/div/div[1]";
-	public static String RxLanguageMarathi = "/html/body/div[4]/div[4]/div/div/div/mat-option[2]/span";
-	public static String ConfirmandPrint = "//*[text()='Confirm and Print']";
-	public static String prescriptionDone = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-prescriptionpreview/div[1]/div/div[3]/div";
-	public static String ChoosePharmacy = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[3]/mat-form-field/div/div[1]/div/mat-select/div/div[1]";
-	public static String TestPharmacy = "/html/body/div[4]/div[4]/div/div/div/mat-option[1]/span";
-	public static String ShareWhatsapp = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[3]/div[2]/div[1]";
-	public static String ShareEmail = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[3]/div[2]/div[2]";
-	public static String ShareInHealthapp = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[3]/div[5]/div[2]/div";
-	public static String GoHome = "//*[text()='Go Home']";
-	public static String Medpageinstruction = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[5]/div/div/div[2]/div/div/div[4]/div/app-language-select-textbox/div/input";
-	public static String Doctor = "/html/body/app-root/app-layout/ng-sidebar-container/ng-sidebar/aside/div[3]/div";
-	public static String nextFollowupDate = "/html/body/div[4]/div[2]/div/mat-dialog-container/div/div[2]/div[1]/div[1]/div[2]/div[1]/mat-form-field[1]/div/div[1]/div[2]/mat-datepicker-toggle/button/span[1]";
-	public static String nextFollowupSelectDate = "/html/body/div[4]/div[4]/div/mat-datepicker-content/div[2]/mat-calendar/div/mat-month-view/table/tbody/tr[3]/td[4]/div[1]";
-	public static String SPO2 = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[1]/div/div/div/div[3]/div/div[6]/div/mat-form-field/div/div[1]/div[3]/input";
-	public static String OTP1 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]";
-	public static String OTP2 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[2]";
-	public static String OTP3 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[3]";
-	public static String OTP4 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
-	public static String OTP5 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
-	public static String OTP6 = "/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]";
+	public static String vitalWeihgt = "//*[text()='Vitals']//following::input[1]";
+	public static String vitalHeihgt = "//*[text()='Vitals']//following::input[2]";
+	public static String headCircumferance = "//*[text()='Vitals']//following::input[3]";
+	//public static String CC = "//*[text()='Vitals']//following::input[4]";
+	public static String RxCC = "//*[text()='Vitals']//following::input[4]";
+	public static String temperature = "//*[text()='Vitals']//following::input[5]";
+	public static String SPO2 = "//*[text()='Vitals']//following::input[6]";
+	//public static String temperature = "mat-input-2";
+	public static String BpAndHeart = "//*[text()='BP & Heart']";
+	public static String BPSys = "//*[text()='BP & Heart']//following::input[1]";
+	public static String BPDia = "//*[text()='BP & Heart']//following::input[2]";
+	public static String heartRate = "//*[text()='BP & Heart']//following::input[3]";
+	public static String pulse = "//*[text()='BP & Heart']//following::input[4]";
+	public static String BloodAndAnalysis = "//*[text()='Blood Analysis(Sugar)	']";
+	public static String Haemoglobin = "//*[text()='Blood Analysis(Sugar)	']//following::input[1]";
+	public static String BloodSugarRandom = "//*[text()='Blood Analysis(Sugar)	']//following::input[2]";
+	public static String BloodSugarF = "//*[text()='Blood Analysis(Sugar)	']//following::input[3]";
+	public static String BloodSugarPP = "//*[text()='Blood Analysis(Sugar)	']//following::input[4]";
+	public static String Blood = "//*[text()='Blood Analysis(Sugar)	']//following::input[5]";
+	public static String LipidProfile = "//*[text()='Lipid Profile']";
+	public static String CholestrerolHDL = "//*[text()='Lipid Profile']//following::input[1]";
+	public static String CholestrerolLDL = "//*[text()='Lipid Profile']//following::input[2]";
+	public static String totalCholesterol = "//*[text()='Lipid Profile']//following::input[3]";
+	public static String Triglycerides = "//*[text()='Lipid Profile']//following::input[4]";
+	public static String OnExamination = "//*[text()='On Examination']";
+	//public static String SearchExamination = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[3]/div/div/div/div[1]/div[2]/div/div/input";
+	//public static String ExaminationNew = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[3]/div/div/div/div[1]/div[2]/button";
+	//public static String Examination = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[3]/div/div/div/div[2]/div[1]/div[1]/div/div[12]/app-cutom-card/div";
+	public static String DiagnosisOption = "//*[text()=' Diagnosis ']";
+	//public static String SearchDiagnosis = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[4]/div/div/div/div[1]/div[2]/div/div/input";
+	//public static String DiagnosisNew = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[4]/div/div/div/div[1]/div[2]/button";
+	public static String Diagnosis = "//*[text()='RESPIRATORY TRACK INFECTION ']";
+	public static String Medicine = "//*[text()=' Medicines ']";
+	public static String medicineSearch = "//*[text()=' Medicines ']//following::input[9]";
+	public static String Dolocare = "//*[text()='DOLO']";
+	public static String MedAddtoList = "//*[text()='Add to List']";
+	
+	public static String Instruction = "//*[text()='Medicines']//following::input[6]";
+	
+	
+ public static String OTP1="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[1]"; 
+   public static String OTP2="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[2]"; 
+   public static String OTP3="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[3]"; 
+   public static String OTP4="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[4]";
+   public static String OTP5="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[5]";
+   public static String OTP6="/html/body/app-root/app-signin/div/div/div/div/div[1]/div/div/section/div/div[3]/div/input[6]"; 
+   public static String QuickRx="//*[text()='Quick Rx']";
+   
+   
+   public static String ChiefComplaints = "//*[text()='Fever ']  ";
+	public static String ComplaintDetails = "//*[text()='Highgrade'] ";
+	public static String MoreSymptoms = "//*[text()='with chills'] ";
+	
+	//public static String Rxweight = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[1]/div/div/div/div[3]/div/div[1]/div/div[2]/mat-form-field/div/div[1]/div[3]/input";
+	//public static String RxBP = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[2]/div/div/app-add-vitals/div[2]/mat-tab-group/div/mat-tab-body[1]/div/div/div/div[3]/div/div[2]/div/mat-form-field/div/div[1]/div[3]/input";
 
+	//public static String AddNewDrug = "/html/body/div[4]/div[2]/div/mat-dialog-container/div[3]/div";
+
+	public static String PopularOption = "//div[text()=' Popular ']";
+	public static String PopularSearch = "//*[text()= ' Popular ']//following::input";
+	public static String PopularMedicineClick = "//*[text()= ' Popular ']//following::Img";
+	public static String FavouriteOption = "//*[text()= ' Favourite ']";
+	public static String FavouriteSearch = "//*[text()= ' Favourite ']//following::input[1]";
+	public static String FavouriteClick = "//*[text()= ' Favourite ']//following::mat-option";
+	public static String FavouriteClickMedicine = "//*[text()= ' Favourite ']//following::img";
+
+	public static String DietaryAdviceOption = "//*[text()= ' Dietary Advice ']";
+
+	public static String DietaryAdd = "//*[text()= 'Eat green vegetables ']";
+	//public static String DietaryAdvice = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[2]/div[6]/div/div/div/div[2]/div[1]/div/div/div[1]/app-cutom-card/div";
+	public static String GeneralInstruction = "//*[text()='Instructions']";
+	public static String GenInstruction = "//*[text()='Can mix all supplements except iron supplement ']";
+
+	public static String prescriptionSave = "//*[text()=' Save']";
+	public static String prescriptionProceed = "//*[text()=' Proceed']";
+	public static String InstructionImpNote = "//*[text()=' If no relief on taking medicines visit doctor immediately ']";
+	public static String FollowupTypes = "//*[text()='Confirm Prescription']//following::span[5]";
+	public static String Appointment = "//*[text()=' Call ']";
+	//public static String FollowupMessage = "/html/body/div[4]/div[2]/div/mat-dialog-container/div/div[2]/div[1]/div[1]/div[2]/div[2]/mat-chip-list/div/mat-chip[2]";
+
+	public static String ConfirmandPrint = "//*[text()='Confirm and Print']";
+	public static String prescriptionDone = "//*[text()=' Done']";
+	
+	public static String GoHome = "//*[text()='Go Home']";
+	
+	public static String nextFollowupSelectDate = "//*[text()='Confirm Prescription']//following::span[112]";
+	
+
+	public static String ClickHome = "//*[text()=' Home']";
+
+
+	public static String nextFollowupDate = "//*[text()='Confirm Prescription']//following::span[4]";
+	public static String Examination = "//*[text()='THROAT - NORMAL '] ";
 	public static void waitForVisibilityOf(By by) {
 		try {
 
@@ -195,7 +165,7 @@ public class AddNewPrescription {
 		driver.manage().window().maximize();
 		//driver.get("http://stage.copious.care:4200/");
 		// driver.get("https://stage.copious.care/");
-		 driver.get("https://opd.copious.care/");
+		 driver.get("https://app.copious.care/");
 		driver.manage().window().fullscreen();
 	}
 
@@ -255,7 +225,7 @@ public class AddNewPrescription {
 	@Test(priority = 4)
 	public void searchBar() {
 		waitForVisibilityOf(By.xpath(searchBar));
-		driver.findElement(By.xpath(searchBar)).sendKeys("confirm");
+		driver.findElement(By.xpath(searchBar)).sendKeys("Pivotal20");
 		highlightElement(By.xpath(searchBar));
 		clickUsingJavaScript(By.xpath(searchBar));
 	}
@@ -308,34 +278,35 @@ public class AddNewPrescription {
 	  @Test(priority = 8) public void VitalsOption() throws InterruptedException {
 	  
 	  Thread.sleep(3000); //driver.manage().window().fullscreen();
-	  waitForVisibilityOf(By.xpath(VitalsOption));
-	  driver.findElement(By.xpath(VitalsOption));
-	  highlightElement(By.xpath(VitalsOption));
-	  clickUsingJavaScript(By.xpath(VitalsOption));
-	  
+	 
 	  waitForVisibilityOf(By.xpath(VitalsButton));
 	  driver.findElement(By.xpath(VitalsButton));
 	  highlightElement(By.xpath(VitalsButton));
 	  clickUsingJavaScript(By.xpath(VitalsButton));
 	  
-	  highlightElement(By.id(vitalWeihgt));
-	  driver.findElement(By.id(vitalWeihgt)).clear();
-	  driver.findElement(By.id(vitalWeihgt)).sendKeys("13");
+	  waitForVisibilityOf(By.xpath(VitalsOption));
+	  driver.findElement(By.xpath(VitalsOption));
+	  highlightElement(By.xpath(VitalsOption));
+	  clickUsingJavaScript(By.xpath(VitalsOption));
 	  
-	  highlightElement(By.id(vitalHeihgt));
-	  driver.findElement(By.id(vitalHeihgt)).clear();
-	  driver.findElement(By.id(vitalHeihgt)).sendKeys("100");
+	  highlightElement(By.xpath(vitalWeihgt));
+	  driver.findElement(By.xpath(vitalWeihgt)).clear();
+	  driver.findElement(By.xpath(vitalWeihgt)).sendKeys("13");
 	  
-	  highlightElement(By.id(headCircumferance));
-	  driver.findElement(By.id(headCircumferance)).clear();
-	  driver.findElement(By.id(headCircumferance)).sendKeys("5");
+	  highlightElement(By.xpath(vitalHeihgt));
+	  driver.findElement(By.xpath(vitalHeihgt)).clear();
+	  driver.findElement(By.xpath(vitalHeihgt)).sendKeys("100");
 	  
-	  highlightElement(By.id(CC)); driver.findElement(By.id(CC)).clear();
-	  driver.findElement(By.id(CC)).sendKeys("97");
+	  highlightElement(By.xpath(headCircumferance));
+	  driver.findElement(By.xpath(headCircumferance)).clear();
+	  driver.findElement(By.xpath(headCircumferance)).sendKeys("5");
 	  
-	  highlightElement(By.id(temperature));
-	  driver.findElement(By.id(temperature)).clear();
-	  driver.findElement(By.id(temperature)).sendKeys("77");
+	  highlightElement(By.xpath(RxCC)); driver.findElement(By.xpath(RxCC)).clear();
+	  driver.findElement(By.xpath(RxCC)).sendKeys("97");
+	  
+	  highlightElement(By.xpath(temperature));
+	  driver.findElement(By.xpath(temperature)).clear();
+	  driver.findElement(By.xpath(temperature)).sendKeys("77");
 	  
 	  highlightElement(By.xpath(SPO2)); driver.findElement(By.xpath(SPO2)).clear();
 	  driver.findElement(By.xpath(SPO2)).sendKeys("10");
@@ -345,22 +316,22 @@ public class AddNewPrescription {
 	  @Test(priority = 9) public void BpandHeartOption() throws
 	  InterruptedException {
 	  
-	  Thread.sleep(15000); waitForVisibilityOf(By.id(BpAndHeart));
-	  driver.findElement(By.id(BpAndHeart)); highlightElement(By.id(BpAndHeart));
-	  clickUsingJavaScript(By.id(BpAndHeart));
+	  Thread.sleep(15000); waitForVisibilityOf(By.xpath(BpAndHeart));
+	  driver.findElement(By.xpath(BpAndHeart)); highlightElement(By.xpath(BpAndHeart));
+	  clickUsingJavaScript(By.xpath(BpAndHeart));
 	  
-	  highlightElement(By.id(BPSys)); driver.findElement(By.id(BPSys)).clear();
-	  driver.findElement(By.id(BPSys)).sendKeys("80");
+	  highlightElement(By.xpath(BPSys)); driver.findElement(By.xpath(BPSys)).clear();
+	  driver.findElement(By.xpath(BPSys)).sendKeys("80");
 	  
-	  highlightElement(By.id(BPDia)); driver.findElement(By.id(BPDia)).clear();
-	  driver.findElement(By.id(BPDia)).sendKeys("100");
+	  highlightElement(By.xpath(BPDia)); driver.findElement(By.xpath(BPDia)).clear();
+	  driver.findElement(By.xpath(BPDia)).sendKeys("100");
 	  
-	  highlightElement(By.id(heartRate));
-	  driver.findElement(By.id(heartRate)).clear();
-	  driver.findElement(By.id(heartRate)).sendKeys("75");
+	  highlightElement(By.xpath(heartRate));
+	  driver.findElement(By.xpath(heartRate)).clear();
+	  driver.findElement(By.xpath(heartRate)).sendKeys("75");
 	  
-	  highlightElement(By.id(pulse)); driver.findElement(By.id(pulse)).clear();
-	  driver.findElement(By.id(pulse)).sendKeys("77");
+	  highlightElement(By.xpath(pulse)); driver.findElement(By.xpath(pulse)).clear();
+	  driver.findElement(By.xpath(pulse)).sendKeys("77");
 	  
 	  }
 	  
@@ -503,7 +474,7 @@ public class AddNewPrescription {
 	  
 	  waitForVisibilityOf(By.xpath(PopularSearch));
 	  highlightElement(By.xpath(PopularSearch));
-	  driver.findElement(By.xpath(PopularSearch)).sendKeys("new");
+	  driver.findElement(By.xpath(PopularSearch)).sendKeys("cro");
 	  
 	  waitForVisibilityOf(By.xpath(PopularMedicineClick));
 	  highlightElement(By.xpath(PopularMedicineClick));
@@ -519,13 +490,13 @@ public class AddNewPrescription {
 	  
 	  waitForVisibilityOf(By.xpath(FavouriteSearch));
 	  highlightElement(By.xpath(FavouriteSearch));
-	  driver.findElement(By.xpath(FavouriteSearch)).sendKeys("test");
+	  driver.findElement(By.xpath(FavouriteSearch)).sendKeys("temp");
 	  
-	  waitForVisibilityOf(By.id(FavouriteClick));
-	  highlightElement(By.id(FavouriteClick));
-	  driver.findElement(By.id(FavouriteClick));
-	  clickUsingJavaScript(By.id(FavouriteClick));
-	  
+	  waitForVisibilityOf(By.xpath(FavouriteClick));
+	  highlightElement(By.xpath(FavouriteClick));
+	  driver.findElement(By.xpath(FavouriteClick));
+	  clickUsingJavaScript(By.xpath(FavouriteClick));
+	  Thread.sleep(2000);
 	  waitForVisibilityOf(By.xpath(FavouriteClickMedicine));
 	  highlightElement(By.xpath(FavouriteClickMedicine));
 	  driver.findElement(By.xpath(FavouriteClickMedicine));
@@ -622,14 +593,6 @@ public class AddNewPrescription {
 		 
 
 		
-		  waitForVisibilityOf(By.xpath(FollowupMessage));
-		  driver.findElement(By.xpath(FollowupMessage));
-		  highlightElement(By.xpath(FollowupMessage));
-		  clickUsingJavaScript(By.xpath(FollowupMessage));
-		 
-
-		
-
 		Thread.sleep(15000);
 		waitForVisibilityOf(By.xpath(ConfirmandPrint));
 		driver.findElement(By.xpath(ConfirmandPrint));

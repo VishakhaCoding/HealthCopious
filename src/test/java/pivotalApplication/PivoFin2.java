@@ -224,7 +224,7 @@ public void RquisitionDownloadclose() throws InterruptedException, IndexOutOfBou
 }
 @Test(priority = 16)
 public void ReportClick() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(2000);
+	Thread.sleep(5000);
 	WebElement ReportClick
 	  =  driver.findElement(By.xpath("//*[@text='Report']"));
 	ReportClick.click();
@@ -525,7 +525,7 @@ public void UploadOk3() throws InterruptedException, IndexOutOfBoundsException {
 	 public void DocPdf() throws InterruptedException, IndexOutOfBoundsException {
 	 	Thread.sleep(10000);
 	 	List<WebElement> docPdf=driver.findElements(By.className("android.widget.TextView"));
-	 	docPdf.get(11).click();
+	 	docPdf.get(9).click();
 	 	
 
 	 }
@@ -979,7 +979,7 @@ public void Files1() throws InterruptedException, IndexOutOfBoundsException {
 public void docPdf() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(10000);
 	List<WebElement> docPdf=driver.findElements(By.className("android.widget.TextView"));
-	docPdf.get(11).click();
+	docPdf.get(9).click();
 
 	
 

@@ -46,11 +46,11 @@ public class MoreInformation {
 	public static String AddNewPrescription = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[2]/div[2]/div[1]/app-patient/div/div/div/div/div[2]/div/div/ul/a/li/a/div/div[3]/figure/a[1]/img";
 	public static String MoreInfo="//*[text()='More Information']";
 	public static String MoreInfoEdit="/html/body/div[4]/div[2]/div/div/div/div[1]/div[2]/div[1]/button/span";
-	public static String MedicalCondition="/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/div[1]/mat-form-field[1]/div/div[1]/div[3]/input";
-	public static String Allergies="/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/div[1]/mat-form-field[2]/div/div[1]/div[3]/input";
-	public static String RecurringComplaints="/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/div[1]/mat-form-field[3]/div/div[1]/div[3]/input";
-	public static String AccidentalHistory="/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/div[1]/mat-form-field[4]/div/div[1]/div[3]/input";
-	public static String Save="/html/body/div[4]/div[2]/div/mat-dialog-container/div[2]/div[2]/button";
+	public static String MedicalCondition="//*[text()='More Information']//following::input[18]";
+	public static String Allergies="//*[text()='More Information']//following::input[19]";
+	public static String RecurringComplaints="//*[text()='More Information']//following::input[20]";
+	public static String AccidentalHistory="//*[text()='More Information']//following::input[21]";
+	public static String Save="//*[text()='More Information']//following::button[9]";
 	
 	
 	
@@ -153,7 +153,7 @@ Thread.sleep(1000);
 	@Test(priority = 4)
 	public void searchBar() {
 		waitForVisibilityOf(By.xpath(searchBar));
-		driver.findElement(By.xpath(searchBar)).sendKeys("cccc");
+		driver.findElement(By.xpath(searchBar)).sendKeys("aaaa");
 
 		highlightElement(By.xpath(searchBar));
 		clickUsingJavaScript(By.xpath(searchBar));

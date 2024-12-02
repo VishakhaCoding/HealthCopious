@@ -3,19 +3,45 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="healthApp.HealthEndToEndScript">
+      <class name="webAuto.WebOpdEndToEndWorkflow">
         <methods>
-          <include name="setup"/>
           <include name="LipidProfile"/>
-          <include name="AllVisits"/>
-          <include name="AddButton2"/>
-          <include name="AddVitalsClick"/>
-          <include name="BfSuite"/>
-          <include name="AfterSuite"/>
-          <include name="AddVitals"/>
+          <include name="cirtificateOption"/>
+          <include name="Diagnosis"/>
+          <include name="HealthProfile"/>
+          <include name="setUp"/>
+          <include name="Complaints"/>
+          <include name="GeneralInstruction"/>
+          <include name="clickContinueprofile"/>
+          <include name="SaveandProceed"/>
+          <include name="fillHealthProfile"/>
+          <include name="cirtificateOption3"/>
           <include name="screenShot"/>
+          <include name="VitalsOption"/>
+          <include name="cirtificateOption1"/>
+          <include name="AddNewAppointment"/>
+          <include name="ReferralOption3"/>
+          <include name="BloodAndAnalysis"/>
+          <include name="AllDocuments1"/>
+          <include name="BpandHeartOption"/>
+          <include name="GoHome"/>
+          <include name="OnExamination"/>
+          <include name="fillVitalForm"/>
+          <include name="ConfirmPrescription"/>
+          <include name="DietaryAdvice"/>
+          <include name="Medicine1"/>
+          <include name="AddPrescription"/>
+          <include name="Document2"/>
+          <include name="fillFamilyProfile"/>
+          <include name="Investigation"/>
+          <include name="ReceiptOption"/>
+          <include name="Investigation1"/>
+          <include name="nextButton"/>
+          <include name="Document1"/>
+          <include name="AllDocuments"/>
+          <include name="previewReceipt"/>
         </methods>
-      </class> <!-- healthApp.HealthEndToEndScript -->
+      </class> <!-- webAuto.WebOpdEndToEndWorkflow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -504,7 +504,7 @@ public static String HPV1by2Record="/html/body/app-root/app-layout/ng-sidebar-co
 
 	}
 
-	@Test(priority = 20, retryAnalyzer = webAutoNegative.MyRetry.class)
+	@Test(priority = 20, retryAnalyzer = webAutoNegative.Demo_MyRetry.class)
 	public void fillVitalForm() throws InterruptedException {
 		waitForVisibilityOf(By.xpath(selectDelivery));
 

@@ -348,7 +348,7 @@ public class PatientEditVaccineQ {
 	       		  
 	       		  }
 	       		 
-	               @Test(priority=20,retryAnalyzer = webAutoNegative.MyRetry.class)
+	               @Test(priority=20,retryAnalyzer = webAutoNegative.Demo_MyRetry.class)
 	               public void fillVitalForm() throws InterruptedException {
 	                   waitForVisibilityOf(By.xpath(selectDelivery));
 	                  

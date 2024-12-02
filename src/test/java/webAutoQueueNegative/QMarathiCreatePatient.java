@@ -184,7 +184,7 @@ public class QMarathiCreatePatient {
 	public static String prefferedLanguage = "/html/body/div[2]/div[2]/div/mat-dialog-container/app-new-onboard-patient/mat-horizontal-stepper/div[2]/div[1]/form/div/div[7]/mat-form-field[2]/div/div[1]/div/mat-select/div/div[1]/span";
 	public static String prefferedLanguageEnglish = "/html/body/div[2]/div[4]/div/div/div/mat-option[1]/span";
 	public static String Medicine = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-quick/div/mat-horizontal-stepper/div[1]/mat-step-header[5]";
-	public static String clickContinue = "/html/body/ngb-modal-window/div/div/div[2]/div/div/div[5]/span";
+	public static String clickContinue = "//*[text()='Continue to complete detail profile']";
 	public static String AppointmentBooked = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[2]/div[2]/div[1]/app-patient/p-toast/div/p-toastitem/div/div/div/div[2]/div[2]";
 
 	public static String Queue="/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-home-dashboard/div[2]/div[2]/div[1]/app-patient/div/div/div/div/div[2]/div/div/ul/a[1]/li/a/div/div[3]/figure/a[2]/img";
@@ -443,7 +443,7 @@ public class QMarathiCreatePatient {
 		  
 		  }
 		 
-        @Test(priority=20,retryAnalyzer = webAutoNegative.MyRetry.class)
+        @Test(priority=20,retryAnalyzer = webAutoNegative.Demo_MyRetry.class)
         public void fillVitalForm() throws InterruptedException {
             waitForVisibilityOf(By.xpath(selectDelivery));
            
